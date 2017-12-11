@@ -1,0 +1,147 @@
+{% extends '_layouts/base.html' %}
+
+{% block title %}
+	Edition produits
+{% endblock title %}
+
+{% block sidebar %}                       
+	<li>
+	<a href="#"><i class="fa fa-dashboard fa-fw"></i> Mon Profil</a>
+	</li>
+	<li>
+	<a href="#"><i class="fa fa-table fa-fw"></i> Mes Produits</a>
+	</li>
+{% endblock sidebar %}
+
+{% block headline %}
+	ApproEco
+{% endblock headline %}
+
+{% block content %}
+
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong>Informations client</strong>
+        </div>
+        <div class="panel-body">
+            ApproEco</br>
+            3e rue Limete</br>
+            +24381XXXXXX
+        </div>
+    </div>
+    </div>
+    <!-- /.col-lg-6 -->
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong>Produit</strong>
+        </div>
+        <div class="panel-body">
+            Type produit: Laptop</br>
+            Critère de recherche: 2GB RAM, 500GB Disque dur
+        </div>
+    </div>
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-8">
+                      <h3 class="box-title">Ma cotation</h3>
+                    </div>
+                  </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Fournisseur</th>
+                                <th>Détail produit</th>
+                                <th>Prix</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MOBCOM</td>
+                                <td>Marque DELL E6230, core i3, 4Go RAM, 500Go Disque dur</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>IT-COM</td>
+                                <td>Marque DELL inspiron, core i3, 4Go RAM, 500Go Disque dur</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>MOBTEC</td>
+                                <td>Marque lenovo x250, core i3, 4Go RAM, 500Go Disque dur</td>
+                                <td>$150</td>
+                            </tr>
+                            <tr>
+                                <td>MOBCOM</td>
+                                <td>Marque DELL E6230, core i3, 4Go RAM, 500Go Disque dur</td>
+                                <td>$150</td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <th>Fournisseur</th>
+                                <th>Détail produit</th>
+                                <th>Prix</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-6">
+        <div class="panel panel-default">
+        <div class="panel-heading">
+            <strong>Informations fournisseur</strong>
+        </div>
+        <div class="panel-body">
+            MOBCOM, Téléphone: +2439945XXXX</br>
+            IT-COM, Téléphone: +2439945XXXX</br>
+            MOBTECH, Téléphone: +2439945XXXX
+        </div>
+    </div>
+    </div>
+    <!-- /.col-lg-6 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-2">
+        <div class="panel panel-default">
+                <a class="btn btn-block btn-primary btn-google">
+                    <i class="fa fa-print"></i> Imprimer
+                </a>
+        </div>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Copyright 2017
+            </div>
+            <!-- .panel-heading -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<!-- /.row -->
+{% if user.is_authenticated %} {{ user.username }}{% endif %}
+{% endblock %}

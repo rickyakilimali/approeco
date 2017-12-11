@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load catalogue_navigation %}
+{% show_navigation_sidebar %}
+
+{% block title %}Catalogue{% endblock %}
+
+
+{% block page_name %}Liste de produits de la catégorie{% endblock %}
+
+{% block content %}
+    {% if producttypes %}
+
+
+
+                {% for producttype in producttypes %}
+                
+                    <div class="col-md-3">
+                      <!-- Widget: user widget style 1 -->
+                        <div class="box box-widget widget-user">
+                        <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-black" style="background: url('{{producttype.product_type_image.url}}') center center;">
+                          
+                            </div>
+                        
+                            <div class="box-footer">
+                                <div class="category-desc">
+                                    <a href="{{ producttype.get_absolute_url }}">{{ producttype.name }}</a>
+                                </div>  
+
+                          
+                            </div>
+                        </div>
+                      <!-- /.widget-user -->
+                    </div>
+
+                {% endfor %}
+            </ul>
+
+        {% else %}
+            <strong>There are no product type present.</strong>
+        {% endif %}
+
+{% endblock %}
+      

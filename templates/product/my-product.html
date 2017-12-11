@@ -1,0 +1,191 @@
+{% extends '_layouts/base.html' %}
+
+{% block title %}
+	My product
+{% endblock title %}
+
+{% block sidebar %}                       
+	<li>
+	<a href="#"><i class="fa fa-dashboard fa-fw"></i> Mon Profil</a>
+	</li>
+	<li>
+	<a href="#"><i class="fa fa-table fa-fw"></i> Mes Produits</a>
+	</li>
+{% endblock sidebar %}
+
+{% block headline %}
+	Liste des produits
+{% endblock headline %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-8">
+      <h3 class="box-title">Produits</h3>
+    </div>
+    <div class="col-lg-2">
+      <a class="btn btn-block btn-primary btn-bitbucket">
+        <i class="fa fa-upload"></i> Importer
+      </a>
+    </div>
+    <div class="col-lg-2">
+      <a class="btn btn-block btn-danger btn-google">
+        <i class="fa fa-download"></i> Exporter
+      </a>
+    </div>
+  </div>
+  <div class="row">
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Marque</th>
+                <th>Type</th>
+                <th>Modèle</th>
+                <th>Capacité</th>
+                <th>Prix</th>
+                <th>Editer</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Trident</td>
+                <td>Internet
+                    Explorer 4.0
+                </td>
+                <td>Win 95+</td>
+                <td> 4</td>
+                <td>X</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Trident</td>
+                <td>Internet
+                    Explorer 5.0
+                </td>
+                <td>Win 95+</td>
+                <td>5</td>
+                <td>C</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Trident</td>
+                <td>Internet
+                    Explorer 5.5
+                </td>
+                <td>Win 95+</td>
+                <td>5.5</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Trident</td>
+                <td>Internet
+                    Explorer 6
+                </td>
+                <td>Win 98+</td>
+                <td>6</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Trident</td>
+                <td>Internet Explorer 7</td>
+                <td>Win XP SP2+</td>
+                <td>7</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-file-text-o"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Trident</td>
+                <td>AOL browser (AOL desktop)</td>
+                <td>Win XP</td>
+                <td>6</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Gecko</td>
+                <td>Firefox 1.0</td>
+                <td>Win 98+ / OSX.2+</td>
+                <td>1.7</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Gecko</td>
+                <td>Firefox 1.5</td>
+                <td>Win 98+ / OSX.2+</td>
+                <td>1.8</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+                </td>
+            <tr>
+                <td>Gecko</td>
+                <td>Firefox 2.0</td>
+                <td>Win 98+ / OSX.2+</td>
+                <td>1.8</td>
+                <td>A</td>
+                <td>
+                    <a class="btn btn-block btn-success btn-xs">
+                        <i class="fa fa-edit"></i> Editer
+                    </a>
+              </td>
+            </tr>
+        </tbody>
+        <thead>
+            <tr>
+                <th>Marque</th>
+                <th>Type</th>
+                <th>Modèle</th>
+                <th>Capacité</th>
+                <th>Prix</th>
+                <th>Editer</th>
+            </tr>
+        </thead>
+    </table>
+</div>
+</div>
+<div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Copyright 2017
+            </div>
+            <!-- .panel-heading -->
+        </div>
+        <!-- /.panel -->
+</div>
+<!-- /.row -->
+{% if user.is_authenticated %} {{ user.username }}{% endif %}
+{% endblock %}
