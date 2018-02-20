@@ -1,0 +1,132 @@
+{% extends '_layouts/acheteur.html' %}
+
+{% block headline %}
+{{business.businessprofile.nom}}
+{% endblock headline %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-4">
+        <img src="{{business.businessprofile.logo.url}}" class="img-responsive"/>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    Adresse
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.adresse}},
+                {{business.businessprofile.commune}},
+                {{business.businessprofile.ville}},
+                {{business.businessprofile.province}}
+                {{business.businessprofile.pays}}
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <i class="fa  fa-phone"> Téléphone</i>
+                </h4>
+            </div>
+            <div class="panel-body">
+               {{business.businessprofile.telephone}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <i class="fa fa-envelope-o"> E-mail</i>
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.email}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Site web
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.website}}
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-8">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Présentation de l'entreprise
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.presentation}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Nombre d'année d'existence
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.annee_existence}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Nombre d'année d'experience de l'équipe de gestion
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.annee_experience}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Certifications - Titres obtenus
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.certifications}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Travaux important réalisés
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.travaux_realises}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Partenaires
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.business_partners}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Clients Important
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{business.businessprofile.business_references}}
+            </div>
+        </div>
+
+    </div>
+
+{% endblock content %}

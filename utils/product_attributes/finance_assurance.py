@@ -1,0 +1,15 @@
+NOMBRE_JOUR = (
+		('1-7 JOURS','1-7 JOURS'),
+		('8-15 JOURS','8-15 JOURS'),
+		('16-21 JOURS','16-21 JOURS'),
+		('22-30 JOURS','22-30 JOURS'),
+		('31-45 JOURS','31-45 JOURS'),
+		('46-60 JOURS','46-60 JOURS'),
+	)
+
+TRANCHE_AGE = (
+		('0-55 ANS','0-55 ANS'),
+		('55-65 ANS','55-65 ANS'),
+		('65 ANS ET PLUS','65 ANS ET PLUS'),
+	)
+

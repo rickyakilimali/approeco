@@ -11,9 +11,11 @@ def index(request):
 	"""
 
 	categories = Category.get_root_nodes()
-	 
 
-	context_dict = {'categories' : categories}
+	category = ''
+
+
+	context_dict = {'categories' : categories, 'current_cat':category}
 	return render(request, 'category/browse.html', context_dict)
 
 
@@ -25,26 +27,26 @@ def category_list(request, topcategory):
 	category_slugs = topcategory.split('/')
 
 	category_slug = category_slugs[-1]
-	
+
 
 	category = Category.objects.get(slug=category_slug)
 
 	if category.is_leaf():
 		producttypes = category.producttypes.all()
-		context_dict = {'producttypes':producttypes}
+		context_dict = {'producttypes':producttypes, 'current_cat':category}
 		r_template = 'category/product_type.html'
 	else:
 		sub_categories = category.get_children()
-		context_dict = {'categories': sub_categories}
+		context_dict = {'categories': sub_categories, 'current_cat':category}
 		r_template = 'category/browse.html'
 
-	return render(request, r_template, context_dict)	
+	return render(request, r_template, context_dict)
 
 
 class CategoryProfileListView(ListView):
 	model=Category
 	context_object_name = 'my_categories'
-	
+
 
 	def get_queryset(self):
 		print(self.request.user)

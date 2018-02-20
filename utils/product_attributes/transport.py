@@ -1,0 +1,67 @@
+
+PAYS_SOURCE = (
+
+		('FRANCE','FRANCE'),
+
+	)
+
+VILLE_DE_DESTINATION = (
+		('KINSHASA','KINSHASA'),
+
+		)
+
+TONNAGE = (
+		('20T','20T'),
+
+
+	)
+
+CAPACITE_MAX = (
+		('20T','20T'),
+
+
+	)
+
+LIEU_DEPART=(
+		('KINSHASA','KINSHASA'),
+		('KINSHASA','KINSHASA'),
+		('KINSHASA','KINSHASA'),
+		('KINSHASA','KINSHASA'),
+
+
+	)
+
+LIEU_DESTINATION = (
+		('KANANGA','KANANGA'),
+		('MBUJI MAYI ','MBUJI MAYI '),
+		('KIKWIT','KIKWIT'),
+		('TSHIKAPA','TSHIKAPA'),
+
+
+	)
+POIDS_BIEN = (
+
+		('0 - 300 KG', '0 - 300 KG'),
+        ('300 KG <', '300 KG <'),
+
+	)
+
+ASSURANCE = (
+
+		('OUI', 'OUI'),
+        ('NON', 'NON'),
+
+	)
+
+DUREE_LOCATION = (
+
+		('DEMI-JOURNEE(4H)', 'DEMI-JOURNEE(4H)'),
+        ('JOURNEE(8H)', 'JOURNEE(8H)'),
+
+	)
+ZONEDUREE_LOCATION = (
+
+		('INTRA-URBAIN', 'INTRA-URBAIN'),
+
+
+	)

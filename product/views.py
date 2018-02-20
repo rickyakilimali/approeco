@@ -1,10 +1,13 @@
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, UpdateView
 from django.http import HttpResponse, QueryDict
 from .forms import _ProductForm
+from django.forms import modelform_factory
 from .models import *
 from .filters import *
-from django.contrib.contenttypes.models import ContentType 
+from django.contrib.contenttypes.models import ContentType
+from category.models import *
+from django.urls import reverse
 
 
 from django.core import urlresolvers
@@ -14,19 +17,158 @@ from django_tables2 import RequestConfig
 from .tables import *
 
 from django_filters.views import FilterView
-from django_tables2.views import SingleTableMixin
+from django_tables2.views import SingleTableMixin, SingleTableView
 from django.views.generic.list import ListView
+from django_filters.filterset import *
+from django_tables2.tables import *
 
 
 # Create your views here.
 
+ALL_FIELDS=['nom','vendeur','prix','is_active','category','units','polymorphic_ctype',]
+ALL_FIELDS_TABLE= ('id','category','polymorphic_ctype','is_active','productbase_ptr',)
+ALL_FIELDS_FORM = ('nom', 'prix',)
+
+def productformclass_factory(modele, fields=ALL_FIELDS_FORM):
+    the_model = ContentType.objects.get(app_label="product", model=modele).model_class()
+    meta = type(str('Meta'), (object,), {'model': the_model, 'fields':fields})
+
+    form_class = type(str('%sForm' %the_model._meta.object_name),(forms.ModelForm,), {'Meta':meta})
+
+def productfilterset_factory(modele, exclude=ALL_FIELDS):
+	the_model = ContentType.objects.get(app_label="product", model=modele).model_class()
+	meta = type(str('Meta'), (object,), {'model': the_model, 'exclude': exclude})
+
+	filterset = type(str('%sFilterSet' %the_model._meta.object_name),(FilterSet,), {'Meta': meta})
+	return filterset
+
+
+def producttable_factory(modele, exclude=ALL_FIELDS_TABLE):
+	the_model = ContentType.objects.get(app_label="product", model=modele).model_class()
+	meta = type(str('Meta'), (object,), {'model': the_model, 'exclude': exclude})
+
+	table_class = type(str('%sTable' %the_model._meta.object_name),(ProductTable,), {'Meta': meta})
+	return table_class
+
+
+def producttable_factory_withoutlink(modele, exclude=ALL_FIELDS_TABLE):
+	the_model = ContentType.objects.get(app_label="product", model=modele).model_class()
+	meta = type(str('Meta'), (object,), {'model': the_model, 'exclude': exclude})
+
+	table_class = type(str('%sTable' %the_model._meta.object_name),(Table,), {'Meta': meta})
+	return table_class
+
+
+
+class FilteredProductView(SingleTableMixin, FilterView):
+	#table_class = LaptopTable
+	model = Laptop
+	template_name = 'productfilter.html'
+
+
+	def get_filterset_class(self):
+		"""
+		Returns the filterset class to use in this view
+		"""
+		the_model = self.kwargs['model']
+		return productfilterset_factory(modele=the_model)
+
+	def get_table_class(self):
+		'''
+		Return the class to use for the table.
+		'''
+		the_model = self.kwargs['model']
+		return producttable_factory(modele=the_model)
+
+		#if self.table_class:
+		#    return self.table_class
+		#klass = type(self).__name__
+		#raise ImproperlyConfigured('A table class was not specified. Define {}.table_class'.format(klass))
+
+
+	def get_context_data(self, **kwargs):
+		context = super(FilteredProductView, self).get_context_data(**kwargs)
+		context['model'] = self.kwargs['model']
+		context['criteria2'] = {k: v for k, v in self.request.GET.items() if v}
+		context['products']=''
+		return context
+
+	def get_queryset(self):
+		product_db=ContentType.objects.get(app_label="product", model=self.kwargs['model']).model_class()
+		return product_db.objects.all()
+
+
 class MyProductView(TemplateView):
     template_name = 'product/my-product.html'
+
+    def get_context_data(self, **kwargs):
+        context = super(MyProductView, self).get_context_data(**kwargs)
+
+        les_produits = ContentType.objects.filter(app_label="product")
+
+        #recupere les content-type où le vendeur a des produits
+        search_producttype=[]
+        for dbtable in les_produits:
+	        if dbtable.model_class().objects.filter(vendeur__username=self.request.user.username):
+	            search_producttype.append(dbtable)
+
+
+        #recupere les product-type où le vendeur a des produits
+        producttype_list=[]
+        for pt in search_producttype:
+            type_produit=ProductType.objects.get(product_model=pt)
+            producttype_list.append(type_produit)
+
+        context['mes_produits'] = producttype_list
+        return context
+
+
+class MyProductListView(SingleTableMixin, ListView):
+
+    template_name = 'product/my-product-list.html'
+    context_object_name = 'mes_produits_model'
+
+    def get_table_class(self):
+        the_model = self.kwargs['conttype']
+        return producttable_factory_withoutlink(modele=the_model)
+
+
+
+
+    def get_queryset(self):
+
+    	#recupere l'instance de Content Type representé par le parametre nommé de l'url, ensuite recupere la classe
+
+        ctype = ContentType.objects.get(app_label="product", model=self.kwargs['conttype']).model_class()
+
+        #crée le queryset à renvoyer
+
+        return ctype.objects.filter(vendeur__username=self.request.user.username)
+
+
+class ProductUpdateView(UpdateView):
+
+    template_name = 'product/update.html'
+
+    def get_success_url(self):
+        the_model = self.kwargs['model']
+        return reverse('my-product-list', kwargs={'conttype':the_model})
+
+    def get_form_class(self):
+        ctype = ContentType.objects.get(app_label="product", model=self.kwargs['model']).model_class()
+        ProductForm = modelform_factory(ctype, fields=('prix',))
+        return ProductForm
+
+    def get_queryset(self):
+        ctype = ContentType.objects.get(app_label="product", model=self.kwargs['model']).model_class()
+
+        return ctype.objects.filter(pk=self.kwargs['pk'])
 
 class EditProductView(TemplateView):
     template_name = 'product/edit-product.html'
 
-
+#--------------------------------------------------------#
+#--------------------------------------------------------#
 
 
 class FilteredLaptopListView(SingleTableMixin, FilterView):
@@ -114,7 +256,7 @@ class FilteredPieceRechangeMoteurListView(SingleTableMixin, FilterView):
 	table_class = PieceRechangeMoteurTable
 	model = PieceRechangeMoteur
 	template_name = 'productfilter.html'
-	filterset_class = PieceRechangeMoteurFilter		
+	filterset_class = PieceRechangeMoteurFilter
 
 
 class FilteredCarteServiceListView(SingleTableMixin, FilterView):
@@ -146,7 +288,7 @@ class FilteredTShirtBlancListView(SingleTableMixin, FilterView):
 	table_class = TShirtBlancTable
 	model = TShirtBlanc
 	template_name = 'productfilter.html'
-	filterset_class = TShirtBlancFilter	
+	filterset_class = TShirtBlancFilter
 
 
 class FilteredTShirtListView(SingleTableMixin, FilterView):
@@ -176,18 +318,13 @@ class FilteredAfficheListView(SingleTableMixin, FilterView):
 
 
 
-class FilteredFardeListView(SingleTableMixin, FilterView):
-	table_class = FardeTable
-	model = Farde
-	template_name = 'productfilter.html'
-	filterset_class = FardeFilter
 
 
 class FilteredPorteClefListView(SingleTableMixin, FilterView):
 	table_class = PorteClefTable
 	model = PorteClef
 	template_name = 'productfilter.html'
-	filterset_class = PorteClefFilter			
+	filterset_class = PorteClefFilter
 
 
 class FilteredLaniereListView(SingleTableMixin, FilterView):
@@ -196,11 +333,7 @@ class FilteredLaniereListView(SingleTableMixin, FilterView):
 	template_name = 'productfilter.html'
 	filterset_class = LaniereFilter
 
-class FilteredCasquetteBlancheListView(SingleTableMixin, FilterView):
-	table_class = CasquetteBlancheTable
-	model = CasquetteBlanche
-	template_name = 'productfilter.html'
-	filterset_class = CasquetteBlancheFilter
+
 
 class FilteredFlyerListView(SingleTableMixin, FilterView):
 	table_class = FlyerTable
@@ -214,29 +347,6 @@ class FilteredCarnetListView(SingleTableMixin, FilterView):
 	template_name = 'productfilter.html'
 	filterset_class = CarnetFilter
 
-class FilteredCachetHumideListView(SingleTableMixin, FilterView):
-	table_class = CachetHumideTable
-	model = CachetHumide
-	template_name = 'productfilter.html'
-	filterset_class = CachetHumideFilter
-
-class FilteredCachetNumeriqueListView(SingleTableMixin, FilterView):
-	table_class = CachetNumeriqueTable
-	model = CachetNumerique
-	template_name = 'productfilter.html'
-	filterset_class = CachetNumeriqueFilter
-
-class FilteredCachetImprimeListView(SingleTableMixin, FilterView):
-	table_class = CachetImprimeTable
-	model = CachetImprime
-	template_name = 'productfilter.html'
-	filterset_class = CachetImprimeFilter
-
-class FilteredCachetSecListView(SingleTableMixin, FilterView):
-	table_class = CachetSecTable
-	model = CachetSec
-	template_name = 'productfilter.html'
-	filterset_class = CachetSecFilter
 
 class FilteredGravureListView(SingleTableMixin, FilterView):
 	table_class = GravureTable
@@ -244,313 +354,7 @@ class FilteredGravureListView(SingleTableMixin, FilterView):
 	template_name = 'productfilter.html'
 	filterset_class = GravureFilter
 
-class FilteredBoiteCuisiniereListView(SingleTableMixin, FilterView):
-	table_class = BoiteCuisiniereTable
-	model = BoiteCuisiniere
-	template_name = 'productfilter.html'
-	filterset_class = BoiteCuisiniereFilter
 
-class FilteredClefMoletteListView(SingleTableMixin, FilterView):
-	table_class = ClefMoletteTable
-	model = ClefMolette
-	template_name = 'productfilter.html'
-	filterset_class = ClefMoletteFilter
-
-class FilteredDisjoncteurListView(SingleTableMixin, FilterView):
-	table_class = DisjoncteurTable
-	model = Disjoncteur
-	template_name = 'productfilter.html'
-	filterset_class = DisjoncteurFilter
-
-
-class FilteredInterrupteurDifferentielListView(SingleTableMixin, FilterView):
-	table_class = InterrupteurDifferentielTable
-	model = InterrupteurDifferentiel
-	template_name = 'productfilter.html'
-	filterset_class = InterrupteurDifferentielFilter
-
-class FilteredFusibleListView(SingleTableMixin, FilterView):
-	table_class = FusibleTable
-	model = Fusible
-	template_name = 'productfilter.html'
-	filterset_class = FusibleFilter
-
-class FilteredEquerreListView(SingleTableMixin, FilterView):
-	table_class = EquerreTable
-	model = Equerre
-	template_name = 'productfilter.html'
-	filterset_class = EquerreFilter
-
-class FilteredSecheMainListView(SingleTableMixin, FilterView):
-	table_class = SecheMainTable
-	model = SecheMain
-	template_name = 'productfilter.html'
-	filterset_class = SecheMainFilter
-
-class FilteredMonteChargeListView(SingleTableMixin, FilterView):
-	table_class = MonteChargeTable
-	model = MonteCharge
-	template_name = 'productfilter.html'
-	filterset_class = MonteChargeFilter
-
-class FilteredInterrupteurElectriqueListView(SingleTableMixin, FilterView):
-	table_class = InterrupteurElectriqueTable
-	model = InterrupteurElectrique
-	template_name = 'productfilter.html'
-	filterset_class = InterrupteurElectriqueFilter
-
-#class FilteredInterrupteurElectriqueMoteurListView(SingleTableMixin, FilterView):
-#	table_class = InterrupteurElectriqueMoteurTable
-#	model = InterrupteurElectriqueMoteur
-#	template_name = 'productfilter.html'
-#	filterset_class = InterrupteurElectriqueMoteurFilter
-
-
-class FilteredPaumelleListView(SingleTableMixin, FilterView):
-	table_class = PaumelleTable
-	model = Paumelle
-	template_name = 'productfilter.html'
-	filterset_class = PaumelleFilter
-
-
-class FilteredGantListView(SingleTableMixin, FilterView):
-	table_class = GantTable
-	model = Gant
-	template_name = 'productfilter.html'
-	filterset_class = GantFilter
-
-
-class FilteredCylindreListView(SingleTableMixin, FilterView):
-	table_class = CylindreTable
-	model = Cylindre
-	template_name = 'productfilter.html'
-	filterset_class = CylindreFilter
-
-
-class FilteredPalanMecaniqueListView(SingleTableMixin, FilterView):
-	table_class = PalanMecaniqueTable
-	model = PalanMecanique
-	template_name = 'productfilter.html'
-	filterset_class = PalanMecaniqueFilter
-
-
-class FilteredInverseurListView(SingleTableMixin, FilterView):
-	table_class = InverseurTable
-	model = Inverseur
-	template_name = 'productfilter.html'
-	filterset_class = InverseurFilter
-
-
-class FilteredAppareilDeMesureListView(SingleTableMixin, FilterView):
-	table_class = AppareilDeMesureTable
-	model = AppareilDeMesure
-	template_name = 'productfilter.html'
-	filterset_class = AppareilDeMesureFilter
-
-
-class FilteredPriseElectriqueListView(SingleTableMixin, FilterView):
-	table_class = PriseElectriqueTable
-	model = PriseElectrique
-	template_name = 'productfilter.html'
-	filterset_class = PriseElectriqueFilter
-
-
-class FilteredRallongeListView(SingleTableMixin, FilterView):
-	table_class = RallongeTable
-	model = Rallonge
-	template_name = 'productfilter.html'
-	filterset_class = RallongeFilter
-
-
-class FilteredBoiteDerivationListView(SingleTableMixin, FilterView):
-	table_class = BoiteDerivationTable
-	model = BoiteDerivation
-	template_name = 'productfilter.html'
-	filterset_class = BoiteDerivationFilter
-
-
-class FilteredCoffretElectriqueListView(SingleTableMixin, FilterView):
-	table_class = CoffretElectriqueTable
-	model = CoffretElectrique
-	template_name = 'productfilter.html'
-	filterset_class = CoffretElectriqueFilter
-
-
-class FilteredContacteurListView(SingleTableMixin, FilterView):
-	table_class = ContacteurTable
-	model = Contacteur
-	template_name = 'productfilter.html'
-	filterset_class = ContacteurFilter
-
-
-class FilteredMecheBetonListView(SingleTableMixin, FilterView):
-	table_class = MecheBetonTable
-	model = MecheBeton
-	template_name = 'productfilter.html'
-	filterset_class = MecheBetonFilter
-
-
-class FilteredOutilsJardinageListView(SingleTableMixin, FilterView):
-	table_class = OutilsJardinageTable
-	model = OutilsJardinage
-	template_name = 'productfilter.html'
-	filterset_class = OutilsJardinageFilter
-
-
-class FilteredBalanceListView(SingleTableMixin, FilterView):
-	table_class = BalanceTable
-	model = Balance
-	template_name = 'productfilter.html'
-	filterset_class = BalanceFilter
-
-
-class FilteredTuyauterieListView(SingleTableMixin, FilterView):
-	table_class = TuyauterieTable
-	model = Tuyauterie
-	template_name = 'productfilter.html'
-	filterset_class = TuyauterieFilter
-
-
-class FilteredAccessoiresHydrophoreListView(SingleTableMixin, FilterView):
-	table_class = AccessoiresHydrophoreTable
-	model = AccessoiresHydrophore
-	template_name = 'productfilter.html'
-	filterset_class = AccessoiresHydrophoreFilter
-
-
-class FilteredFlexibleListView(SingleTableMixin, FilterView):
-	table_class = FlexibleTable
-	model = Flexible
-	template_name = 'productfilter.html'
-	filterset_class = FlexibleFilter
-
-
-
-class FilteredSiphonListView(SingleTableMixin, FilterView):
-	table_class = SiphonTable
-	model = Siphon
-	template_name = 'productfilter.html'
-	filterset_class = SiphonFilter
-
-
-class FilteredReductionPvcListView(SingleTableMixin, FilterView):
-	table_class = ReductionPvcTable
-	model = ReductionPvc
-	template_name = 'productfilter.html'
-	filterset_class = ReductionPvcFilter
-
-
-class FilteredAmpouleElectriqueListView(SingleTableMixin, FilterView):
-	table_class = AmpouleElectriqueTable
-	model = AmpouleElectrique
-	template_name = 'productfilter.html'
-	filterset_class = AmpouleElectriqueFilter
-
-
-class FilteredMotoPompeListView(SingleTableMixin, FilterView):
-	table_class = MotoPompeTable
-	model = MotoPompe
-	template_name = 'productfilter.html'
-	filterset_class = MotoPompeFilter
-
-
-class FilteredChargeurBatterieListView(SingleTableMixin, FilterView):
-	table_class = ChargeurBatterieTable
-	model = ChargeurBatterie
-	template_name = 'productfilter.html'
-	filterset_class = ChargeurBatterieFilter
-
-
-class FilteredEnseigneLumineuseListView(SingleTableMixin, FilterView):
-	table_class = EnseigneLumineuseTable
-	model = EnseigneLumineuse
-	template_name = 'productfilter.html'
-	filterset_class = EnseigneLumineuseFilter
-
-
-class FilteredPompeHydrophoreListView(SingleTableMixin, FilterView):
-	table_class = PompeHydrophoreTable
-	model = PompeHydrophore
-	template_name = 'productfilter.html'
-	filterset_class = PompeHydrophoreFilter
-
-
-class FilteredPompeForageListView(SingleTableMixin, FilterView):
-	table_class = PompeForageTable
-	model = PompeForage
-	template_name = 'productfilter.html'
-	filterset_class = PompeForageFilter
-
-
-class FilteredPompeEauListView(SingleTableMixin, FilterView):
-	table_class = PompeEauTable
-	model = PompeEau
-	template_name = 'productfilter.html'
-	filterset_class = PompeEauFilter
-
-
-class FilteredMachineAtelierNonPortatifListView(SingleTableMixin, FilterView):
-	table_class = MachineAtelierNonPortatifTable
-	model = MachineAtelierNonPortatif
-	template_name = 'productfilter.html'
-	filterset_class = MachineAtelierNonPortatifFilter
-
-
-class FilteredMachineAtelierPortatifListView(SingleTableMixin, FilterView):
-	table_class = MachineAtelierPortatifTable
-	model = MachineAtelierPortatif
-	template_name = 'productfilter.html'
-	filterset_class = MachineAtelierPortatifFilter
-
-
-class FilteredGroupeElectrogeneListView(SingleTableMixin, FilterView):
-	table_class = GroupeElectrogeneTable
-	model = GroupeElectrogene
-	template_name = 'productfilter.html'
-	filterset_class = GroupeElectrogeneFilter
-
-
-class FilteredCompresseurListView(SingleTableMixin, FilterView):
-	table_class = CompresseurTable
-	model = Compresseur
-	template_name = 'productfilter.html'
-	filterset_class = CompresseurFilter
-
-
-
-class FilteredDetecteurIntrusionListView(SingleTableMixin, FilterView):
-	table_class = DetecteurIntrusionTable
-	model = DetecteurIntrusion
-	template_name = 'productfilter.html'
-	filterset_class = DetecteurIntrusionFilter
-
-
-class FilteredMoteurElectriqueListView(SingleTableMixin, FilterView):
-	table_class = MoteurElectriqueTable
-	model = MoteurElectrique
-	template_name = 'productfilter.html'
-	filterset_class = MoteurElectriqueFilter
-
-class FilteredConvertisseurListView(SingleTableMixin, FilterView):
-	table_class = ConvertisseurTable
-	model = Convertisseur
-	template_name = 'productfilter.html'
-	filterset_class = ConvertisseurFilter
-
-
-
-class FilteredControleAccesEtPointageListView(SingleTableMixin, FilterView):
-	table_class = ControleAccesEtPointageTable
-	model = ControleAccesEtPointage
-	template_name = 'productfilter.html'
-	filterset_class = ControleAccesEtPointageFilter
-
-
-class FilteredEnregistreurCameraSurveillanceListView(SingleTableMixin, FilterView):
-	table_class = EnregistreurCameraSurveillanceTable
-	model = EnregistreurCameraSurveillance
-	template_name = 'productfilter.html'
-	filterset_class = EnregistreurCameraSurveillanceFilter
 
 
 class FilteredConseilListView(SingleTableMixin, FilterView):
@@ -561,11 +365,7 @@ class FilteredConseilListView(SingleTableMixin, FilterView):
 
 
 
-class FilteredRedactionDesProceduresListView(SingleTableMixin, FilterView):
-	table_class = RedactionDesProceduresTable
-	model = RedactionDesProcedures
-	template_name = 'productfilter.html'
-	filterset_class = RedactionDesProceduresFilter
+
 
 
 
@@ -576,11 +376,6 @@ class FilteredAssistanceFiscaleListView(SingleTableMixin, FilterView):
 	filterset_class = AssistanceFiscaleFilter
 
 
-class FilteredAuditEtControleInterneListView(SingleTableMixin, FilterView):
-	table_class = AuditEtControleInterneTable
-	model = AuditEtControleInterne
-	template_name = 'productfilter.html'
-	filterset_class = AuditEtControleInterneFilter
 
 
 class FilteredAssistanceComptableListView(SingleTableMixin, FilterView):
@@ -612,11 +407,7 @@ class FilteredServiceNettoyageListView(SingleTableMixin, FilterView):
 
 
 
-class FilteredCoursAnglaisListView(SingleTableMixin, FilterView):
-	table_class = CoursAnglaisTable
-	model = CoursAnglais
-	template_name = 'productfilter.html'
-	filterset_class = CoursAnglaisFilter
+
 
 
 class FilteredInterpretariatListView(SingleTableMixin, FilterView):
@@ -633,7 +424,7 @@ class FilteredServiceDeTraductionListView(SingleTableMixin, FilterView):
 	filterset_class = ServiceDeTraductionFilter
 
 
-	
 
 
-										
+
+

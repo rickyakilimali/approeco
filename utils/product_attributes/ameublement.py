@@ -1,37 +1,147 @@
 TYPES_ARMOIRE = (
-		('Armoire basse','Armoire basse'),
-		('Armoire haute','Armoire haute'),
-		('Armoire mi-haute','Armoire mi-haute'),
+		('ARMOIRE BASSE','ARMOIRE BASSE'),
+		('ARMOIRE HAUTE','ARMOIRE HAUTE'),
+		('ARMOIRE MI-HAUTE','ARMOIRE MI-HAUTE'),
+		('RAYONNAGE SQUELETTE','RAYONNAGE SQUELETTE'),
+	    ('VESTIAIRE','VESTIAIRE'),
 	)
 
 TYPE_SIEGE = (
-		('Chaise accueil','Chaise accueil'),
-		('Chaise visiteur','Chaise visiteur'),
-		('Fauteuil de Direction','Fauteuil de Direction'),
-		('Siège de réunion','Siège de réunion'),
+		('CHAISE ACCUEIL','CHAISE ACCUEIL'),
+		('CHAISE VISITEUR','CHAISE VISITEUR'),
+		('FAUTEUIL DE DIRECTION','FAUTEUIL DE DIRECTION'),
+		('SIEGE DE REUNION','SIEGE DE REUNION'),
 	)
 
 TYPE_PORTE_ARMOIRE = (
-		('Battantes','Battantes'),
-		('Rideaux','Rideaux'),
+		('BATTANTES','BATTANTES'),
+		('RIDEAUX','RIDEAUX'),
+	)
+
+MODEL_BUREAU = (
+		('001','001'),
+		('002','002'),
+		('Z001','Z001'),
+		('1205','1205'),
+		('1405','1405'),
+	    ('1605','1605'),
+	    ('2022','2022'),
+	    ('2036','2036'),
+	    ('2808','2808'),
+	    ('12019B','12019B'),
+	    ('14019B','14019B'),
+	    ('16019B','16019B'),
+	    ('16129','16129'),
 	)
 
 REVETEMENT_SIEGE = (
-		('1','Bois'),
-		('2','Cuir'),
-		('3','Métal'),
-		('4','Plastique'),
+		('BOIS','BOIS'),
+		('CUIR','CUIR'),
+		('METAL','METAL'),
+		('PLASTIQUE','PLASTIQUE'),
 	)
 
 DIMENSION_AMEUBLEMENT = (
-		('01','100x120cm'),
-		('02','180x100cm'),
-		('03','198x120cm'),
-		('04','210x270cm'),
+		('01','100X120CM'),
+		('02','180X100CM'),
+		('03','198X120CM'),
+		('04','210X270CM'),
 	)
 
+DIMENSION_TABLEAU= (
+		('60X60 CM ','60X60 CM '),
+		('50X40 CM','50X40 CM'),
+
+	)
 
 MATIERE_AMEUBLEMENT = (
-		('01','Bois'),
-		('02','Métal'),
+		('BOIS','BOIS'),
+		('METAL','METAL'),
 	)
+LONGUEUR_TABLE_BUREAU = (
+		('160 CM','160 CM'),
+		('120 CM','120 CM'),
+		('140 CM','140 CM'),
+		('180 CM','180 CM'),
+
+
+
+		)
+
+MATERIAU = (
+		('METAL','METAL'),
+		('BOIS AGGLOMERE','BOIS AGGLOMERE'),
+
+	)
+
+
+HAUTEUR= (
+		('157CM','157CM'),
+		('198CM','198CM'),
+		('200CM','200CM'),
+
+
+	)
+
+LONGUEUR= (
+		('40CM','40CM'),
+		('92CM','92CM'),
+		('91CM','91CM'),
+		('120CM','120CM'),
+		('150CM','150CM'),
+		('170CM','170CM'),
+		('1.40 MTR','1.40 MTR'),
+		('1.60 MTR','1.60 MTR'),
+		('1.80 MTR','1.80 MTR'),
+		('1.20 MTR','1.20 MTR'),
+		('2.4 MTR','2.4 MTR'),
+        ('3.5 MTR','3.5 MTR'),
+
+
+	)
+
+LARGEUR= (
+		('27,5CM','27,5CM'),
+		('37,5CM','37,5CM'),
+		('30CM','30CM'),
+		('78CM','78CM'),
+
+	)
+
+NOMBRE_CASES= (
+		('3','3'),
+		('6','6'),
+
+	)
+
+FORME= (
+		('RECTANGULAIRE','RECTANGULAIRE'),
+		('OVALE','OVALE'),
+
+	)
+
+NOMBRE_DE_PLACES= (
+		('3','3'),
+
+	)
+TYPE_CHAISE= (
+		('CHAISE ORDINATEUR','CHAISE ORDINATEUR'),
+		('CHAISE DE BUREAU','CHAISE DE BUREAU'),
+		('CHAISE VISITEUR','CHAISE VISITEUR'),
+		('CHAISE DE DIRECTION','CHAISE DE DIRECTION'),
+
+	)
+
+TYPE_BUREAU = (
+		('SIMPLE','SIMPLE'),
+		('DIRECTION','DIRECTION'),
+	)
+
+REVETEMENT= (
+		('MAILLE','MAILLE'),
+		('CUIR','CUIR'),
+		('TISSU ET MAILLE','TISSU ET MAILLE'),
+
+)
+
+

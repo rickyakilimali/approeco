@@ -15,16 +15,24 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from .views import HomePageView
+from .views import HomePageView, login_success, LoginView, LogOutView
+from django.conf.urls.static import static
+from django.conf import settings
 
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url('^$', HomePageView.as_view(), name='home'),
-    
-    
+    url(r'^login_success/$', login_success, name='login_success'),
+    url(r'^login/$', LoginView.as_view(), name='login'),
+    url(r'^logout/$', LogOutView.as_view(), name='logout'),
+
+
+
     url(r'^category/', include('category.urls')),
     url(r'^accounts/', include('accounts.urls')),
     url(r'^product/', include('product.urls')),
     url(r'^quotation/', include('quotation.urls')),
 ]
+
+urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

@@ -1,0 +1,300 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Votre Quotation</title>
+
+    <style>
+    .invoice-box {
+        max-width: 800px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+    }
+
+    .invoice-box table {
+        width: 100%;
+        line-height: inherit;
+        text-align: left;
+    }
+
+    .invoice-box table td {
+        padding: 5px;
+        vertical-align: top;
+    }
+
+    .invoice-box table tr td:nth-child(2) {
+        text-align: right;
+    }
+
+    .invoice-box table tr.top table td {
+        padding-bottom: 20px;
+    }
+
+    .invoice-box table tr.top table td.title {
+        font-size: 45px;
+        line-height: 45px;
+        color: #333;
+    }
+
+    .invoice-box table tr.information table td {
+        padding-bottom: 40px;
+    }
+
+    .invoice-box table tr.heading td {
+        background: #eee;
+        border-bottom: 1px solid #ddd;
+        font-weight: bold;
+    }
+
+    .invoice-box table tr.details td {
+        padding-bottom: 20px;
+    }
+
+    .invoice-box table tr.item td{
+        border-bottom: 1px solid #eee;
+    }
+
+    .invoice-box table tr.item.last td {
+        border-bottom: none;
+    }
+
+    .invoice-box table tr.total td:nth-child(2) {
+        border-top: 2px solid #eee;
+        font-weight: bold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .invoice-box table tr.top table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
+        .invoice-box table tr.information table td {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    /** RTL **/
+    .rtl {
+        direction: rtl;
+        font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    }
+
+    .rtl table {
+        text-align: right;
+    }
+
+    .rtl table tr td:nth-child(2) {
+        text-align: left;
+    }
+
+
+    #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #eee;
+    color: #555;
+}
+
+
+    </style>
+</head>
+
+<body>
+{% load static %}
+<img src="{% static "logo-site4.png" %}" alt="Logo!" />
+
+
+    <div class="invoice-box">
+        <table cellpadding="0" cellspacing="0">
+            <tr class="top">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td class="title">
+                                <img src="https://www.sparksuite.com/images/logo.png" style="width:100%; max-width:300px;">
+                            </td>
+
+                            <td>
+
+                                Date: {% now "jS F Y H:i" %}
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="information">
+                <td colspan="2">
+                    <table>
+                        <tr>
+                            <td>
+
+                                {{ username.businessprofile.adresse }}<br>
+
+                                {{ username.businessprofile.commune }}<br>
+                                {{ username.businessprofile.ville }}<br>
+                                {{ username.businessprofile.pays }}
+                            </td>
+
+                            <td>
+
+                                Nom d'utilisateur: {{ username }}<br>
+                                Entreprise: {{ username.businessprofile.nom }}<br>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr class="heading">
+                <td>
+                    Produit Recherché
+                </td>
+
+                <td>
+                    Critère de Recherche
+                </td>
+            </tr>
+
+            <tr class="details">
+                <td>
+                    {{product_model}}
+                </td>
+
+                <td>
+
+                    {% for key, values in criteria.items %}
+                        <p>{{key}} : {{values}}</p>
+
+                    {% endfor %}
+
+
+                </td>
+            </tr>
+
+
+        </table>
+    </div>
+
+{% load widget_tweaks %}
+{% load render_table from django_tables2 %}
+{% load querystring from django_tables2 %}
+{% load title from django_tables2 %}
+{% load django_tables2 %}
+{% load i18n %}
+
+
+
+Nom d'utilisateur: {{ username }}<br>
+Entreprise: {{ username.businessprofile.nom }}<br>
+
+<h3>Résultats</h3>
+{% for key, values in criteria.items %}
+                        <p>{{key}} : {{values}}</p>
+
+{% endfor %}
+
+
+<h3>Résultats</h3>
+
+
+{% block table %}
+<table id="customers">
+    {% block table.thead %}
+    {% if table.show_header %}
+    <thead>
+
+
+
+        <tr class="heading">
+        {% for column in table.columns %}
+
+            <th class="heading">{{ column.header }}</th>
+
+        {% endfor %}
+        </tr>
+    </thead>
+    {% endif %}
+    {% endblock table.thead %}
+    {% block table.tbody %}
+    <tbody>
+        {% for row in table.page.object_list|default:table.rows %} {# support pagination #}
+        {% block table.tbody.row %}
+        <tr>
+            {% for column, cell in row.items %}
+                <td>{% if column.localize == None %}{{ cell }}{% else %}{% if column.localize %}{{ cell|localize }}{% else %}{{ cell|unlocalize }}{% endif %}{% endif %}</td>
+            {% endfor %}
+
+            <td>{{row.record.vendeur.businessprofile.telephone}}</td>
+
+        </tr>
+        {% endblock table.tbody.row %}
+        {% empty %}
+        {% if table.empty_text %}
+        {% block table.tbody.empty_text %}
+        <tr><td colspan="{{ table.columns|length }}">{{ table.empty_text }}</td></tr>
+        {% endblock table.tbody.empty_text %}
+        {% endif %}
+        {% endfor %}
+    </tbody>
+    {% endblock table.tbody %}
+    {% block table.tfoot %}
+    {% if table.has_footer %}
+    <tfoot>
+        <tr>
+        {% for column in table.columns %}
+            <td {{ column.attrs.tf.as_html }}>{{ column.footer }}</td>
+        {% endfor %}
+        </tr>
+    </tfoot>
+    {% endif %}
+    {% endblock table.tfoot %}
+</table>
+
+
+
+
+
+{% endblock table %}
+
+<div style="position: relative">
+
+    <p style="position: fixed; bottom: 0; width:100%; text-align: center; font-size:65%;"> ApproEco<br>Un marché virtuel qui vous permet de donner à vos produits une visibilité parfaite.<br>
+Tél : + 243 82 491 9504 / + 243 99 044 2080
+E mail : info@approeco.net – Site : www.approeco.net<br>
+RCCM : CD/KNM/RCCM/17-B-00211, ID NAT : 01-9-N22312G, Numéro Impôt :A1713211E
+Siège social : 8, 3eme rue, Limete industriel, Kinshasa, RDC
+                </p>
+
+ </div>
+
+    </div>
+</body>
+</html>

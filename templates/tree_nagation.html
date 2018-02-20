@@ -1,0 +1,11 @@
+{% load catalogue_navigation %}
+
+	{% for category in subcategories %}
+		<li>
+			<a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
+			{% if category.get_children_count %}
+			{% show_sublevel category %}
+			{% endif %}
+		</li>
+		
+	{% endfor %}

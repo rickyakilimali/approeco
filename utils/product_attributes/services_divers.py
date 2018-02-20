@@ -1,35 +1,374 @@
 NIVEAU_COURS = (
-		('A','Avancé'),
-		('I','Intermédiaire'),
-		('D','Débutant'),
+		('AVANCÉ','AVANCÉ'),
+		('INTERMEDIAIRE','INTERMEDIAIRE'),
+		('DEBUTANT','DEBUTANT'),
+	)
+
+LANGUE_COURS = (
+		('ANGLAIS','ANGLAIS'),
+
 	)
 
 LANGUES = (
-		('A','Anglais'),
-		('F','Français'),
+		('ANGLAIS-FRANCAIS','ANGLAIS-FRANCAIS'),
+		('FRANCAIS-LINGALA','FRANCAIS-LINGALA'),
+		('ANGLAIS-LINGALA','ANGLAIS-LINGALA'),
+		('ALLEMAND-FRANCAIS','ALLEMAND-FRANCAIS'),
+		('ESPAGNOL-FRANCAIS','ESPAGNOL-FRANCAIS'),
+
 	)
+
 LANGUES_INTERPRETARIAT = (
-		('1','Français-Anglais'),
-		('2','Francais-Lingala'),
-		('3','Anglais-Lingala'),
+		('ANGLAIS-FRANCAIS','ANGLAIS-FRANCAIS'),
+		('FRANCAIS-LINGALA','FRANCAIS-LINGALA'),
+		('ANGLAIS-LINGALA','ANGLAIS-LINGALA'),
+		('FRANCAIS-TSHILUBA','FRANCAIS-TSHILUBA'),
+		('ALLEMAND-FRANCAIS','ALLEMAND-FRANCAIS'),
+		('ESPAGNOL-FRANCAIS','ESPAGNOL-FRANCAIS'),
 	)
 TYPE_DOCUMENT = (
-		('G','Général'),
-		('T','Technique'),
+		('GENERAL','GENERAL'),
+		('TECHNIQUE','TECHNIQUE'),
 	)
 
 TYPE_NETTOYAGE = (
-		('01','Appartement'),
-		('02','Bureaux'),
-		('03','Bureaux + Sanitaires'),
-		('04','Hôtel'),
-		('05','Nettoyage après chantier'),
-		('06','Sanitaires'),
+		('APPARTEMENT','APPARTEMENT'),
+		('BUREAUX','BUREAUX'),
+		('BUREAUX + SANITAIRES','BUREAUX + SANITAIRES'),
+		('HOTEL','HOTEL'),
+		('NETTOYAGE APRES CHANTIER','NETTOYAGE APRES CHANTIER'),
+		('SANITAIRES','SANITAIRES'),
 	)
 
 TYPE_SERVICE_TRAITEUR = (
-		('B','Buffet'),
-		('C','Cocktail'),
-		('C','Cuisinière'),
-		('P','Pause café'),
+		('BUFFET','BUFFET'),
+		('COCKTAIL','COCKTAIL'),
+
+		('PAUSE CAFÉ','PAUSE CAFÉ'),
 	)
+
+
+TYPE_ABONNEMENT = (
+		('JOURNAL','JOURNAL'),
+
+	)
+
+TYPE_INSERTION = (
+		('JOURNAL','JOURNAL'),
+
+	)
+
+PERIODICITE_PARUTION = (
+		('HEBDOMADAIRE','HEBDOMADAIRE'),
+
+	)
+
+DUREE_ABONNEMENT = (
+		('3 MOIS','3 MOIS'),
+		('6 MOIS','6 MOIS'),
+		('12 MOIS','12 MOIS'),
+
+	)
+
+
+TIRAGE = (
+		('1500','1500'),
+
+
+	)
+
+DIMENSION = (
+		('1 PAGE COULEUR','1 PAGE COULEUR'),
+		('1 PAGE NB','1 PAGE NB'),
+		('1/2 PAGE COULEUR','1/2 PAGE COULEUR'),
+		('1/2 PAGE NB','1/2 PAGE NB'),
+		('1/4 PAGE NB','1/4 PAGE NB'),
+		('LA UNE','LA UNE'),
+		('PUBLI REPORTAGE','PUBLI REPORTAGE'),
+		('PUBLICATION DOCUMENT','PUBLICATION DOCUMENT'),
+
+	)
+
+
+CHOIX_ENTREE = (
+		('0','0'),
+		('4','4'),
+		('5','5'),
+		('7','7'),
+	)
+
+CHOIX_PLATS = (
+		('2','2'),
+		('3','3'),
+		('4','4'),
+	)
+
+CHOIX_DE_LEGUMES = (
+		('2','2'),
+
+	)
+
+CHOIX_ACCOMPAGNEMENT = (
+		('2','2'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+	)
+
+CHOIX_DESSERT = (
+		('0','0'),
+		('1','1'),
+	)
+
+CHOIX_AMUSE_GUEULE = (
+		('0','0'),
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+		('7','7'),
+		('8','8'),
+		('9','9'),
+
+	)
+
+CHOIX_BOISSON_FROIDE = (
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+	)
+CHOIX_BOISSON_CHAUDE= (
+		('0','0'),
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+	)
+
+CHOIX_BOISSON_ALCOOLISEE = (
+		('0','0'),
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+	)
+
+
+CHOIX_VIENNOISERIE = (
+		('0','0'),
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+
+	)
+
+
+TYPE_GARDIENNAGE = (
+		('BATIMENTS ET TRAVAUX PUBLIC','BATIMENTS ET TRAVAUX PUBLIC'),
+		('BRASSERIES ET AGROALIMENTAIRE','BRASSERIES ET AGROALIMENTAIRE'),
+		('DISTRIBUTION ET COMMERCE','DISTRIBUTION ET COMMERCE'),
+		('FINANCE ET BANQUES','FINANCE ET BANQUES'),
+		('INDUSTRIES ','INDUSTRIES '),
+		('MINES','MINES'),
+		('ENERGIE ET HYDROCARBURES','ENERGIE ET HYDROCARBURES'),
+		('TELECOMMUNICATIONS ET TIC','TELECOMMUNICATIONS ET TIC'),
+		('TRANSPORTS ET LOGISTIQUE','TRANSPORTS ET LOGISTIQUE'),
+		('AUTRES SERVICES','AUTRES SERVICES'),
+		('ETABLISSEMENT PUBLIC','ETABLISSEMENT PUBLIC'),
+		('REPRESENTATION DIPLOMATIQUE','REPRESENTATION DIPLOMATIQUE'),
+		('ORGANISME INTERNATIONAL','ORGANISME INTERNATIONAL'),
+		('SECURITE RAPPROCHEE','SECURITE RAPPROCHEE'),
+
+
+	)
+
+TYPE_SERVICE_ASSAINISSEMENT=(
+		('NETTOYAGE BUREAUX','NETTOYAGE BUREAUX'),
+
+
+	)
+
+PERIODE_SERVICE=(
+		('JOURNEE','JOURNEE'),
+		('NUIT','NUIT'),
+
+	)
+
+FREQUENCE=(
+		('1 FOIS/SEMAINE','1 FOIS/SEMAINE'),
+		('2 FOIS/SEMAINE','2 FOIS/SEMAINE'),
+		('3 FOIS/SEMAINE','3 FOIS/SEMAINE'),
+
+	)
+
+PAIEMENT=(
+		('MENSUEL','MENSUEL'),
+
+	)
+
+TYPE_PRODUIT=(
+		('EAU DE JAVEL','EAU DE JAVEL'),
+		('BACTEROL','BACTEROL'),
+		('CREOLINE','CREOLINE'),
+		('ESPRIT DE SEL','ESPRIT DE SEL'),
+		('INSECTICIDE','INSECTICIDE'),
+		('RATICIDE','RATICIDE'),
+
+	)
+TYPE_ASSAINISSEMENT=(
+		('DESINSECTISATION','DESINSECTISATION'),
+		('DERATISATION','DERATISATION'),
+		('NETTOYAGE','NETTOYAGE'),
+		('NETTOYAGE APRES CHANTIER','NETTOYAGE APRES CHANTIER'),
+	)
+
+
+TYPE_SERVICE_SPLIT=(
+		('INSTALLATION SPLIT','INSTALLATION SPLIT'),
+		('ENTRETIEN SPLIT','ENTRETIEN SPLIT'),
+
+			)
+
+NOMBRE_JOUR = (
+		('1-7 JOURS','1-7 JOURS'),
+		('8-15 JOURS','8-15 JOURS'),
+		('16-21 JOURS','16-21 JOURS'),
+		('22-30 JOURS','22-30 JOURS'),
+		('31-45 JOURS','31-45 JOURS'),
+		('46-60 JOURS','46-60 JOURS'),
+		('61-90 JOURS','61-90 JOURS'),
+		('91-180 JOURS','91-180 JOURS'),
+	)
+
+TRANCHE_AGE = (
+		('0-55 ANS','0-55 ANS'),
+		('55-65 ANS','55-65 ANS'),
+		('65 ANS ET PLUS','65 ANS ET PLUS'),
+	)
+
+TYPE_SERVICE = (
+		('NAVETTE AEROPORT','NAVETTE AEROPORT'),
+		('ASSISTANCE OBTENTION  VISA','ASSISTANCE OBTENTION  VISA'),
+		('SERVICE PROTOCOLE AEROPORT','SERVICE PROTOCOLE AEROPORT'),
+		('RESERVATION HOTEL A L’ETRANGER','RESERVATION HOTEL A L’ETRANGER'),
+	)
+
+NOMBRE_ETOILE = (
+
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+
+	)
+
+ACCES_WIFI_GRATUIT = (
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
+PETIT_DEJEUNE_GRATUIT = (
+		('OUI','OUI'),
+		('NON','NON'),
+		)
+
+
+TYPE_LIT = (
+		('SIMPLE','SIMPLE'),
+		('DOUBLE','DOUBLE'),
+		)
+
+
+
+
+
+AVENUE = (
+		('SENEGALAIS','SENEGALAIS'),
+		('KASAVUBU','KASAVUBU'),
+		('LUAMBO MAKIADI','LUAMBO MAKIADI'),
+
+		)
+
+
+COMMUNE = (
+		('GOMBE','GOMBE'),
+		('KASAVUBU','KASAVUBU'),
+		('LIMETE','LIMETE'),
+		('BANDALUNGWA','BANDALUNGWA'),
+		)
+
+
+
+
+
+SUPERFICIE	= (
+		('140 M2','140 M2'),
+
+		)
+MICRO_GRATUIT= (
+		('OUI','OUI'),
+		('NON','NOM'),
+
+
+		)
+RETRO_PROJECTEUR = (
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+BAFFLE_GRATUIT= (
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
+NOMBRE_PERSONNES= (
+		('1','1'),
+		('1<','1<'),
+
+		)
+
+
+PERIODE_SERVICE= (
+		('JOUR','JOUR'),
+		('NUIT','NUIT'),
+
+		)
+
+PAYS_SOURCE = (
+		('FRANCE','FRANCE'),
+
+		)
+
+VILLE_DESTINATION = (
+		('KINSHASA','KINSHASA'),
+
+		)
+
+
+SUR_PLACE=(
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
+FREQUENCE_EVACUATION=(
+		('1 FOIS/SEMAINE','1 FOIS/SEMAINE'),
+		('2 FOIS/SEMAINE','2 FOIS/SEMAINE'),
+		('3 FOIS/SEMAINE','3 FOIS/SEMAINE'),
+
+		)

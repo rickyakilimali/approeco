@@ -22,12 +22,12 @@ null=True, max_length=255)
 	def save(self, *args, **kwargs):
 		self.slug = slugify(self.name)
 		super(Category, self).save(*args, **kwargs)
-		
+
 
 	def __str__(self):
 		return 'Category: %s' % self.name
 
-   
+
 	def get_ancestors_and_self(self):
 		"""
 		Gets ancestors and includes itself. Use treebeard's get_ancestors
@@ -51,11 +51,11 @@ null=True, max_length=255)
 		return self.get_children().count()
 
 	def get_absolute_url(self):
-		return "/category/%s/" % self.slug	
+		return "/category/%s/" % self.slug
 
 
 class ProductType(models.Model):
-	""" 
+	"""
 	Représente un type de produit. Ex: voiture, ordinateur
 	"""
 
@@ -65,12 +65,12 @@ class ProductType(models.Model):
 	name = models.CharField("Nom du type de produit", max_length=255)
 	description = models.TextField("Descriptif du type de produit", blank=True)
 	product_model = models.ForeignKey('contenttypes.ContentType',on_delete=models.CASCADE,
-    limit_choices_to={'app_label': 'product'},)
+    limit_choices_to={'app_label': 'product'},blank=True, null=True)
 	category = models.ForeignKey(Category, verbose_name="Catégorie d'appartenance", related_name="producttypes")
 	slug = models.SlugField()
 	product_type_image = models.ImageField("Image", upload_to='producttypes/', blank=True,
 null=True, max_length=255)
-	
+
 
 
 
@@ -82,8 +82,7 @@ null=True, max_length=255)
 		super(ProductType, self).save(*args, **kwargs)
 
 	def __str__(self):
-		return self.name 
+		return self.name
 
 	def get_absolute_url(self):
-		return "/product/%s/" %self.product_model.model
-		
+		return "/product/search/%s/" %self.product_model.model

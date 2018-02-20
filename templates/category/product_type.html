@@ -1,12 +1,13 @@
-{% extends 'base.html' %}
-
-{% load catalogue_navigation %}
-{% show_navigation_sidebar %}
-
-{% block title %}Catalogue{% endblock %}
+{% extends '_layouts/acheteur.html' %}
 
 
-{% block page_name %}Liste de produits de la catégorie{% endblock %}
+
+{% block headline %}Catalogue
+    {% if current_cat %}
+        {{current_cat.name}}
+    {% endif %}
+
+{% endblock headline %}
 
 {% block content %}
     {% if producttypes %}
@@ -14,32 +15,23 @@
 
 
                 {% for producttype in producttypes %}
-                
-                    <div class="col-md-3">
-                      <!-- Widget: user widget style 1 -->
-                        <div class="box box-widget widget-user">
-                        <!-- Add the bg color to the header using any of the bg-* classes -->
-                            <div class="widget-user-header bg-black" style="background: url('{{producttype.product_type_image.url}}') center center;">
-                          
-                            </div>
-                        
-                            <div class="box-footer">
-                                <div class="category-desc">
-                                    <a href="{{ producttype.get_absolute_url }}">{{ producttype.name }}</a>
-                                </div>  
 
-                          
-                            </div>
-                        </div>
-                      <!-- /.widget-user -->
+                <div class="col-md-4">
+                    <div class="well well-sm">
+                        <a href="{{ producttype.get_absolute_url }}">
+                            <img src="{{producttype.product_type_image.url}}" alt="Picture of Product" class="img-responsive"/>
+                            <h4>{{ producttype.name }}</h4>
+                        </a>
                     </div>
+                </div>
+
+
 
                 {% endfor %}
-            </ul>
+
 
         {% else %}
             <strong>There are no product type present.</strong>
         {% endif %}
 
 {% endblock %}
-      

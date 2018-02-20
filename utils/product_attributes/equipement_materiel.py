@@ -1,69 +1,81 @@
 DIMENSION_BOITE_CUISINIERE = (
-		('80x80mm','80x80mm'),
-		('100x100mm','100x100mm'),
-		('150x150mm','150x150mm'),
-		('200x150m','200x150mm'),
+		('80X80MM','80X80MM'),
+		('100X100MM','100X100MM'),
+		('150X150MM','150X150MM'),
+		('200X150M','200X150MM'),
 	)
 
 DIMENSION_CLEF_MOLETTE = (
-		('10"','10"'),
-		('12"','12"'),
-		('14"','14"'),
-		('36"','36"'),
+		('10 POUCES','10 POUCES'),
+		('12 POUCES','12 POUCES'),
+		('14 POUCES','14 POUCES'),
+		('36 POUCES','36 POUCES'),
 	)
 DIMENSION_EQUERRE = (
-		('300x400mm','300x400mm'),
-		('400x600mm','400x600mm'),
-		('600x800mm','600x800mm'),
-		('800x100mm','800x100mm'),
-		('1000x1000mm','1000x1000mm'),
+		('300X400MM','300X400MM'),
+		('400X600MM','400X600MM'),
+		('600X800MM','600X800MM'),
+		('800X100MM','800X100MM'),
+		('1000X1000MM','1000X1000MM'),
 	)
 
 ENCASTRE_SAILLI = (
-		('Encastré','Encastré'),
+		('ENCASTRE','ENCASTRE'),
 		('SAILLI','SAILLI'),
 	)
 
 FORME_AMPOULE = (
 		('AR 111','AR 111'),
-		('Capsule','Capsule'),
-		('Coup de vent','Coup de vent'),
-		('Flamme','Flamme'),
-		('Goutte','Goutte'),
-		('Hélicoïdale','Hélicoïdale'),
-		('Linolite','Linolite'),
-		('Mini tube','Mini tube'),
-		('Pépite','Pépite'),
-		('Sphérique','Sphérique'),
-		('Spot','Spot'),
-		('Réflecteur','Réflecteur'),
+		('CAPSULE','CAPSULE'),
+		('COUP DE VENT','COUP DE VENT'),
+		('FLAMME','FLAMME'),
+		('GOUTTE','GOUTTE'),
+		('HELICOÏDALE','HELICOÏDALE'),
+		('LINOLITE','LINOLITE'),
+		('MINI TUBE','MINI TUBE'),
+		('PEPITE','PEPITE'),
+		('SPHERIQUE','SPHERIQUE'),
+		('SPOT','SPOT'),
+		('REFLECTEUR','REFLECTEUR'),
 	)
 
 HAUTEUR_POMPE = (
-		('5,5m','5,5m'),
-		('8m','8m'),
-		('9m','9m'),
-		('10m','10m'),
-		('11m','11m'),
-		('26m','26m'),
-		('36m','36m'),
-		('65m','65m'),
-		('90m','90m'),
-		('116m','116m'),
-		('141m','141m'),
-		('202m','202m'),
-		('203m','203m'),
-		('228m','228m'),
-		('195m','195m'),
-		('258m','258m'),
-		('271m','271m'),
-		('352m','352m'),
-		('399m','399m'),
-		('419m','419m'),
-		('420m','420m'),
-		('424m','424m'),
-		('485m','485m'),
-		('505m','505m'),
+		('5.5M','5.5M'),
+		('8M','8M'),
+		('9M','9M'),
+		('10M','10M'),
+		('13M','13M'),
+		('16M','16M'),
+		('11M','11M'),
+		('26M','26M'),
+		('36M','36M'),
+		('65M','65M'),
+		('45M','45M'),
+		('90M','90M'),
+		('116M','116M'),
+		('141M','141M'),
+		('202M','202M'),
+		('203M','203M'),
+		('228M','228M'),
+		('195M','195M'),
+		('258M','258M'),
+		('271M','271M'),
+		('352M','352M'),
+		('399M','399M'),
+		('419M','419M'),
+		('420M','420M'),
+		('424M','424M'),
+		('485M','485M'),
+		('505M','505M'),
+		('50M','50M'),
+		('80M','80M'),
+		('100M','100M'),
+		('58M','58M'),
+		('70M','70M'),
+		('41M','41M'),
+		('50M','50M'),
+		('70M','70M'),
+		('18.5M','18.5M'),
 	)
 #=====================================================
 # I
@@ -111,33 +123,100 @@ INTENSITE_INVERSEUR = (
 	)
 
 MARQUE_CONVERTISSEUR = (
-		('Victron','Victron'),
-		('Westech','Westech'),
+		('VICTRON','VICTRON'),
+		('WESTECH','WESTECH'),
 	)
 MARQUE_MACHINE_ATELIER = (
-		('Einhell','Einhell'),
-		('Emergy','Emergy'),
-		('Dewalt','Dewalt'),
-		('Imo Italia','Imo Italia'),
-		('Makita','Makita'),
-		('Stihl','Stihl'),
+		('EINHELL','EINHELL'),
+		('EMERGY','EMERGY'),
+		('DEWALT','DEWALT'),
+		('IMO ITALIA','IMO ITALIA'),
+		('MAKITA','MAKITA'),
+		('STIHL','STIHL'),
+		('ROBEN','ROBEN'),
+		('SACO','SACO'),
+		('TALA','TALA'),
+		('DEUTZ','DEUTZ'),
+		('PERKINS','PERKINS'),
+		('ITALIAN POINT','ITALIAN POINT'),
 	)
 MARQUE_EQUIPEMENT = (
 		('ABB','ABB'),
 		('GENERAL ELECTRIC','GENERAL ELECTRIC'),
 		('SCHNEIDER','SCHNEIDER'),
-		('Suprema','Suprema'),
+		('SUPREMA','SUPREMA'),
+		('PROLINE','PROLINE'),
 		('TELEMECA','TELEMECA'),
+		('NEC','NEC'),
 	)
+
+
+MARQUE_ONDULEUR = (
+
+		('PREMAX', 'PREMAX'),
+		('APC', 'APC'),
+		('ITC', 'ITC'),
+		('MERCURY','MERCURY'),
+    )
+
+INTERFACE = (
+
+		('ETHERNET', 'ETHERNET'),
+    )
+
+PUISSANCE_ONDULEUR = (
+
+		('110VA', '110VA'),
+    )
+
+
+
+MARQUE_IMPRIMANTE_BAGE = (
+
+		('EVOLIS', 'EVOLIS'),
+    )
+
+
+TECHNOLOGIE_IMPRESSION = (
+
+		('TRANSFERT THERMIQUE', 'TRANSFERT THERMIQUE'),
+		('RETRANSFERT', 'RETRANSFERT'),
+    )
+
+
+FACES_IMPRIMES = (
+
+		('SIMPLE FACE', 'SIMPLE FACE'),
+		('DOUBLE FACE', 'DOUBLE FACE'),
+    )
+
+VITESSE_IMPRESSION = (
+
+		('144 CARTES/HEURE', '144 CARTES/HEURE'),
+		('325 CARTES/HEURE', '325 CARTES/HEURE'),
+		('500 CARTES/HEURE', '500 CARTES/HEURE'),
+		('850 CARTES/HEURE','850 CARTES/HEURE'),
+    )
+
+OPTION_ENCODAGE = (
+
+		('NON', 'NON'),
+		('MAGNETIQUE+CARTE A PUCE AVEC CONTACT+CARTE A PUCE SANS CONTACT', 'MAGNETIQUE+CARTE A PUCE AVEC CONTACT+CARTE A PUCE SANS CONTACT'),
+    )
+
+
+
+
+
 MARQUE_MOTEUR = (
-		('Speroni','Speroni'),
+		('SPERONI','SPERONI'),
 	)
 MARQUE_PRISE_ELECTRIQUE = (
-		('Ingelec','Ingelec'),
-		('Le grand','Le grand'),
-		('Niko','Niko'),
-		('Schneider','Schneider'),
-		('Vicko','Vicko'),
+		('INGELEC','INGELEC'),
+		('LE GRAND','LE GRAND'),
+		('NIKO','NIKO'),
+		('SCHNEIDER','SCHNEIDER'),
+		('VICKO','VICKO'),
 	)
 
 NOMBRE_MODULE = (
@@ -150,10 +229,10 @@ NOMBRE_MODULE = (
 		('24','24'),
 	)
 NOMBRE_PHASE = (
-		('G1','G1'),
-		('G2','G2'),
-		('G3','G3'),
-		('G4','G4'),
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
 	)
 NOMBRE_POLE = (
 		('2P','2P'),
@@ -170,19 +249,19 @@ NOMBRE_PRISE = (
 
 
 POIDS_MONTE_CHARGE = (
-		('1 tonne','1 tonne'),
-		('2 tonnes','2 tonnes'),
-		('3 tonnes','3 tonnes'),
-		('4 tonnes','4 tonnes'),
-		('5 tonnes','5 tonnes'),
+		('1 TONNE','1 TONNE'),
+		('2 TONNES','2 TONNES'),
+		('3 TONNES','3 TONNES'),
+		('4 TONNES','4 TONNES'),
+		('5 TONNES','5 TONNES'),
 	)
 PRESSION = (
-		('7 bars','7 bars'),
-		('8 bars','8 bars'),
-		('10 bars','10 bars'),
-		('100 bars','100 bars'),
-		('120 bars','120 bars'),
-		('150 bars','150 bars'),
+		('7 BARS','7 BARS'),
+		('8 BARS','8 BARS'),
+		('10 BARS','10 BARS'),
+		('100 BARS','100 BARS'),
+		('120 BARS','120 BARS'),
+		('150 BARS','150 BARS'),
 	)
 PUISSANCE_AMPOULE_ELECTRIQUE = (
 		('1W','1W'),
@@ -212,14 +291,25 @@ PUISSANCE_COMPRESSEUR = (
 		('1875W','1875W'),
 		('3000W','3000W'),
 	)
+PUISSANCE_SPLIT = (
+		('9000 BTU','9000 BTU'),
+		('12000 BTU','12000 BTU'),
+		('18000 BTU','18000 BTU'),
+		('24000 BTU','24000 BTU'),
+
+	)
+
 PUISSANCE_CONTACTEUR = (
 		('4KW','4KW'),
-		('5.5KW','5.5KW'),
-		('7.5KW','7.5KW'),
+		('5,5KW','5,5KW'),
+		('7,5KW','7,5KW'),
 		('11KW','11KW'),
 		('55KW','55KW'),
 		('90KW','90KW'),
 		('110KW','110KW'),
+		('335KW','335KW'),
+		('75KW','75KW'),
+		('90KW','90KW'),
 	)
 PUISSANCE_CONVERTISSEUR = (
 		('300W','300W'),
@@ -232,6 +322,36 @@ PUISSANCE_CONVERTISSEUR = (
 		('5000W','5000W'),
 	)
 
+PUISSANCE_TONDEUSE = (
+		('12800W','12800W'),
+		('4500W','4500W'),
+		('1300W','1300W'),
+
+	)
+
+TYPE_TONDEUSE = (
+		('THERMIQUE','THERMIQUE'),
+		('ELECTRIQUE','ELECTRIQUE'),
+
+	)
+
+TYPE_DETECTEUR = (
+		('DETECTEUR DE MOUVEMENT','DETECTEUR DE MOUVEMENT'),
+		('DETECTEUR DE CHOC','DETECTEUR DE CHOC'),
+		('DETECTEUR DE FUMEE','DETECTEUR DE FUMEE'),
+		('DETECTEUR DE CHALEUR','DETECTEUR DE CHALEUR'),
+		('DETECTEUR MANUEL','DETECTEUR MANUEL'),
+
+	)
+
+PUISSANCE_MEULEUSE = (
+		('2200W','2200W'),
+		('3000W','3000W'),
+
+	)
+
+
+
 PUISSANCE_GROUPE_ELECTROGENE = (
 		('720W','720W'),
 		('3100W','3100W'),
@@ -241,6 +361,27 @@ PUISSANCE_GROUPE_ELECTROGENE = (
 		('5500W','5500W'),
 		('7500W','7500W'),
 		('10000W','10000W'),
+		('1KVA','1KVA'),
+		('10KVA','10KVA'),
+		('2,5KVA','2,5KVA'),
+		('5,5KVA','5,5KVA'),
+		('3,5KVA','3,5KVA'),
+		('5KVA','5KVA'),
+		('2KVA','2KVA'),
+		('3KVA','3KVA'),
+		('6,5KVA','6,5KVA'),
+		('7,5KVA','7,5KVA'),
+		('12,5KVA','12,5KVA'),
+		('15KVA','15KVA'),
+		('20KVA','20KVA'),
+		('38KVA','38KVA'),
+		('27KVA','27KVA'),
+		('225KVA','225KVA'),
+		('30KVA','30KVA'),
+		('40KVA','40KVA'),
+		('60KVA','60KVA'),
+		('50KVA','50KVA'),
+		('100KVA','100KVA'),
 	)
 PUISSANCE_MACHINE_ATELIER_NON_PORTATIF = (
 		('100W','100W'),
@@ -303,6 +444,69 @@ PUISSANCE_MACHINE_ATELIER_NON_PORTATIF = (
 		('3000W','3000W'),
 		('12800W','12800W'),
 	)
+
+PUISSANCE_MACHINE_PORTATIF = (
+		('100W','100W'),
+		('120W','120W'),
+		('150W','150W'),
+		('180W','180W'),
+		('200W','200W'),
+		('240W','240W'),
+		('250W','250W'),
+		('300W','300W'),
+		('350W','350W'),
+		('370W','370W'),
+		('400W','400W'),
+		('450W','450W'),
+		('500W','500W'),
+		('550W','550W'),
+		('600W','600W'),
+		('630W','630W'),
+		('650W','650W'),
+		('700W','700W'),
+		('701W','701W'),
+		('710W','710W'),
+		('720W','720W'),
+		('750W','750W'),
+		('770W','770W'),
+		('800W','800W'),
+		('815W','815W'),
+		('840W','840W'),
+		('850W','850W'),
+		('860W','860W'),
+		('900W','900W'),
+		('1000W','1000W'),
+		('1050W','1050W'),
+		('1010W','1010W'),
+		('1100W','1100W'),
+		('1150W','1150W'),
+		('1200W','1200W'),
+		('1230W','1230W'),
+		('1250W','1250W'),
+		('1280W','1280W'),
+		('1300W','1300W'),
+		('1320W','1320W'),
+		('1400W','1400W'),
+		('1500W','1500W'),
+		('1600W','1600W'),
+		('1650W','1650W'),
+		('1700W','1700W'),
+		('1750W','1750W'),
+		('1800W','1800W'),
+		('1900W','1900W'),
+		('2000W','2000W'),
+		('2100W','2100W'),
+		('2200W','2200W'),
+		('2250W','2250W'),
+		('2300W','2300W'),
+		('2350W','2350W'),
+		('2400W','2400W'),
+		('2600W','2600W'),
+		('2800W','2800W'),
+		('3000W','3000W'),
+		('12800W','12800W'),
+	)
+
 PUISSANCE_MOTEUR = (
 		('180W','180W'),
 		('250W','250W'),
@@ -320,9 +524,10 @@ PUISSANCE_MOTEUR = (
 		('18.5KW','18.5KW'),
 	)
 PUISSANCE_MOTO_POMPE = (
-		('10hp','10hp'),
-		('13hp','13hp'),
-		('15hp','15hp'),
+		('7,5HP','7,5HP'),
+		('10HP','10HP'),
+		('13HP','13HP'),
+		('15HP','15HP'),
 	)
 PUISSANCE_POMPE = (
 		('270W','270W'),
@@ -360,13 +565,13 @@ REDUCTION_PVC = (
 
 
 SCHEMA_INTERRUPTEUR = (
-		('Schéma 1','Schéma 1'),
-		('Schéma 2','Schéma 2'),
-		('Schéma 3','Schéma 3'),
-		('Schéma 4','Schéma 4'),
-		('Schéma 5','Schéma 5'),
-		('Schéma 6','Schéma 6'),
-		('Schéma 7','Schéma 7'),
+		('SCHEMA 1','SCHEMA 1'),
+		('SCHEMA 2','SCHEMA 2'),
+		('SCHEMA 3','SCHEMA 3'),
+		('SCHEMA 4','SCHEMA 4'),
+		('SCHEMA 5','SCHEMA 5'),
+		('SCHEMA 6','SCHEMA 6'),
+		('SCHEMA 7','SCHEMA 7'),
 	)
 SECTION_MOTO_POMPE = (
 		('2"','2"'),
@@ -379,7 +584,7 @@ SENSIBILITE_INTERRUPTEUR = (
 	)
 
 
-TENSION = (
+TENSION2 = (
 		('3.6V','3.6V'),
 		('10.8V','10.8V'),
 		('12V','12V'),
@@ -396,6 +601,7 @@ TENSION = (
 		('250V','250V'),
 		('380V','380V'),
 		('400V','400V'),
+		('415V','415V'),
 		('500V','500V'),
 		('1000V','1000V'),
 	)
@@ -405,37 +611,38 @@ TENSION_MOTEUR = (
 		('400V','400V'),
 	)
 TYPE_ACCESSOIRES_HYDROPHORE = (
-		('Bougie de filtre','Bougie de filtre'),
-		('Manomètre','Manomètre'),
-		('Pressostat','Pressostat'),
-		('Pressure control','Pressure control'),
-		('Té','Té'),
+		('BOUGIE DE FILTRE','BOUGIE DE FILTRE'),
+		('MANOMETRE','MANOMETRE'),
+		('PRESSOSTAT','PRESSOSTAT'),
+		('PRESSURE CONTROL','PRESSURE CONTROL'),
+		('TE','TE'),
 	)
 TYPE_AMPOULE = (
-		('Economique','Economique'),
-		('Halogène','Halogène'),
-		('Incandescence','Incandescence'),
-		('Infrarouge','Infrarouge'),
-		('Led','Led'),
-		('Projecteur','Projecteur'),
+		('ECONOMIQUE','ECONOMIQUE'),
+		('SODIUM','SODIUM'),
+		('HALOGENE','HALOGENE'),
+		('INCANDESCENCE','INCANDESCENCE'),
+		('INFRAROUGE','INFRAROUGE'),
+		('LED','LED'),
+		('PROJECTEUR','PROJECTEUR'),
 	)
 TYPES_APPAREIL_MESURE = (
-		('Digital','Digital'),
-		('Mécanique','Mécanique'),
-		('Pince ampèremétrique','Pince ampèremétrique'),
+		('DIGITAL','DIGITAL'),
+		('MECANIQUE','MECANIQUE'),
+		('PINCE AMPEREMETRIQUE','PINCE AMPEREMETRIQUE'),
 	)
 
 TYPES_BALANCE = (
-		('Electronique','Electronique'),
-		('Mécanique','Mécanique'),
+		('ELECTRONIQUE','ELECTRONIQUE'),
+		('MECANIQUE','MECANIQUE'),
 	)
 
 TYPE_CYLINDRE = (
 		('DGC','DGC'),
-		('Italy','Italy'),
-		('Renz','Renz'),
-		('Sislye','Sislye'),
-		('Vachette','Vachette'),
+		('ITALY','ITALY'),
+		('RENZ','RENZ'),
+		('SISLYE','SISLYE'),
+		('VACHETTE','VACHETTE'),
 	)
 TYPE_DERIVATION = (
 		('EMBOUT','EMBOUT'),
@@ -443,79 +650,104 @@ TYPE_DERIVATION = (
 	)
 
 TYPE_MACHINE_ATELIER_PORTATIF = (
-		('Visseuse','Visseuse'),
+		('VISSEUSE','VISSEUSE'),
 	)
 TYPE_MACHINE_ATELIER_NON_PORTATIF = (
-		('Aspirateur','Aspirateur'),
-		('Boulonneur','Boulonneur'),
-		('Burineur','Burineur'),
-		('Coupe carrelage','Coupe carrelage'),
-		('Coupe haie','Coupe haie'),
-		('Décapeur','Décapeur'),
-		('Défonceuse','Défonceuse'),
-		('Foreuse','Foreuse'),
-		('Fraiseuse','Fraiseuse'),
-		('Marteau perforateur','Marteau perforateur'),
-		('Mélangeur','Mélangeur'),
-		('Meleuse','Meleuse'),
-		('Palan électrique','Palan électrique'),
-		('Perceuse','Perceuse'),
-		('Perforateur','Perforateur'),
-		('Pistolet à souder','Pistolet à souder'),
-		('Pompe','Pompe'),
-		('Ponceuse','Ponceuse'),
-		('Rabot','Rabot'),
-		('Raboteuse','Raboteuse'),
-		('Rainureuse','Rainureuse'),
-		('Scie','Scie'),
-		('Souffleur','Souffleur'),
-		('Tondeuse','Tondeuse'),
-		('Touret','Touret'),
-		('Tronçonneuse','Tronçonneuse'),
-		('Débroussailleuse','Débroussailleuse'),
+		('ASPIRATEUR','ASPIRATEUR'),
+		('BOULONNEUR','BOULONNEUR'),
+		('BURINEUR','BURINEUR'),
+		('COUPE CARRELAGE','COUPE CARRELAGE'),
+		('COUPE HAIE','COUPE HAIE'),
+		('DECAPEUR','DECAPEUR'),
+		('DEFONCEUSE','DEFONCEUSE'),
+		('FOREUSE','FOREUSE'),
+		('FRAISEUSE','FRAISEUSE'),
+		('MARTEAU PERFORATEUR','MARTEAU PERFORATEUR'),
+		('MELANGEUR','MELANGEUR'),
+		('MELEUSE','MELEUSE'),
+		('PALAN ELECTRIQUE','PALAN ELECTRIQUE'),
+		('PERCEUSE','PERCEUSE'),
+		('PERFORATEUR','PERFORATEUR'),
+		('PISTOLET A SOUDER','PISTOLET A SOUDER'),
+		('POMPE','POMPE'),
+		('PONCEUSE','PONCEUSE'),
+		('RABOT','RABOT'),
+		('RABOTEUSE','RABOTEUSE'),
+		('RAINUREUSE','RAINUREUSE'),
+		('SCIE','SCIE'),
+		('SOUFFLEUR','SOUFFLEUR'),
+		('TONDEUSE','TONDEUSE'),
+		('TOURET','TOURET'),
+		('TRONÇONNEUSE','TRONÇONNEUSE'),
+		('DEBROUSSAILLEUSE','DEBROUSSAILLEUSE'),
 	)
 
 TYPE_PRISE_ELECTRIQUE = (
-		('Antenne','Antenne'),
-		('Avec terre','Avec terre'),
-		('Cuisinière','Cuisinière'),
-		('Hermetique','Hermetique'),
-		('Murale','Murale'),
-		('Simple','Simple'),
+		('ANTENNE','ANTENNE'),
+		('AVEC TERRE','AVEC TERRE'),
+		('CUISINIERE','CUISINIERE'),
+		('HERMETIQUE','HERMETIQUE'),
+		('MURALE','MURALE'),
+		('SIMPLE','SIMPLE'),
 	)
 
 
 
-TYPE_OUTILS_JARDINAGE = (
-		('Plantoir','Plantoir'),
-		('Pinceau','Pinceau'),
+TYPE_OUTILS_MANUEL = (
+		('PLANTOIR','PLANTOIR'),
+		('PINCEAU','PINCEAU'),
+		('RATEAU','RATEAU'),
+		('PELLE','PELLE'),
+		('MACHETTE','MACHETTE'),
+		('ARROSOIR','ARROSOIR'),
+		('HACHE','HACHE'),
 	)
 
-UTILISATION = (
-		('Chauffe eau','Chauffe eau'),
-		('Hydrophore','Hydrophore'),
-		('Lavabo','Lavabo'),
+UTILISATION_FLEXIBLE= (
+		('CHAUFFE EAU','CHAUFFE EAU'),
+		('HYDROPHORE','HYDROPHORE'),
+		('LAVABO','LAVABO'),
 	)
 CAPACITE_CHARGEUR_BATTERIE = (
-		('20 à 120 Ah','20 à 120 Ah'),
-		('20 à 400 Ah','20 à 400 Ah'),
-		('250 Ah','250 Ah'),
+		('20 A 120 AH','20 A 120 AH'),
+		('20 A 400 AH','20 A 400 AH'),
+		('250 AH','250 AH'),
 	)
 CAPACITE_POMPE = (
-		('3000 litres','3000 litres'),
-		('3800 litres','3800 litres'),
-		('4100 litres','4100 litres'),
-		('5500 litres','5500 litres'),
-		('10500 litres','10500 litres'),
-		('66000 litres','66000 litres'),
+		('3000 LITRES','3000 LITRES'),
+		('3800 LITRES','3800 LITRES'),
+		('4100 LITRES','4100 LITRES'),
+		('5500 LITRES','5500 LITRES'),
+		('10500 LITRES','10500 LITRES'),
+		('66000 LITRES','66000 LITRES'),
 	)
 CAPACITE_COMPRESSEUR = (
-		('6 litres','6 litres'),
-		('24 litres','24 litres'),
-		('50 litres','50 litres'),
-		('100 litres','100 litres'),
-		('200 litres','200 litres'),
-		('300 litres','300 litres'),
+		('6 LITRES','6 LITRES'),
+		('24 LITRES','24 LITRES'),
+		('50 LITRES','50 LITRES'),
+		('100 LITRES','100 LITRES'),
+		('200 LITRES','200 LITRES'),
+		('300 LITRES','300 LITRES'),
+	)
+
+CAPACITE_L = (
+
+		('100L','100L'),
+		('150L','150L'),
+		('200L','200L'),
+		('300L','300L'),
+		('500L','500L'),
+		('1000L','1000L'),
+		('2000L','2000L'),
+		('3000L','3000L'),
+		('5000L','5000L'),
+		('10000L','10000L'),
+	)
+
+MATERIAU_CITERNE = (
+		('INOX','INOX'),
+		('PLASTIQUE','PLASTIQUE'),
+
 	)
 
 CULOT = (
@@ -527,38 +759,42 @@ CULOT = (
 # D
 #=====================================================
 DEBIT_POMPE = (
-		('300 l/h','300 l/h'),
-		('600 l/h','600 l/h'),
-		('1200 l/h','1200 l/h'),
-		('1500 l/h','1500 l/h'),
-		('1800 l/h','1800 l/h'),
-		('3000 l/h','3000 l/h'),
-		('3800 l/h','3800 l/h'),
-		('4020 l/h','4020 l/h'),
-		('4600 l/h','4600 l/h'),
-		('6800 l/h','6800 l/h'),
-		('10020 l/h','10020 l/h'),
-		('15000 l/h','15000 l/h'),
-		('15700 l/h','15700 l/h'),
-		('17500 l/h','17500 l/h'),
-		('18000 l/h','18000 l/h'),
-		('23000 l/h','23000 l/h'),
+		('300 L/H','300 L/H'),
+		('600 L/H','600 L/H'),
+		('1200 L/H','1200 L/H'),
+		('1500 L/H','1500 L/H'),
+		('1800 L/H','1800 L/H'),
+		('3000 L/H','3000 L/H'),
+		('3600 L/H','3600 L/H'),
+		('3800 L/H','3800 L/H'),
+		('4020 L/H','4020 L/H'),
+		('4600 L/H','4600 L/H'),
+		('6800 L/H','6800 L/H'),
+		('10020 L/H','10020 L/H'),
+		('10500 L/H','10500 L/H'),
+		('15700 L/H','15700 L/H'),
+		('17500 L/H','17500 L/H'),
+		('18000 L/H','18000 L/H'),
+		('23000 L/H','23000 L/H'),
+		('66000 L/H','66000 L/H'),
 	)
 DIAMETRE = (
-		('5mm','5mm'),
-		('6mm','6mm'),
-		('8mm','8mm'),
-		('10mm','10mm'),
-		('12mm','12mm'),
-		('14mm','14mm'),
-		('16mm','16mm'),
-		('20mm','20mm'),
-		('25mm','25mm'),
-		('32mm','32mm'),
-		('50mm','50mm'),
-		('63mm','63mm'),
-		('90mm','90mm'),
-		('110mm','110mm'),
+		('5MM','5MM'),
+		('6MM','6MM'),
+		('8MM','8MM'),
+		('10MM','10MM'),
+		('12MM','12MM'),
+		('14MM','14MM'),
+		('16MM','16MM'),
+		('20MM','20MM'),
+		('25MM','25MM'),
+		('32MM','32MM'),
+		('50MM','50MM'),
+		('63MM','63MM'),
+		('90MM','90MM'),
+		('110MM','110MM'),
+		('230MM','230MM'),
+		('125MM','125MM'),
 	)
 
 MATIERE_TUYAUTERIE = (
@@ -567,49 +803,49 @@ MATIERE_TUYAUTERIE = (
 	)
 
 MOTEUR = (
-		('Diesel','Diesel'),
-		('Essence','Essence'),
+		('DIESEL','DIESEL'),
+		('ESSENCE','ESSENCE'),
 	)
 
 OUI_NON = (
-		('Oui','Oui'),
-		('Non','Non'),
+		('OUI','OUI'),
+		('NON','NON'),
 	)
 
 LOCALISATION_TUYAUTERIE = (
-		('Bouchon','Bouchon'),
-		('Coude','Coude'),
-		('Manchon','Manchon'),
-		('Raccord','Raccord'),
-		('Té','Té'),
-		('Tuyau','Tuyau'),
-		('Vanne','Vanne'),
+		('BOUCHON','BOUCHON'),
+		('COUDE','COUDE'),
+		('MANCHON','MANCHON'),
+		('RACCORD','RACCORD'),
+		('TE','TE'),
+		('TUYAU','TUYAU'),
+		('VANNE','VANNE'),
 	)
 LONGUEUR = (
-		('2m','2m'),
-		('3m','3m'),
-		('5m','5m'),
-		('10m','10m'),
-		('1,20m','1,20m'),
-		('15m','15m'),
-		('20m','20m'),
-		('25m','25m'),
-		('50m','50m'),
-		('100m','100m'),
+		('2M','2M'),
+		('3M','3M'),
+		('5M','5M'),
+		('10M','10M'),
+		('1,20M','1,20M'),
+		('15M','15M'),
+		('20M','20M'),
+		('25M','25M'),
+		('50M','50M'),
+		('100M','100M'),
 	)
 
 MATIERE_SECHE_MAIN = (
-		('Inox','Inox'),
-		('Plastique','Plastique'),
+		('INOX','INOX'),
+		('PLASTIQUE','PLASTIQUE'),
 	)
 
 DIMENSION_PAUMELLE = (
-		('85mm','85mm'),
-		('90mm','90mm'),
-		('95mm','95mm'),
-		('120mm','120mm'),
-		('140mm','140mm'),
-		('160mm','160mm'),
+		('85MM','85MM'),
+		('90MM','90MM'),
+		('95MM','95MM'),
+		('120MM','120MM'),
+		('140MM','140MM'),
+		('160MM','160MM'),
 	)
 
 FORCE = (
@@ -618,29 +854,44 @@ FORCE = (
 	)
 
 SANITAIRE = (
-		('Baignoire','Baignoire'),
-		('Evier','Evier'),
-		('Lavabo','Lavabo'),
-		('Sol','Sol'),
+		('BAIGNOIRE','BAIGNOIRE'),
+		('EVIER','EVIER'),
+		('LAVABO','LAVABO'),
+		('SOL','SOL'),
 	)
 
 TYPE_GANT = (
-		('Anti chaleur','Anti chaleur'),
-		('Chantier','Chantier'),
-		('Coton','Coton'),
-		('Cuire','Cuire'),
-		('Plastique','Plastique'),
+		('ANTI CHALEUR','ANTI CHALEUR'),
+		('CHANTIER','CHANTIER'),
+		('COTON','COTON'),
+		('CUIRE','CUIRE'),
+		('PLASTIQUE','PLASTIQUE'),
 	)
 
 FORMAT = (
-		('Grand format','Grand format'),
-		('Petit format','Petit format'),
+		('GRAND FORMAT','GRAND FORMAT'),
+		('PETIT FORMAT','PETIT FORMAT'),
 	)
 
 MODE_DETECTION = (
-		('Choc','Choc'),
-		('Mouvement','Mouvement'),
+		('CHOC','CHOC'),
+		('MOUVEMENT','MOUVEMENT'),
 	)
+
+MODE_DETECTION_DETECTEUR_INCENDIE= (
+		('DETECTEUR OPTIQUE ','DETECTEUR OPTIQUE '),
+		('DETECTION DE CHALEUR','DETECTION DE CHALEUR'),
+		('DETECTION DE FUMEE','DETECTION DE FUMEE'),
+		('DETECTION DE CHALEUR','DETECTION DE CHALEUR'),
+		('DETECTION DE FUMEE','DETECTION DE FUMEE'),
+	)
+
+ADRESSABLE=(
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
 
 TENSION_CONVERTISSEUR = (
 		('12V','12V'),
@@ -649,10 +900,10 @@ TENSION_CONVERTISSEUR = (
 		('48V','48V'),
 	)
 MODE_FONCTIONNEMENT = (
-		('Code','Code'),
-		('Badge','Badge'),
-		('Badge + empreinte digitale','Badge + empreinte digitale'),
-		('Empreinte digitale','Empreinte digitale'),
+		('CODE','CODE'),
+		('BADGE','BADGE'),
+		('BADGE + EMPREINTE DIGITALE','BADGE + EMPREINTE DIGITALE'),
+		('EMPREINTE DIGITALE','EMPREINTE DIGITALE'),
 	)
 
 NOMBRE_CANAUX = (
@@ -661,22 +912,582 @@ NOMBRE_CANAUX = (
 
 
 DIMENSION = (
-		('60x60x25mm','60x60x25mm'),
-		('65x65x45mm','65x65x45mm'),
-		('80x80x30mm','80x80x30mm'),
-		('105x105x42mm','105x105x42mm'),
-		('130x130x30mm','130x130x30mm'),
-		('160x100x45mm','160x100x45mm'),
-		('220x160x45mm','220x160x45mm'),
-		('105x105x55mm','105x105x55mm'),
-		('175x150x80mm','175x150x80mm'),
-		('225x175x100mm','225x175x100mm'),
-		('275x225x120mm','275x225x120mm'),
+		('60X60X25','60X60X25'),
+		('65X65X45','65X65X45'),
+		('80X80X30','80X80X30'),
+		('105X105X42','105X105X42'),
+		('130X130X30','130X130X30'),
+		('160X100X45','160X100X45'),
+		('220X160X45','220X160X45'),
+		('105X105X55','105X105X55'),
+		('175X150X80','175X150X80'),
+		('225X175X100','225X175X100'),
+		('275X225X120','275X225X120'),
 	)
 
 POIDS = (
-		('200kg','200kg'),
-		('300kg','300kg'),
-		('500kg','500kg'),
-		('600kg','600kg'),
+		('200KG','200KG'),
+		('300KG','300KG'),
+		('500KG','500KG'),
+		('600KG','600KG'),
+	)
+AGENT_EXTINCTEUR = (
+		('CO2','CO2'),
+		('POUDRE','POUDRE'),
+		('EAU','EAU'),
+
+	)
+POIDS_AGENT_EXTINCTEUR = (
+		('5KG','5KG'),
+		('6KG','6KG'),
+		('9KG','9KG'),
+
+
+	)
+
+
+TYPE_SIGNALISATION = (
+		('PANNEAU EXTINCTEUR EN PVC','PANNEAU EXTINCTEUR EN PVC'),
+		('PANNEAU EXTINCTEUR LUMINESCENT ','PANNEAU EXTINCTEUR LUMINESCENT '),
+		('PANNEAU INDICATION SYMBOLE RIA EN PVC ','PANNEAU INDICATION SYMBOLE RIA EN PVC '),
+		('PANNEAU EVACUATION LUMINISCENT DIR. GAUCHE','PANNEAU EVACUATION LUMINISCENT DIR. GAUCHE'),
+		('PANNEAU EVACUATION LUMINESCENT DIR. DROITE','PANNEAU EVACUATION LUMINESCENT DIR. DROITE'),
+		('PANNEAU EVACUATION LUMINESCENT SORTIE DE SECOURS','PANNEAU EVACUATION LUMINESCENT SORTIE DE SECOURS'),
+		('PANNEAU EVACUATION LUMINESCENT ','PANNEAU EVACUATION LUMINESCENT '),
+		('PANNEAU EVACUATION EN PVC','PANNEAU EVACUATION EN PVC'),
+		('PANNEAU  DEVACUATION EN PVC DIRECTION A SUIVRE ','PANNEAU  EVACUATION EN PVC DIRECTION A SUIVRE '),
+		('PANNEAU POINT DE RASSEMBLEMENT ','PANNEAU POINT DE RASSEMBLEMENT '),
+
+	)
+
+CAPACITE_BETONNIERE= (
+		('180L','180L'),
+		('260L','260L'),
+		('350L','350L'),
+		('360L','360L'),
+		('500L','500L'),
+	)
+
+TYPES_BETONNIERE = (
+		('ELECTRIQUE','ELECTRIQUE'),
+		('DIESEL','DIESEL'),
+	)
+
+TYPES_COMPACTEUR = (
+		('PLATE','PLATE'),
+		('PLATE 50CM','PLATE 50CM'),
+		('PLATE 60CM','PLATE 60CM'),
+		('ROUE','ROUE'),
+		('BARE','BARE'),
+	)
+
+PUISSANCE_HP = (
+		('5,5 HP','5,5 HP'),
+		('6,5 HP','6,5 HP'),
+		('4,0 HP','4,0 HP'),
+		('2 HP','2 HP'),
+		('3 HP','3 HP'),
+		('4 HP','4 HP'),
+		('10HP','10HP'),
+		('7,5 HP','7,5H P'),
+		('0,5 HP','0,5 HP'),
+		('0.75 HP','0.75 HP'),
+		('1 HP','1 HP'),
+		('1,5 HP','1,5 HP'),
+		('15 HP','15 HP'),
+		('20 HP','20 HP'),
+		('25 HP','25 HP'),
+		('30 HP','30 HP'),
+		('40 HP','40 HP'),
+
+	)
+TYPE_CARBURANT = (
+		('ESSENCE','ESSENCE'),
+		('DIESEL','DIESEL'),
+
+
+	)
+
+DEBIT_L_MIN = (
+		('250L/MIN','250L/MIN'),
+		('360L/MIN','360L/MIN'),
+		('1000L/MIN','1000L/MIN'),
+		('900L/MIN','900L/MIN'),
+		('1050L/MIN','1050L/MIN'),
+		('2800L/MIN','2800L/MIN'),
+		('3600L/MIN','3600L/MIN'),
+		('3000L/MIN','3000L/MIN'),
+		('1300L/MIN','1300L/MIN'),
+		('465L/MIN','465L/MIN'),
+		('280L/MIN','280L/MIN'),
+
+	)
+
+SILENCIEUX = (
+		('OUI','OUI'),
+		('NON','NON'),
+
+	)
+MODEL = (
+		('090','090'),
+		('070','070'),
+		('AV 070','AV 070'),
+
+	)
+
+MARQUE = (
+		('SCHNEIDER','SCHNEIDER'),
+		('APC','APC'),
+        ('MACKEL','MACKEL'),
+        ('VINCKIER','VINCKIER'),
+        ('ABB','ABB'),
+        ('WESTECH','WESTECH'),
+		('VICTRON','VICTRON'),
+		('MERCURY','MERCURY'),
+		('VICKO','VICKO'),
+		('LE GRAND','LE GRAND'),
+		('NIKO','NIKO'),
+		('INGELEC','INGELEC'),
+		('EUROMAX','EUROMAX'),
+		('TANAKA','TANAKA'),
+
+
+	)
+
+
+
+NOMBRE_POLE = (
+		('2','2'),
+		('3','3'),
+		('4','4'),
+
+	)
+
+
+
+
+INTENSITE = (
+		('25A','25A'),
+		('40A','40A'),
+        ('63A','63A'),
+        ('9A','9A'),
+        ('1000A','1000A'),
+        ('115A','115A'),
+        ('12A','12A'),
+        ('150A','150A'),
+        ('185A','18A'),
+        ('225A','225A'),
+        ('100A','100A'),
+        ('125A','125A'),
+        ('160A','160A'),
+        ('200A','200A'),
+        ('80A','80A'),
+        ('250A','250A'),
+		('32A','32A'),
+		('400A','400A'),
+		('64A','64A'),
+		('18A','18A'),
+		('10A','10A'),
+		('16A','16A'),
+		('1A','1A'),
+		('20A','20A'),
+		('2A','2A'),
+		('50A','50A'),
+		('6A','6A'),
+
+	)
+
+TENSION = (
+		('110V','110V'),
+		('230V','230V'),
+		('24V','24V'),
+		('24VCC','24VCC'),
+		('380V','380V'),
+		('400V','400V'),
+		('415V','415V'),
+		('48V','48V'),
+		('220V','220V'),
+		('250V','250V'),
+		('500V','500V'),
+		('1000V','1000V'),
+
+	)
+
+PUISSANCE= (
+		('4KW','4KW'),
+		('335KW','335KW'),
+		('55KW','55KW'),
+		('5,5KW','5,5KW'),
+		('75KW','75KW'),
+		('90KW','90KW'),
+		('7,5KW','7,5KW'),
+		('110KW','110KW'),
+		('11KW','11KW'),
+		('2000W','2000W'),
+		('1000W','1000W'),
+		('800W','800W'),
+		('600W','600W'),
+		('300W','300W'),
+		('5000W','5000W'),
+		('4000W','4000W'),
+		('3000W','3000W'),
+		('3W','3W'),
+		('6W','6W'),
+		('12W','12W'),
+		('48W','48W'),
+		('40W','40W'),
+		('20W','20W'),
+		('16W','16W'),
+		('8W','8W'),
+		('14W','14W'),
+		('23W','23W'),
+		('45W','45W'),
+		('50W','505W'),
+		('65W','65W'),
+		('100W','100W'),
+		('400W','400W'),
+
+	)
+
+
+
+
+TYPE_CABLE= (
+		('ARME','ARME'),
+		('AERIEN','AERIEN'),
+
+
+
+	)
+
+TYPE_TUBE= (
+		('FLUORESCENT','FLUORESCENT'),
+		('LED','LED'),
+
+
+
+	)
+
+
+
+NOMBRE_DE_FIL= (
+		('4','4'),
+		('3','3'),
+
+
+
+
+	)
+SECTION=(
+		('4','4'),
+		('6','6'),
+		('10','10'),
+		('16','16'),
+		('25','25'),
+		('35','35'),
+		('50MM2','50MM2'),
+		('3X2,5MM2','3X2,5MM2'),
+		('3X1,5MM2','3X1,5MM2'),
+
+	)
+
+SENSIBILITE =(
+		('300MA','300MA'),
+		('30MA','30MA'),
+
+
+	)
+
+DIMENSION =(
+		('105X105X55','105X105X55'),
+		('175X150X80','175X150X80'),
+		('225X175X100','225X175X100'),
+		('275X225X120','275X225X120'),
+		('65X65X45','65X65X45'),
+		('105X105X42','105X105X42'),
+		('130X130X30','130X130X30'),
+		('160X100X45','160X100X45'),
+		('220X160X45','220X160X45'),
+		('60X60X25','60X60X25'),
+		('80X80X30','80X80X30'),
+		('80X80MM','80X80MM'),
+		('100X100MM','100X100MM'),
+		('150X150MM','150X150MM'),
+		('200X150MM','200X150MM'),
+
+		)
+
+DIMENSION_ROULEAU_FLEXIBLE=(
+		('5/8','5/8'),
+		('3/4','3/4'),
+
+		)
+
+LONGUEUR_ROULEAU_FLEXIBLE=(
+		('100M','100M'),
+		('50M','50M'),
+
+		)
+
+NOMBRE_MODULE = (
+
+		('4','4'),
+		('6','6'),
+		('8','8'),
+		('12','12'),
+
+
+	)
+
+
+
+ENCASTRE_SAILLI = (
+
+		('SAILLI','SAILLI'),
+		('ENCASTRE','ENCASTRE'),
+
+
+	)
+
+
+NOMBRE_CIRCUIT=(
+
+		('8','8'),
+		('12','12'),
+		('16','16'),
+		('24','24'),
+		('36','36'),
+
+
+	)
+
+
+
+CHARGEUR=(
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
+SINUS_PUR=(
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
+TYPE_APPAREIL_MESURE=(
+		('PINCE AMPEREMETRIQUE','PINCE AMPEREMETRIQUE'),
+		('DIGITAL','DIGITAL'),
+		('MECANIQUE','MECANIQUE'),
+
+		)
+
+SCHEMA_INTERRUPTEUR=(
+
+		('SCHEMA1','SCHEMA1'),
+		('SCHEMA2','SCHEMA2'),
+		('SCHEMA3','SCHEMA3'),
+		('SCHEMA5','SCHEMA5'),
+		('SCHEMA6','SCHEMA6'),
+		('SCHEMA7','SCHEMA7'),
+
+		)
+
+LONGUEUR_RALLONGE = (
+		('3M','3M'),
+		('5M','5M'),
+		('10M','10M'),
+		('25M','25M'),
+		('50M','50M'),
+		('100M','100M'),
+
+	)
+
+
+
+TYPE_PRISE= (
+		('AVEC TERRE','AVEC TERRE'),
+		('MURALE','MURALE'),
+		('SIMPLE','SIMPLE'),
+		('ANTENNE','ANTENNE'),
+		('CUISINIERE','CUISINIERE'),
+		('HERMETIQUE','HERMETIQUE'),
+
+	)
+
+MODE_FONTAINE= (
+		('YLR-1.5-EM-5','YLR-1.5-EM-5'),
+		('YLR-1.5-JX-5','YLR-1.5-JX-5'),
+
+	)
+PUISSANCE_STABISATEUR = (
+
+		('500VA','500VA'),
+		('1000VA','1000VA'),
+		('3000VA','3000VA'),
+		('1500VA','1500VA'),
+		('5000VA','5000VA'),
+		('10000VA','10000VA'),
+		('2000VA','2000VA'),
+
+
+	)
+
+TYPE_TEMPORISATION = (
+
+		('REPOS', 'REPOS'),
+        ('TRAVAIL', 'TRAVAIL'),
+
+	)
+
+
+DOMAINE_REGLAGE = (
+
+		('0.1..3S', '0.1..3S'),
+        ('0.1..30S', '0.1..30S'),
+        ('10..180S', '10..180S'),
+
+	)
+
+SENSIBILITE = (
+
+		('30MA', '30MA'),
+        ('300MA', '300MA'),
+
+	)
+CAPACITE_BETONNIERE = (
+
+		('180L', '180L'),
+        ('260L', '260L'),
+        ('350L', '350L'),
+        ('360L', '360L'),
+        ('500L', '500L'),
+
+	)
+
+
+TYPE_BETONNIERE = (
+
+		('ELECTRIQUE', 'ELECTRIQUE'),
+        ('DIESEL', 'DIESEL'),
+
+	)
+TYPE_COMPACTEUR = (
+
+		('PLATE', 'PLATE'),
+		('PLATE 50CM', 'PLATE 50CM'),
+        ('PLATE 60CM', 'PLATE 60CM'),
+
+        ('BARE', 'BARE'),
+
+	)
+
+
+PUISSANCE_COMPACTEUR = (
+
+		('4,0 HP', '4,0 HP'),
+		('5,5 HP', '5,5 HP'),
+        ('6,5 HP', '6,5 HP'),
+
+
+	)
+
+CARBURANT = (
+
+		('ESSENCE', 'ESSENCE'),
+        ('DIESEL', 'DIESEL'),
+
+	)
+
+CAPACITE_COMPRESSEUR = (
+
+		('100L', '100L'),
+		('150L', '150L'),
+        ('200L', '200L'),
+        ('300L', '300L'),
+        ('500L', '500L'),
+		('1000L', '1000L'),
+
+
+
+	)
+
+
+PUISSANCE_COMPRESSEUR = (
+
+		('2 HP', '2 HP'),
+		('3 HP', '3 HP'),
+		('4 HP', '4 HP'),
+		('5,5 HP', '5,5 HP'),
+        ('6,5 HP', '6,5 HP'),
+        ('7,5 HP', '7,5 HP'),
+		('10 HP', '10 HP'),
+
+
+	)
+
+DEBIT = (
+
+		('250L/MIN', '250L/MIN'),
+        ('360L/MIN', '360L/MIN'),
+        ('900L/MIN', '900L/MIN'),
+        ('1000L/MIN', '1000L/MIN'),
+        ('1050L/MIN', '1050L/MIN'),
+
+
+	)
+
+PUISSANCE_PALAN = (
+
+		('1,6KW', '1,6KW'),
+		('3KW', '3KW'),
+
+
+
+	)
+
+
+LONGUEUR = (
+
+		('10M', '10M'),
+
+
+	)
+
+POIDS_MAX = (
+
+		('3T', '3T'),
+		('5T', '5T'),
+
+
+	)
+
+
+TYPE_PALAN = (
+
+		('ELECTRIQUE', 'ELECTRIQUE'),
+
+
+	)
+
+
+TYPE_OUTILLAGE = (
+
+		('RATEAU', 'RATEAU'),
+		('PELLE', 'PELLE'),
+		('MACHETTE', 'MACHETTE'),
+		('ARROSOIR', 'ARROSOIR'),
+		('HACHE', 'HACHE'),
+
+
+	)
+
+
+MODELE_TRONCONNEUSE = (
+
+		('090', '090'),
+		('070', '070'),
+		('AV 070', 'AV 070'),
+
+
 	)

@@ -4,153 +4,104 @@
 	Profil
 {% endblock title %}
 
-{% block sidebar %}                       
+{% block sidebar %}
 	<li>
-	<a href="#"><i class="fa fa-dashboard fa-fw"></i> Mon Profil</a>
+	<a href="/accounts/profil/"><i class="fa fa-dashboard fa-fw"></i> Mon Profil</a>
 	</li>
 	<li>
-	<a href="#"><i class="fa fa-table fa-fw"></i> Mes Produits</a>
+	<a href="/product/my-product/"><i class="fa fa-table fa-fw"></i> Mes Produits</a>
 	</li>
 {% endblock sidebar %}
 
 {% block headline %}
-	<div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Profil de l'entreprise</h1>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
-    <div class="row">
-        <div class="col-lg-4">
-            <div id="logo">
-                <img src="E:\Approeco\Approeco\site\SBA Admin\SBA ADMIN\vendor\datatables\images\tn_ATT-logo.jpg" alt="logo entreprise">
-            </div>
-        </div>
-        <div class="col-lg-8">
-            <p class="panel-header">
-                <strong><h2>Leader dans le monde cellulaire</h2></strong>
-            </p>
-        </div>
-        <!-- /.col-lg-12 -->
-    </div>
+
+            {{user.businessprofile.nom}}
+
 {% endblock headline %}
 
 {% block content %}
 
 <div class="row">
-    <div class="col-lg-4">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <strong><center>L'ORANGERAIE</center></strong>
-                    </div>
-                    <!-- .panel-heading -->
-                    <div class="panel-body">
-                        <div class="panel-group" id="accordion">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        Adresse
-                                    </h4>
-                                </div>
-                                <div class="panel-body">
-                                    Numéro 423, Boulevard du 30 juin, Immeuble Liberté, Kinshasa/Gombe
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <i class="fa  fa-phone"> Téléphone</i>
-                                    </h4>
-                                </div>
-                                <div class="panel-body">
-                                    +243 990 007 777</br>
-                                    +243 998 273 997</br>
-                                    +243 814 937 844
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h4 class="panel-title">
-                                          <i class="fa fa-envelope-o"> E-mail</i>
-                                    </h4>
-                                </div>
-                                <div class="panel-body">
-                                    <a href="#">lorangeraie@example.com</a>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    Site web
-                                </div>
-                                <div class="panel-body">
-                                    <a href="http://www.approeco.net">www.approeco.net</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- .panel-body -->
-                </div>
-                <!-- /.panel -->
-            </div>
-    <!-- /.col-lg-12 -->
-            </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Informations
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a href="#appropos" data-toggle="tab">A propos</a>
-                                </li>
-                                <li><a href="#realisation" data-toggle="tab">Réalisation</a>
-                                </li>
-                                <li><a href="#messages" data-toggle="tab">Réalisation</a>
-                                </li>
-                            </ul>
-
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane fade in active" id="appropos">
-                                    <h4>A propos</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="realisation">
-                                    <h4>Réalisation</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                                <div class="tab-pane fade" id="messages">
-                                    <h4>Messages Tab</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-            </div>
-            
-<div class="row">
+    <div class="col-md-4">
+        <img src="{{user.businessprofile.logo.url}}" class="img-responsive"/>
         <div class="panel panel-default">
             <div class="panel-heading">
-                Copyright 2017
+                <h4 class="panel-title">
+                    Adresse
+                </h4>
             </div>
-            <!-- .panel-heading -->
+            <div class="panel-body">
+                {{user.businessprofile.adresse}}
+                {{user.businessprofile.commune}}
+                {{user.businessprofile.ville}}
+                {{user.businessprofile.province}}
+                {{user.businessprofile.pays}}
+            </div>
         </div>
-        <!-- /.panel -->
-</div>
-<!-- /.row -->
-<p>{% if user.is_authenticated %} {{ user.username }}{% endif %}
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <i class="fa  fa-phone"> Téléphone</i>
+                </h4>
+            </div>
+            <div class="panel-body">
+               {{user.businessprofile.telephone}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <i class="fa fa-envelope-o"> E-mail</i>
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{user.businessprofile.email}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                Site web
+            </div>
+            <div class="panel-body">
+                {{user.businessprofile.website}}
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-8">
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Présentation de l'entreprise
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{user.businessprofile.presentation}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Partenaires
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{user.businessprofile.business_partners}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                     Références
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{user.businessprofile.business_references}}
+            </div>
+        </div>
+
+    </div>
+
 {% endblock %}

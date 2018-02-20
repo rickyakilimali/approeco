@@ -12,17 +12,22 @@ class BusinessProfile(models.Model):
 	presentation = models.TextField("Présentation de l'entreprise", max_length=500, blank=True)
 	logo = models.ImageField("Image", upload_to='logos/', blank=True,
 null=True, max_length=255)
+
 	pays = models.CharField("Pays", max_length=100, blank=True)
 	province = models.CharField("Province", max_length=100, blank=True)
 	ville = models.CharField("Ville", max_length=100, blank=True)
 	commune = models.CharField("Commune", max_length=100, blank=True)
 	adresse = models.TextField(max_length=500, blank=True)
 	telephone = models.CharField(max_length=100, blank=True)
-	
+
+
 	email = models.EmailField("E-mail", max_length=200, blank=True)
 	website = models.URLField("Site Web", max_length=200, blank=True)
 	certifications = models.CharField(max_length=200, blank=True)
-	
+	annee_existence = models.CharField(max_length=100, blank=True)
+	annee_experience = models.CharField(max_length=100, blank=True)
+	travaux_realises = models.CharField(max_length=300, blank=True)
+
 	business_partners = models.CharField(max_length=200, blank=True)
 	business_references = models.CharField(max_length=200, blank=True)
 

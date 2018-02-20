@@ -1,0 +1,36 @@
+{% load catalogue_navigation %}
+
+
+						<li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="/category/"><i class="fa fa-dashboard fa-fw"></i> Catalogue</a>
+                        </li>
+                                             
+                        
+
+                        
+
+	{% for category in categories %}
+		<li>
+			<a href="{{ category.get_absolute_url }}" aria-expanded="false">
+				<i class="fa fa-wrench fa-fw"></i>{{category.name}}<span class="fa arrow"> 
+			</a>
+			<!--
+			{% if category.get_children_count %}
+			<ul aria-expanded="false" class="nav nav-second-level">
+			{% show_sublevel category %}
+			</ul>
+			{% endif %} -->
+		</li>
+	{%endfor%}	
+	

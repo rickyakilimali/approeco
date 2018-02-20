@@ -25,7 +25,7 @@ SECRET_KEY = ')6_mcb4_fg5&+$n0lu9_^zur@x-!mvwymckiu38-8&bc0--yer'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['approeco.pythonanywhere.com',]
 
 
 # Application definition
@@ -85,8 +85,14 @@ WSGI_APPLICATION = 'approeco.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+            },
+        'NAME': 'approeco$dbproduct',
+        'USER': 'approeco',
+        'PASSWORD': 'appria0803',
+        'HOST': 'approeco.mysql.pythonanywhere-services.com',
     }
 }
 
@@ -126,9 +132,10 @@ USE_TZ = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
+LOGIN_REDIRECT_URL = 'login_success'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 
 # Static files (CSS, JavaScript, Images)
@@ -136,7 +143,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
-    
+
 ]
 
 STATIC_URL = '/static/'

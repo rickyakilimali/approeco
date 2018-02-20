@@ -1,45 +1,38 @@
-{% extends 'base.html' %}
+{% extends '_layouts/acheteur.html' %}
 
-{% load catalogue_navigation %}
-{% show_navigation_sidebar %}
 
-  
-  {% block title %}Catalogue{% endblock %}
-  
-{% block page_name %}Liste des catégories{% endblock %}
 
+
+{% block headline %}Catalogue
+
+    {% if current_cat %}
+        {{current_cat.name}}
+    {% endif %}
+
+{% endblock headline %}
 
 {% block content %}
 
 
     {% if categories %}
 
-	
+
 	{% for category in categories %}
 
-        <div class="col-md-3">
-          <!-- Widget: user widget style 1 -->
-          <div class="box box-widget widget-user">
-            <!-- Add the bg color to the header using any of the bg-* classes -->
-            <div class="widget-user-header bg-black" style="background: url('{{category.image.url}}') center center;">
-              
-              
+        <div class="col-md-4">
+            <div class="well well-sm">
+                <a href="{{ category.get_absolute_url }}">
+                    <img src="{{category.image.url }}" alt="Category Image" class="img-responsive"/>
+                    <h4>{{ category.name }}</h4>
+                </a>
             </div>
-            
-            <div class="box-footer">
-              <div class="category-desc">
-                <a href="{{ category.get_absolute_url }}">{{ category.name }}</a>
-              </div>  
-
-              
-            </div>
-          </div>
-          <!-- /.widget-user -->
         </div>
 
-		
+
+
+
 	{% endfor %}
-	
+
 {% else %}
 		Aucune catégorie
 {% endif %}

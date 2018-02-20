@@ -1,0 +1,32 @@
+{% extends '_layouts/base.html' %}
+
+
+{% load widget_tweaks %}
+{% load render_table from django_tables2 %}
+{% load querystring from django_tables2 %}
+{% load title from django_tables2 %}
+{% load django_tables2 %}
+{% load i18n %}
+
+
+{% block sidebar %}
+	<li>
+	<a href="/accounts/profil/"><i class="fa fa-dashboard fa-fw"></i> Mon Profil</a>
+	</li>
+	<li>
+	<a href="/product/my-product/"><i class="fa fa-table fa-fw"></i> Mes Produits</a>
+	</li>
+{% endblock sidebar %}
+
+{% block headline %}
+	Modifier mon offre
+{% endblock headline %}
+
+{% block content %}
+
+<form action="" method="POST">
+{% csrf_token %}
+{{form.as_ul}}
+<input type="submit" value="Modifier le prix"/>
+
+{% endblock %}
