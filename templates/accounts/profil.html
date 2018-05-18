@@ -24,25 +24,36 @@
 <div class="row">
     <div class="col-md-4">
         <img src="{{user.businessprofile.logo.url}}" class="img-responsive"/>
+
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    Adresse
+                    NOMBRES D'ANNÉES D'EXISTENCE
                 </h4>
             </div>
             <div class="panel-body">
-                {{user.businessprofile.adresse}}
-                {{user.businessprofile.commune}}
-                {{user.businessprofile.ville}}
-                {{user.businessprofile.province}}
-                {{user.businessprofile.pays}}
+                {{user.businessprofile.annee_existence|upper}}
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    ADRESSE
+                </h4>
+            </div>
+            <div class="panel-body">
+                {{user.businessprofile.adresse|upper}}
+                {{user.businessprofile.commune|upper}}
+                {{user.businessprofile.ville|upper}}
+                {{user.businessprofile.province|upper}}
+                {{user.businessprofile.pays|upper}}
             </div>
         </div>
 
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <i class="fa  fa-phone"> Téléphone</i>
+                    <i class="fa  fa-phone"> TÉLÉPHONE</i>
                 </h4>
             </div>
             <div class="panel-body">
@@ -52,7 +63,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    <i class="fa fa-envelope-o"> E-mail</i>
+                    <i class="fa fa-envelope-o"> E-MAIL</i>
                 </h4>
             </div>
             <div class="panel-body">
@@ -61,7 +72,7 @@
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
-                Site web
+                SITE WEB
             </div>
             <div class="panel-body">
                 {{user.businessprofile.website}}
@@ -74,31 +85,31 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                     Présentation de l'entreprise
+                     PRESENTATION DE L'ENTREPRISE
                 </h4>
             </div>
             <div class="panel-body">
-                {{user.businessprofile.presentation}}
+                {{user.businessprofile.presentation|upper}}
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                     Partenaires
+                     PARTENAIRES
                 </h4>
             </div>
             <div class="panel-body">
-                {{user.businessprofile.business_partners}}
+                {{user.businessprofile.business_partners|upper}}
             </div>
         </div>
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                     Références
+                     RÉFÉRENCES
                 </h4>
             </div>
             <div class="panel-body">
-                {{user.businessprofile.business_references}}
+                {{user.businessprofile.business_references|upper}}
             </div>
         </div>
 

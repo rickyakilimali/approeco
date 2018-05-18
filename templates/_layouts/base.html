@@ -26,6 +26,9 @@
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="{% static 'theme/vendor/font-awesome/css/font-awesome.min.css' %}">
 
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="{% static 'theme/vendor/jqueryui/jquery-ui.min.css' %}">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -58,18 +61,21 @@
 
                 <!-- /.dropdown -->
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="/logout/">
-                        Logout<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+
+                <a class="dropdown-toggle" data-toggle="dropdown" href="http://approeco.pythonanywhere.com/login/">
+                        Connexion<i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                     <ul class="dropdown-menu dropdown-user">
+                        <li><a href="http://approeco.pythonanywhere.com/login/"><i class="fa fa-user fa-fw"></i> Se Connecter</a>
                         </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="http://approeco.pythonanywhere.com/logout/"><i class="fa fa-gear fa-fw"></i> Se Déconnecter</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
                     </ul>
+
+
+
+
                     <!-- /.dropdown-user -->
                 </li>
                 <!-- /.dropdown -->
@@ -99,7 +105,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">{% block headline %}Blank{% endblock headline %}</h1>
+                          <h1 class="page-header">{% block headline %}Blank{% endblock headline %}</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -114,20 +120,32 @@
     <!-- /#wrapper -->
 
     <!-- jQuery -->
-    <link rel="stylesheet" href="{% static 'theme/vendor/jquery/jquery.min.js' %}">
+    <script src="{% static 'theme/vendor/jquery/jquery.min.js' %}" type="text/javascript"></script>
 
 
     <!-- Bootstrap Core JavaScript -->
-    <link rel="stylesheet" href="{% static 'theme/vendor/bootstrap/js/bootstrap.min.js' %}">
+    <script src="{% static 'theme/vendor/bootstrap/js/bootstrap.min.js' %}" type="text/javascript"></script>
 
 
     <!-- Metis Menu Plugin JavaScript -->
-    <link rel="stylesheet" href="{% static 'theme/vendor/metisMenu/metisMenu.min.js' %}">
+    <script src="{% static 'theme/vendor/metisMenu/metisMenu.min.js' %}" type="text/javascript"></script>
 
 
     <!-- Custom Theme JavaScript -->
-    <link rel="stylesheet" href="{% static 'theme/dist/js/sb-admin-2.js' %}">
+    <script src="{% static 'theme/dist/js/sb-admin-2.js' %}" type="text/javascript"></script>
 
+    <!-- jQuery UI -->
+    <script src="{% static 'theme/vendor/jqueryui/jquery-ui.min.js' %}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#product_type").autocomplete({
+                source: "/category/search_product_type/",
+                minLength: 2,
+            });
+
+        });
+    </script>
 
 </body>
 

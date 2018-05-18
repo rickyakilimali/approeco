@@ -1,17 +1,9 @@
 from product.models import *
 from utils.product_attributes.ameublement import *
-from utils.unite_prix import UNITE
+from utils.unite_prix import *
 
 # Create your models here.
 
-#=====================================================
-# 1. Siège et fauteuil de bureau
-#=====================================================
-class SiegeEtFauteuilDeBureau(productbase.ProductBase):
-	type_siege =models.CharField(max_length=50, choices=TYPE_SIEGE)
-	revetement_siege =models.CharField(max_length=50, choices=REVETEMENT_SIEGE)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 2. Armoire
@@ -41,19 +33,7 @@ class Etagere(productbase.ProductBase):
 	class Meta:
 		ordering = ['prix']
 
-#=====================================================
-# 6. TABLE BUREAU
-#=====================================================
-class TableBureau(productbase.ProductBase):
-	materiau_armoire =models.CharField("MATERIAU ", max_length=20, choices= MATERIAU)
-	longueur =models.CharField("LONGUEUR", max_length=20, choices= LONGUEUR )
-	largeur =models.CharField("LARGEUR", max_length=20, choices= LARGEUR)
-	forme =models.CharField("FORME", max_length=20, choices= FORME)
-	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
-#ordonner les produits
-	class Meta:
-		ordering = ['prix']
+
 #=====================================================
 # 6. TABLE REUNION
 #=====================================================
@@ -71,9 +51,9 @@ class TableReunion(productbase.ProductBase):
 #=====================================================
 class Bureau(productbase.ProductBase):
 	materiau_bureau =models.CharField("MATERIAU ", max_length=20, choices= MATERIAU)
-	longueur =models.CharField("LONGUEUR", max_length=20, choices= LONGUEUR)
-	type_bureau =models.CharField("FORME", max_length=20, choices= TYPE_BUREAU)
-	model_bureau =models.CharField("FORME", max_length=20, choices= MODEL_BUREAU)
+	longueur =models.CharField("LONGUEUR(CENTIMETRE)", max_length=20, choices= LONGUEUR)
+	type_bureau =models.CharField("TYPE DE BUREAU", max_length=20, choices= TYPE_BUREAU)
+	forme =models.CharField("FORME", max_length=20, choices= FORME)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 #ordonner les produits
@@ -104,12 +84,13 @@ class Chaisebureau(productbase.ProductBase):
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
 #=====================================================
 # 7. CONSULTANCE DECORATION
 #=====================================================
 class ConsultanceDecoration(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_HEURE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -119,8 +100,7 @@ class ConsultanceDecoration(productbase.ProductBase):
 #=====================================================
 class DecorationAmenagement(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
-#ordonner les produits
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_POURC_DEVIS)
 	class Meta:
 		ordering = ['prix']
 
@@ -129,7 +109,7 @@ class DecorationAmenagement(productbase.ProductBase):
 #=====================================================
 class DecorationSurface(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_M2)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']

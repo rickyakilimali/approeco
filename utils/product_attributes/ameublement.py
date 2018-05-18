@@ -90,6 +90,12 @@ LONGUEUR= (
 		('120CM','120CM'),
 		('150CM','150CM'),
 		('170CM','170CM'),
+        ('140CM','140CM'),
+        ('160CM','160CM'),
+        ('180CM','180CM'),
+        ('120CM','120CM'),
+        ('150CM','150CM'),
+        ('170CM','170CM'),
 		('1.40 MTR','1.40 MTR'),
 		('1.60 MTR','1.60 MTR'),
 		('1.80 MTR','1.80 MTR'),
@@ -117,6 +123,7 @@ NOMBRE_CASES= (
 FORME= (
 		('RECTANGULAIRE','RECTANGULAIRE'),
 		('OVALE','OVALE'),
+		('EN L','EN L'),
 
 	)
 

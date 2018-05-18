@@ -2,7 +2,7 @@
 
 
 
-{% block headline %}Catalogue
+{% block headline %}
     {% if current_cat %}
         {{current_cat.name}}
     {% endif %}
@@ -10,6 +10,8 @@
 {% endblock headline %}
 
 {% block content %}
+<div class="row"><a href="http://approeco.pythonanywhere.com/category/">Catalogue></a><a href="">{{next_category_slug.name}}></a><a href="">{{current_cat.name}}></a><a href="">{{ producttype.name }}</a></div>
+
     {% if producttypes %}
 
 

@@ -18,6 +18,8 @@ from django.contrib import admin
 from .views import HomePageView, login_success, LoginView, LogOutView
 from django.conf.urls.static import static
 from django.conf import settings
+from pub.views import imageviewer,imageviewer2,imageviewer3,imageviewer1
+from sendemail.views import emailView,successView
 
 
 urlpatterns = [
@@ -33,6 +35,13 @@ urlpatterns = [
     url(r'^accounts/', include('accounts.urls')),
     url(r'^product/', include('product.urls')),
     url(r'^quotation/', include('quotation.urls')),
+
+    url(r'^image/$', imageviewer, name='image.html'),
+	url(r'^page1/$', imageviewer1, name='image.html'),
+	url(r'^page2/$', imageviewer2, name='image.html'),
+	url(r'^page3/$', imageviewer3, name='image.html'),
+	url(r'^email/$', emailView, name='email.html'),
+	url(r'^email/succes/$', successView, name='success'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

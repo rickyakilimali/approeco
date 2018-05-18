@@ -1,0 +1,14 @@
+<!-- templates/email.html -->
+{% load staticfiles %}
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<!-- <link rel="stylesheet" href="{% static 'css/design.css' %}"> -->
+<link rel="stylesheet" href="{{ STATIC_URL }}static/css/design.css" type="text/css">
+<h1>Faite votre reservation en un clic!</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+      <button type="submit">Send</button>
+    </div>
+</form>

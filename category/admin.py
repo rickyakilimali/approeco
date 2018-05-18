@@ -28,6 +28,7 @@ class ProductTypeAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
     list_display = ('name', 'description','product_type_image', 'category', 'product_model')
 
 
+
 	#fields = ['name', 'slug','product_type_image', 'category','product_model', 'description']
 
 

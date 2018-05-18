@@ -1,6 +1,6 @@
 from product.models import *
 from utils.product_attributes.batiment_construction import *
-from utils.unite_prix import UNITE
+from utils.unite_prix import *
 
 
 #=====================================================
@@ -11,7 +11,7 @@ class Peinture(productbase.ProductBase):
 	composition =models.CharField("COMPOSITION", max_length=20, choices= COMPOSITION)
 	teinte =models.CharField("TEINTE", max_length=20, choices= TEINTE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG_LITRE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -25,7 +25,7 @@ class PeintureSpeciale(productbase.ProductBase):
 	domaine_application=models.CharField("DOMAINE APPLICATION", max_length=50, choices= DOMAINE_APPLICATION)
 	caracteristique=models.CharField("CARACTERISTIQUE", max_length=20, choices= CARACTERISTIQUE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG_LITRE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -37,7 +37,7 @@ class Brique(productbase.ProductBase):
 	type_brique=models.CharField("TYPE DE BRIQUE", max_length=50, choices= TYPE_BRIQUE)
 	largeur =models.CharField("LARGEUR", max_length=20, choices= LARGEUR_BRIQUE )
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PIECE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -70,13 +70,13 @@ class Carreau(productbase.ProductBase):
 #=====================================================
 class TravauxPeinture(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_POURC_DEVIS)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
 
 #=====================================================
-#  LOCATIONDEPOT
+#  LOCATION DEPOT
 #=====================================================
 
 class LocationDepot(productbase.ProductBase):
@@ -87,7 +87,7 @@ class LocationDepot(productbase.ProductBase):
 	commune  = models.CharField("COMMUNE",max_length=100, choices=COMMUNE)
 	surface  = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_MOIS)
 
 	#ordonner les produits
 	class Meta:
@@ -119,7 +119,7 @@ class Moellon(productbase.ProductBase):
 	#les attributs
 	type_moellon = models.CharField("TYPE MOELLON",max_length=100, choices=TYPE_MOELLON)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_TONE)
 
 	#ordonner les produits
 	class Meta:
@@ -133,7 +133,7 @@ class MissionControleChantier(productbase.ProductBase):
 	#les attributs
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_MOIS)
 
 	#ordonner les produits
 	class Meta:
@@ -178,7 +178,50 @@ class LocationRemorqueMatadi(productbase.ProductBase):
 #=====================================================
 class InstallationElectrique(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_POURC_DEVIS)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
+#=====================================================
+# CONSTRUCTION BATIMENT
+#=====================================================
+class ConstructionBatiment(productbase.ProductBase):
+	qualite_du_terrain=models.CharField("QUALITE DU TERRAIN", max_length=50, choices= QUALITE_DU_TERRAIN)
+	usage_du_batiment=models.CharField("USAGE DU BATIMENT", max_length=50, choices= USAGE_DU_BATIMENT)
+	nombre_d_etages=models.CharField("NOMBRE D'ETAGE", max_length=50, choices= NOMBRE_ETAGE)
+	nombre_de_pieces=models.CharField("NOMBRE DE PIECES", max_length=50, choices= NOMBRE_DE_PIECES)
+	type_de_terrain=models.CharField("TYPE DE TERRAIN", max_length=50, choices= TYPE_DE_TERRAIN)
+	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_M2)
+#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+#=====================================================
+# CONSTRUCTION ROUTE
+#=====================================================
+class ConstructionRoute(productbase.ProductBase):
+	type_de_route=models.CharField("TYPE DE ROUTE", max_length=50, choices= TYPE_DE_ROUTE)
+	largeur_de_route=models.CharField("LARGEUR DE ROUTE", max_length=50, choices= LARGEUR_DE_ROUTE)
+	couche_de_tout_venant=models.CharField("COUCHE DE TOUT VENANT", max_length=50, choices= COUCHE_DE_TOUT_VENANT)
+	couche_de_beton=models.CharField("COUCHE DE BETON", max_length=50, choices= COUCHE_DE_BETON)
+	couche_de_terre_jaune=models.CharField("COUCHE DE TERRE JAUNE", max_length=50, choices= COUCHE_DE_TERRE_JAUNE)
+	matiere=models.CharField("MATIERE", max_length=50, choices= MATIERE)
+	canalisation_d_eau=models.CharField("CANALISATION D'EAU", max_length=50, choices= CANALISATION_EAU)
+	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KM)
+#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+#=====================================================
+# 18. CHAMBRE
+#=====================================================
+class Chambre(productbase.ProductBase):
+	nombre_etoile =models.CharField("NOMBRE ETOILE", max_length=20, choices= NOMBRE_ETOILE)
+	acces_wifi_gratuit =models.CharField("ACCES WIFI GRATUIT", max_length=20, choices= ACCES_WIFI_GRATUIT)
+	petit_dejeune_gratuit =models.CharField("PETIT DEJEUNE GRATUIT", max_length=20, choices= PETIT_DEJEUNE_GRATUIT)
+	type_lit =models.CharField("TYPE DE LIT", max_length=20, choices= TYPE_LIT)
+	avenue =models.CharField("AVENUE", max_length=20, choices= AVENUE)
+	commune =models.CharField("COMMUNE", max_length=20, choices= COMMUNE)
+	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)

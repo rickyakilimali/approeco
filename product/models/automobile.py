@@ -1,6 +1,6 @@
 from product.models import *
 from utils.product_attributes.automobile import *
-from utils.unite_prix import UNITE
+from utils.unite_prix import *
 
 # Create your models here.
 
@@ -8,77 +8,84 @@ from utils.unite_prix import UNITE
 # 1. Pièce de rechange - Refroidissement
 #=====================================================
 class PieceDeRechangeRefroidissement(productbase.ProductBase):
-	pieces_rechange_refroidissement=models.CharField(max_length=50, choices=PIECE_RECHANGE_REFROIDISSEMENT)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	type_piece_refroidissement=models.CharField("TYPE_PIECE_REFROIDISSEMENT",max_length=50, choices=TYPE_PIECE_REFROIDISSEMENT)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 2. Pièce de rechange - Direction suspension
 #=====================================================
 class PieceDeRechangeDirectionSuspension(productbase.ProductBase):
-	pieces_rechange_direction_suspension=models.CharField(max_length=50, choices=PIECE_RECHANGE_DIRECTION_SUSPENSION)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE)
+    type_piece_direction_suspension=models.CharField("PIECE RECHANGE DIRECTION-SUSPENSION",max_length=50, choices=PIECE_DIRECTION_SUSPENSION)
+    modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+    marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+    annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+    annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+    prix = models.DecimalField(max_digits=10, decimal_places=2)
+    units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 3. Pièce de rechange - Transmission
 #=====================================================
 class PieceDeRechangeTransmission(productbase.ProductBase):
-	pieces_rechange_transmission=models.CharField(max_length=50, choices=PIECE_RECHANGE_TRANSMISSION)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	type_piece_transmission=models.CharField("PIECE RECHANGE TRANSMISSION",max_length=50, choices=PIECE_RECHANGE_TRANSMISSION)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 4. Pièce de rechange - Carrosserie
 #=====================================================
 class PieceDeRechangeCarrosserie(productbase.ProductBase):
-	pieces_rechange_carrosserie=models.CharField(max_length=50, choices=PIECE_RECHANGE_CARROSSERIE)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	type_piece_carosserie=models.CharField("PIECE RECHANGE CARROSSERIE",max_length=50, choices=PIECE_RECHANGE_CARROSSERIE)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 5. Pièce de rechange - Electrique
 #=====================================================
 class PieceDeRechangeElectrique(productbase.ProductBase):
-	pieces_rechange_electrique=models.CharField(max_length=50, choices=PIECE_RECHANGE_ELECTRIQUE)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	type_piece_electrique=models.CharField("PIECE RECHANGE ELECTRIQUE",max_length=50, choices=PIECE_RECHANGE_ELECTRIQUE)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 6. Pièce de rechange - Embrayage
 #=====================================================
 class PieceDeRechangeEmbrayage(productbase.ProductBase):
-	pieces_rechange_embrayage =models.CharField(max_length=50, choices=PIECE_RECHANGE_EMBRAYAGE)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	type_piece_embrayage =models.CharField("PIECE RECHANGE EMBRAYAGE",max_length=50, choices=PIECE_RECHANGE_EMBRAYAGE)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
-# 7. Pièce de rechange - Embrayage
+# 7. Pièce de rechange - Freinage
 #=====================================================
 class PieceDeRechangeFreinage(productbase.ProductBase):
 	pieces_rechange_freinage =models.CharField(max_length=50, choices=PIECE_RECHANGE_FREINAGE)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
@@ -86,22 +93,30 @@ class PieceDeRechangeFreinage(productbase.ProductBase):
 #=====================================================
 class PieceRevisionMoteur(productbase.ProductBase):
 	pieces_revision_moteur =models.CharField(max_length=50, choices=PIECE_REVISION_MOTEUR)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
+	modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+	marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+	annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+	annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+	prix = models.DecimalField(max_digits=10, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE)
 
 #=====================================================
 # 9. Pièce rechange moteur
 #=====================================================
 class PieceRechangeMoteur(productbase.ProductBase):
-	pieces_rechange_moteur =models.CharField(max_length=50, choices=PIECE_RECHANGE_MOTEUR)
-	annee_debut_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
-	annee_fin_fabrication_vehicule=models.CharField(max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
-
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE)
+    pieces_rechange_moteur=models.CharField("PIECE RECHANGE MOTEUR", max_length=50, choices=PIECE_RECHANGE_MOTEUR)
+    modele=models.CharField("MODELE",max_length=50, choices=PIECE_RECHANGE_MODELE)
+    marque=models.CharField("MARQUE",max_length=50, choices=PIECE_RECHANGE_MARQUE)
+    annee_debut=models.CharField("ANNEE DEBUT FABRICATION VEHICULE",max_length=50, choices=ANNEE_DEBUT_FABRICATION_VEHICULE)
+    annee_fin=models.CharField("ANNEE FIN FABRICATION VEHICULE",max_length=50, choices=ANNEE_FIN_FABRICATION_VEHICULE)
+    prix = models.DecimalField(max_digits=10, decimal_places=2)
+    units = models.CharField(max_length=50, choices=UNITE)
+#=====================================================
+# 10. Entretien et reparation de vehicule
+#=====================================================
+class EntretienEtReparationDeVehicule(productbase.ProductBase):
+    prix = models.DecimalField(max_digits=10, decimal_places=2)
+    units = models.CharField(max_length=50, choices=UNITE_POURC_DEVIS)
 
 #=====================================================
 # 10. LOCATION VEHICULE
@@ -111,7 +126,7 @@ class LocationVehicule(productbase.ProductBase):
 	marque=models.CharField("MARQUE DU VEHICULE", max_length=100, choices= MARQUE_VOITURE)
 	modele=models.CharField("MODELE DU VEHICULE", max_length=100, choices= MODELE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_JOUR)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -272,6 +287,19 @@ class Batterie(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# CABLE DE REMORQUAGE
+#=====================================================
+
+class CableDeRemorquage(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']

@@ -115,7 +115,7 @@ PLAGE_SURFACE = (
 AVENUE = (
 
 		('7EME RUE INDUSTRIEL', '7EME RUE INDUSTRIEL'),
-
+        ('7EME RUE', '7EME RUE'),
 	)
 
 COMMUNE = (
@@ -126,9 +126,9 @@ COMMUNE = (
 
 SURFACE_STAND = (
 
-		('6M²', '6M²'),
-        ('9M²', '9M²'),
-        ('12M²', '12M²'),
+		('6M2', '6M2'),
+        ('9M2', '9M2'),
+        ('12M2', '12M2'),
 
 	)
 
@@ -163,4 +163,145 @@ NOMBRE_PIED = (
         ('2x20', '2x20'),
 
 	)
+QUALITE_DU_TERRAIN= (
 
+		('SABLONEUX','SABLONEUX'),
+		('ARGILEUX','ARGILEUX'),
+		('MARECAGEUX','MARECAGEUX'),
+		('ALCALINO-TERREUX','ALCALINO-TERREUX'),
+
+
+	)
+USAGE_DU_BATIMENT= (
+
+		('ENTREPOT','ENTREPOT'),
+		('COMMERCIAL ORDINAIRE','COMMERCIAL ORDINAIRE'),
+		('COMMERCIAL LUXUEUX','COMMERCIAL LUXUEUX'),
+		('RESIDENTIEL ORDINAIRE','RESIDENTIEL ORDINAIRE'),
+		('RESIDENTIEL LUXUEUX','RESIDENTIEL LUXUEUX'),
+
+	)
+NOMBRE_ETAGE= (
+		('0','0'),
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+		('6','6'),
+		('7','7'),
+		('8','8'),
+		('9','9'),
+		('10','10'),
+
+
+	)
+NOMBRE_DE_PIECES= (
+		('1 -10','1 -10'),
+		('11 - 20','11 - 20'),
+		('21 - 30','21 - 30'),
+		('31 - 40','31 - 40'),
+		('41 - 50','41 - 50'),
+		('51 - 60','51 - 60'),
+		('61 - 70','61 - 70'),
+		('71 - 80','71 - 80'),
+		('81 - 90','81 - 90'),
+		('91 -100','91 -100'),
+		('1 -10','1 -10'),
+
+
+	)
+TYPE_DE_TERRAIN= (
+		('TERRAIN INCLINÉ','TERRAIN INCLINÉ'),
+		('TERRAIN PLAT','TERRAIN PLAT'),
+
+    )
+TYPE_DE_ROUTE= (
+		('ROUTE DE DESSERTE AGRICOLE','ROUTE DE DESSERTE AGRICOLE'),
+		('ROUTE ASPHALTEE','ROUTE ASPHALTEE'),
+		('ROUTE STABILISEE','ROUTE STABILISEE'),
+
+	)
+LARGEUR_DE_ROUTE= (
+		('4M','4M'),
+		('6M','6M'),
+
+
+	)
+COUCHE_DE_TOUT_VENANT= (
+		('NON APPLICABLE','NON APPLICABLE'),
+		('15M³ DE 0/31 SUR 10 M','15M³ DE 0/31 SUR 10 M'),
+
+
+
+	)
+COUCHE_DE_BETON= (
+		('NON APPLICABLE','NON APPLICABLE'),
+		('9M³ DE BETON SUR 10M','9M³ DE BETON SUR 10M'),
+
+
+	)
+COUCHE_DE_TERRE_JAUNE= (
+		('NON APPLICABLE','NON APPLICABLE'),
+		('15M³ DE TERRE JAUNE SUR 10M','15M³ DE TERRE JAUNE SUR 10M'),
+
+
+	)
+MATIERE= (
+		('NON APPLICABLE','NON APPLICABLE'),
+		('ASPHALTE','ASPHALTE'),
+		('CIMENT','CIMENT'),
+
+
+
+	)
+CANALISATION_EAU= (
+		('OUI','OUI'),
+
+	)
+NOMBRE_ETOILE = (
+
+		('1','1'),
+		('2','2'),
+		('3','3'),
+		('4','4'),
+		('5','5'),
+
+	)
+
+ACCES_WIFI_GRATUIT = (
+		('OUI','OUI'),
+		('NON','NON'),
+
+		)
+
+PETIT_DEJEUNE_GRATUIT = (
+		('OUI','OUI'),
+		('NON','NON'),
+		)
+
+
+TYPE_LIT = (
+		('LIT SIMPLE','LIT SIMPLE'),
+		('LIT DOUBLE','LIT DOUBLE'),
+		)
+
+
+
+
+
+AVENUE = (
+		('SENEGALAIS','SENEGALAIS'),
+		('KASAVUBU','KASAVUBU'),
+		('LUAMBO MAKIADI','LUAMBO MAKIADI'),
+		('KASAI','KASAI'),
+
+		)
+
+
+COMMUNE = (
+		('GOMBE','GOMBE'),
+		('KASAVUBU','KASAVUBU'),
+		('LIMETE','LIMETE'),
+		('BANDALUNGWA','BANDALUNGWA'),
+		)

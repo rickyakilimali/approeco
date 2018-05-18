@@ -16,5 +16,10 @@ class ProductBase(models.Model):
 	def __str__(self):
 		return self.nom
 
+	def the_model_name(self):
+		return self.__class__.__name__
+
+
+
 
 

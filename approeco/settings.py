@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django_filters',
     'import_export',
 	'widget_tweaks',
+	'pub',
+	'papeterie',
 ]
 
 MIDDLEWARE = [
@@ -147,3 +149,10 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+EMAIL_HOST=''
+EMAIL_HOST_USER=''
+EMAIL_HOST_PASSWORD=''
+EMAIL_PORT=''
+EMAIL_USE_TLS =True

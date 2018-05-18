@@ -13,7 +13,7 @@
                 <li>
                 	<!-- <img src="{{MEDIA_PREFIX}}/{{categorie.image}}" alt="Picture of Rango" /> -->
                 	<a href="{{ category.get_absolute_url }}"> {{ category.name }} </a>
-                	
+
                 </li>
                 {% endfor %}
             </ul>
@@ -21,5 +21,5 @@
         {% else %}
             <strong>Aucune catégorie présente.</strong>
         {% endif %}
-        
+
   {% endblock %}

@@ -13,3 +13,4 @@ from .batiment_construction import *
 from .transport import *
 from .energie import *
 from .industrie import *
+from .produit_pharmaceutique import *

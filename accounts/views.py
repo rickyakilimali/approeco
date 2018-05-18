@@ -11,15 +11,18 @@ from braces.views import LoginRequiredMixin, GroupRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.models import Group
-
+from django.contrib.auth.mixins import UserPassesTestMixin
 # Create your views here.
 
-class BusinessProfileDetailView(DetailView):
+class BusinessProfileDetailView(UserPassesTestMixin, DetailView):
 
     model = User
     context_object_name = 'business'
     template_name = 'businessprofile_detail.html'
     #group_required = 'acheteur'
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='acheteurs').exists()
 
 class BuyerLoginView(generic.FormView):
     form_class = LoginForm
@@ -68,8 +71,11 @@ class LogOutView(generic.RedirectView):
         logout(request)
         return super(LogOutView, self).get(request, *args, **kwargs)
 
-class ProfilView(TemplateView):
+class ProfilView(UserPassesTestMixin,TemplateView):
     template_name = 'accounts/profil.html'
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='vendeurs').exists()
 
 
 
@@ -80,10 +86,14 @@ class ProfileView(LoginRequiredMixin, GroupRequiredMixin,DetailView):
         return self.request.user.businessprofile
 
 
-class BusinessProfileUpdate(UpdateView):
+class BusinessProfileUpdate(UserPassesTestMixin,UpdateView):
     model = BusinessProfile
     fields = ['logo','presentation','pays', 'province', 'ville', 'commune', 'adresse', 'telephone', 'email', 'website', 'certifications', 'business_partners', 'business_references']
     template_name_suffix = '_update_form'
+
+    def test_func(self):
+        return self.request.user.groups.filter(name='vendeurs').exists()
+
 
     def get_object(self):
         return self.request.user.businessprofile

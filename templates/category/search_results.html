@@ -1,0 +1,48 @@
+{% extends '_layouts/acheteur.html' %}
+
+
+
+
+{% block headline %}Catalogue
+
+    {% if current_cat %}
+        {{current_cat.name}}
+    {% endif %}
+
+{% endblock headline %}
+
+{% block content %}
+
+
+<hgroup class="mb20">
+	<h1>Résultats</h1>
+	<h2 class="lead"><strong class="text-danger">{{found_products|length}}</strong> resultats répondant au critère <strong class="text-danger">{{query_string}}</strong> ont été trouvé</h2>
+</hgroup>
+
+<hr>
+{% if found_products %}
+    <section class="col-xs-12 col-sm-6 col-md-12">
+    {% for each_found_product in found_products %}
+
+
+		<article class="row">
+			<div class="col-xs-12 col-sm-12 col-md-3">
+				<a href="{{ each_found_product.get_absolute_url }}">
+                    <img src="{{each_found_product.product_type_image.url}}" alt="Picture of Product" class="img-responsive" width="60%" height="60%"/>
+                </a>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-9 excerpet">
+				<h3><a href="{{ each_found_product.get_absolute_url }}" title="">{{ each_found_product.name }}</a></h3>
+				<p>Classification:{{each_found_product.category.name}}</p>
+
+
+			</div>
+			<span class="clearfix borda"></span>
+		</article>
+    {% endfor %}
+    </section>
+{% endif %}
+
+
+{% endblock %}

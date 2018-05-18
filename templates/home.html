@@ -3,5 +3,5 @@
 {% block headline %}<h1>Bienvenue sur ApproEco!</h1>{% endblock headline %}
 
 {% block content %}
-<p>Howdy{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p>
+<p>Bienvenue sur ApproEco!{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p>
 {% endblock %}

@@ -1,0 +1,84 @@
+{% extends '_layouts/acheteur.html' %}
+
+
+
+{% load widget_tweaks %}
+{% load render_table from django_tables2 %}
+{% load querystring from django_tables2 %}
+{% load title from django_tables2 %}
+{% load django_tables2 %}
+{% load i18n %}
+{% load product_extra_tags %}
+{% block headline %}Catalogue {{product_type.name}}
+<img src="{{product_type.product_type_image.url}}" alt="Picture of Product" class="img-responsive"/>
+
+
+
+{% endblock headline %}
+
+
+{% block content %}
+
+
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        Résultats
+    </div>
+                        <!-- /.panel-heading -->
+    <div class="panel-body">
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <td><strong>Vendeur</strong></td>
+                    {% for field in fields %}
+                        <td style="text-align:center"><strong>{{field}}</strong></td>
+                    {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in product_list|slice:":5" %}
+                    <tr>
+                        <td><a target="_blank" href="{% url 'businessprofile-detail' product.vendeur.id %}"><img src="{{product.vendeur.businessprofile.logo.url}}" alt="Picture of Product" class="img-responsive" height="70" width="70"/>{{ product.vendeur.businessprofile.nom }}</a></td>
+                    {% for field in fields %}
+                        <td style="text-align:center;vertical-align:middle">{{product|from_string_to_field:field}}</td>
+                    {% endfor %}
+
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+                            <!-- /.table-responsive -->
+    </div>
+                        <!-- /.panel-body -->
+</div>
+
+
+
+<div class="container">
+
+<form id="myform" method="post" target="_blank" action="/quotation/ma-new-quotation-simple/">
+    {% csrf_token %}
+    <input type="hidden" name="model" value="{{ model }}" >
+    <input type="hidden" name="query" value="{{ criteria2 }}" >
+    <fieldset name="ids">
+            {% for product in product_list|slice:":5" %}
+
+            <input type="hidden" name="id" value="{{product.pk }}" >
+
+            {% endfor %}
+    </fieldset>
+
+    <button class="btn btn-success" id="print" type="submit" value="Télécharger le résultat" class="btn btn-primary"><span class="glyphicon glyphicon-print"></span>Imprimer
+            </button>
+</form>
+</div>
+
+
+{% endblock %}
+
+

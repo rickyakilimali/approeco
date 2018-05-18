@@ -1,7 +1,7 @@
 from product.models import *
 from utils.product_attributes.informatique import *
 #MARQUE_INFORMATIQUE, TYPE_DE_PROCESSEUR, CAPACITE_DISQUE_DUR, CAPAPCITE_MEMOIRE_RAM, SYSTEME_EXPLOITATION, TAILLE_ECRAN, TECHNOLOGIE_IMPRESSION, COULEUR, RECTOVERSO, MULTIFONCTION, FORMAT
-from utils.unite_prix import UNITE
+from utils.unite_prix import *
 
 #=====================================================
 # 1. IMPRIMANTE
@@ -167,8 +167,8 @@ class Switch(productbase.ProductBase):
 class Videoprojecteur(productbase.ProductBase):
 
 	#les attributs
-	marque = models.CharField("MARQUE",max_length=50, choices=MARQUE_INFORMATIQUE)
-	puissance= models.CharField("PUISSANCE DU RETOPROJECTEUR",max_length=50, choices= PUISSANCE_VIDEOPROJECTEUR)
+	marque = models.CharField("MARQUE",max_length=50, choices=MARQUE_VIDEOPROJECTEUR)
+	puissance= models.CharField("PUISSANCE",max_length=50, choices= PUISSANCE_VIDEOPROJECTEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 
@@ -238,7 +238,7 @@ class CableInformatique(productbase.ProductBase):
 
 	#les attributs
 	type_cable = models.CharField("TYPE CABLE",max_length=50, choices= TYPE_CABLE_INFORMATIQUE)
-	longueur = models.CharField("LONGUEUR CABLE",max_length=50, choices= LONGUEUR_CABLE_INFORMATIQUE)
+	longueur = models.CharField("LONGUEUR CABLE(METRE)",max_length=50, choices= LONGUEUR_CABLE_INFORMATIQUE)
 	prix = models.DecimalField("PRIX",max_digits=5, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 
@@ -345,7 +345,7 @@ class Serveur(productbase.ProductBase):
 class AdresseIpPublique(productbase.ProductBase):
 	nombre_adresse_maximum =models.CharField("NOMBRE ADRESSE IP PUBLIQUE MAXIMUM", max_length=20, choices= NOMBRE_ADRESSE_MAXIMUM)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_AN)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -358,7 +358,7 @@ class BandePassante(productbase.ProductBase):
 	debit_upload =models.CharField("DEBIT EN UPLOAD", max_length=20, choices= DEBIT_UPLOAD)
 	frais_installation =models.CharField("FRAIS INSTALLATION", max_length=20, choices= FRAIS_INSTALLATION)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_MOIS)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -372,7 +372,7 @@ class BandePassante(productbase.ProductBase):
 class HebergementSiteWeb(productbase.ProductBase):
 	type_hebergement=models.CharField("TYPE HEBERGEMENT", max_length=50, choices= TYPE_HEBERGEMENT)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_AN)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -405,7 +405,7 @@ class CahierCharges(productbase.ProductBase):
 class Helpdesk(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_HEURE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -437,7 +437,7 @@ class IntegrationCustomisationStandard(productbase.ProductBase):
 class MaintenanceBackup(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_MOIS)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -448,7 +448,7 @@ class MaintenanceBackup(productbase.ProductBase):
 class NumerisationDonnees(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PAGE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -460,6 +460,35 @@ class CreationSiteWeb(productbase.ProductBase):
 
 	#les attributs
 	type_site_web  = models.CharField("TYPE DE SITE",max_length=100, choices=TYPE_SITE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# INSTALLATION RESEAU INFORMATIQUE
+#=====================================================
+class InstallationReseauInformatique(productbase.ProductBase):
+
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# INSTALLATION RESEAU TELEPHONIQUE
+#=====================================================
+class InstallationReseauTelephonique(productbase.ProductBase):
+
+	#les attributs
+	ipbx_voip = models.CharField("IPBX & VOIP",max_length=100, choices=IPBX_VOIP)
+	call_manager  = models.CharField("CALL MANAGER",max_length=100, choices=CALL_MANAGER)
+
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 

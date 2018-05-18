@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>{% block title %}ApproEco{% endblock title %}</title>
+    {% load static %}
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'theme/vendor/bootstrap/css/bootstrap.min.css' %}">
+
+
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="{% static 'theme/vendor/font-awesome/css/font-awesome.min.css' %}">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+  @import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+  body, h1, h2, h3, h4, h5, h6{
+    font-family: 'Bree Serif', serif;
+  }
+  </style>
+ <!-- /#bouton imprimer -->
+            <script type="text/javascript">
+                function initButtonImprimer() {
+                var bouton = document.getElementById('button-imprimer');
+                bouton.onclick = function(e) {
+                print();
+                return false;
+             }
+            }
+        </script>
+
+</head>
+
+<body>
+
+{% load product_extra_tags %}
+{% load widget_tweaks %}
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <h1>
+
+                        {% load static %} <img src="{% static "logo-site4.png" %}" alt="Hi!" />
+
+
+                </h1>
+            </div>
+            <div class="col-xs-6 text-right">
+                <h1>QUOTATIONS</h1>
+                <small>Date: {% now "jS F Y H:i" %}</small>
+
+            </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-5">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>Produit Recherché: {{product_model}}</h4>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-5 col-xs-offset-2 text-right">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>Critère de recherche</a></h4>
+                        </div>
+                        <div class="panel-body">
+
+                            {% for key, values in criteria.items %}
+                                <small>{{key}} : {{values}}</small></br>
+
+                            {% endfor %}
+                        </div>
+                    </div>
+
+                </div>
+            </div> <!-- / end client details section -->
+
+
+            <table class="table table-bordered" >
+                <thead style="background-color: #4CAF50;border:1px solid black">
+                    <tr>
+                        <td><strong>Vendeur</strong></td>
+                    {% for field in fields %}
+                        <td style="text-align:center"><strong>{{field}}</strong></td>
+                    {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for product in product_list %}
+                    <tr>
+                        <td><img src="{{product.vendeur.businessprofile.logo.url}}" alt="Picture of Product" class="img-responsive" height="70" width="70" style="border:1px solid black"/>{{ product.vendeur.businessprofile.nom }}</a></td>
+                    {% for field in fields %}
+                        <td style="text-align:center;vertical-align:middle">{{product|from_string_to_field:field}}</td>
+                    {% endfor %}
+
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+
+
+                <div class="row">
+
+                    <div class="col-xs-7">
+                        <div class="span7">
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h4><small>Informations de Contact</small></h4>
+                                </div>
+                                <div class="panel-body" style="font-size:85%">
+                                    {% for product in product_list %}
+                                    <small>{{ product.vendeur.businessprofile.nom }}: {{ product.vendeur.businessprofile.telephone }}</small></br>
+                                    {% endfor %}
+
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-5">
+                        <div class="panel panel-info">
+
+                            <div class="panel-body">
+                                <p style="text-align:center; font-size:70%"> ApproEco<br>Trouver les meilleurs produits aux meilleurs prix.<br>
+                                    Tél : + 243 82 491 9504 / + 243 99 044 2080
+                                    E mail : info@approeco.net – Site : www.approeco.net<br>
+                                    RCCM : CD/KNM/RCCM/17-B-00211, ID NAT : 01-9-N22312G, Numéro Impôt :A1713211E
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+  <div>
+
+    <input type="button" id="button-imprimer" value="Imprimer" />
+
+  </div>
+
+  <script type="text/javascript">
+    initButtonImprimer();
+  </script>
+
+
+
+
+
+
+
+
+
+        </div> <!-- /row -->
+
+
+
+    </div> <!-- /container -->
+
+
+
+
+
+
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="{% static 'theme/vendor/jquery/jquery.min.js' %}">
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <link rel="stylesheet" href="{% static 'theme/vendor/bootstrap/js/bootstrap.min.js' %}">
+
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <link rel="stylesheet" href="{% static 'theme/vendor/metisMenu/metisMenu.min.js' %}">
+
+
+    <!-- Custom Theme JavaScript -->
+    <link rel="stylesheet" href="{% static 'theme/dist/js/sb-admin-2.js' %}">
+
+
+
+
+
+
+
+</body>
+
+</html>
