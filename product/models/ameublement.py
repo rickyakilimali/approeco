@@ -126,4 +126,62 @@ class Tableau(productbase.ProductBase):
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
+#=====================================================
+#POUBELLE
+#=====================================================
+
+class Poubelleuac(productbase.ProductBase):
+	#les attributs
+	type_poubelle  = models.CharField("TYPE DE POUBELLE",max_length=100, choices=TYPE_POUBELLE)
+	matiere= models.CharField("MATIERE",max_length=100, choices=MATIERE_POUBELLE)
+	volume= models.CharField("VOLUME (LITRE)",max_length=100, choices=VOLUME_POUBELLE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+#	VASE
+#=====================================================
+
+class Vase(productbase.ProductBase):
+	#les attributs
+	dimension_carreau  = models.CharField("DIMENSION CARREAU",max_length=100, choices=DIMENSION_VASE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#====== 23-05-2018 =================================
+# CAISSON DE BUREAU
+#===================================================
+
+class CaissonDeBureau(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#====== 23-05-2018 =================================
+# TABLE D’ORDINATEUR
+#===================================================
+
+class TableOrdinateur(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
 

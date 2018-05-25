@@ -1,5 +1,4 @@
 UNITE = (
-        ('USD', 'US$'),
         ('USD','USD'),
         ('$/KM','$/KM'),
         ('% DES DROITS ET TAXES','% DES DROITS ET TAXES'),
@@ -17,6 +16,11 @@ UNITE_USD_AN = (
 
 UNITE_USD_BOITE = (
         ('USD/BOITE', 'USD/BOITE'),
+
+    )
+
+UNITE_USD_BOTTE = (
+        ('USD/BOTTE', 'USD/BOTTE'),
 
     )
 
@@ -58,7 +62,6 @@ UNITE_USD_JEU = (
 UNITE_USD_JOUR = (
 
         ('USD/JOUR', 'USD/JOUR'),
-        ('US/JOUR','US/JOUR'),
 
     )
 
@@ -96,12 +99,14 @@ UNITE_USD_M = (
 UNITE_USD_M2 = (
 
         ('USD/M2', 'USD/M2'),
-        ('USD/M²','USD/M²'),
-        ('$/M2','$/M2'),
 
     )
 
+UNITE_USD_MIN = (
 
+        ('USD/MIN', 'USD/MIN'),
+
+    )
 
 UNITE_USD_MODULE = (
 
@@ -149,6 +154,12 @@ UNITE_USD_PIECE = (
 
         ('USD/PIECE', 'USD/PIECE'),
         ('USD/PCE','USD/PCE'),
+
+    )
+
+UNITE_USD_POSTE = (
+
+        ('USD/POSTE', 'USD/POSTE'),
 
     )
 

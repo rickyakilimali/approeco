@@ -7,7 +7,7 @@ from utils.unite_prix import *
 #=====================================================
 class Riz(productbase.ProductBase):
 
-	variete =models.CharField("VARIETE",max_length=100, choices=VARIETE)
+	variete = models.CharField("VARIETE",max_length=100, choices=VARIETE_RIZ)
 	type_riz =models.CharField("TYPE RIZ",max_length=100, blank=True,null=True,choices=TYPE_RIZ)
 	qualite =models.CharField("QUALITE",max_length=50, blank=True,null=True,choices=QUALITE_RIZ)
 	prix = models.DecimalField(max_digits=10, decimal_places=2)
@@ -122,7 +122,7 @@ class Reboisement(productbase.ProductBase):
 # LEGUME
 #=====================================================
 class Legume(productbase.ProductBase):
-	type_legume =models.CharField("TYPE LEGUME",max_length=50, choices=TYPE_LEGUME)
+	type_legume =models.CharField("TYPE LEGUME",max_length=50, choices=TYPE_LEGUME_1)
 	prix = models.DecimalField(max_digits=5, decimal_places=2)
 	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
 
@@ -242,12 +242,12 @@ class Gingembre(productbase.ProductBase):
 
 
 #=====================================================
-# PONDU
+# LEGUME SECHE
 #=====================================================
 
-class Pondu(productbase.ProductBase):
+class LegumeSeche(productbase.ProductBase):
 	#les attributs
-	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_PONDU)
+	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_LEGUME_SECHE)
 	type_legume= models.CharField("TYPE DE LEGUME",max_length=100, choices=TYPE_LEGUME)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
@@ -308,7 +308,7 @@ class Manioc(productbase.ProductBase):
 class Arachide(productbase.ProductBase):
 	#les attributs
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ARACHIDE)
-	caracteristique= models.CharField("CONTENANT",max_length=100, choices=CARACTERISTIQUE_ARACHIDE)
+	caracteristique= models.CharField("CARACTERISTIQUE",max_length=100, choices=CARACTERISTIQUE_ARACHIDE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
 

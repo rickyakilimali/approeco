@@ -148,7 +148,7 @@ class ServiceAccueil(productbase.ProductBase):
 class ProduitNettoyage(productbase.ProductBase):
 	type_produit=models.CharField("TYPE PRODUIT", max_length=20, choices= TYPE_PRODUIT)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices= UNITE_LITRE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -172,7 +172,7 @@ class Assainissement(productbase.ProductBase):
 class ServiceSplit(productbase.ProductBase):
 	type_service_split=models.CharField("TYPE SERVICE SPLIT", max_length=20, choices= TYPE_SERVICE_SPLIT)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_SPLIT)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -195,7 +195,7 @@ class AssuranceVoyage(productbase.ProductBase):
 #=====================================================
 class ServiceAgenceVoyage(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PERSONNE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -205,7 +205,7 @@ class ServiceAgenceVoyage(productbase.ProductBase):
 #=====================================================
 class AssistanceObtentionVisa(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PERSONNE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -215,7 +215,7 @@ class AssistanceObtentionVisa(productbase.ProductBase):
 #=====================================================
 class ReservationHotelEtranger(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PERSONNE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -233,7 +233,7 @@ class SalleConference(productbase.ProductBase):
 	avenue =models.CharField("AVENUE", max_length=20, choices= AVENUE)
 	commune =models.CharField("COMMUNE", max_length=20, choices= COMMUNE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_HEURE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_JOUR)
 
 
 
@@ -254,7 +254,7 @@ class SalleGym(productbase.ProductBase):
 class NavetteAeroport(productbase.ProductBase):
 	nombre_personnes =models.CharField("NOMBRE PERSONNES", max_length=20, choices= NOMBRE_PERSONNES)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PERSONNE)
 
 #=====================================================
 # 22. ACCUEIL AEROPORT
@@ -298,7 +298,7 @@ class Recrutement(productbase.ProductBase):
 class Jardinage(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_M2)
 
 
 

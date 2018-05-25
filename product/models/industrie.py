@@ -13,7 +13,7 @@ class ProduitDeNettoyage(productbase.ProductBase):
 	type_produit =models.CharField("TYPE DE PRODUIT",max_length=100, blank=True,null=True,choices=TYPE_PRODUIT)
 
 	prix = models.DecimalField(max_digits=10, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE)
+	units = models.CharField(max_length=50, choices=UNITE_LITRE)
 
 #ordonner les produits
 	class Meta:

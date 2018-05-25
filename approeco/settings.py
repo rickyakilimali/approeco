@@ -49,6 +49,7 @@ INSTALLED_APPS = [
 	'widget_tweaks',
 	'pub',
 	'papeterie',
+	'smuggler',
 ]
 
 MIDDLEWARE = [
@@ -149,6 +150,9 @@ STATICFILES_DIRS = [
 ]
 
 STATIC_URL = '/static/'
+
+SMUGGLER_FIXTURE_DIR = 'fixtures'
+
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
 EMAIL_HOST=''

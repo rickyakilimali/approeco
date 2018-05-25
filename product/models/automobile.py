@@ -172,7 +172,7 @@ class MotoDeuxRoues(productbase.ProductBase):
 		ordering = ['prix']
 
 #=====================================================
-#  MOTODEUXROUES  ==>  AUTOMOBILE
+#  MOTO TROIS ROUES  ==>  AUTOMOBILE
 #=====================================================
 
 class MotoTroisRoues(productbase.ProductBase):

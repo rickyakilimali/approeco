@@ -873,7 +873,7 @@ class Split(productbase.ProductBase):
 	marque =models.CharField("MARQUE", max_length=20, choices= MARQUE_SPLIT)
 	puissance =models.CharField("PUISSANCE SPLIT", max_length=20, choices= PUISSANCE_SPLIT)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_SPLIT)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -2051,17 +2051,7 @@ class FilBarbele(productbase.ProductBase):
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
-#=====================================================
-#
-#=====================================================
-class BareDeMine(productbase.ProductBase):
-	#les attributs
-	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 
-	#ordonner les produits
-	class Meta:
-		ordering = ['prix']
 #=====================================================
 # SCIE CIRCULAIRE
 #=====================================================
@@ -2225,36 +2215,7 @@ class Boulonneuse(productbase.ProductBase):
 	class Meta:
 		ordering = ['prix']
 
-#=====================================================
-# RAINUREUSE
-#=====================================================
 
-class Rainureuse(productbase.ProductBase):
-	#les attributs
-	marque_marchine= models.CharField("MARQUE",max_length=100, choices=MARQUE_RAINUREUSE)
-	puissance_machine= models.CharField("TRANSMISSION",max_length=100, choices=PUISSANCE_RAINUREUSE)
-	largeur_de_coupe= models.CharField("ALIMENTATION",max_length=100, choices=LARGEUR_RAINUREUSE)
-	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
-
-	#ordonner les produits
-	class Meta:
-		ordering = ['prix']
-
-#=====================================================
-# TOUR A BOIS
-#=====================================================
-
-class TourABois(productbase.ProductBase):
-	#les attributs
-	marque_marchine= models.CharField("MARQUE",max_length=100, choices=MARQUE_RAINUREUSE)
-	puissance_machine= models.CharField("TRANSMISSION",max_length=100, choices=PUISSANCE_RAINUREUSE)
-	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
-
-	#ordonner les produits
-	class Meta:
-		ordering = ['prix']
 
 #=====================================================
 # VISSEUSE
@@ -2264,6 +2225,479 @@ class Visseuse(productbase.ProductBase):
 	#les attributs
 	marque_outillage= models.CharField("MARQUE",max_length=100, choices=MARQUE_VISSEUSE)
 	tension_batterie= models.CharField("TENSION",max_length=100, choices=TENSION_VISSEUSE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# VENTILATEUR PLAFONNIER
+#=====================================================
+
+class VentilateurPlafonier(productbase.ProductBase):
+	#les attributs
+	dimension_ventilateur  = models.CharField("DIMENSION VENTILATEUR",max_length=100, choices=DIMENSION_VENTILATEUR)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# TABLE PLASTIQUE
+#=====================================================
+
+class TablePlastique(productbase.ProductBase):
+	#les attributs
+	forme  = models.CharField("FORME",max_length=100, choices=FORME_TABLE)
+	dimensions= models.CharField("DIMENSION",max_length=100, choices=DIMENSION_TABLE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# BOUILLOIRE
+#=====================================================
+
+class Bouilloire(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_BOUILLOIRE)
+	volume = models.CharField("VOLUME",max_length=100, choices=VOLUME_BOUILLOIRE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# CAFETIERE
+#=====================================================
+
+class Cafetiere(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_CAFETIERE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# CHAUFFE EAU
+#=====================================================
+
+class ChauffeEau(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_CHAUFFE_EAU)
+	volume = models.CharField("VOLUME EN LITRE",max_length=100, choices=VOLUME_CHAUFFE_EAU)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# DESTRUCTEUR PAPIER
+#=====================================================
+
+class DestructeurPapier(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_DESTR_PAPIER)
+	capacite_papier  = models.CharField("CAPACITE PAPIER",max_length=100, choices=CAPACITE_DESTR_PAPIER)
+	Volume_panier_dechet  = models.CharField("VOLUME PANIER DECHIQUETEUSE",max_length=100, choices=VOLUME_DESTR_PAPIER)
+	destruction_cd  = models.CharField("AVEC DESRTUCTEUR CD",max_length=100, choices=DEST_CD)
+	destruction_carte_credit = models.CharField("AVEC DESRTUCTEUR CARTE DE CREDIT",max_length=100, choices=DESTR_CARTE_CREDIT)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# CONGELATEUR
+#=====================================================
+
+class Congelateur(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_CONGELATEUR)
+	volume = models.CharField("VOLUME EN LITRE",max_length=100, choices=VOLUME_CONGELATEUR)
+	type_congelateur  = models.CharField("TYPE DE CONGELATEUR",max_length=100, choices=TYPE_CONGELATEUR)
+	alimentation = models.CharField("ALIMENTATION",max_length=100, choices=ALIMENTATION)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# FRIGO
+#=====================================================
+
+class Frigo(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_FRIGO)
+	volume = models.CharField("VOLUME EN LITRE",max_length=100, choices=VOLUME_FRIGO)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# MICRO ONDE
+#=====================================================
+
+class MicroOnde(productbase.ProductBase):
+	#les attributs
+	marque  = models.CharField("MARQUE",max_length=100, choices=MARQUE_MICROONDE)
+	capacite  = models.CharField("CAPACITE",max_length=100, choices=CAPACITE_MICROONDE)
+	puissance = models.CharField("PUISSANCE EN WATT",max_length=100, choices=PUISSANCE_MICROONDE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#=====================================================
+# TUYAU D'ARROSAGE
+#=====================================================
+
+class TuyauArrosage(productbase.ProductBase):
+	#les attributs
+	diametre  = models.CharField("DIAMETRE EN POUCE",max_length=100, choices=DIAMETRE_TUYAU)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#===21 - 05 - 2018 =================================
+# CABLE COAXIAL
+#===================================================
+
+class CableCoaxial(productbase.ProductBase):
+	#les attributs
+	type_cable = models.CharField("TYPE DE CABLE",max_length=100, choices=TYPE_CABLE_COAXIAL)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CABLE POUR CAMERA CCD
+#===================================================
+
+class CableCameraCCD(productbase.ProductBase):
+	#les attributs
+	longueur = models.CharField("LONGUEUR DE CABLE",max_length=100, choices=LONGEUR_CABLE_CCD)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CAMERA IP
+#===================================================
+
+class CameraIP(productbase.ProductBase):
+	#les attributs
+	style_camera = models.CharField("STYLE DE CAMERA",max_length=100, choices=STYLE_CCD)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CAMERA CCD
+#===================================================
+
+class CameraCCD(productbase.ProductBase):
+	#les attributs
+	technologie = models.CharField("TECHNOLOGIE DE CAMERA CCD",max_length=100, choices=TECHNOLOGIE_CCD)
+	style_camera = models.CharField("STYLE DE CAMERA",max_length=100, choices=STYLE_CCD)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CHAINE DE SECURITE POUR LAPTOP
+#===================================================
+
+class ChaineDeSecuritePourLaptop(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CHARGEUR POUR CAMERA CCD
+#===================================================
+
+class ChargeurCameraCCD(productbase.ProductBase):
+	#les attributs
+	tension = models.CharField("TENSION DU CHARGEUR",max_length=100, choices=TENSION_CHARGEUR_CCD)
+	intensite = models.CharField("INTENSITE DU CHARGEUR",max_length=100, choices=INTENSITE_CHARGEUR_CCD)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CONNECTEUR BNC
+#===================================================
+
+class ConnecteurBNC(productbase.ProductBase):
+	#les attributs
+	type_connecteur = models.CharField("TYPE DE CONNECTEUR",max_length=100, choices=TYPE_CONNECTEUR_BNC)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# CONNECTEUR D’ALIMENTATION FEMELLE POUR CAMERA CCD
+#===================================================
+
+class ConnecteurAlimentationFemmelleCCD(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# ENREGISTREUR CCD
+#===================================================
+
+class EnregistreurCCD(productbase.ProductBase):
+	#les attributs
+	type_enregisteur = models.CharField("TYPE D'ENREGISTREUR",max_length=100, choices=TYPE_ENREGISTREUR)
+	nombre_canaux = models.CharField("NOMBRE DE CANAUX",max_length=100, choices=NBRE_CANAUX)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# LENTILLE POUR CAMERA CCD
+#===================================================
+
+class LentilleCameraCCD(productbase.ProductBase):
+	#les attributs
+	distance_focale = models.CharField("DISTANCE FOCALE EN MILLIMETRE",max_length=100, choices=DISTANCE_FOCALE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# MICROPHONE POUR CAMERA IP
+#===================================================
+
+class MicrophonePourCameraIP(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# ROULEAU CABLE COAXIAL
+#===================================================
+
+class RouleauCableCoaxial(productbase.ProductBase):
+	#les attributs
+	type_cable = models.CharField("TYPE DE CABLE",max_length=100, choices=TYPE_CABLE_COAXIAL)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# SAC A DOS
+#===================================================
+
+class SacADos(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#===21 - 05 - 2018 =================================
+# UNITE D’ALIMENTATION POUR CAMERA CCD
+#===================================================
+
+class UniteAlimlentationCameraCCD(productbase.ProductBase):
+	#les attributs
+	tension = models.CharField("TENSION DE L'ALIMENTATION",max_length=100, choices=TENSION_CHARGEUR_CCD)
+	intensite = models.CharField("INTENSITE  DE L'ALIMENTATION",max_length=100, choices=INTENSITE_ALIMENTATION_CCD)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#====== 23-05-2018 =================================
+# APPAREIL DE GYM
+#===================================================
+
+class AppareilDeGym(productbase.ProductBase):
+	#les attributs
+	nombre_station = models.CharField("NOMBRE DE STATION",max_length=100, choices=NOMBRE_STATION)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#====== 23-05-2018 =================================
+# BOITIER ARRIERE POUR SOCKET MURAL
+#===================================================
+
+class BoitierSocketMural(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+
+#====== 23-05-2018 =================================
+# ENSEMBLE DE POIDS POUR BANC DE MUSCULATION
+#===================================================
+
+class EnsemblePoidsMuscul(productbase.ProductBase):
+	#les attributs
+	poids = models.CharField("POIDS EN KILOGRAMME",max_length=100, choices=POIDS_MUSCUL)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#====== 23-05-2018 =================================
+# VELO ELLIPTIQUE
+#===================================================
+
+class VeloElliptique(productbase.ProductBase):
+	#les attributs
+	modele = models.CharField("MODELE VELO",max_length=100, choices=MODELE_VELO)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#====== 23-05-2018 =================================
+# TAPIS DE COURSE
+#===================================================
+
+class TapisDeCourse(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#====== 23-05-2018 =================================
+# VELO MAGNETIQUE
+#===================================================
+
+class VeloMagnetique(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#======== 23-05-2018 =================================
+# PLAQUE DE FACE DOUBLE POUR SOCKET MURALE
+#=====================================================
+
+class PlaqueAFaceDoublePourSocketMural(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#====== 23-05-2018 =================================
+# POINCON
+#===================================================
+
+class Poincon(productbase.ProductBase):
+	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 

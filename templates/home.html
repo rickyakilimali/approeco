@@ -1,7 +1,488 @@
-{% extends '_layouts/base.html' %}
+<html lang="en-US" class="html_stretched responsive av-preloader-disabled av-default-lightbox  html_header_top html_logo_left html_main_nav_header html_menu_right html_custom html_header_sticky html_header_shrinking_disabled html_header_transparency html_header_glassy html_mobile_menu_phone html_disabled html_header_searchicon_disabled html_content_align_center html_header_unstick_top_disabled html_header_stretch_disabled html_minimal_header html_minimal_header_shadow html_entry_id_152 av-no-preview  avia_desktop  js_active  avia_transform  avia_transform3d  avia_transform  avia_transform3d  avia-webkit avia-webkit-52 avia-opera avia-opera-52 avia-windows"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-{% block headline %}<h1>Bienvenue sur ApproEco!</h1>{% endblock headline %}
+<meta name="robots" content="index, follow">
 
-{% block content %}
-<p>Bienvenue sur ApproEco!{% if user.is_authenticated %} {{ user.username }}{% endif %}!</p>
-{% endblock %}
+
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Scripts/CSS and wp_head hook -->
+<title>ApproEco – Vos Achats Simplifiés</title>
+<link rel="alternate" type="application/rss+xml" title="ApproEco » Feed" href="http://http://approeco.pythonanywhere.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="ApproEco » Comments Feed" href="http://http://approeco.pythonanywhere.com/comments/feed/">
+
+<!-- google webfont font replacement -->
+
+{% load static %}
+
+<link rel="stylesheet" id="avia-google-webfont" href="{% static 'theme/home/css' %}" type="text/css" media="all">
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/approeco.pythonanywhere.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.14"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+
+</script><script src="{% static 'theme/home/javascsript/wp-emoji-release.min.js' %}" type="text/javascript"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+
+<link rel="stylesheet" id="pp-bootstrap-css" href="{% static 'theme/home/bs.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="pp-flat-ui-css" href="{% static 'theme/home/base.css' %} " type="text/css" media="all">
+<link rel="stylesheet" id="ppcore-css" href="{% static 'theme/home/ppcore.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="avia-grid-css" href="{% static 'theme/home/grid.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="avia-base-css" href="{% static 'theme/home/base.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="avia-layout-css" href="{% static 'theme/home/layout.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="avia-scs-css" href="{% static 'theme/home/shortcodes.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="avia-popup-css-css" href="{% static 'theme/home/magnific-popup.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" id="avia-media-css" href="{% static 'theme/home/mediaelementplayer.min.css' %}" type="text/css" media="screen">
+<link rel="stylesheet" id="avia-print-css" href="{% static 'theme/home/print.css' %}" type="text/css" media="print">
+<link rel="stylesheet" id="avia-dynamic-css" href="{% static 'theme/home/enfold.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="avia-custom-css" href="{% static 'theme/home/custom.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="wptoolset-field-datepicker-css" href="{% static 'theme/home/jquery-ui-1.11.4.custom.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="{% static 'theme/home/mediaelementplayer.min.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="{% static 'theme/home/wp-mediaelement.min.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="views-pagination-style-css" href="{% static 'theme/home/wpv-pagination.css' %}" type="text/css" media="all">
+<link rel="stylesheet" id="dtree.css-css" href="{% static 'theme/home/wp-dtree.min.css' %}" type="text/css" media="all">
+
+
+<script type="text/javascript" src="{% static 'theme/home/javascsript/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/jquery-migrate.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/jquery.dataTables.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/avia-compat.js' %}"></script>
+<script type="text/javascript">
+
+/* <![CDATA[ */
+var WPdTreeSettings = {"animate":"1","duration":"250","imgurl":"http:\/\/www.http://approeco.pythonanywhere.com\/wp-content\/plugins\/wp-dtree-30\/"};
+/* ]]> */
+
+</script>
+
+
+<script type="text/javascript" src="{% static 'theme/home/javascsript/wp-dtree.min.js' %}"></script>
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://approeco.pythonanywhere.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://approeco.pythonanywhere.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 4.5.14">
+<link rel="canonical" href="http://approeco.pythonanywhere.com/">
+<link rel="shortlink" href="http://approeco.pythonanywhere.com/">
+<link rel="alternate" type="application/json+oembed" href="http://approeco.pythonanywhere.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fapproeco.pythonanywhere.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="http://approeco.pythonanywhere.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fapproeco.pythonanywhere.com%2F&amp;format=xml">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="alternate" type="application/rss+xml" title="ApproEco RSS2 Feed" href="http://approeco.pythonanywhere.com/feed/">
+<link rel="pingback" href="http://approeco.pythonanywhere.com/xmlrpc.php">
+
+<style type="text/css" media="screen">
+ #top #header_main > .container, #top #header_main > .container .main_menu ul:first-child > li > a, #top #header_main #menu-item-shop .cart_dropdown_link{ height:100px; line-height: 100px; }
+ .html_top_nav_header .av-logo-container{ height:100px;  }
+ .html_header_top.html_header_sticky #top #wrap_all #main{ padding-top:100px; }
+</style>
+<!--[if lt IE 9]><script src="http://approeco.pythonanywhere.com/wp-content/themes/enfold/js/html5shiv.js"></script><![endif]-->
+<link rel="icon" href="{% static 'themetheme/home/media/logo-icone.png' %}" type="image/x-icon">
+
+
+<!--
+Debugging Info for Theme support:
+
+Theme: Enfold
+Version: 4.0.2
+Installed: enfold
+AviaFramework Version: 4.6
+AviaBuilder Version: 0.9.5
+ML:256-PU:69-PLA:27
+WP:4.5.14
+Updates: disabled
+-->
+
+
+<script type="text/javascript">var avia_preview = {"error":"It seems you are currently adding some HTML markup or other special characters. Once all HTML tags are closed the preview will be available again. If this message persists please check your input for special characters and try to remove them.","paths":"<link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/css\/grid.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/css\/base.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/css\/layout.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/css\/shortcodes.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/js\/aviapopup\/magnific-popup.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/js\/mediaelement\/skin-1\/mediaelementplayer.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/css\/custom.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/uploads\/dynamic_avia\/enfold.css?ver=0.9.5' type='text\/css' media='all' \/><link rel='stylesheet' href='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/css\/admin-preview.css?ver=0.9.5' type='text\/css' media='all' \/><script type='text\/javascript' src='http:\/\/approeco.pythonanywhere.com\/wp-includes\/js\/jquery\/jquery.js?ver=0.9.5'><\/script><script type='text\/javascript' src='http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/js\/avia-admin-preview.js?ver=0.9.5'><\/script>\n<!-- google webfont font replacement -->\n<link rel='stylesheet' id='avia-google-webfont' href='\/\/fonts.googleapis.com\/css?family=Montserrat%7CLato:300,400,700' type='text\/css' media='all'\/> \n\n<!-- google webfont font replacement -->\n
+<link rel='stylesheet' id='avia-google-webfont' href='\/\/fonts.googleapis.com\/css?family=Montserrat%7CLato:300,400,700' type='text\/css' media='all'\/> \n<style type='text\/css'>\n@font-face {font-family: 'entypo-fontello'; font-weight: normal; font-style: normal;\nsrc: url('http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/config-templatebuilder\/avia-template-builder\/assets\/fonts\/entypo-fontello.eot?v=3');\nsrc: url('http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/config-templatebuilder\/avia-template-builder\/assets\/fonts\/entypo-fontello.eot?v=3#iefix') format('embedded-opentype'), \nurl('http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/config-templatebuilder\/avia-template-builder\/assets\/fonts\/entypo-fontello.woff?v=3') format('woff'), \nurl('http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/config-templatebuilder\/avia-template-builder\/assets\/fonts\/entypo-fontello.ttf?v=3') format('truetype'), \nurl('http:\/\/approeco.pythonanywhere.com\/wp-content\/themes\/enfold\/config-templatebuilder\/avia-template-builder\/assets\/fonts\/entypo-fontello.svg?v=3#entypo-fontello') format('svg');\n} #top .avia-font-entypo-fontello, body .avia-font-entypo-fontello, html body [data-av_iconfont='entypo-fontello']:before{ font-family: 'entypo-fontello'; }\n\n@font-face {font-family: 'flaticon'; font-weight: normal; font-style: normal;\nsrc: url('http:\/\/approeco.pythonanywhere.com\/wp-content\/uploads\/avia_fonts\/flaticon\/flaticon.eot');\nsrc: url('http:\/\/approeco.pythonanywhere.com\/wp-content\/uploads\/avia_fonts\/flaticon\/flaticon.eot?#iefix') format('embedded-opentype'), \nurl('http:\/\/approeco.pythonanywhere.com\/wp-content\/uploads\/avia_fonts\/flaticon\/flaticon.woff') format('woff'), \nurl('http:\/\/approeco.pythonanywhere.com\/wp-content\/uploads\/avia_fonts\/flaticon\/flaticon.ttf') format('truetype'), \nurl('http:\/\/approeco.pythonanywhere.com\/wp-content\/uploads\/avia_fonts\/flaticon\/flaticon.svg#flaticon') format('svg');\n} #top .avia-font-flaticon, body .avia-font-flaticon, html body [data-av_iconfont='flaticon']:before{ font-family: 'flaticon'; }\n<\/style>","title":"Element Preview","background":"Set preview background:"};
+</script>
+<style type="text/css" id="av-browser-height">.avia-section.av-minimum-height .container{opacity: 1; }
+.av-minimum-height-100 .container, .avia-fullscreen-slider .avia-slideshow, #top.avia-blank .av-minimum-height-100 .container, .av-cell-min-height-100 > .flex_cell{height:658px;}
+.av-minimum-height-75 .container, .av-cell-min-height-75 > .flex_cell	{height:494px;}
+.av-minimum-height-50 .container, .av-cell-min-height-50 > .flex_cell	{height:329px;}
+.av-minimum-height-25 .container, .av-cell-min-height-25 > .flex_cell	{height:165px;}
+.avia-builder-el-0.av-minimum-height-100 .container, .avia-builder-el-0.avia-fullscreen-slider .avia-slideshow, .avia-builder-el-0.av-cell-min-height-100 > .flex_cell{height:658px;}
+#top .av-solo-full .avia-slideshow {min-height:0px;}
+#top .av-element-cover iframe, #top .av-element-cover embed, #top .av-element-cover object, #top .av-element-cover video{height:737.4375px; top: -39.71875px;}
+#top .avia-builder-el-0 .av-element-cover iframe, #top .avia-builder-el-0 .av-element-cover embed, #top .avia-builder-el-0 .av-element-cover object, #top .avia-builder-el-0 .av-element-cover video{height:737.4375px; top: -39.71875px;}
+</style></head>
+
+
+
+
+<body id="top" class="home page page-id-152 page-template-default stretched montserrat lato " itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+
+	<div id="wrap_all">
+	    <a id="advanced_menu_hide" href="http://approeco.pythonanywhere.com/#" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></a>
+	    <ul id="mobile-advanced" class="">
+	    <li id="menu-item-2081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1">
+	        <a href="#entete">
+	           <span class="avia-bullet"></span>
+	           <span class="avia-menu-text">Accueil</span>
+	           <span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span>
+	       </a>
+	   </li>
+        <li id="menu-item-2082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2">
+        <a href="http://approeco.pythonanywhere.com/A_PROPOS" itemprop="url">
+        <span class="avia-bullet"></span>
+        <span class="avia-menu-text">A propos</span>
+        <span class="avia-menu-fx">
+        <span class="avia-arrow-wrap">
+        <span class="avia-arrow"></span></span></span></a>
+
+        </li>
+
+
+<li id="menu-item-2145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-3">
+    <a href="http://approeco.pythonanywhere.com/AVANTAGES" itemprop="url">
+        <span class="avia-bullet"></span>
+        <span class="avia-menu-text">Avantages</span>
+        <span class="avia-menu-fx">
+        <span class="avia-arrow-wrap">
+        <span class="avia-arrow"></span></span></span></a></li>
+
+
+<li id="menu-item-2489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4">
+    <a href="http://approeco.pythonanywhere.com/CONTACT" itemprop="url">
+        <span class="avia-bullet"></span>
+        <span class="avia-menu-text">Contact</span>
+        <span class="avia-menu-fx">
+        <span class="avia-arrow-wrap">
+        <span class="avia-arrow"></span></span></span></a></li>
+
+
+<li id="menu-item-20549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5">
+    <a href="http://approeco.pythonanywhere.com/login/" itemprop="url">
+    <span class="avia-bullet"></span>
+    <span class="avia-menu-text">Connexion</span>
+    <span class="avia-menu-fx"><span class="avia-arrow-wrap">
+    <span class="avia-arrow"></span></span></span></a></li>
+</ul>
+
+<header id="header" class="all_colors header_color light_bg_color av_header_top av_logo_left av_main_nav_header av_menu_right av_custom av_header_sticky av_header_shrinking_disabled av_header_stretch_disabled av_mobile_menu_phone av_header_glassy av_header_searchicon_disabled av_header_unstick_top_disabled av_minimal_header av_minimal_header_shadow av_bottom_nav_disabled av_alternate_logo_active av_header_border_disabled av_header_transparency" role="banner" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
+
+<div id="header_main" class="container_wrap container_wrap_logo">
+
+<div class="container av-logo-container"><div class="inner-container"><strong class="logo">
+<a href="http://approeco.pythonanywhere.com">
+<img height="100" width="300" src="{% static 'theme/home/media/logo-url1.png' %}" alt="ApproEco"><span class="subtext">
+<img src="{% static 'theme/home/media/logo-url1-transparent1.png' %}" class="alternate" alt="" title=""></span></a></strong>
+<a id="advanced_menu_toggle" href="http://approeco.pythonanywhere.com/#" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></a>
+<nav class="main_menu" data-selectname="Select a page" role="navigation" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+<div class="avia-menu av-main-nav-wrap av_menu_icon_beside"><ul id="avia-menu" class="menu av-main-nav">
+<li id="menu-item-2081" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-1 current-menu-item">
+<a href="http://approeco.pythonanywhere.com/#top" itemprop="url">
+    <span class="avia-bullet"></span>
+    <div id="entete"><span class="avia-menu-text">Accueil</span></div>
+<span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>
+
+<li id="menu-item-2082" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-2">
+    <a href="http://approeco.pythonanywhere.com/#A_PROPOS">
+            <span class="avia-bullet"></span>
+            <span class="avia-menu-text">A propos</span>
+            <span class="avia-menu-fx">
+            <span class="avia-arrow-wrap">
+            <span class="avia-arrow"></span></span></span></a></li>
+
+<li id="menu-item-2145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-3">
+    <a href="http://approeco.pythonanywhere.com/#AVANTAGES" itemprop="url">
+        <span class="avia-bullet"></span>
+        <span class="avia-menu-text">Avantages</span>
+        <span class="avia-menu-fx">
+        <span class="avia-arrow-wrap">
+        <span class="avia-arrow"></span></span></span></a></li>
+
+<li id="menu-item-2489" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-top-level menu-item-top-level-4">
+    <a href="http://approeco.pythonanywhere.com/#CONTACT" itemprop="url">
+        <span class="avia-bullet"></span>
+        <span class="avia-menu-text">Contact</span>
+        <span class="avia-menu-fx">
+        <span class="avia-arrow-wrap">
+        <span class="avia-arrow"></span></span></span></a></li>
+
+<li id="menu-item-20549" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-top-level menu-item-top-level-5">
+    <a href="http://approeco.pythonanywhere.com/login/" itemprop="url"><span class="avia-bullet"></span>
+        <span class="avia-menu-text">Connexion</span>
+        <span class="avia-menu-fx">
+        <span class="avia-arrow-wrap">
+        <span class="avia-arrow"></span></span></span></a></li>
+</ul></div></nav></div> </div>
+		<!-- end container_wrap-->
+		</div>
+
+		<div class="header_bg"></div>
+
+<!-- end header -->
+</header>
+
+	<div id="main" class="all_colors" data-scroll-offset="20">
+
+	<div style="text-align:left;"></div>
+	<div id="av_section_1" class="avia-section main_color avia-section-huge avia-no-border-styling avia-full-stretch av-section-color-overlay-active avia-bg-style-fixed  avia-builder-el-0  avia-builder-el-no-sibling  av-minimum-height av-minimum-height-30 container_wrap fullsize" style="background-repeat: no-repeat; background-image: url({% static 'theme/home/media/kin1.jpg' %}); background-attachment: fixed; background-position: top left; " data-section-bg-repeat="stretch">
+    <div class="av-section-color-overlay-wrap">
+    <div class="av-section-color-overlay" style="opacity: 0.6; background-color: #3e6792; "></div><div class="container">
+    <main role="main" itemprop="mainContentOfPage" class="template-page content  av-content-full alpha units">
+    <div class="post-entry post-entry-type-page post-entry-152">
+    <div class="entry-content-wrapper clearfix">
+    <div class="flex_column av_one_full  av-animated-generic fade-in  flex_column_div av-zero-column-padding first  avia-builder-el-1  el_before_av_section  avia-builder-el-no-sibling   avia_start_animation avia_start_delayed_animation" style="margin-top:0px; margin-bottom:0px; border-radius:0px; ">
+    <div style="padding-bottom:10px;color:#ffffff;font-size:30px;" class="av-special-heading av-special-heading-h1 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-2  el_before_av_heading  avia-builder-el-first   av-thin-font av-inherit-size">
+    <h1 class="av-special-heading-tag" itemprop="headline">
+    <strong>Trouver le meilleur produit au meilleur prix</strong></h1>
+    <div class="special-heading-border">
+    <div class="special-heading-inner-border" style="border-color:#ffffff"></div></div></div>
+    <div style="padding-bottom:35px;color:#ffffff;font-size:40px;" class="av-special-heading av-special-heading-h1 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-3  el_after_av_heading  el_before_av_one_fourth   av-inherit-size">
+    <h1 class="av-special-heading-tag" itemprop="headline">Et</h1><div class="special-heading-border"><div class="special-heading-inner-border" style="border-color:#ffffff"></div></div></div>
+    <div style="padding-bottom:40px;color:#ffffff;font-size:31px;" class="av-special-heading av-special-heading-h1 custom-color-heading blockquote modern-quote modern-centered  avia-builder-el-4  el_before_av_heading  avia-builder-el-first   av-thin-font av-inherit-size">
+    <h1 class="av-special-heading-tag" itemprop="headline">Réduisez vos charges opérationnelles <strong>d’au moins 15% à 20%</strong></h1>
+    <div class="special-heading-border"><div class="special-heading-inner-border" style="border-color:#ffffff"></div></div></div></div>
+    <div class="flex_column av_one_fourth  flex_column_div av-zero-column-padding first  " style="border-radius:0px; "></div>
+    <div class="flex_column av_one_fourth  flex_column_div av-zero-column-padding   " style="border-radius:0px; ">
+    <div class="avia-button-wrap avia-button-center ">
+    <a href="#A_PROPOS" class="avia-button  avia-icon_select-no avia-color-light avia-size-x-large avia-position-center ">
+    <span class="avia_iconbox_title">En savoir plus</span></a></div></div>
+<div class="flex_column av_one_fourth  flex_column_div av-zero-column-padding   " style="border-radius:0px; ">
+    <div class="avia-button-wrap avia-button-center ">
+    <a href="http://approeco.pythonanywhere.com/login/" class="avia-button  avia-icon_select-no avia-color-light avia-size-x-large avia-position-center ">
+    <span class="avia_iconbox_title">Je me connecte</span></a></div></div><div class="flex_column av_one_fourth  flex_column_div av-zero-column-padding   " style="border-radius:0px; ">
+</div>
+</div>
+</div>
+</main>
+<!-- close content main element -->
+</div></div></div>
+
+<a name="A_PROPOS"></a>
+
+<div id="#A_PROPOS" class="avia-section main_color avia-section-default avia-no-shadow avia-bg-style-scroll  av-minimum-height av-minimum-height-20 container_wrap fullsize">
+<div class="av-section-color-overlay-wrap">
+<a href="#next-section" title="" class="scroll-down-link" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello"></a>
+<div class="container">
+<div class="template-page content  av-content-full alpha units">
+<div class="post-entry post-entry-type-page post-entry-152">
+<div class="entry-content-wrapper clearfix">
+<div class="flex_column av_one_half  flex_column_div av-zero-column-padding first  " style="border-width:2px; border-color:#cccccc; border-style:solid; border-radius:0px; ">
+<div data-size="no scaling" data-lightbox_size="large" data-animation="slide" data-ids="2303,2304,2306,2307,2308,2310,2311,2312" data-video_counter="0" data-autoplay="true" data-bg_slider="false" data-slide_height="" data-handle="av_slideshow" data-interval="3" data-class="" data-css_id="" data-scroll_down="" data-control_layout="av-control-hidden" data-custom_markup="" data-perma_caption="" data-autoplay_stopper="" data-image_attachment="" data-min_height="0px" class="avia-slideshow avia-slideshow-1  av-control-hidden avia-slideshow-no scaling av_slideshow  avia-slide-slider" itemscope="itemscope" itemtype="https://schema.org/ImageObject">
+<ul class="avia-slideshow-inner" style="padding: 0px; height: 268px; transition: none; transform: translateZ(0px);">
+<li class="slide-1" style="visibility: hidden; opacity: 1; transition: none; transform: translate3d(-357px, 0px, 0px); z-index: 4; left: 0px; top: 0px;">
+    <div data-rel="slideshow-1" class="avia-slide-wrap">
+<img src="{% static 'theme/home/media/a-cartesvisites.png' %}" width="450" height="450" title="a-cartesvisites" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li>
+<li class="slide-2" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;">
+<div data-rel="slideshow-1" class="avia-slide-wrap">
+<img src="{% static 'theme/home/media/a-tires.png' %}" width="450" height="450" title="a-tires" alt="" itemprop="thumbnailUrl" style="left: 0px;">
+</div>
+</li>
+<li class="slide-3" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;">
+    <div data-rel="slideshow-1" class="avia-slide-wrap">
+        <img src="{% static 'theme/home/media/a-isolateur.png' %}" width="640" height="480" title="a-isolateur" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li>
+<li class="slide-4" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;">
+    <div data-rel="slideshow-1" class="avia-slide-wrap">
+        <img src="{% static 'theme/home/media/a-laptop.png' %}" width="640" height="480" title="a-laptop" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li>
+
+<li class="slide-5" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;">
+    <div data-rel="slideshow-1" class="avia-slide-wrap">
+        <img src="{% static 'theme/home/media/a-ramepapier.png' %}" width="640" height="480" title="ramepapier" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li>
+
+<li class="slide-6" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;">
+    <div data-rel="slideshow-1" class="avia-slide-wrap">
+        <img src="{% static 'theme/home/media/a-bureau.png' %}" width="640" height="480" title="a-bureau" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li>
+
+<li class="slide-7" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;"><div data-rel="slideshow-1" class="avia-slide-wrap">
+<img src="{% static 'theme/home/media/a-fortuner.png' %}" width="640" height="480" title="a-fortuner" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li><li class="slide-8" style="visibility: hidden; z-index: 4; opacity: 1; left: 0px; top: 0px; transform: translate3d(-357px, 0px, 0px); transition: none;"><div data-rel="slideshow-1" class="avia-slide-wrap">
+<img src="{% static 'theme/home/media/a-imprimante.png' %}" width="640" height="480" title="a-imprimante" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li></ul><div class="avia-slideshow-arrows avia-slideshow-controls"><a href="#prev" class="prev-slide" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello">Previous</a>
+<a href="#next" class="next-slide" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello">Next</a>
+</div>
+<div class="avia-slideshow-dots avia-slideshow-controls"><a href="#1" class="goto-slide">1</a>
+<a href="#2" class="goto-slide">2</a><a href="#3" class="goto-slide">3</a><a href="#4" class="goto-slide">4</a>
+<a href="#5" class="goto-slide active">5</a><a href="#6" class="goto-slide">6</a><a href="#7" class="goto-slide">7</a>
+<a href="#8" class="goto-slide">8</a></div></div></div>
+<div class="flex_column av_one_half  flex_column_div av-zero-column-padding   " style="border-radius:0px; ">
+<div style="padding-bottom:50px;font-size:34px;" class="av-special-heading av-special-heading-h3  blockquote modern-quote modern-centered  avia-builder-el-5  el_after_av_heading  avia-builder-el-last   av-inherit-size"><h3 class="av-special-heading-tag" itemprop="headline">Une application web pour tous vos approvisionnements</h3><div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<section class="av_textblock_section" itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+<div class="avia_textblock " itemprop="text"><p>Il n’a jamais été si simple de rendre votre processus d’approvisionnement plus efficace et efficient!</p>
+<p>Soyez rapides et efficaces dans l’exécution de vos achats en répondant adéquatement à la multitude des besoins des différents départements internes.</p>
+<p>Conduisant ainsi votre entreprise à réduire ses couts d’un minimum de 15% !!!!</p>
+</div></section></div>
+<p></p>
+</div></div></div><!-- close content main div --></div></div></div>
+
+
+
+
+
+<a name="AVANTAGES"></a>
+</div></div></div><!-- close content main div --></div></div></div>
+
+<div id="#AVANTAGES" class="avia-section main_color avia-section-default avia-no-shadow avia-bg-style-scroll  container_wrap fullsize" style="background-color: #c9cfe5; ">
+<div class="container">
+<div class="template-page content  av-content-full alpha units">
+<div class="post-entry post-entry-type-page post-entry-152">
+<div class="entry-content-wrapper clearfix">
+<div style="padding-bottom:34px;font-size:34px;" class="av-special-heading av-special-heading-h3  blockquote modern-quote modern-centered   av-inherit-size">
+<h3 class="av-special-heading-tag" itemprop="headline">Amélioration de votre rentabilité</h3>
+<div class="special-heading-border"><div class="special-heading-inner-border"></div></div></div>
+<div class="flex_column av_one_half  flex_column_div av-zero-column-padding first  " style="border-radius:0px; ">
+<div data-size="no scaling" data-lightbox_size="large" data-animation="slide" data-ids="2315" data-video_counter="0" data-autoplay="false" data-bg_slider="false" data-slide_height="" data-handle="av_slideshow" data-interval="5" data-class="" data-css_id="" data-scroll_down="" data-control_layout="av-control-hidden" data-custom_markup="" data-perma_caption="" data-autoplay_stopper="" data-image_attachment="" data-min_height="0px" class="avia-slideshow avia-slideshow-2  av-control-hidden avia-slideshow-no scaling av_slideshow  avia-slide-slider" itemscope="itemscope" itemtype="https://schema.org/ImageObject"><ul class="avia-slideshow-inner" style="padding: 0px;"><li class="av-single-slide slide-1  active-slide" style="visibility: visible; opacity: 1; transition: none; transform: translateZ(0px);"><div data-rel="slideshow-2" class="avia-slide-wrap">
+    <img src="{% static 'theme/home/media/laptop_screen_down.png' %}" width="594" height="450" title="laptop_screen_down" alt="" itemprop="thumbnailUrl" style="left: 0px;"></div></li></ul></div></div><div class="flex_column av_one_half  flex_column_div av-zero-column-padding   " style="border-radius:0px; ">
+        <article class="iconbox iconbox_left   " itemscope="itemscope" itemtype="https://schema.org/CreativeWork">
+            <div class="iconbox_content">
+                <header class="entry-content-header">
+        <div class="iconbox_icon heading-color" aria-hidden="true" data-av_icon="" data-av_iconfont="flaticon"></div>
+        <h3 class="iconbox_content_title" itemprop="headline">Réduction des coûts</h3>
+        </header>
+        <div class="iconbox_content_container " itemprop="text">
+        <p>▣ Réduisez vos couts d’achat à travers un meilleur rapport qualité-prix et une meilleure capacité à négocier les prix avec les fournisseurs</p>
+<p>▣ Réduisez le capital humain nécessaire pour réaliser les achats grâce à un processus plus efficace et efficient</p>
+<p>▣ Réduisez les charges salariales, frais médicaux, frais de transport, fournitures de bureau, frais de communication, etc…..</p>
+</div></div><footer class="entry-footer"></footer></article>
+<article class="iconbox iconbox_left   " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="iconbox_content"><header class="entry-content-header"><div class="iconbox_icon heading-color" aria-hidden="true" data-av_icon="" data-av_iconfont="flaticon"></div><h3 class="iconbox_content_title" itemprop="headline">Gain de temps</h3></header>
+<div class="iconbox_content_container " itemprop="text"><p>Obtenez en 10 minutes ce que vous obteniez en 2 heures</p>
+</div></div><footer class="entry-footer"></footer></article>
+<article class="iconbox iconbox_left   " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="iconbox_content"><header class="entry-content-header"><div class="iconbox_icon heading-color" aria-hidden="true" data-av_icon="" data-av_iconfont="flaticon"></div><h3 class="iconbox_content_title" itemprop="headline">Transparence et élimination des risques</h3></header><div class="iconbox_content_container " itemprop="text"><p>Eliminez définitivement les risques de manque de transparence des prix et de fraude dans le processus d’approvisionnement</p>
+</div></div><footer class="entry-footer"></footer></article></div>
+
+</div></div></div><!-- close content main div --> <!-- section close by builder template -->
+</div><!--end builder template--></div><!-- close default .container_wrap element -->
+<div class="container_wrap footer_color" id="footer">
+
+<div class="container">
+
+<div class="flex_column av_one_third  first el_before_av_one_third">
+<section id="text-3" class="widget clearfix widget_text"><h3 class="widgettitle">ApproEco</h3>
+<div class="textwidget"><p>Un marché virtuel qui vous permet de trouver les meilleurs produits aux meilleurs prix.</p>
+</div>
+<span class="seperator extralight-border"></span></section></div>
+<div class="flex_column av_one_third  el_after_av_one_third  el_before_av_one_third ">
+<section id="text-2" class="widget clearfix widget_text">
+    <h3 class="widgettitle">Contact</h3>
+<div class="textwidget">
+    <p><a name="CONTACT"></a><br>
+Tel: +243 824 919 504<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;+243 990 442 080</p>
+<p>E-mail: <a href="http://approeco.pythonanywhere.com/#">infos@approeco.net</a></p>
+</div>
+		<span class="seperator extralight-border"></span></section></div><div class="flex_column av_one_third  el_after_av_one_third  el_before_av_one_third "><section id="text-4" class="widget clearfix widget_text"><h3 class="widgettitle">Heures de service</h3>			<div class="textwidget"><p>Lu-Ve: 8:00-17:00<br>
+Sa: &nbsp; &nbsp; &nbsp; &nbsp; 8:00-12:00</p>
+<p><a href="http://approeco.pythonanywhere.com/login">Se Connecter</a></p>
+</div>
+		<span class="seperator extralight-border"></span></section></div>
+
+					</div>
+
+
+				<!-- ####### END FOOTER CONTAINER ####### -->
+				</div>
+
+
+				<footer class="container_wrap socket_color" id="socket" role="contentinfo" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+                    <div class="container">
+
+                        <span class="copyright">© Copyright  - <a href="http://approeco.pythonanywhere.com/">ApproEco</a> </span>
+
+                    </div>
+
+	            <!-- ####### END SOCKET CONTAINER ####### -->
+				</footer>
+
+
+					<!-- end main -->
+		</div>
+
+		<!-- end wrap_all --></div>
+
+
+<script type="text/html" id="tmpl-wp-playlist-current-item">
+	<# if ( data.image ) { #>
+	<img src="{{ data.thumb.src }}" alt="" />
+	<# } #>
+	<div class="wp-playlist-caption">
+		<span class="wp-playlist-item-meta wp-playlist-item-title">&#8220;{{ data.title }}&#8221;</span>
+		<# if ( data.meta.album ) { #><span class="wp-playlist-item-meta wp-playlist-item-album">{{ data.meta.album }}</span><# } #>
+		<# if ( data.meta.artist ) { #><span class="wp-playlist-item-meta wp-playlist-item-artist">{{ data.meta.artist }}</span><# } #>
+	</div>
+</script>
+
+
+<script type="text/javascript">
+ /* <![CDATA[ */
+var avia_framework_globals = avia_framework_globals || {};
+    avia_framework_globals.frameworkUrl = 'http://approeco.pythonanywhere.com/wp-content/themes/enfold/framework/';
+    avia_framework_globals.installedAt = 'http://approeco.pythonanywhere.com/wp-content/themes/enfold/';
+    avia_framework_globals.ajaxurl = 'http://approeco.pythonanywhere.com/wp-admin/admin-ajax.php';
+/* ]]> */
+</script>
+
+
+
+<script type="text/javascript" src="{% static 'theme/home/javascsript/jquery.dataTables.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/avia.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/shortcodes.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/jquery.magnific-popup.min.js' %}"></script>
+<script type="text/javascript">
+
+
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+
+
+
+<script type="text/javascript" src="{% static 'theme/home/javascsript/mediaelement-and-player.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/wp-mediaelement.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/comment-reply.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/core.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/datepicker.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/underscore.min.js' %}"></script>
+<script type="text/javascript">
+
+
+
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+
+
+
+<script type="text/javascript" src="{% static 'theme/home/javascsript/wp-util.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/backbone.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/wp-playlist.min.js' %}"></script>
+<script type="text/javascript">
+
+
+/* <![CDATA[ */
+var wpv_pagination_local = {"front_ajaxurl":"http:\/\/approeco.pythonanywhere.com\/wp-admin\/admin-ajax.php","ajax_pagination_url":"http:\/\/approeco.pythonanywhere.com\/wpv-ajax-pagination\/","calendar_image":"http:\/\/approeco.pythonanywhere.com\/wp-content\/plugins\/wp-views\/embedded\/res\/img\/calendar.gif","calendar_text":"Select date","datepicker_min_date":null,"datepicker_max_date":null};
+/* ]]> */
+</script>
+
+
+
+<script type="text/javascript" src="{% static 'theme/home/javascsript/wpv-pagination-embedded.js' %}"></script>
+<script type="text/javascript" src="{% static 'theme/home/javascsript/wp-embed.min.js' %}"></script>
+
+<a href="http://approeco.pythonanywhere.com/#top" title="Scroll to top" id="scroll-top-link" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" class="">
+    <span class="avia_hidden_link_text">Scroll to top</span></a>
+
+<div id="fb-root"></div>
+
+<a href="#top" title="Scroll to top" id="scroll-top-link" aria-hidden="true" data-av_icon="" data-av_iconfont="entypo-fontello" class="avia_pop_class">
+<span class="avia_hidden_link_text">Scroll to top</span></a>
+
+</body></html>

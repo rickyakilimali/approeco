@@ -14,3 +14,4 @@ from .transport import *
 from .energie import *
 from .industrie import *
 from .produit_pharmaceutique import *
+from .hotel_restaurant import *

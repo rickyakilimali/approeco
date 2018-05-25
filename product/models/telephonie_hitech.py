@@ -39,3 +39,20 @@ class TelephoneMobileSimple(productbase.ProductBase):
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
+#=====================================================
+#  TV LED
+#=====================================================
+
+class TVLed(productbase.ProductBase):
+
+	#les attributs
+	taille_ecran= models.CharField("TAILLE DE L'ECRAN",max_length=100, choices=TAILLE_TV)
+	marque = models.CharField("MARQUE DE LA TV",max_length=100, choices=MARQUE_TV)
+
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']

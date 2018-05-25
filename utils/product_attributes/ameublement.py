@@ -150,5 +150,43 @@ REVETEMENT= (
 		('TISSU ET MAILLE','TISSU ET MAILLE'),
 
 )
+TYPE_POUBELLE= (
+
+
+		('POUBELLE','POUBELLE'),
+
+	)
+MATIERE_POUBELLE= (
+
+
+		('PLASTIQUE','PLASTIQUE'),
+		('INOX','INOX'),
+
+
+	)
+VOLUME_POUBELLE= (
+
+
+		('12L','12L'),
+		('30L','30L'),
+		('8L','8L'),
+		('20L','20L'),
+		('6L','6L'),
+)
+
+DIMENSION_VASE= (
+
+		('24x40','24x40'),
+		('29x31','29x31'),
+		('34x60','34x60'),
+		('36x36','36x36'),
+		('40x43','40x43'),
+		('42x78','42x78'),
+		('44x80','44x80'),
+		('50x20','50x20'),
+		('60x30','60x30'),
+		('80x40','80x40'),
+
+	)
 
 

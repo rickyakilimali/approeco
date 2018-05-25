@@ -717,3 +717,697 @@ CALL_MANAGER = (
         ('NON', 'NON'),
 
 	)
+
+TYPE_ADAPTATEUR= (
+
+		('ALIMENTATION CCTV CAMERA 12V','ALIMENTATION CCTV CAMERA 12V'),
+		('USB VERS PORT PARALLELE','USB VERS PORT PARALLELE'),
+		('USB VERS RJ45','USB VERS RJ45'),
+		('USB VERS PORT SERIE','USB VERS PORT SERIE'),
+		('USB VERS SON','USB VERS SON'),
+		('USB WIFI TPLINK T2U AC600','USB WIFI TPLINK T2U AC600'),
+		('USB WIRELESS TL-WN7200ND','USB WIRELESS TL-WN7200ND'),
+		('USB WIFI TPLINK TL-WN725N','USB WIFI TPLINK TL-WN725N'),
+		('1VGA VERS HDMI','VGA VERS HDMI'),
+		('WIFI POUR IMPRIMANTE','WIFI POUR IMPRIMANTE'),
+		('IHPONE 5/6 VERS HDMI AVEC ALIMENTATION', 'IHPONE 5/6 VERS HDMI AVEC ALIMENTATION'),
+        ('DVI VERS VGA', 'DVI VERS VGA'),
+        ('POUR ORDINATEUR', 'POUR ORDINATEUR'),
+        ('UNIVERSEL POUR LAPTOP', 'UNIVERSEL POUR LAPTOP'),
+        ('CARTE MEMOIRE', 'CARTE MEMOIRE'),
+        ('USB 3.0 VERS HDMI', 'USB 3.0 VERS HDMI'),
+        ('USB 3.0 VERS VGA', 'USB 3.0 VERS VGA'),
+        ('HUB CHARGEUR DE SORTIE UNIVERSEL USB', 'HUB CHARGEUR DE SORTIE UNIVERSEL USB'),
+        ('HDMI VERS 3RCA AVEC ALIMENTATON', 'HDMI VERS 3RCA AVEC ALIMENTATON'),
+        ('HDMI VERS VGA AVEC ALIMENTATION', 'HDMI VERS VGA AVEC ALIMENTATION'),
+        ('VGA VERS HDMI', 'VGA VERS HDMI'),
+        ('PORT DISPLAY DVI', 'PORT DISPLAY DVI'),
+        ('HDMI VERS VGA ', 'HDMI VERS VGA '),
+        ('IPAD VERS HDMI', 'IPAD VERS HDMI'),
+        ('PORT MINI DISPLAY VERS DVI', 'PORT MINI DISPLAY VERS DVI'),
+        ('PORT MINI DISPLAY VERS HDMI', 'PORT MINI DISPLAY VERS HDMI'),
+        ('POUR ALIMENTATION IMPRIMANTE HP', 'POUR ALIMENTATION IMPRIMANTE HP'),
+
+
+	)
+
+MARQUE_ANTENNE= (
+
+		('TP-LINK','TP-LINK'),
+		('UBIQUITI','UBIQUITI'),
+
+
+	)
+MODELE_ANTENNE= (
+
+		('TL-ANT2415D','TL-ANT2415D'),
+		('TL-ANT2424B','TL-ANT2424B'),
+		('M5 NBE-M5-1','M5 NBE-M5-1'),
+
+	)
+
+QUANTITE_AUTOCOLLANT= (
+
+				('1500','1500'),
+				('5000','5000'),
+				('4000','4000'),
+
+
+	)
+DIMENSION_AUTOCOLLANT= (
+
+				('102x76 MM','102x76 MM'),
+				('50x30 MM','50x30 MM'),
+				('60x30 MM','60x30 MM'),
+
+	)
+
+MARQUE_LAPTOP= (
+
+				('HP','HP'),
+
+
+	)
+MODELE_LAPTOP= (
+
+				('530/510','530/510'),
+				('6720/6730','6720/6730'),
+				('DV4/DV5/DV6','DV4/DV5/DV6'),
+				('G62','G62'),
+				('NX6120','NX6120'),
+				('PROBOOK 4520/620','PROBOOK 4520/620')
+
+				)
+
+
+TYPE_DISQUE= (
+
+				('SATA','SATA'),
+				('IDE','IDE'),
+
+
+	)
+
+TYPE_CARTE= (
+
+				('GRAPHIQUE PCI EXPRESS NVIDIA 1GO','GRAPHIQUE PCI EXPRESS NVIDIA 1GO'),
+				('GRAPHICS ZOTAC PCI EXPRESS NVIDIA 2GO','GRAPHICS ZOTAC PCI EXPRESS NVIDIA 2GO'),
+				('READER EXTERNAL','READER EXTERNAL'),
+				('RESEAU SANS FIL PCI EXPRESS TPLINK TL781ND','RESEAU SANS FIL PCI EXPRESS TPLINK TL781ND'),
+				('FIREWIRE PCI LW','FIREWIRE PCI LW'),
+				('GRAPHIQUE NVIDIA 1GB','GRAPHIQUE NVIDIA 1GB'),
+				('PCI COMBO 2 SERIAL+1PARRALE','PCI COMBO 2 SERIAL+1PARRALE'),
+				('PCI EXPRESS','PCI EXPRESS'),
+				('PCI SERIAL ATA HOST','PCI SERIAL ATA HOST'),
+				('PCI TO PCMCI','PCI TO PCMCI'),
+				('PCI ULTRA ATA','PCI ULTRA ATA'),
+				('PCMCI RJ45','PCMCI RJ45'),
+				('SON PCI','SON PCI'),
+				('CARTE MERE INTEL DG 41BL','CARTE MERE INTEL DG 41BL'),
+
+
+    )
+
+MARQUE_CHARGEUR= (
+
+				('ACER','ACER'),
+				('DELL','DELL'),
+				('HP','HP'),
+				('UNIVERSEL','UNIVERSEL'),
+				('SELPHY CP910','SELPHY CP910'),
+				('TOSHIBA','TOSHIBA'),
+
+	)
+TENSION_CHARGEUR= (
+
+				('19V','19V'),
+				('19,5V','19,5V'),
+				('18,5V','18,5V'),
+
+	)
+INTENSITE_CHARGEUR= (
+
+				('3,42A','3,42A'),
+				('3,34A','3,34A'),
+				('4,62A','4,62A'),
+				('3,5A','3,5A'),
+				('3,5A SMALL PIN','3,5A SMALL PIN'),
+				('1,58A','1,58A'),
+				('4,74A BIG PIN','4,74A BIG PIN'),
+				('4,74A SMALL PIN','4,74A SMALL PIN'),
+				('3,42A','3,42A'),
+				('3,95A','3,95A'),
+
+	)
+
+TYPE_CONNECTEUR= (
+
+				('RJ45 CAT6 METAL','RJ45 CAT6 METAL'),
+				('RJ45 COUVERT','RJ45 COUVERT'),
+				('RJ11','RJ11'),
+				('RJ45 CAT5E','RJ45 CAT5E'),
+				('RJ45 CAT6E','RJ45 CAT6E'),
+				('COUVERTURE CABLE RJ45','COUVERTURE CABLE RJ45'),
+				('RJ45 AICO','RJ45 AICO'),
+				('RJ45 CAT6','RJ45 CAT6'),
+				('RJ45 METAL','RJ45 METAL'),
+				('RJ45 NORMA','RJ45 NORMA'),
+				('CAT6 RJ45 POUR PRISE MURALE','CAT6 RJ45 POUR PRISE MURALE'),
+
+
+	)
+
+TYPE_ORDINATEUR= (
+
+				('LAPTOP','LAPTOP'),
+				('DESKTOP','DESKTOP'),
+
+
+
+
+	)
+TYPE_MEMOIRE_RAM= (
+
+				('DDR1','DDR1'),
+				('DDR2','DDR2'),
+				('DDR3','DDR3'),
+				('DDR4','DDR4'),
+
+
+
+
+	)
+CAPACITE_MEMOIRE_RAM= (
+
+				('128MB','128MB'),
+				('2GB','2GB'),
+				('4GB','4GB'),
+				('8GB','8GB'),
+
+	)
+
+LONGUEUR_PATCHCORD= (
+
+				('15M','15M'),
+				('1M','1M'),
+				('0,3M ','0,3M '),
+				('3M','3M'),
+	)
+TYPE_PATCHPANEL= (
+
+				('CAT 5E','CAT 5E'),
+				('CAT 6E','CAT 6E'),
+
+
+
+	)
+NOMBRE_PORT_PATCHPANEL= (
+
+				('24 PORTS','24 PORTS'),
+				('24 PORTS','24 PORTS'),
+				('48 PORTS','48 PORTS'),
+
+
+	)
+MARQUE_SURTENSIONS= (
+
+				('APC','APC'),
+				('MERCURY','MERCURY'),
+
+	)
+
+MONTAGE_RACK= (
+
+				('SOL','SOL'),
+				('MUR','MUR'),
+
+	)
+FAN_RACK= (
+
+				('OUI','OUI'),
+				('NON','NON'),
+				('DOUBLE','DOUBLE'),
+
+	)
+UNITE_RACK= (
+
+				('12U','12U'),
+				('15U','15U'),
+				('18U','18U'),
+				('22U','22U'),
+				('27U','27U'),
+				('32U','32U'),
+				('37U','37U'),
+				('42U','42U'),
+				('6U','6U'),
+				('9U','9U'),
+
+	)
+DIMENSION_RACK= (
+
+				('600x600MM','600x600MM'),
+				('600x800MM','600x800MM'),
+				('600x1000MM','600x1000MM'),
+				('800x800MM','800x800MM'),
+				('800X1000MM','800X1000MM'),
+				('600X550MM','600X550MM'),
+
+
+
+
+
+
+
+
+
+
+
+	)
+ENTRE_SORTIE= (
+
+				('1x4','1x4'),
+				('1x8','1x8'),
+
+	)
+
+TYPE_WEBCAM= (
+
+				('SIMPLE','SIMPLE'),
+				('HD','HD'),
+
+
+
+	)
+MARQUE_ENCRE= (
+
+
+		('BROTHER','BROTHER'),
+
+
+	)
+COULEUR= (
+
+		('CYAN','CYAN'),
+
+
+	)
+NOMBRE_PAGE_MAX= (
+
+		('5000','5000'),
+
+
+	)
+
+TYPE_COUPLEUR= (
+
+		('RJ45 DOUBLE','RJ45 DOUBLE'),
+		('RJ45 SIMPLE','RJ45 SIMPLE'),
+
+
+
+
+	)
+NOMBRE_PRISE= (
+
+		('6','6'),
+
+
+	)
+TYPE_HUB= (
+
+		('3 PORTS AVEC ETHERNET RJ45','3 PORTS AVEC ETHERNET RJ45'),
+		('7 PORTS','7 PORTS'),
+		('LECTEUR CARTE MEMOIRE','LECTEUR CARTE MEMOIRE'),
+		('4 PORTS','4 PORTS'),
+		('3 PORTS AVEC LECTEUR CARTE MEMOIRE','3 PORTS AVEC LECTEUR CARTE MEMOIRE'),
+		('4 PORT SMART HUB','4 PORT SMART HUB'),
+
+	)
+
+
+TAILLE_ECRAN= (
+
+		('10’’','10’’'),
+		('7,5’’','7,5’’'),
+		('9,5’’','9,5’’'),
+
+	)
+
+TYPE_GRAVEUR= (
+
+		('EXTERNE','EXTERNE'),
+		('INTERNE SATA','INTERNE SATA'),
+		('INTERNE SATA POUR LAPTOP','INTERNE SATA POUR LAPTOP'),
+
+
+	)
+
+MODELE_SERTISSAGE= (
+
+		('TL-2810','TL-2810'),
+		('TL-315','TL-315'),
+		('TL-568','TL-568'),
+
+
+	)
+
+
+MARQUE_PRISE_WIFI= (
+
+		('TP-LINK','TP-LINK'),
+
+
+
+	)
+MODELE_PRISE= (
+
+		('HS 100','HS 100'),
+		('HS 110','HS 110'),
+
+	)
+
+MARQUE_PROCESSEUR= (
+
+		('INTEL','INTEL'),
+
+
+
+	)
+MODELE_PROCESSEUR= (
+
+		('P4','P4'),
+
+
+
+	)
+
+MARQUE_CAMERA_CLOUD = (
+        ('TP-LINK', 'TP-LINK'),
+
+    )
+
+MODELE_CAMERA_CLOUD = (
+        ('NC250', 'NC250'),
+        ('NC220', 'NC220'),
+
+    )
+
+MARQUE_MONITEUR= (
+        ('HP', 'HP'),
+        ('ACER', 'ACER'),
+        ('DELL', 'DELL'),
+
+    )
+
+
+TYPE_MONITEUR= (
+        ('LED', 'LED'),
+
+    )
+
+
+TAILLE_MONITEUR= (
+        ('18.5"', '18.5"'),
+        ('19.5"', '19.5"'),
+        ('20"', '20"'),
+        ('22"', '22"'),
+        ('23"', '23"'),
+
+    )
+
+MODELE_RUBAN= (
+        ('P-TOUCH', 'P-TOUCH'),
+
+    )
+
+LONGUEUR_RUBAN= (
+        ('LQ350', 'LQ350'),
+        ('LX350', 'LX350'),
+
+    )
+
+
+MARQUE_RUBAN= (
+        ('BROTHER', 'BROTHER'),
+
+    )
+
+
+NUMERO_RUBAN= (
+        ('DK-11202', 'DK-11202'),
+        ('DK-11207', 'DK-11207'),
+        ('DK-22205', 'DK-22205'),
+        ('DK-22210', 'DK-22210'),
+
+    )
+
+MODELE_RUBAN_ETIQ= (
+        ('P-TOUCH TZE-FX621', 'P-TOUCH TZE-FX621'),
+        ('P-TOUCH TZE-FX631', 'P-TOUCH TZE-FX631'),
+
+    )
+
+MARQUE_SWITCH_HDMI= (
+        ('S-TEK', 'S-TEK'),
+
+    )
+
+NOMBRE_PORT_HDMI= (
+        ('3', '3'),
+        ('5', '5'),
+
+    )
+
+DIMENSION_TABLEAU= (
+        ('100x150CM', '100x150CM'),
+
+    )
+
+MARQUE_TAMBOUR= (
+        ('BROTHER', 'BROTHER'),
+        ('CANNON', 'CANNON'),
+
+    )
+
+NUM_TAMBOUR= (
+        ('DR 2125', 'DR 2125'),
+        ('DR 2255', 'DR 2255'),
+        ('DR 240CL', 'DR 240CL'),
+        ('DR 261CL', 'DR 261CL'),
+        ('DR 3215', 'DR 3215'),
+        ('IR-1018', 'IR-1018'),
+
+    )
+
+TYPE_TESTEUR= (
+        ('4 EN 1', '4 EN 1'),
+        ('2 EN 1', '2 EN 1'),
+        ('MULTIFONCTION', 'MULTIFONCTION'),
+        ('CCTV CAMERA', 'CCTV CAMERA'),
+
+    )
+
+NBRE_OUTIL= (
+        ('14', '14'),
+        ('15', '15'),
+        ('18', '18'),
+        ('56', '56'),
+        ('69', '69'),
+        ('80', '80'),
+        ('145', '145'),
+        ('56', '56'),
+        ('18', '18'),
+
+    )
+
+MARQUE_VENTIL= (
+        ('INTEL', 'INTEL'),
+
+    )
+
+TYPE_SOCKET= (
+        ('1155', '1155'),
+
+    )
+
+NOMBRE_PORT_KVM= (
+        ('2', '2'),
+
+    )
+
+NOMBRE_PC= (
+        ('2', '2'),
+
+    )
+TYPE_CABLE_RX= (
+
+		('FTP','FTP'),
+		('SFTP','SFTP'),
+		('UTP','UTP'),
+
+	)
+
+CATEGORIE_CABLE_RX= (
+
+		('CAT5','CAT5'),
+		('CAT6','CAT6'),
+
+
+
+
+
+	)
+LONGUEUR_RX= (
+
+		('100M','100M'),
+		('305M','305M'),
+
+
+	)
+MARQUE_RX= (
+
+		('AICO','AICO'),
+		('STEK','STEK'),
+		('NET POWER','NET POWER'),
+		('3M','3M'),
+		('SCHNEIDER','SCHNEIDER'),
+
+	)
+
+MARQUE_CAMERA= (
+
+		('KODAK','KODAK'),
+		('OLYMPUS','OLYMPUS'),
+		('SONY','SONY'),
+		('CLOUD CAMERA','CLOUD CAMERA'),
+		('CANON','CANON'),
+
+
+	)
+MODELE_CAMERA= (
+
+		('C-1505','C-1505'),
+		('T200','T200'),
+		('VE-180','VE-180'),
+		('DSC-T99','DSC-T99'),
+		('DSC-TX1','DSC-TX1'),
+		('HD DAY/NIGHT NC450','HD DAY/NIGHT NC450'),
+		('DIGICAM EOS 350D','DIGICAM EOS 350D'),
+
+
+	)
+MARQUE_CASQUE_MICRO= (
+
+		('LG TONE','LG TONE'),
+
+	)
+MARQUE_CASQUE_MUSIQUE= (
+
+		('GORSUN','GORSUN'),
+		('SAMSUNG','SAMSUNG'),
+		('BEATS','BEATS'),
+		('LIGHTWAVE BIG','LIGHTWAVE BIG'),
+		('LIGHTWAVE SMALL','LIGHTWAVE SMALL'),
+
+	)
+
+
+MARQUE_COMPTEUR_MONNAIE= (
+
+		('ITC','ITC'),
+		('MAGNER','MAGNER'),
+
+
+
+
+	)
+MODEL_COMPTEUR_MONNAIE= (
+
+		('2108','2108'),
+		('MAG75','MAG75'),
+
+
+	)
+
+DIMENSION_ECRAN_PROJECTION= (
+
+		('150x150MM','150x150MM'),
+		('200x200MM','200x200MM'),
+		('240x240MM','240x240MM'),
+		('223x120MM','223x120MM'),
+
+
+	)
+
+MARQUE_CPE= (
+
+		('TP-LINK','TP-LINK'),
+
+	)
+MODELE_CPE= (
+
+		('CPE210','CPE210'),
+		('WBS210','WBS210'),
+
+	)
+
+
+MARQUE_HAUT_PARLEUR= (
+
+		('MAXICOM','MAXICOM'),
+
+	)
+MARQUE_IMPRIMANTE_ETIQUETTE= (
+
+		('BROTHER','BROTHER'),
+
+	)
+MODELE_IMPRIMANTE_ETIQUETTE= (
+
+		('P-TOUCH PC QL-720NW','P-TOUCH PC QL-720NW'),
+		('P-TOUCH PT-E300VP','P-TOUCH PT-E300VP'),
+		('P-TOUCH QL-1050','P-TOUCH QL-1050'),
+
+	)
+PUISSANCE_SPLIT_KIT= (
+
+		('12000BTU','12000BTU'),
+		('18000BTU','18000BTU'),
+		('24000BTU','24000BTU'),
+
+	)
+DIMENSION_TABLEAU_BLANC= (
+
+		('100x150CM','100x150CM'),
+
+	)
+
+
+MARQUE_CLAVIER_SOURIS= (
+        ('LOGITECH', 'LOGITECH'),
+        ('HP', 'HP'),
+
+    )
+
+
+MARQUE_IMPR_PHOTO = (
+        ('CANON', 'CANON'),
+
+    )
+
+MODELE_IMPR_PHOTO = (
+        ('SELPHY CP190', 'SELPHY CP190'),
+
+    )
+
+
+MODELE_KIT_NET = (
+        ('FARGO', 'FARGO'),
+
+    )
+
+TYPE_APP_BT = (
+        ('HAUT-PARLEUR', 'HAUT-PARLEUR'),
+        ('RECEPTEUR', 'RECEPTEUR'),
+
+    )

@@ -1301,18 +1301,18 @@ class TShirtAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = TShirtResources
 	list_display = ('vendeur','nom','type_tshirt','quantite','prix','units')
 #=======================================================
-# 5. GILLET KAKI
+# 5. GILET KAKI
 #=======================================================
-class GiletkakiResources(resources.ModelResource):
+class GiletKakiResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = Giletkaki
+		model = GiletKaki
 
-@admin.register(Giletkaki)
-class GiletkakiAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class = GiletkakiResources
+@admin.register(GiletKaki)
+class GiletKakiAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = GiletKakiResources
 	list_display = ('vendeur','nom','quantite','prix','units')
 #=======================================================
 # CALENDRIER
@@ -1656,16 +1656,16 @@ class RollUpdAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 #=======================================================
 #Impression sur briquet
 #=======================================================
-class ImpressionsurbriquetResources(resources.ModelResource):
+class ImpressionSurBriquetResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = Impressionsurbriquet
+		model = ImpressionSurBriquet
 
-@admin.register(Impressionsurbriquet)
-class ImpressionsurbriquetAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class = ImpressionsurbriquetResources
+@admin.register(ImpressionSurBriquet)
+class ImpressionSurBriquetAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ImpressionSurBriquetResources
 	list_display = ('vendeur','nom','quantite','prix','units')
 
 #=======================================================
@@ -6337,18 +6337,18 @@ class GingembreAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	list_display = ('vendeur','nom','contenant','prix','units')
 
 #=====================================================
-#  PONDU
+#  LEGUME SECHE
 #=====================================================
-class PonduResources(resources.ModelResource):
+class LegumeSecheResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = Pondu
+		model = LegumeSeche
 
-@admin.register(Pondu)
-class PonduAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class =PonduResources
+@admin.register(LegumeSeche)
+class LegumeSecheAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =LegumeSecheResources
 	list_display = ('vendeur','nom','contenant','type_legume','prix','units')
 
 #=====================================================
@@ -6426,3 +6426,1662 @@ class SemouleResources(resources.ModelResource):
 class SemouleAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class =SemouleResources
 	list_display = ('vendeur','nom','contenant','produit_de_base','prix','units')
+#=====================================================
+#POUBELLE
+#=====================================================
+class  PoubelleuacResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Poubelleuac
+
+@admin.register( Poubelleuac)
+class  PoubelleuacAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = PoubelleuacResources
+	list_display = ('vendeur','nom','type_poubelle','matiere','volume','prix','units')
+
+#=====================================================
+#	VASE
+#=====================================================
+
+class  VaseResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Vase
+
+@admin.register(Vase)
+class VaseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = VaseResources
+	list_display = ('vendeur','nom','dimension_carreau','prix','units')
+
+#=====================================================
+#	VENTILATEUR PLAFONNIER
+#=====================================================
+
+class VentilateurPlafonierResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  VentilateurPlafonier
+
+@admin.register(VentilateurPlafonier)
+class VentilateurPlafonierAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = VentilateurPlafonierResources
+	list_display = ('vendeur','nom','dimension_ventilateur','prix','units')
+
+#=====================================================
+#TABLE PLASTIQUE
+#=====================================================
+class  TablePlastiqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TablePlastique
+
+@admin.register( TablePlastique)
+class  TablePlastiqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TablePlastiqueResources
+	list_display = ('vendeur','nom','forme','dimensions','prix','units')
+#=====================================================
+#TRIPLEX
+#=====================================================
+class  TriplexResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Triplex
+
+@admin.register(Triplex)
+class TriplexAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TriplexResources
+	list_display = ('vendeur','nom','dimension_triplex','type_triplex','epaisseur','prix','units')
+
+#=====================================================
+#  TABLIER
+#=====================================================
+class TablierResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Tablier
+
+@admin.register(Tablier)
+class TablierAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =TablierResources
+	list_display = ('vendeur','nom','couleur','prix','units')
+
+#=====================================================
+#   BALANCE DE CUISINE
+#=====================================================
+class BalanceCuisineResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = BalanceCuisine
+
+@admin.register(BalanceCuisine)
+class BalanceCuisineAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =BalanceCuisineResources
+	list_display = ('vendeur','nom','poids','marque','prix','units')
+
+#=====================================================
+# COUVERCLE OVAL
+#=====================================================
+class CouvercleOvalResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = CouvercleOval
+
+@admin.register(CouvercleOval)
+class CouvercleOvalAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =CouvercleOvalResources
+	list_display = ('vendeur','nom','taille','marque','prix','units')
+#=====================================================
+#FOUR A PIZZA
+#=====================================================
+class FourPizzaResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = FourPizza
+
+@admin.register(FourPizza)
+class FourPizzaAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =FourPizzaResources
+	list_display = ('vendeur','nom','puissance','marque','prix','units')
+
+#=====================================================
+#MACHINE A CREME GLACEE
+#=====================================================
+class MachineCremeResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = MachineCreme
+
+@admin.register(MachineCreme)
+class MachineCremeAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =MachineCremeResources
+	list_display = ('vendeur','nom','puissance','marque','volume','prix','units')
+
+#=====================================================
+#PARASOLEIL
+#=====================================================
+class  ParasoleilResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Parasoleil
+
+@admin.register( Parasoleil)
+class  ParasoleilAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ParasoleilResources
+	list_display = ('vendeur','nom','diametre','prix','units')
+
+#=====================================================
+#PLATEAU DE NOURRITURE
+#=====================================================
+class  PlateauNourritureResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  PlateauNourriture
+
+@admin.register( PlateauNourriture)
+class  PlateauNourriturelAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = PlateauNourritureResources
+	list_display = ('vendeur','nom','format','marque','prix','units')
+
+#=====================================================
+#TASSE DE MESURE
+#=====================================================
+class  TasseMesureResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TasseMesure
+
+@admin.register( TasseMesure)
+class  TasseMesureAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TasseMesureResources
+	list_display = ('vendeur','nom','volume','marque','prix','units')
+
+
+
+#=====================================================
+#	VITRINE POUR BOISSON
+#=====================================================
+
+class VitrineBoissonResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  VitrineBoisson
+
+@admin.register(VitrineBoisson)
+class VitrineBoissonAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = VitrineBoissonResources
+	list_display = ('vendeur','nom','nombre_porte','marque','prix','units')
+
+#=====================================================
+# BOUILLOIRE
+#=====================================================
+
+class BouilloireResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Bouilloire
+
+@admin.register(Bouilloire)
+class BouilloireAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BouilloireResources
+	list_display = ('vendeur','nom','volume','marque','prix','units')
+
+#=====================================================
+# CAFETIERE
+#=====================================================
+
+class CafetiereResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Cafetiere
+
+@admin.register(Cafetiere)
+class CafetiereAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CafetiereResources
+	list_display = ('vendeur','nom','marque','prix','units')
+
+#=====================================================
+# CONGELATEUR
+#=====================================================
+
+class CongelateurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Congelateur
+
+@admin.register(Congelateur)
+class CongelateurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CongelateurResources
+	list_display = ('vendeur','nom','marque','volume','type_congelateur','alimentation','prix','units')
+
+#=====================================================
+# CHAUFFE EAU
+#=====================================================
+
+class ChauffeEauResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ChauffeEau
+
+@admin.register(ChauffeEau)
+class ChauffeEauAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ChauffeEauResources
+	list_display = ('vendeur','nom','marque','volume','prix','units')
+
+#=====================================================
+# DESTRUCTEUR PAPIER
+#=====================================================
+
+class DestructeurPapierResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  DestructeurPapier
+
+@admin.register(DestructeurPapier)
+class DestructeurPapierAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = DestructeurPapierResources
+	list_display = ('vendeur','nom','marque','capacite_papier','Volume_panier_dechet','destruction_cd','destruction_carte_credit','prix','units')
+
+#=====================================================
+# FRIGO
+#=====================================================
+
+class FrigoResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Frigo
+
+@admin.register(Frigo)
+class FrigoAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = FrigoResources
+	list_display = ('vendeur','nom','marque','volume','prix','units')
+
+#=====================================================
+# MICRO ONDE
+#=====================================================
+
+class MicroOndeResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  MicroOnde
+
+@admin.register(MicroOnde)
+class MicroOndeAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MicroOndeResources
+	list_display = ('vendeur','nom','marque','capacite','puissance','prix','units')
+
+#=====================================================
+# TUYAU D'ARROSAGE
+#=====================================================
+
+class TuyauArrosageResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TuyauArrosage
+
+@admin.register(TuyauArrosage)
+class TuyauArrosageAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TuyauArrosageResources
+	list_display = ('vendeur','nom','diametre','prix','units')
+
+
+#=====================================================
+#  ADAPTATEUR
+#=====================================================
+class AdaptateurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Adaptateur
+
+@admin.register(Adaptateur)
+class AdaptateurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =AdaptateurResources
+	list_display = ('vendeur','nom','type_adaptateur','prix','units')
+
+#=====================================================
+#  ANTENNE WIFI
+#=====================================================
+class AntenneWifiResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = AntenneWifi
+
+@admin.register(AntenneWifi)
+class AntenneWifiAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =AntenneWifiResources
+	list_display = ('vendeur','nom','marque_antenne','modele_antenne','prix','units')
+
+#=====================================================
+#  AUTOCOLLANT CODE BAR
+#=====================================================
+class AutocollantCodeBarResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = AutocollantCodeBar
+
+@admin.register(AutocollantCodeBar)
+class AutocollantCodeBarAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =AutocollantCodeBarResources
+	list_display = ('vendeur','nom','dimension_autocollant','quantite_autocollant','prix','units')
+
+#=====================================================
+# BATTERIE LAPTOP
+#=====================================================
+class BatterieLaptopResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = BatterieLaptop
+
+@admin.register(BatterieLaptop)
+class BatterieLaptopAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =BatterieLaptopResources
+	list_display = ('vendeur','nom','marque_laptop','modeles_laptop','prix','units')
+
+#=====================================================
+# BOITIER DISQUE DUR 2.5’’
+#=====================================================
+class BoitierDisqueDurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = BoitierDisqueDur
+
+@admin.register(BoitierDisqueDur)
+class BoitierDisqueDurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BoitierDisqueDurResources
+	list_display = ('vendeur','nom','type_disque_dur','prix','units')
+
+
+#=====================================================
+# CARTE
+#=====================================================
+class CarteResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Carte
+
+@admin.register(Carte)
+class CarteAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CarteResources
+	list_display = ('vendeur','nom','type_carte','prix','units')
+
+
+
+#=====================================================
+# CHARGEUR
+#=====================================================
+class ChargeurLaptopResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = ChargeurLaptop
+
+@admin.register(ChargeurLaptop)
+class ChargeurLaptopAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =ChargeurLaptopResources
+	list_display = ('vendeur','nom','marque_appareil','tension','intensite','prix','units')
+
+
+#=====================================================
+# CONNECTEUR
+#=====================================================
+class ConnecteurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Connecteur
+
+@admin.register(Connecteur)
+class ConnecteurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =ConnecteurResources
+	list_display = ('vendeur','nom','type_connecteur','prix','units')
+
+
+#=====================================================
+# MEMOIRES RAM
+#=====================================================
+class MemoireRamResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = MemoireRam
+
+@admin.register(MemoireRam)
+class MemoireRamAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =MemoireRamResources
+	list_display = ('vendeur','nom','type_ordinateur','type_memoire','capacite_memoire','prix','units')
+
+
+
+#=====================================================
+#  PATCH CORD
+#=====================================================
+class PatchCordResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = PatchCord
+
+@admin.register(PatchCord)
+class PatchCordAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =PatchCordResources
+	list_display = ('vendeur','nom','longueur','prix','units')
+
+#=====================================================
+# PATCH PANEL
+#=====================================================
+class PatchPanelResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = PatchPanel
+
+@admin.register(PatchPanel)
+class PatchPanelAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =PatchPanelResources
+	list_display = ('vendeur','nom','type_patch_panel','nombre_port','prix','units')
+
+#=====================================================
+# PROTECTION CONTRE LES SURTENSIONS
+#=====================================================
+class ProtectionSurtensionsResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = ProtectionSurtensions
+
+@admin.register(ProtectionSurtensions)
+class ProtectionSurtensionsAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =ProtectionSurtensionsResources
+	list_display = ('vendeur','nom','marque','prix','units')
+
+#=====================================================
+# RACK
+#=====================================================
+class RackResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Rack
+
+@admin.register(Rack)
+class RackAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =RackResources
+	list_display = ('vendeur','nom','montage','avec_fan','nombre_unites','dimension','prix','units')
+
+#=====================================================
+# REPARTITEUR HDMI
+#=====================================================
+class RepartiteurHdmiResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = RepartiteurHdmi
+
+@admin.register(RepartiteurHdmi)
+class RepartiteurHdmiAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =RepartiteurHdmiResources
+	list_display = ('vendeur','nom','entree_sortie','prix','units')
+
+#=====================================================
+# WEBCAM
+#=====================================================
+class WebcamResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Webcam
+
+@admin.register( Webcam)
+class  WebcamAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = WebcamResources
+	list_display = ('vendeur','nom','type_webcam','prix','units')
+
+#=====================================================
+# TV LED
+#=====================================================
+class TVLedResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TVLed
+
+@admin.register( TVLed)
+class TVLedAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TVLedResources
+	list_display = ('vendeur','nom','taille_ecran','marque','prix','units')
+
+#=========21-05-2018 =================================
+# CABLE COAXIAL
+#=====================================================
+
+class CableCoaxialResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  CableCoaxial
+
+@admin.register(CableCoaxial)
+class CableCoaxialAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CableCoaxialResources
+	list_display = ('vendeur','nom','type_cable','prix','units')
+
+
+#=========21-05-2018 =================================
+# CABLE POUR CAMERA CCD
+#=====================================================
+
+class CableCameraCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  CableCameraCCD
+
+@admin.register(CableCameraCCD)
+class CableCameraCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CableCameraCCDResources
+	list_display = ('vendeur','nom','longueur','prix','units')
+
+#=========21-05-2018 =================================
+# CAMERA IP
+#=====================================================
+
+class CameraIPResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  CameraIP
+
+@admin.register(CameraIP)
+class CameraIPAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CameraIPResources
+	list_display = ('vendeur','nom','style_camera','prix','units')
+
+
+#=========21-05-2018 =================================
+# CAMERA CCD
+#=====================================================
+
+class CameraCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  CameraCCD
+
+@admin.register(CameraCCD)
+class CameraCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CameraCCDResources
+	list_display = ('vendeur','nom','technologie','style_camera','prix','units')
+
+#=========21-05-2018 =================================
+# CHAINE DE SECURITE POUR LAPTOP
+#=====================================================
+
+class ChaineDeSecuritePourLaptopResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ChaineDeSecuritePourLaptop
+
+@admin.register(ChaineDeSecuritePourLaptop)
+class ChaineDeSecuritePourLaptopAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ChaineDeSecuritePourLaptopResources
+	list_display = ('vendeur','nom','prix','units')
+
+#=========21-05-2018 =================================
+# CHARGEUR POUR CAMERA CCD
+#=====================================================
+
+class ChargeurCameraCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ChargeurCameraCCD
+
+@admin.register(ChargeurCameraCCD)
+class ChargeurCameraCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ChargeurCameraCCDResources
+	list_display = ('vendeur','nom','tension','intensite','prix','units')
+
+#=========21-05-2018 =================================
+# CONNECTEUR BNC
+#=====================================================
+
+class ConnecteurBNCResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ConnecteurBNC
+
+@admin.register(ConnecteurBNC)
+class ConnecteurBNCAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ConnecteurBNCResources
+	list_display = ('vendeur','nom','type_connecteur','prix','units')
+
+#=========21-05-2018 =================================
+# CONNECTEUR D’ALIMENTATION FEMELLE POUR CAMERA CCD
+#=====================================================
+
+class ConnecteurAlimentationFemmelleCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ConnecteurAlimentationFemmelleCCD
+
+@admin.register(ConnecteurAlimentationFemmelleCCD)
+class ConnecteurAlimentationFemmelleCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ConnecteurAlimentationFemmelleCCDResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#=========21-05-2018 =================================
+# ENREGISTREUR CCD
+#=====================================================
+
+class EnregistreurCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  EnregistreurCCD
+
+@admin.register(EnregistreurCCD)
+class EnregistreurCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EnregistreurCCDResources
+	list_display = ('vendeur','nom','type_enregisteur','nombre_canaux','prix','units')
+
+
+#=========21-05-2018 =================================
+# LENTILLE POUR CAMERA CCD
+#=====================================================
+
+class LentilleCameraCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  LentilleCameraCCD
+
+@admin.register(LentilleCameraCCD)
+class LentilleCameraCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = LentilleCameraCCDResources
+	list_display = ('vendeur','nom','distance_focale','prix','units')
+
+
+#=========21-05-2018 =================================
+# MICROPHONE POUR CAMERA IP
+#=====================================================
+
+class MicrophonePourCameraIPResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  MicrophonePourCameraIP
+
+@admin.register(MicrophonePourCameraIP)
+class MicrophonePourCameraIPAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MicrophonePourCameraIPResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#=========21-05-2018 =================================
+# ROULEAU CABLE COAXIAL
+#=====================================================
+
+class RouleauCableCoaxialResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  RouleauCableCoaxial
+
+@admin.register(RouleauCableCoaxial)
+class RouleauCableCoaxialAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = RouleauCableCoaxialResources
+	list_display = ('vendeur','nom','type_cable','prix','units')
+
+#=========21-05-2018 =================================
+# SAC A DOS
+#=====================================================
+
+class SacADosResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  SacADos
+
+@admin.register(SacADos)
+class SacADosAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = SacADosResources
+	list_display = ('vendeur','nom','prix','units')
+
+#=========21-05-2018 =================================
+# UNITE D’ALIMENTATION POUR CAMERA CCD
+#=====================================================
+
+class UniteAlimlentationCameraCCDResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  UniteAlimlentationCameraCCD
+
+@admin.register(UniteAlimlentationCameraCCD)
+class UniteAlimlentationCameraCCDAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = UniteAlimlentationCameraCCDResources
+	list_display = ('vendeur','nom','tension','intensite','prix','units')
+
+#=====================================================
+#BOUTEILLE D’ENCRE
+#=====================================================
+class BouteilleEncreResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = BouteilleEncre
+
+@admin.register(BouteilleEncre)
+class BouteilleEncreAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =BouteilleEncreResources
+	list_display = ('vendeur','nom','marque_bouteille_encre','couleur','nombre_pages_max','prix','units')
+
+#=====================================================
+#COUPLEUR
+#=====================================================
+class CoupleurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Coupleur
+
+@admin.register(Coupleur)
+class CoupleurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =BouteilleEncreResources
+	list_display = ('vendeur','nom','type_coupleur','prix','units')
+
+
+#=====================================================
+#HUB USB
+#=====================================================
+class HubUsbResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = HubUsb
+
+@admin.register(HubUsb)
+class HubUsbAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =HubUsbResources
+	list_display = ('vendeur','nom','type_hub','prix','units')
+
+#=====================================================
+#LECTEUR DVD
+#=====================================================
+class LecteurDvdResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = LecteurDvd
+
+@admin.register(LecteurDvd)
+class LecteurDvdAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =LecteurDvdResources
+	list_display = ('vendeur','nom','taille_ecran','prix','units')
+#=====================================================
+#DISTRIBUTEUR D’ALIMENTATION ELECTRIQUE
+#=====================================================
+class DistributeurElectriqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = DistributeurElectrique
+
+@admin.register(DistributeurElectrique)
+class DistributeurElectriqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =DistributeurElectriqueResources
+	list_display = ('vendeur','nom','prix','nombre_prise','units')
+#=====================================================
+#GRAVEUR
+#=====================================================
+class GraveurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Graveur
+
+@admin.register(Graveur)
+class GraveurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =GraveurResources
+	list_display = ('vendeur','nom','Type_graveur','prix','units')
+
+
+#=====================================================
+#OUTIL DE SERTISSAGE
+#=====================================================
+class OutilSertissageResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = OutilSertissage
+
+@admin.register(OutilSertissage)
+class OutilSertissageAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =OutilSertissageResources
+	list_display = ('vendeur','nom','modele_outil_sertissage','prix','units')
+
+#=====================================================
+#PRISE WIFI
+#=====================================================
+class PriseWifiResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = PriseWifi
+
+@admin.register(PriseWifi)
+class PriseWifiAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =PriseWifiResources
+	list_display = ('vendeur','nom','marque','modele_prise','prix','units')
+
+#=====================================================
+#PROCESSEUR
+#=====================================================
+class ProcesseurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Processeur
+
+@admin.register(Processeur)
+class ProcesseurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =ProcesseurResources
+	list_display = ('vendeur','nom','marque_processeur','modele_processeur','prix','units')
+
+#=====================================================
+#REPARTITEUR ADSL
+#=====================================================
+class RepartiteurAdslResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = RepartiteurAdsl
+
+@admin.register(RepartiteurAdsl)
+class RepartiteurAdslAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class =RepartiteurAdslResources
+	list_display = ('vendeur','nom','prix','units')
+
+#====== 22-05-2018 =================================
+# CAMERA CLOUD
+#=====================================================
+
+class CameraCloudResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  CameraCloud
+
+@admin.register(CameraCloud)
+class CameraCloudAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CameraCloudResources
+	list_display = ('vendeur','nom','marque','modele','prix','units')
+
+
+#====== 22-05-2018 =================================
+# MONITEUR ORDINATEUR
+#=====================================================
+
+class MoniteurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Moniteur
+
+@admin.register(Moniteur)
+class MoniteurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MoniteurResources
+	list_display = ('vendeur','nom','marque','type_ecran','taille_ecran','prix','units')
+
+
+#====== 22-05-2018 =================================
+# RUBAN D’IMPRESSION
+#=====================================================
+
+class RubanImpressionResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  RubanImpression
+
+@admin.register(RubanImpression)
+class RubanImpressionAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = RubanImpressionResources
+	list_display = ('vendeur','nom','modele','longueur','prix','units')
+
+
+
+#====== 22-05-2018 =================================
+# RUBAN PAPIER
+#=====================================================
+
+class RubanPapierResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  RubanPapier
+
+@admin.register(RubanPapier)
+class RubanPapierAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = RubanPapierResources
+	list_display = ('vendeur','nom','marque','modele','numero','prix','units')
+
+
+#====== 22-05-2018 =================================
+# RUBAN POUR ETIQUETEUSE
+#=====================================================
+
+class RubanPourEtiqueteuseResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  RubanPourEtiqueteuse
+
+@admin.register(RubanPourEtiqueteuse)
+class RubanPourEtiqueteuseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = RubanPourEtiqueteuseResources
+	list_display = ('vendeur','nom','marque','modele','prix','units')
+
+
+
+#====== 22-05-2018 =================================
+# SWITCH HDMI
+#=====================================================
+
+class SwitchHDMIResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  SwitchHDMI
+
+@admin.register(SwitchHDMI)
+class SwitchHDMIAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = SwitchHDMIResources
+	list_display = ('vendeur','nom','marque','nombre_port','prix','units')
+
+
+#====== 22-05-2018 =================================
+# SWITCH KVM
+#=====================================================
+
+class SwitchKVMResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  SwitchKVM
+
+@admin.register(SwitchKVM)
+class SwitchKVMAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = SwitchKVMResources
+	list_display = ('vendeur','nom','nombre_port','nombre_pc','prix','units')
+
+
+
+#====== 22-05-2018 =================================
+# TABLEAU BLANC
+#=====================================================
+
+class TableauBlancResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TableauBlanc
+
+@admin.register(TableauBlanc)
+class TableauBlancAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TableauBlancResources
+	list_display = ('vendeur','nom','dimension','prix','units')
+
+
+#====== 22-05-2018 =================================
+# TAMBOUR
+#=====================================================
+
+class TambourResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Tambour
+
+@admin.register(Tambour)
+class TambourAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TambourResources
+	list_display = ('vendeur','nom','marque','numero','prix','units')
+
+
+#====== 22-05-2018 =================================
+# TESTEUR DE CABLE
+#=====================================================
+
+class TesteurDeCableResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TesteurDeCable
+
+@admin.register(TesteurDeCable)
+class TesteurDeCableAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TesteurDeCableResources
+	list_display = ('vendeur','type_testeur','prix','units')
+
+
+
+#====== 22-05-2018 =================================
+# TROUSSE A OUTIL
+#=====================================================
+
+class TrousseAOutilResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TrousseAOutil
+
+@admin.register(TrousseAOutil)
+class TrousseAOutilAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TrousseAOutilResources
+	list_display = ('vendeur','nom','nombre_d_outil','prix','units')
+
+
+
+
+#====== 22-05-2018 ===================================
+# VENTILATEUR CARTE MERE
+#=====================================================
+
+class VentilateurCarteMereResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  VentilateurCarteMere
+
+@admin.register(VentilateurCarteMere)
+class VentilateurCarteMereAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = VentilateurCarteMereResources
+	list_display = ('vendeur','nom','marque','type_socket','prix','units')
+
+
+#====== 23-05-2018 ===================================
+#BATTERIE POUR CMOS
+#=====================================================
+class BatterieCmosResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = BatterieCmos
+
+@admin.register(BatterieCmos)
+class BatterieCmosAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BatterieCmosResources
+	list_display = ('vendeur','nom','prix','units')
+#====== 23-05-2018 ===================================
+#CABLE RESEAU
+#=====================================================
+class CableReseauResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = CableReseau
+
+@admin.register(CableReseau)
+class CableReseauAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BatterieCmosResources
+	list_display = ('vendeur','nom','type_cable_reseau','categorie_cable_reseau','longueur','marque_cable_reseau','prix','units')
+
+
+#====== 23-05-2018 ===================================
+#CAMERA
+#=====================================================
+class CameraResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = Camera
+
+@admin.register(Camera)
+class CameraAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CameraResources
+	list_display = ('vendeur','nom','marque_camera','modele_camera','prix','units')
+
+#====== 23-05-2018 ===================================
+#CASQUE AVEC MICRO
+#=====================================================
+class CasqueAvecMicroResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = CasqueAvecMicro
+
+@admin.register(CasqueAvecMicro)
+class CasqueAvecMicroAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CasqueAvecMicroResources
+	list_display = ('vendeur','nom','marque_casque_micro','prix','units')
+#====== 23-05-2018 ===================================
+#CASQUE DE MUSIQUE
+#=====================================================
+class CasqueMusiqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = CasqueMusique
+
+@admin.register(CasqueMusique)
+class CasqueMusiqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CasqueMusiqueResources
+	list_display = ('vendeur','nom','marque_casque_musique','prix','units')
+
+#====== 23-05-2018 ===================================
+#CASQUE MUSIQUE ET HAUT PARLEUR
+#=====================================================
+class CasqueMusiqueHautParleurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = CasqueMusiqueHautParleur
+
+@admin.register(CasqueMusiqueHautParleur)
+class CasqueMusiqueHautParleurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CasqueMusiqueHautParleurResources
+	list_display = ('vendeur','nom','prix','units')
+#====== 23-05-2018 ===================================
+#COMPTEUR DE MONNAIE
+#=====================================================
+class CompteurMonnaieResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = CompteurMonnaie
+
+@admin.register(CompteurMonnaie)
+class CompteurMonnaieAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = CompteurMonnaieResources
+	list_display = ('vendeur','nom','marque_compteur_monnaie','model_compteur_monnaie','prix','units')
+
+#====== 23-05-2018 ===================================
+#ECOUTEUR AVEC MICRO
+#=====================================================
+class EcouteurMicroResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = EcouteurMicro
+
+@admin.register(EcouteurMicro)
+class EcouteurMicroAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EcouteurMicroResources
+	list_display = ('vendeur','nom','prix','units')
+
+#====== 23-05-2018 ===================================
+#ECRAN DE PROJECTION
+#=====================================================
+class EcranProjectionResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = EcranProjection
+
+@admin.register(EcranProjection)
+class EcranProjectionAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EcranProjectionResources
+	list_display = ('vendeur','nom','dimension','prix','units')
+
+#====== 23-05-2018 ===================================
+#EQUIPEMENT CPE
+#=====================================================
+class EquipementCpeResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = EquipementCpe
+
+@admin.register(EquipementCpe)
+class EquipementCpeAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EquipementCpeResources
+	list_display = ('vendeur','nom','marque_cpe','modele_cpe','prix','units')
+
+
+#====== 23-05-2018 ===================================
+#HAUT PARLEUR USB
+#=====================================================
+class HautParleurUsbResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = HautParleurUsb
+
+@admin.register(HautParleurUsb)
+class HautParleurUsbAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = HautParleurUsbResources
+	list_display = ('vendeur','nom','marque_haut_parleur','prix','units')
+
+
+#====== 23-05-2018 ===================================
+#IMPRIMANTE D’ETIQUETTE
+#=====================================================
+class ImprimanteEtiquetteResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = ImprimanteEtiquette
+
+@admin.register(ImprimanteEtiquette)
+class ImprimanteEtiquetteAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ImprimanteEtiquetteResources
+	list_display = ('vendeur','nom','marque','modele_imprimante_etiquette','prix','units')
+
+#====== 23-05-2018 ===================================
+#KIT ACCESSOIRES POUR SPLIT
+#=====================================================
+class KitAccessoiresSplitResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = KitAccessoiresSplit
+
+@admin.register(KitAccessoiresSplit)
+class KitAccessoiresSplitAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = KitAccessoiresSplitResources
+	list_display = ('vendeur','nom','puissance_split','prix','units')
+
+#====== 23-05-2018 ===================================
+#MOUSSE NETTOYANTE
+#=====================================================
+class MousseNettoyanteResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = MousseNettoyante
+
+@admin.register(MousseNettoyante)
+class MousseNettoyanteAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MousseNettoyanteResources
+	list_display = ('vendeur','nom','prix','units')
+
+#====== 23-05-2018 ===================================
+#STAND LAPTOP
+#=====================================================
+class StandLaptopResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = StandLaptop
+
+@admin.register(StandLaptop)
+class StandLaptopAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = StandLaptopResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#====== 23-05-2018 ===================================
+#TAPIS DE SOURIS
+#=====================================================
+class TapisSourisResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model = TapisSouris
+
+@admin.register(TapisSouris)
+class TapisSourisAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TapisSourisResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# BLOC D'ALIMENTATION POUR PC
+#=====================================================
+
+class BlocDAlimentationPourPCResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  BlocDAlimentationPourPC
+
+@admin.register(BlocDAlimentationPourPC)
+class BlocDAlimentationPourPCAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BlocDAlimentationPourPCResources
+	list_display = ('vendeur','nom','prix','units')
+
+#======== 23-05-2018 =================================
+# APPAREIL DE GYM
+#=====================================================
+
+class AppareilDeGymResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  AppareilDeGym
+
+@admin.register(AppareilDeGym)
+class AppareilDeGymAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = AppareilDeGymResources
+	list_display = ('vendeur','nom','nombre_station','prix','units')
+
+
+#======== 23-05-2018 =================================
+# BOITIER ARRIERE POUR SOCKET MURAL
+#=====================================================
+
+class BoitierSocketMuralResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  BoitierSocketMural
+
+@admin.register(BoitierSocketMural)
+class BoitierSocketMuralAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BoitierSocketMuralResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# CLAVIER ET SOURIS SANS FIL
+#=====================================================
+
+class ClavierEtSourisSansFilResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ClavierEtSourisSansFil
+
+@admin.register(ClavierEtSourisSansFil)
+class ClavierEtSourisSansFilAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ClavierEtSourisSansFilResources
+	list_display = ('vendeur','nom','marque','prix','units')
+
+
+#======== 23-05-2018 =================================
+# CLAVIER SANS FIL
+#=====================================================
+
+class ClavierSansFilResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ClavierSansFil
+
+@admin.register(ClavierSansFil)
+class ClavierSansFilAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ClavierSansFilResources
+	list_display = ('vendeur','nom','marque','prix','units')
+
+
+
+#======== 23-05-2018 =================================
+# ENSEMBLE DE POIDS POUR BANC DE MUSCULATION
+#=====================================================
+
+class EnsemblePoidsMusculResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  EnsemblePoidsMuscul
+
+@admin.register(EnsemblePoidsMuscul)
+class EnsemblePoidsMusculAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EnsemblePoidsMusculResources
+	list_display = ('vendeur','nom','poids','prix','units')
+
+
+#======== 23-05-2018 =================================
+# IMPRIMANTE PHOTO
+#=====================================================
+
+class ImprimantePhotoResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ImprimantePhoto
+
+@admin.register(ImprimantePhoto)
+class ImprimantePhotoAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ImprimantePhotoResources
+	list_display = ('vendeur','nom','marque_imprimante','modele_imprimante','prix','units')
+
+
+
+#======== 23-05-2018 =================================
+# KIT DE NETTOYAGE POUR IMPRIMANTE
+#=====================================================
+
+class KitDeNettoyageImprimanteResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  KitDeNettoyageImprimante
+
+@admin.register(KitDeNettoyageImprimante)
+class KitDeNettoyageImprimanteAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = KitDeNettoyageImprimanteResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# VELO ELLIPTIQUE
+#=====================================================
+
+class VeloElliptiqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  VeloElliptique
+
+@admin.register(VeloElliptique)
+class VeloElliptiqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = VeloElliptiqueResources
+	list_display = ('vendeur','nom','modele','prix','units')
+
+
+#======== 23-05-2018 =================================
+# TAPIS DE COURSE
+#=====================================================
+
+class TapisDeCourseResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TapisDeCourse
+
+@admin.register(TapisDeCourse)
+class TapisDeCourseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TapisDeCourseResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# VELO MAGNETIQUE
+#=====================================================
+
+class VeloMagnetiqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  VeloMagnetique
+
+@admin.register(VeloMagnetique)
+class VeloMagnetiqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = VeloMagnetiqueResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# PLAQUE DE FACE DOUBLE POUR SOCKET MURALE
+#=====================================================
+
+class PlaqueAFaceDoublePourSocketMuralResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  PlaqueAFaceDoublePourSocketMural
+
+@admin.register(PlaqueAFaceDoublePourSocketMural)
+class PlaqueAFaceDoublePourSocketMuralAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = PlaqueAFaceDoublePourSocketMuralResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# POINCON
+#=====================================================
+
+class PoinconResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Poincon
+
+@admin.register(Poincon)
+class PoinconAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = PoinconResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 23-05-2018 =================================
+# TABLE D’ORDINATEUR
+#=====================================================
+
+class TableOrdinateurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  TableOrdinateur
+
+@admin.register(TableOrdinateur)
+class TableOrdinateurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = TableOrdinateurResources
+	list_display = ('vendeur','nom','prix','units')
+

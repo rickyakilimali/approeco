@@ -2267,3 +2267,317 @@ TENSION_VISSEUSE= (
 		('12V','12V'),
 
 	)
+DIMENSION_VENTILATEUR= (
+
+
+		('48’’','48’’'),
+		('56’’','56’’'),
+
+	)
+FORME_TABLE= (
+
+		('CARRE','CARRE'),
+		('RECTANGULAIRE','RECTANGULAIRE'),
+
+	)
+DIMENSION_TABLE= (
+
+
+		('70X70CM','70X70CM'),
+		('60X60CM','60X60CM'),
+		('90X90CM','90X90CM'),
+		('242X76CM','242X76CM'),
+
+	)
+
+MARQUE_BOUILLOIRE= (
+
+		('DEFY','DEFY'),
+		('PANASONIC','PANASONIC'),
+		('PESKOE','PESKOE'),
+		('TAURUS','TAURUS'),
+		('ZAIKO','ZAIKO'),
+
+	)
+
+VOLUME_BOUILLOIRE= (
+
+		('1,7 L','1,7 L'),
+		('1,6 L','1,6 L'),
+		('2 L','2 L'),
+
+	)
+
+MARQUE_CAFETIERE= (
+
+		('DEFY','DEFY'),
+		('PANASONIC','PANASONIC'),
+		('PHILIPS','PHILIPS'),
+		('KRUPS EXPRESSO','KRUPS EXPRESSO'),
+		('MOULINEX','MOULINEX'),
+		('TAURUS','TAURUS'),
+
+	)
+
+MARQUE_CHAUFFE_EAU= (
+
+		('ARISTON','ARISTON'),
+		('PANASONIC','PANASONIC'),
+		('IGNIS','IGNIS'),
+
+	)
+
+VOLUME_CHAUFFE_EAU= (
+
+		('100 L','100 L'),
+		('80 L','80 L'),
+		('50 L','50 L'),
+		('30 L','30 L'),
+
+	)
+
+MARQUE_DESTR_PAPIER= (
+
+		('DELI','DELI'),
+
+	)
+
+CAPACITE_DESTR_PAPIER= (
+
+		('12 PAPIERS','12 PAPIERS'),
+		('17 PAPIERS','17 PAPIERS'),
+		('2 PAPIERS','2 PAPIERS'),
+		('8 PAPIERS','8 PAPIERS'),
+
+	)
+
+VOLUME_DESTR_PAPIER= (
+
+		('23L','23L'),
+		('16L','16L'),
+		('31L','31L'),
+		('13L','13L'),
+		('3,5L','3,5L'),
+
+	)
+
+DEST_CD= (
+
+		('OUI','OUI'),
+		('NON','NON'),
+
+	)
+
+DESTR_CARTE_CREDIT= (
+
+		('OUI','OUI'),
+		('NON','NON'),
+
+	)
+
+MARQUE_CONGELATEUR= (
+
+		('ATLAS','ATLAS'),
+		('DEFY','DEFY'),
+		('SAMSUNG','SAMSUNG'),
+		('WHIRLPOOL','WHIRLPOOL'),
+		('XPER','XPER'),
+
+	)
+
+VOLUME_CONGELATEUR= (
+
+		('150L','150L'),
+		('250L','250L'),
+		('350L','350L'),
+		('300L','300L'),
+		('550L','550L'),
+		('260L','260L'),
+		('400L','400L'),
+		('280L','280L'),
+		('320L','320L'),
+		('480L','480L'),
+		('185L','185L'),
+		('324L','324L'),
+		('130L','130L'),
+		('465L','465L'),
+		('500L','500L'),
+		('600L','600L'),
+		('110L','110L'),
+		('120L','120L'),
+		('170L','170L'),
+		('200L','200L'),
+		('450L','450L'),
+
+	)
+
+TYPE_CONGELATEUR= (
+
+		('STANDARD','STANDARD'),
+		('DEBOUT','DEBOUT'),
+		('AVEC COOL PACK','AVEC COOL PACK'),
+		('AVEC VITRE','AVEC VITRE'),
+
+	)
+
+ALIMENTATION= (
+
+		('PANNEAUX SOLAIRES','PANNEAUX SOLAIRES'),
+		('PETROL','PETROL'),
+		('SECTEUR','SECTEUR'),
+
+	)
+
+VOLUME_FILTRE= (
+
+		('16L','16L'),
+		('24L','24L'),
+		('34L','34L'),
+		('18L','18L'),
+		('36L','36L'),
+		('11L','11L'),
+
+	)
+
+TYPE_FILTRE= (
+
+		('ACIER','ACIER'),
+		('ALUMINIUM','ALUMINIUM'),
+
+	)
+
+MARQUE_FRIGO= (
+
+		('SHARP','SHARP'),
+		('WESTPOOL','WESTPOOL'),
+		('XPER','XPER'),
+
+	)
+
+VOLUME_FRIGO= (
+
+		('50L','50L'),
+		('105L','105L'),
+		('120L','120L'),
+		('50L','50L'),
+
+	)
+
+MARQUE_MICROONDE= (
+
+		('PANASONIC','PANASONIC'),
+
+	)
+
+CAPACITE_MICROONDE= (
+
+		('27L','27L'),
+		('31L','31L'),
+		('25L','25L'),
+
+	)
+
+PUISSANCE_MICROONDE= (
+
+		('1000W','1000W'),
+		('800W','800W'),
+
+	)
+
+DIAMETRE_TUYAU= (
+
+		('1/2"','1/2"'),
+		('3/4"','3/4"'),
+
+	)
+
+TYPE_CABLE_COAXIAL = (
+        ('RG59', 'RG59'),
+
+    )
+
+LONGEUR_CABLE_CCD = (
+        ('10M', '10M'),
+        ('15M', '15M'),
+        ('20M', '20M'),
+        ('5M', '5M'),
+
+    )
+
+
+TECHNOLOGIE_CCD = (
+        ('INFRAROUGE', 'INFRAROUGE'),
+
+    )
+
+STYLE_CCD = (
+        ('DOME', 'DOME'),
+        ('BOX', 'BOX'),
+        ('BULLET', 'BULLET'),
+
+    )
+
+TENSION_CHARGEUR_CCD = (
+        ('12V', '12V'),
+
+		)
+
+INTENSITE_CHARGEUR_CCD = (
+        ('750MA', '750MA'),
+        ('1000MA', '1000MA'),
+
+		)
+
+TYPE_CONNECTEUR_BNC= (
+        ('FEMELLE', 'FEMELLE'),
+        ('VERT', 'VERT'),
+        ('RG59', 'RG59'),
+        ('T', 'T'),
+        ('BNC VERS BNC', 'BNC VERS BNC'),
+        ('RCA MALE', 'RCA MALE'),
+        ('RCA VERS RCA', 'RCA VERS RCA'),
+
+		)
+
+TYPE_ENREGISTREUR = (
+        ('AHD', 'AHD'),
+
+		)
+
+NBRE_CANAUX = (
+        ('8', '8'),
+        ('4', '4'),
+
+		)
+
+DISTANCE_FOCALE = (
+        ('6MM', '6MM'),
+        ('8MM', '8MM'),
+        ('12MM', '12MM'),
+        ('16MM', '16MM'),
+
+		)
+
+INTENSITE_ALIMENTATION_CCD = (
+        ('15A', '15A'),
+
+		)
+
+NOMBRE_STATION = (
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+
+    )
+
+POIDS_MUSCUL= (
+        ('50KG', '50KG'),
+
+    )
+
+
+MODELE_VELO = (
+        ('ORBITRAC', 'ORBITRAC'),
+
+    )

@@ -182,6 +182,7 @@ CHOIX_AMUSE_GUEULE = (
 	)
 
 CHOIX_BOISSON_FROIDE = (
+		('0','0'),
 		('1','1'),
 		('2','2'),
 		('3','3'),
@@ -343,6 +344,7 @@ AVENUE = (
 		('SENEGALAIS','SENEGALAIS'),
 		('KASAVUBU','KASAVUBU'),
 		('LUAMBO MAKIADI','LUAMBO MAKIADI'),
+		('COLONNEL EBEYA','COLONNEL EBEYA'),
 
 		)
 
@@ -360,6 +362,9 @@ COMMUNE = (
 
 SUPERFICIE	= (
 		('140 M2','140 M2'),
+		('71,5 M2','71,5 M2'),
+		('72 M2','72 M2'),
+
 
 		)
 MICRO_GRATUIT= (

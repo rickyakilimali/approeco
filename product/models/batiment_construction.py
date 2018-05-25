@@ -150,7 +150,7 @@ class LocationCamion(productbase.ProductBase):
 	zone = models.CharField("ZONE",max_length=100, choices=ZONE)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_JOUR)
 
 	#ordonner les produits
 	class Meta:
@@ -221,7 +221,22 @@ class Chambre(productbase.ProductBase):
 	acces_wifi_gratuit =models.CharField("ACCES WIFI GRATUIT", max_length=20, choices= ACCES_WIFI_GRATUIT)
 	petit_dejeune_gratuit =models.CharField("PETIT DEJEUNE GRATUIT", max_length=20, choices= PETIT_DEJEUNE_GRATUIT)
 	type_lit =models.CharField("TYPE DE LIT", max_length=20, choices= TYPE_LIT)
-	avenue =models.CharField("AVENUE", max_length=20, choices= AVENUE)
+	avenue =models.CharField("AVENUE", max_length=20, choices= AVENUE_1)
 	commune =models.CharField("COMMUNE", max_length=20, choices= COMMUNE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+#=====================================================
+#TRIPLEX
+#=====================================================
+
+class Triplex(productbase.ProductBase):
+	#les attributs
+	dimension_triplex  = models.CharField("DIMENSION",max_length=100, choices=DIMENSION_TRIPLEX)
+	type_triplex= models.CharField("TYPE",max_length=100, choices=TYPE_TRIPLEX)
+	epaisseur= models.CharField("MARQUE",max_length=100, choices=EPAISSEUR_TRIPLEX)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']

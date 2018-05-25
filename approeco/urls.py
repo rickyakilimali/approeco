@@ -23,6 +23,7 @@ from sendemail.views import emailView,successView
 
 
 urlpatterns = [
+    url(r'^admin/', include('smuggler.urls')),
     url(r'^admin/', admin.site.urls),
     url('^$', HomePageView.as_view(), name='home'),
     url(r'^login_success/$', login_success, name='login_success'),

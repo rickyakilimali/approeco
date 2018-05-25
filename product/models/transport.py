@@ -52,7 +52,7 @@ class LocationPorteConteneur(productbase.ProductBase):
 	#les attributs
 	zone  = models.CharField("POIDS",max_length=100, choices=ZONE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_JOUR)
 
 	#ordonner les produits
 	class Meta:
@@ -112,7 +112,7 @@ class Dedouanement(productbase.ProductBase):
 class Entreposage(productbase.ProductBase):
 	type_entreposage = models.CharField("TYPE ENTREPOSAGE", max_length=50, choices= TYPE_ENTREPOSAGE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_M2)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
