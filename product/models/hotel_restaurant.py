@@ -54,7 +54,7 @@ class Comptoire(productbase.ProductBase):
 
 class CouvercleOval(productbase.ProductBase):
 	#les attributs
-	taille = models.CharField("TAILLE (POUCE)  ",max_length=100, choices=TAILLE_COUVERCLE)
+	taille = models.CharField("TAILLE EN POUCE  ",max_length=100, choices=TAILLE_COUVERCLE)
 	marque= models.CharField("MARQUE",max_length=100, choices=MARQUE_COUVERCLE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
@@ -84,9 +84,9 @@ class FourPizza(productbase.ProductBase):
 
 class MachineCreme(productbase.ProductBase):
 	#les attributs
-	puissance = models.CharField("PUISSANCE(KILOWATT)",max_length=100, choices=PUISSANCE_MACHINECREME)
+	puissance = models.CharField("PUISSANCE",max_length=100, choices=PUISSANCE_MACHINECREME)
 	marque= models.CharField("MARQUE",max_length=100, choices=MARQUE_MACHINECREME)
-	volume= models.CharField("VOLUME(LITTRE)",max_length=100, choices=VOLUME_MACHINECREME)
+	volume= models.CharField("VOLUME",max_length=100, choices=VOLUME_MACHINECREME)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
 
@@ -100,7 +100,7 @@ class MachineCreme(productbase.ProductBase):
 
 class Parasoleil(productbase.ProductBase):
 	#les attributs
-	diametre = models.CharField("PUISSANCE(CENTIMETRE)",max_length=100, choices=DIAMETRE_PARASOLEIL)
+	diametre = models.CharField("PUISSANCE",max_length=100, choices=DIAMETRE_PARASOLEIL)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
 
@@ -163,7 +163,7 @@ class VitrineBoisson(productbase.ProductBase):
 
 class Poele(productbase.ProductBase):
 	#les attributs
-	format_poele = models.CharField("NOMBRE DE PORTE",max_length=100, choices=FORMAT_POELE)
+	format_poele = models.CharField("FORMAT",max_length=100, choices=FORMAT_POELE)
 	marque= models.CharField("MARQUE",max_length=100, choices=MARQUE_POELE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)

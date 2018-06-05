@@ -23,15 +23,15 @@ MODEL_BUREAU = (
 		('002','002'),
 		('Z001','Z001'),
 		('1205','1205'),
+	    ('12019B','12019B'),
+	    ('14019B','14019B'),
 		('1405','1405'),
 	    ('1605','1605'),
+	    ('16019B','16019B'),
+	    ('16129','16129'),
 	    ('2022','2022'),
 	    ('2036','2036'),
 	    ('2808','2808'),
-	    ('12019B','12019B'),
-	    ('14019B','14019B'),
-	    ('16019B','16019B'),
-	    ('16129','16129'),
 	)
 
 REVETEMENT_SIEGE = (
@@ -59,58 +59,90 @@ MATIERE_AMEUBLEMENT = (
 		('METAL','METAL'),
 	)
 LONGUEUR_TABLE_BUREAU = (
-		('160 CM','160 CM'),
 		('120 CM','120 CM'),
 		('140 CM','140 CM'),
+		('160 CM','160 CM'),
 		('180 CM','180 CM'),
-
-
-
-		)
+	)
 
 MATERIAU = (
-		('METAL','METAL'),
 		('BOIS AGGLOMERE','BOIS AGGLOMERE'),
-
+		('METAL','METAL'),
 	)
+
+MATERIAU_ARMOIRE = (
+		('METAL','METAL'),
+	)
+
+MATERIAU_ETAGERE = (
+		('METAL','METAL'),
+	)
+
+MATERIAU_BUREAU = (
+		('BOIS AGGLOMERE','BOIS AGGLOMERE'),
+		('METAL','METAL'),
+	)
+
 
 
 HAUTEUR= (
 		('157CM','157CM'),
 		('198CM','198CM'),
 		('200CM','200CM'),
+	)
 
+HAUTEUR_ARMOIRE= (
+		('157CM','157CM'),
 
 	)
 
+HAUTEUR_ETAGERE= (
+		('198CM','198CM'),
+		('200CM','200CM'),
+	)
+
+
 LONGUEUR= (
+		('120CM','120CM'),
+        ('140CM','140CM'),
+		('150CM','150CM'),
+        ('160CM','160CM'),
+		('170CM','170CM'),
+        ('180CM','180CM'),
+
+	)
+
+LONGUEUR_ARMOIRE= (
 		('40CM','40CM'),
+	)
+
+LONGUEUR_ETAGERE= (
 		('92CM','92CM'),
 		('91CM','91CM'),
-		('120CM','120CM'),
-		('150CM','150CM'),
-		('170CM','170CM'),
-        ('140CM','140CM'),
-        ('160CM','160CM'),
-        ('180CM','180CM'),
-        ('120CM','120CM'),
-        ('150CM','150CM'),
-        ('170CM','170CM'),
-		('1.40 MTR','1.40 MTR'),
-		('1.60 MTR','1.60 MTR'),
-		('1.80 MTR','1.80 MTR'),
-		('1.20 MTR','1.20 MTR'),
-		('2.4 MTR','2.4 MTR'),
-        ('3.5 MTR','3.5 MTR'),
+	)
 
+LONGUEUR_BUREAU= (
+		('120CM','120CM'),
+        ('140CM','140CM'),
+		('150CM','150CM'),
+        ('160CM','160CM'),
+		('170CM','170CM'),
+        ('180CM','180CM'),
 
 	)
 
 LARGEUR= (
 		('27,5CM','27,5CM'),
-		('37,5CM','37,5CM'),
 		('30CM','30CM'),
+		('37,5CM','37,5CM'),
 		('78CM','78CM'),
+
+	)
+
+
+LONGUEUR_TB_REUNION= (
+		('2,4 M','2,4 M'),
+        ('3,5 M','3,5 M'),
 
 	)
 
@@ -120,10 +152,15 @@ NOMBRE_CASES= (
 
 	)
 
-FORME= (
-		('RECTANGULAIRE','RECTANGULAIRE'),
+FORME_TABLE= (
 		('OVALE','OVALE'),
+		('RECTANGULAIRE','RECTANGULAIRE'),
+
+	)
+
+FORME_BUREAU= (
 		('EN L','EN L'),
+		('RECTANGULAIRE','RECTANGULAIRE'),
 
 	)
 
@@ -132,47 +169,40 @@ NOMBRE_DE_PLACES= (
 
 	)
 TYPE_CHAISE= (
-		('CHAISE ORDINATEUR','CHAISE ORDINATEUR'),
 		('CHAISE DE BUREAU','CHAISE DE BUREAU'),
-		('CHAISE VISITEUR','CHAISE VISITEUR'),
 		('CHAISE DE DIRECTION','CHAISE DE DIRECTION'),
+		('CHAISE VISITEUR','CHAISE VISITEUR'),
 
 	)
 
 TYPE_BUREAU = (
-		('SIMPLE','SIMPLE'),
 		('DIRECTION','DIRECTION'),
+		('SIMPLE','SIMPLE'),
 	)
 
-REVETEMENT= (
-		('MAILLE','MAILLE'),
+REVETEMENT_CHAISE= (
 		('CUIR','CUIR'),
+		('MAILLE','MAILLE'),
 		('TISSU ET MAILLE','TISSU ET MAILLE'),
 
 )
 TYPE_POUBELLE= (
-
-
 		('POUBELLE','POUBELLE'),
 
 	)
 MATIERE_POUBELLE= (
-
-
-		('PLASTIQUE','PLASTIQUE'),
 		('INOX','INOX'),
-
+		('PLASTIQUE','PLASTIQUE'),
 
 	)
+
 VOLUME_POUBELLE= (
-
-
-		('12L','12L'),
-		('30L','30L'),
-		('8L','8L'),
-		('20L','20L'),
 		('6L','6L'),
-)
+		('8L','8L'),
+		('12L','12L'),
+		('20L','20L'),
+		('30L','30L'),
+    )
 
 DIMENSION_VASE= (
 

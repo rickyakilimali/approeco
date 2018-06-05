@@ -199,22 +199,36 @@ def extractfields(classmodel):
 
 	return product_fields
 
+def extractfields_verbose_name(classmodel):
+	all_fields= classmodel._meta.get_fields(include_parents=False, include_hidden=False)
+	attribute_fields = all_fields[5:len(all_fields)]
+	product_fields_verbose_name = []
+	for field in attribute_fields:
+		product_fields_verbose_name.append(field.verbose_name)
+
+	return product_fields_verbose_name
+
 @user_passes_test(acheteur_check,login_url='login')
 def productsearch(request, dbmodel):
 	product_list = ContentType.objects.get(app_label="product", model=dbmodel).model_class().objects.all()
 	ProductFilter = productfilterset_factory(dbmodel)
 	product_filter = ProductFilter(request.GET, queryset=product_list)
 	productfields=extractfields(ContentType.objects.get(app_label="product", model=dbmodel).model_class())
+	productfields_verbose=extractfields_verbose_name(ContentType.objects.get(app_label="product", model=dbmodel).model_class())
+   #--------------------------------------------------------#
 
+
+   #--------------------------------------------------------#
 	product_type = ProductType.objects.get(product_model=ContentType.objects.get(app_label="product", model=dbmodel))
 	criteria2 = {k: v for k, v in request.GET.items() if v}
 
 
+
 	if len(productfields)>2:
-		return render(request, 'product/product-filter-list.html', {'filter': product_filter, 'fields':productfields, 'criteria2':criteria2, 'product_type':product_type, 'model':dbmodel})
+		return render(request, 'product/product-filter-list.html', {'filter': product_filter,'fields_verbose_name':productfields_verbose  ,'fields':productfields, 'criteria2':criteria2, 'product_type':product_type, 'model':dbmodel,})
 
 	else:
-		return render(request, 'product/product-filter-list-without-attributes.html', {'product_list':product_list,'fields':productfields, 'product_type':product_type, 'model':dbmodel})
+		return render(request, 'product/product-filter-list-without-attributes.html', {'product_list':product_list,'fields_verbose_name':productfields_verbose  ,'fields':productfields, 'product_type':product_type, 'model':dbmodel})
 
 
 

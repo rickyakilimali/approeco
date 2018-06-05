@@ -1,0 +1,113 @@
+{% extends '_layouts/acheteur.html' %}
+{% load cart_tags %}
+{% get_cart as cart %}
+
+{% block headline %}Catalogue
+
+    {% if current_cat %}
+        {{current_cat.name}}
+    {% endif %}
+
+{% endblock headline %}
+
+{% block content %}
+
+<div class="container">
+    <div class="text-center"><p>{{instance.name}}</p></div>
+        <hr>
+
+
+
+        {% if  instance.item_set.all %}
+
+        <div class="card">
+          <div class="row">
+            <div class="col-md-9">
+          <table class="table table-hover shopping-cart-wrap">
+            <thead class="text-muted">
+            <tr>
+              <th scope="col"></th>
+              <th scope="col" width="320">acte</th>
+			  <th scope="col" width="320" class="text-right">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+        {% for i in instance.item_set.all %}
+
+            <tr>
+              <form id="myform" method="get" action="/consultation/add/">
+              <td>
+
+                <figure class="media">
+
+                  </div>
+
+                </figure>
+              </td>
+              <td>
+                <strong>{{ i.nom }} </strong>
+                <dl class="param param-inline small">
+
+                </dl>
+              </td>
+              <td>
+                <input type="hidden" name="id" value="{{ i.id }}" >
+
+              </td>
+              <td class="text-right">
+                  <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search">Ajouter</i>
+
+                  </button>
+              </td>
+              </form>
+            </tr>
+
+
+
+        {% endfor %}
+
+
+        {% endif %}
+
+          </tbody>
+          </table>
+        </div>
+        <div class="col-md-3">
+          <h4>Contenu du panier</h4>
+          <table border="1">
+            <tr>
+                <th>Acte</th>
+
+
+            </tr>
+            {% for item in cart.items %}
+            <tr>
+                <td>{{ item.product }}</td>
+
+                <td>
+                  <form method="get" action="/consultation/remove/">
+                    <input type="hidden" name="id" value="{{ item.product.id }}" >
+                    <button class="btn btn-default" type="submit">
+                      <i class="glyphicon glyphicon-search">Supprimer</i>
+                    </button>
+                  </form>
+
+                </td>
+
+            </tr>
+                {% endfor %}
+            </table>
+            <form method="get" action="/consultation/submitcart/">
+                <button class="btn btn-default" type="submit">
+                    <i class="glyphicon glyphicon-search">Recherche Fournisseurs</i>
+                </button>
+            </form>
+        </div>
+        </div>
+      </div>
+</div>
+
+{% endblock %}

@@ -8,10 +8,10 @@ from utils.unite_prix import *
 class Riz(productbase.ProductBase):
 
 	variete = models.CharField("VARIETE",max_length=100, choices=VARIETE_RIZ)
-	type_riz =models.CharField("TYPE RIZ",max_length=100, blank=True,null=True,choices=TYPE_RIZ)
+	type_riz =models.CharField("TYPE DE RIZ",max_length=100, blank=True,null=True,choices=TYPE_RIZ)
 	qualite =models.CharField("QUALITE",max_length=50, blank=True,null=True,choices=QUALITE_RIZ)
-	prix = models.DecimalField(max_digits=10, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -24,10 +24,10 @@ class Riz(productbase.ProductBase):
 class Bouillie(productbase.ProductBase):
 
 
-	composition_bouillie =models.CharField("COMPOSITION BOUILLIE",max_length=100, choices=COMPOSITION_BOUILLIE)
-	qualite_bouillie =models.CharField("QUALITE BOUILLIE",max_length=100, choices= QUALITE_BOUILLIE)
-	prix = models.DecimalField(max_digits=10, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	composition_bouillie =models.CharField("COMPOSITION",max_length=100, choices=COMPOSITION_BOUILLIE)
+	qualite_bouillie =models.CharField("QUALITE ",max_length=100, choices= QUALITE_BOUILLIE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -40,11 +40,11 @@ class Semence(productbase.ProductBase):
 
 	#les attributs
 	produit_agricole = models.CharField("PRODUIT AGRICOLE",max_length=100, choices=PRODUIT_AGRICOLE)
-	variete = models.CharField("VARIETE",max_length=100,blank=True,null=True, choices=VARIETE)
-	poids = models.CharField("POIDS",max_length=100, choices=POIDS)
+	variete = models.CharField("VARIETE",max_length=100,blank=True,null=True, choices=VARIETE_SEMENCE)
+	poids = models.CharField("CONTENANT",max_length=100, choices=POIDS_SEMENCE)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -59,9 +59,9 @@ class BoutureManioc(productbase.ProductBase):
 
 	#les attributs
 
-	longueur = models.CharField("LONGUEUR",max_length=100, choices=LONGUEUR)
+	longueur = models.CharField("LONGUEUR",max_length=100, choices=LONGUEUR_BOUTURE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -75,9 +75,9 @@ class Huile(productbase.ProductBase):
 
 	#les attributs
 
-	base = models.CharField("BASE",max_length=100, choices=BASE)
+	base = models.CharField("PRODUIT DE BASE",max_length=100, choices=BASE_HUILE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_LITRE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_LITRE)
 
 	#ordonner les produits
 	class Meta:
@@ -92,11 +92,11 @@ class Tourteau(productbase.ProductBase):
 
 	#les attributs
 
-	base = models.CharField("BASE",max_length=100, choices=BASE)
+	base = models.CharField("PRODUIT DE BASE",max_length=100, choices=BASE_TOURTEAU)
 
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -113,7 +113,7 @@ class Reboisement(productbase.ProductBase):
 
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_M2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_M2)
 
 	#ordonner les produits
 	class Meta:
@@ -122,9 +122,9 @@ class Reboisement(productbase.ProductBase):
 # LEGUME
 #=====================================================
 class Legume(productbase.ProductBase):
-	type_legume =models.CharField("TYPE LEGUME",max_length=50, choices=TYPE_LEGUME_1)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	type_legume =models.CharField("TYPE DE LEGUME",max_length=50, choices=TYPE_LEGUME_1)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -133,9 +133,9 @@ class Legume(productbase.ProductBase):
 #  POISSON
 #=====================================================
 class Poisson(productbase.ProductBase):
-	type_de_poisson =models.CharField("TYPE POISSON",max_length=50, choices=TYPE_POISSON)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	type_de_poisson =models.CharField("TYPE DE POISSON",max_length=50, choices=TYPE_POISSON)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -147,8 +147,8 @@ class Poisson(productbase.ProductBase):
 #=====================================================
 class Boeuf(productbase.ProductBase):
 	type_de_morceau =models.CharField("TYPE DE MORCEAU",max_length=50, choices=TYPE_MORCEAU_BOEUF)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -159,8 +159,8 @@ class Boeuf(productbase.ProductBase):
 #=====================================================
 class Porc(productbase.ProductBase):
 	type_de_morceau =models.CharField("TYPE DE MORCEAU",max_length=50, choices=TYPE_MORCEAU_PORC)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -170,8 +170,8 @@ class Porc(productbase.ProductBase):
 #=====================================================
 class Poulet(productbase.ProductBase):
 	type_de_poulet =models.CharField("TYPE DE POULET",max_length=50, choices=TYPE_POULET)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_PIECE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
 
 #ordonner les produits
 	class Meta:
@@ -181,8 +181,8 @@ class Poulet(productbase.ProductBase):
 #  CHEVRE
 #=====================================================
 class Chevre(productbase.ProductBase):
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 #ordonner les produits
 	class Meta:
@@ -194,8 +194,8 @@ class Chevre(productbase.ProductBase):
 #=====================================================
 class CossetteManioc(productbase.ProductBase):
 	poids_par_sac=models.CharField("POIDS PAR SAC",max_length=50, choices=POIDS_PAR_SAC)
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_USD_KG)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 #ordonner les produits
 	class Meta:
@@ -205,8 +205,8 @@ class CossetteManioc(productbase.ProductBase):
 #  MIEL PUR
 #=====================================================
 class MielPur(productbase.ProductBase):
-	prix = models.DecimalField(max_digits=5, decimal_places=2)
-	units = models.CharField(max_length=50, choices=UNITE_LITRE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_LITRE)
 
 #ordonner les produits
 	class Meta:
@@ -220,7 +220,7 @@ class Amarante(productbase.ProductBase):
 	#les attributs
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_AMARANTE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -234,7 +234,7 @@ class Gingembre(productbase.ProductBase):
 	#les attributs
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_GINGEMBRE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -250,7 +250,7 @@ class LegumeSeche(productbase.ProductBase):
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_LEGUME_SECHE)
 	type_legume= models.CharField("TYPE DE LEGUME",max_length=100, choices=TYPE_LEGUME)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -265,7 +265,7 @@ class Farine(productbase.ProductBase):
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_FARINE)
 	produit_de_base= models.CharField("PRODUIT DE BASE",max_length=100, choices=PRODUIT_BASE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -279,9 +279,9 @@ class Farine(productbase.ProductBase):
 class Mais(productbase.ProductBase):
 	#les attributs
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_MAIS)
-	variete= models.CharField("VARIETE DU MAIS",max_length=100, choices=VARIETE)
+	variete= models.CharField("VARIETE DU MAIS",max_length=100, choices=VARIETE_MAIS)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -295,7 +295,7 @@ class Manioc(productbase.ProductBase):
 	#les attributs
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_MANIOC)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -310,7 +310,7 @@ class Arachide(productbase.ProductBase):
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ARACHIDE)
 	caracteristique= models.CharField("CARACTERISTIQUE",max_length=100, choices=CARACTERISTIQUE_ARACHIDE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:
@@ -325,7 +325,7 @@ class Semoule(productbase.ProductBase):
 	contenant= models.CharField("CONTENANT",max_length=100, choices=CONTENANT_SEMOULE)
 	produit_de_base= models.CharField("PRODUIT DE BASE",max_length=100, choices=PRODUIT_BASE_SEMOULE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_KG)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
 
 	#ordonner les produits
 	class Meta:

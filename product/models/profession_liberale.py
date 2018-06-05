@@ -9,8 +9,8 @@ from utils.unite_prix import UNITE
 #=====================================================
 class AssistanceComptable(productbase.ProductBase):
 	secteur=models.CharField("SECTEUR ", max_length=100, choices= SECTEUR)
-	type_intervention =models.CharField("TYPE INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
-	nombre_employes =models.CharField("NOMBRE EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
+	type_intervention =models.CharField("TYPE D'INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
+	nombre_employes =models.CharField("NOMBRE D'EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 #ordonner les produits
@@ -23,8 +23,8 @@ class AssistanceComptable(productbase.ProductBase):
 #=====================================================
 class Conseil(productbase.ProductBase):
 	secteur=models.CharField("SECTEUR ", max_length=100, choices= SECTEUR)
-	type_intervention =models.CharField("TYPE INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
-	nombre_employes =models.CharField("NOMBRE EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
+	type_intervention =models.CharField("TYPE D'INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
+	nombre_employes =models.CharField("NOMBRE D'EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -37,8 +37,8 @@ class Conseil(productbase.ProductBase):
 #=====================================================
 class AssistanceFiscale(productbase.ProductBase):
 	secteur=models.CharField("SECTEUR ", max_length=100, choices= SECTEUR)
-	type_intervention =models.CharField("TYPE INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
-	nombre_employes =models.CharField("NOMBRE EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
+	type_intervention =models.CharField("TYPE D'INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
+	nombre_employes =models.CharField("NOMBRE D'EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -51,8 +51,8 @@ class AssistanceFiscale(productbase.ProductBase):
 #=====================================================
 class AuditControleInterne(productbase.ProductBase):
 	secteur=models.CharField("SECTEUR ", max_length=100, choices= SECTEUR)
-	type_intervention =models.CharField("TYPE INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
-	nombre_employes =models.CharField("NOMBRE EMPLOYÉS", max_length=20, choices= NOMBRE_EMPLOYES )
+	type_intervention =models.CharField("TYPE D'INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
+	nombre_employes =models.CharField("NOMBRE D'EMPLOYES", max_length=20, choices= NOMBRE_EMPLOYES )
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -65,8 +65,8 @@ class AuditControleInterne(productbase.ProductBase):
 #=====================================================
 class RedactionProcedures(productbase.ProductBase):
 	secteur=models.CharField("SECTEUR ", max_length=100, choices= SECTEUR)
-	type_intervention =models.CharField("TYPE INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
-	nombre_employes =models.CharField("NOMBRE EMPLOYÉS", max_length=20, choices= NOMBRE_EMPLOYES )
+	type_intervention =models.CharField("TYPE D'INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
+	nombre_employes =models.CharField("NOMBRE D'EMPLOYÉS", max_length=20, choices= NOMBRE_EMPLOYES )
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -79,8 +79,8 @@ class RedactionProcedures(productbase.ProductBase):
 #=====================================================
 class AuditFinancier(productbase.ProductBase):
 	secteur=models.CharField("SECTEUR ", max_length=100, choices= SECTEUR)
-	type_intervention =models.CharField("TYPE INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
-	nombre_employes =models.CharField("NOMBRE EMPLOYÉS", max_length=20, choices= NOMBRE_EMPLOYES )
+	type_intervention =models.CharField("TYPE D'INTERVENTION", max_length=20, choices= TYPE_INTERVENTION  )
+	nombre_employes =models.CharField("NOMBRE D'EMPLOYÉS", max_length=20, choices= NOMBRE_EMPLOYES )
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 #ordonner les produits
@@ -91,7 +91,7 @@ class AuditFinancier(productbase.ProductBase):
 # 6. PUBLICATION
 #=====================================================
 class Publication(productbase.ProductBase):
-	titre=models.CharField("TITRE ", max_length=100, choices= TITRE)
+	titre=models.CharField("TITRE", max_length=100, choices= TITRE)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
 #ordonner les produits

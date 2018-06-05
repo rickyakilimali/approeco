@@ -11,6 +11,7 @@
 
     <title>{% block title %}ApproEco{% endblock title %}</title>
     {% load static %}
+    {% load mathfilters %}
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="{% static 'theme/vendor/bootstrap/css/bootstrap.min.css' %}">
 
@@ -103,17 +104,32 @@
                         <td style="text-align:center"><strong>{{field}}</strong></td>
                     {% endfor %}
                     </tr>
+
                 </thead>
                 <tbody>
                     {% for product in product_list %}
+
                     <tr>
-                        <td><img src="{{product.vendeur.businessprofile.logo.url}}" alt="Picture of Product" class="img-responsive" height="70" width="70" style="border:1px solid black"/>{{ product.vendeur.businessprofile.nom }}</a></td>
+                        <td><img src="{{product.vendeur.businessprofile.logo.url}}" alt="Picture of Product" class="img-responsive" height="70" width="70" style="border:1px solid black"/>{{ product.vendeur.businessprofile.nom}}</td>
                     {% for field in fields %}
                         <td style="text-align:center;vertical-align:middle">{{product|from_string_to_field:field}}</td>
+
                     {% endfor %}
 
+
+<!-- /AFFICHAGE DU PRIX HORS TAXE -->
+
+<!-- /AFFICHAGE DU PRIX HORS TAXE -->
+
                     </tr>
+
                     {% endfor %}
+
+
+
+
+
+
 
                 </tbody>
             </table>

@@ -81,6 +81,7 @@ def category_list(request, topcategory):
 
 	if category.is_leaf():
 		producttypes = category.producttypes.all()
+		producttypes = producttypes.order_by('name')
 		context_dict = {'producttypes':producttypes, 'current_cat':category, 'sub_category':sub_category,'hight_category':hight_category,'next_category_slug':next_category_slug}
 		r_template = 'category/product_type.html'
 	else:

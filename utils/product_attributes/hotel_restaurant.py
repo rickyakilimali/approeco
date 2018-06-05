@@ -1,7 +1,6 @@
 COULEUR_TABLIER= (
 
-		('Blanc/noir','Blanc/noir'),
-
+		('BLANC/NOIR','BLANC/NOIR'),
 
 	)
 
@@ -12,17 +11,17 @@ POIDS_BALANCE= (
 		('30 KG','30 KG'),
 		('100 KG','100 KG'),
 		('150 KG','150 KG'),
-		('30 KG','30 KG'),
 
 
 	)
 
 MARQUE_BALANCE= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 
 	)
+
 FORMAT_COMPTOIRE= (
 
 		('1220x660x790','1220x660x790'),
@@ -32,7 +31,7 @@ FORMAT_COMPTOIRE= (
 	)
 MARQUE_COMPTOIRE= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 
 	)
@@ -47,7 +46,7 @@ TAILLE_COUVERCLE= (
 	)
 MARQUE_COUVERCLE= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 
 	)
@@ -61,7 +60,7 @@ PUISSANCE_FOUR= (
 
 MARQUE_FOUR= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 
 	)
@@ -73,7 +72,7 @@ PUISSANCE_MACHINECREME= (
 	)
 MARQUE_MACHINECREME= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 
 	)
@@ -94,8 +93,8 @@ DIAMETRE_PARASOLEIL= (
 FORMAT_PLATEAU= (
 
 		('280X380X21','280X380X21'),
-		('300X451X20','300X451X20'),
 		('300X455X19','300X455X19'),
+		('300X451X20','300X451X20'),
 		('345X263X20','345X263X20'),
 		('355X455X18,5','355X455X18,5'),
 
@@ -104,7 +103,7 @@ FORMAT_PLATEAU= (
 	)
 MARQUE_PLATEAU= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 	)
 FORMAT_PLATEAU= (
@@ -115,42 +114,37 @@ FORMAT_PLATEAU= (
 		('26 CM"','26 CM'),
 		('28 CM','28 CM'),
 		('30 CM','30 CM'),
-		('30 CM','30 CM'),
 		('40 CM','40 CM'),
 
 	)
 MARQUE_PLATEAU= (
 
-
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 	)
 TYPE_POUBELLE= (
 
-
 		('POUBELLE','POUBELLE'),
 
 	)
-MATIERE_POUBELLE= (
 
+MATIERE_POUBELLE= (
 
 		('PLASTIQUE','PLASTIQUE'),
 		('INOX','INOX'),
-
-
 	)
 
 
 
 VOLUME_TASSE= (
 
-		('1 L','1 L'),
 		('0,5 L','0,5 L'),
+		('1 L','1 L'),
 
 	)
 MARQUE_TASSE= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 	)
 
@@ -158,14 +152,12 @@ MARQUE_TASSE= (
 
 NOMBRE_PORTE_VITRINE= (
 
-
 		('2','2'),
 
 	)
+
 MARQUE= (
-
-
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 	)
 
@@ -183,8 +175,9 @@ FORMAT_POELE= (
 
 
 	)
+
 MARQUE_POELE= (
 
-		('WEST POOL','WEST POOL'),
+		('WESTPOOL','WESTPOOL'),
 
 	)

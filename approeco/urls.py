@@ -43,6 +43,7 @@ urlpatterns = [
 	url(r'^page3/$', imageviewer3, name='image.html'),
 	url(r'^email/$', emailView, name='email.html'),
 	url(r'^email/succes/$', successView, name='success'),
+	url(r'^consultation/',include('consultation.urls')),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

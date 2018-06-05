@@ -61,7 +61,7 @@ class LocationPorteConteneur(productbase.ProductBase):
 #=====================================================
 # 3. ENVOI COLIS NATIONAL 0 A 20 KGS
 #=====================================================
-class Envoicolisnational0a20kgs(productbase.ProductBase):
+class EnvoiColisNational0A20kgs(productbase.ProductBase):
 	ville_de_depart = models.CharField("VILLE DEPART", max_length=20, choices= VILLE_DEPART)
 	ville_de_destination = models.CharField("VILLE DESTINATION", max_length=20, choices= VILLE_DESTINATION)
 	poids= models.CharField("POIDS", max_length=20, choices= POIDS)
@@ -74,7 +74,7 @@ class Envoicolisnational0a20kgs(productbase.ProductBase):
 #=====================================================
 # 4. ENVOI COLIS NATIONAL 20,01KGS A 99,99KGS
 #=====================================================
-class Envoicolisnational20kgsa99kgs(productbase.ProductBase):
+class EnvoiColisNational20kgsA99kgs(productbase.ProductBase):
 	ville_de_depart = models.CharField("VILLE DEPART", max_length=20, choices= VILLE_DEPART)
 	ville_de_destination = models.CharField("VILLE DESTINATION", max_length=20, choices= VILLE_DESTINATION)
 	delai_de_livraison= models.CharField("DELAI LIVRAISON", max_length=20, choices= DELAI_LIVRAISON)
@@ -87,7 +87,7 @@ class Envoicolisnational20kgsa99kgs(productbase.ProductBase):
 #=====================================================
 # 5. ENVOI COLIS NATIONAL 100KGS ET PLUS
 #=====================================================
-class Envoicolisnational100kgsetplus(productbase.ProductBase):
+class EnvoiColisCational100kgsEtPlus(productbase.ProductBase):
 	ville_de_depart = models.CharField("VILLE DEPART", max_length=20, choices= VILLE_DEPART)
 	ville_de_destination = models.CharField("VILLE DESTINATION", max_length=20, choices= VILLE_DESTINATION)
 	delai_de_livraison= models.CharField("DELAI LIVRAISON", max_length=20, choices= DELAI_LIVRAISON)

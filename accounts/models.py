@@ -24,7 +24,7 @@ null=True, max_length=255)
 	email = models.EmailField("E-mail", max_length=200, blank=True)
 	website = models.URLField("Site Web", max_length=200, blank=True)
 	certifications = models.CharField(max_length=200, blank=True)
-	annee_existence = models.CharField(max_length=100, blank=True)
+	annee_existence = models.CharField("Année de création",max_length=100, blank=True)
 	annee_experience = models.CharField(max_length=100, blank=True)
 	travaux_realises = models.CharField(max_length=300, blank=True)
 

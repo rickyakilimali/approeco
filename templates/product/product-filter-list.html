@@ -1,6 +1,5 @@
 {% extends '_layouts/acheteur.html' %}
-
-
+{% load mathfilters %}
 
 {% load widget_tweaks %}
 {% load render_table from django_tables2 %}
@@ -10,9 +9,11 @@
 {% load i18n %}
 {% load product_extra_tags %}
 {% block headline %} {{product_type.name}}
+<div class="">
+    <a href="http://approeco.pythonanywhere.com/category/">Catalogue></a>
+    <a href="">{{next_category_slug.name}}></a><a href="">{{current_cat.name}}></a>{{product_type.name}}
+</div>
 <img src="{{product_type.product_type_image.url}}" alt="Picture of Product" class="img-responsive"/>
-
-
 
 {% endblock headline %}
 
@@ -35,7 +36,7 @@
                 {% endfor %}
             </div>
             <button type="submit" class="btn btn-primary">
-                <span class="glyphicon glyphicon-search"></span>Recherche
+                <span class="glyphicon glyphicon-search"></span> Recherche
             </button>
         </div>
     </form>
@@ -59,8 +60,8 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <td><strong>Vendeur</strong></td>
-                    {% for field in fields %}
+                        <td><strong>VENDEUR</strong></td>
+                    {% for field in fields_verbose_name %}
                         <td style="text-align:center"><strong>{{field}}</strong></td>
                     {% endfor %}
                     </tr>
@@ -72,7 +73,9 @@
                     {% for field in fields %}
                         <td style="text-align:center;vertical-align:middle">{{product|from_string_to_field:field}}</td>
                     {% endfor %}
+<!-- /AFFICHAGE DU PRIX HORS TAXE -->
 
+<!-- /AFFICHAGE DU PRIX HORS TAXE -->
                     </tr>
                     {% endfor %}
 
@@ -100,7 +103,7 @@
             {% endfor %}
     </fieldset>
 
-    <button class="btn btn-success" id="print" type="submit" value="Télécharger le résultat" class="btn btn-primary"><span class="glyphicon glyphicon-print"></span>Imprimer
+    <button class="btn btn-success" id="print" type="submit" value="Télécharger le résultat" class="btn btn-primary"><span class="glyphicon glyphicon-print"></span> Imprimer
             </button>
 </form>
 </div>

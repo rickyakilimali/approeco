@@ -81,34 +81,97 @@ HAUTEUR_POMPE = (
 # I
 #=====================================================
 INTENSITE = (
+		('50A','50A'),
+		('63A','63A'),
+		('65A','65A'),
+	)
+
+INTENSITE_INVERSEUR = (
+		('1A','1A'),
+
+	)
+
+INTENSITE_SECTIONNEUR= (
+		('40A','40A'),
+		('63A','63A'),
+		('125A','125A'),
+
+	)
+
+INTENSITE_DISJONCTEUR =(
 		('1A','1A'),
 		('2A','2A'),
 		('6A','6A'),
-		('9A','9A'),
 		('10A','10A'),
-		('12A','12A'),
 		('16A','16A'),
-		('18A','18A'),
 		('20A','20A'),
 		('25A','25A'),
 		('32A','32A'),
 		('40A','40A'),
 		('50A','50A'),
 		('63A','63A'),
-		('65A','65A'),
-		('80A','80A'),
+
+    )
+
+INTENSITE_DISJ_DIFFER = (
+		('25A','25A'),
+		('40A','40A'),
+		('63A','63A'),
+
+	)
+
+INTENSITE_CONTACTEUR = (
+		('9A','9A'),
+		('12A','12A'),
+		('18A','18A'),
+		('25A','25A'),
 		('100A','100A'),
 		('115A','115A'),
-		('125A','125A'),
 		('150A','150A'),
-		('160A','160A'),
 		('185A','185A'),
-		('200A','200A'),
 		('225A','225A'),
+		('1000A','1000A'),
+
+	)
+
+INTENSITE_INTERRUPTEUR_DIFER = (
+		('25A','25A'),
+		('40A','40A'),
+		('63A','63A'),
+		('80A','80A'),
+
+    )
+
+INTENSITE_FUSIBLE = (
+		('16A','16A'),
+		('63A','63A'),
+		('80A','80A'),
+		('100A','100A'),
+		('125A','125A'),
+		('160A','160A'),
+		('200A','200A'),
+		('250A','250A'),
+    )
+INTENSITE_JEU_BARRE = (
+		('63A','63A'),
 		('250A','250A'),
 		('400A','400A'),
-		('1000A','1000A'),
-	)
+
+    )
+
+INTENSITE_DISJONCTEUR_COMPACT = (
+		('64A','64A'),
+		('100A','100A'),
+		('125A','125A'),
+
+    )
+
+INTENSITE_DISJONCTEUR_CONTACT = (
+		('18A','18A'),
+		('25A','25A'),
+
+    )
+
 INTENSITE_DISJONCTEUR_MOTEUR = (
 		('6-10A','6-10A'),
 		('13-17A','13-17A'),
@@ -251,11 +314,16 @@ NOMBRE_PHASE = (
 		('3','3'),
 		('4','4'),
 	)
+NOMBRE_PHASE_INTER = (
+		('2','2'),
+		('4','4'),
+	)
 NOMBRE_POLE = (
 		('2P','2P'),
 		('3P','3P'),
 		('4P','4P'),
 	)
+
 NOMBRE_PRISE = (
 		('3','3'),
 		('4','4'),
@@ -311,8 +379,11 @@ CAPACITE_COMPRESSEUR = (
 		('24 LITRES','24 LITRES'),
 		('50 LITRES','50 LITRES'),
 		('100 LITRES','100 LITRES'),
+		('150 LITRES','150 LITRES'),
 		('200 LITRES','200 LITRES'),
 		('300 LITRES','300 LITRES'),
+		('500 LITRES','500 LITRES'),
+		('1000 LITRES','1000 LITRES'),
 	)
 PUISSANCE_SPLIT = (
 		('9000 BTU','9000 BTU'),
@@ -855,6 +926,14 @@ LONGUEUR = (
 		('100M','100M'),
 	)
 
+LONGUEUR_ENSEIGNE = (
+		('10M','10M'),
+	)
+
+LONGUEUR_PALAN = (
+		('10M','10M'),
+	)
+
 MATIERE_SECHE_MAIN = (
 		('INOX','INOX'),
 		('PLASTIQUE','PLASTIQUE'),
@@ -889,7 +968,7 @@ TYPE_GANT = (
 		('PLASTIQUE','PLASTIQUE'),
 	)
 
-FORMAT = (
+FORMAT_ENSEIGNE = (
 		('GRAND FORMAT','GRAND FORMAT'),
 		('PETIT FORMAT','PETIT FORMAT'),
 	)
@@ -932,7 +1011,7 @@ NOMBRE_CANAUX = (
 	)
 
 
-DIMENSION = (
+DIMENSION_BOITE_DERIV = (
 		('60X60X25MM','60X60X25MM'),
 		('65X65X45MM','65X65X45MM'),
 		('80X80X30MM','80X80X30MM'),

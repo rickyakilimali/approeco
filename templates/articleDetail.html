@@ -1,0 +1,20 @@
+{% extends '_layouts/acheteur.html' %}
+{# Load the tag library #}
+{% load bootstrap3 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+
+<ul class="breadcrumbs">
+    <li><a href="/">Home</a></li>
+
+    {% for i in instance.category.get_slug_list %}
+       <li><a href="/category/{{ i }}">{{ i | get_name }}</a></li>
+    {% endfor %}
+
+</ul>

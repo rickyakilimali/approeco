@@ -103,7 +103,7 @@ class PhotocopieuseResources(resources.ModelResource):
 @admin.register(Photocopieuse)
 class PhotocopieuseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = PhotocopieuseResources
-	list_display = ('vendeur','nom','marque_imprimante','technologie','recto_verso','reseau','format_max_papier','prix','units')
+	list_display = ('vendeur','nom','marque_photocopieuse','technologie','recto_verso','reseau','format_max_papier','prix','units')
 
 #=======================================================
 # Cartouche tonet
@@ -405,7 +405,7 @@ class SourisResources(resources.ModelResource):
 @admin.register(Souris)
 class Souris(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = SourisResources
-	list_display = ('vendeur','nom','avec_fil','prix','units')
+	list_display = ('vendeur','nom','technologie','prix','units')
 
 #=====================================================
 #  CreationSiteWebResources
@@ -1117,45 +1117,45 @@ class LocationPorteConteneurAdmin(ImportExportModelAdmin, ImportExportActionMode
 #=====================================================
 # ENVOI COLIS NATIONAL 0 A 20 KGS
 #=====================================================
-class Envoicolisnational0a20kgsResources(resources.ModelResource):
+class EnvoiColisNational0A20kgsResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = Envoicolisnational0a20kgs
+		model = EnvoiColisNational0A20kgs
 
-@admin.register(Envoicolisnational0a20kgs)
-class Envoicolisnational0a20kgsAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class = Envoicolisnational0a20kgsResources
+@admin.register(EnvoiColisNational0A20kgs)
+class EnvoiColisNational0A20kgsAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EnvoiColisNational0A20kgsResources
 	list_display = ('vendeur','nom', 'ville_de_depart','ville_de_destination','poids','delai_de_livraison','prix','units')
 #=====================================================
 # ENVOI COLIS NATIONAL 20,01KGS A 99,99KGS
 #=====================================================
-class Envoicolisnational20kgsa99kgsResources(resources.ModelResource):
+class EnvoiColisNational20kgsA99kgsResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = Envoicolisnational20kgsa99kgs
+		model = EnvoiColisNational20kgsA99kgs
 
-@admin.register(Envoicolisnational20kgsa99kgs)
-class Envoicolisnational20kgsa99kgsAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class = Envoicolisnational20kgsa99kgsResources
+@admin.register(EnvoiColisNational20kgsA99kgs)
+class EnvoiColisNational20kgsA99kgsAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EnvoiColisNational20kgsA99kgsResources
 	list_display = ('vendeur','nom', 'ville_de_depart','ville_de_destination','delai_de_livraison','prix','units')
 
 #=====================================================
 # ENVOI COLIS NATIONAL 100KGS ET PLUS
 #=====================================================
-class Envoicolisnational100kgsetplusResources(resources.ModelResource):
+class EnvoiColisCational100kgsEtPlusResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = Envoicolisnational100kgsetplus
+		model = EnvoiColisCational100kgsEtPlus
 
-@admin.register(Envoicolisnational100kgsetplus)
-class Envoicolisnational100kgsetplusAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class = Envoicolisnational100kgsetplusResources
+@admin.register(EnvoiColisCational100kgsEtPlus)
+class EnvoiColisCational100kgsEtPlusAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EnvoiColisCational100kgsEtPlusResources
 	list_display = ('vendeur','nom', 'ville_de_depart','ville_de_destination','delai_de_livraison','prix','units')
 #=====================================================
 # DEDOUANEMENT
@@ -1671,16 +1671,16 @@ class ImpressionSurBriquetAdmin(ImportExportModelAdmin, ImportExportActionModelA
 #=======================================================
 #  EvenementDeMasse
 #=======================================================
-class EvenementDeMasseResources(resources.ModelResource):
+class EvenemententielResources(resources.ModelResource):
 	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
 	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
 
 	class Meta:
-		model = EvenementDeMasse
+		model = Evenemententiel
 
-@admin.register(EvenementDeMasse)
-class EvenementDeMassedAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
-	resource_class = EvenementDeMasseResources
+@admin.register(Evenemententiel)
+class EvenemententielAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = EvenemententielResources
 	list_display = ('vendeur','nom','type_evenement_de_masse','minimum_payable','prix','units')
 
 
@@ -2258,7 +2258,7 @@ class AppareilDeMesureResources(resources.ModelResource):
 @admin.register(AppareilDeMesure)
 class AppareilDeMesureAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = AppareilDeMesureResources
-	list_display = ('vendeur','nom','type_appareil_mesure','tension','prix','unite_prix')
+	list_display = ('vendeur','nom','type_appareil_mesure','tension','prix','units')
 
 #=======================================================
 # 17. Prise électrique
@@ -2318,7 +2318,7 @@ class CoffretElectriqueResources(resources.ModelResource):
 @admin.register(CoffretElectrique)
 class CoffretElectriqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = CoffretElectriqueResources
-	list_display = ('vendeur','nom','marque','nombre_module','encastre_sailli','prix','units')
+	list_display = ('vendeur','nom','marque','nombre_module','type_installation','prix','units')
 
 #=====================================================
 #  CONTACTEURS  ==> EQUIPEMENT MATERIEL
@@ -3184,7 +3184,7 @@ class AssainissementResources(resources.ModelResource):
 @admin.register(Assainissement)
 class AssainissementAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = AssainissementResources
-	list_display = ('vendeur','nom','type_assainissement','prix','units')
+	list_display = ('vendeur','nom','type_assainissement','specifications','prix','units')
 
 
 #=======================================================
@@ -3490,7 +3490,7 @@ class TravauxPeintureAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin)
 	list_display = ('vendeur','nom','prix','units')
 
 #=======================================================
-#LocationDepot
+#Location Depot
 #=======================================================
 
 class LocationDepotResources(resources.ModelResource):
@@ -3503,7 +3503,7 @@ class LocationDepotResources(resources.ModelResource):
 @admin.register(LocationDepot)
 class LocationDepotAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = LocationDepotResources
-	list_display = ('vendeur','nom', 'plage_surface','avenue','commune','surface', 'prix','units')
+	list_display = ('vendeur','nom', 'plage_surface','surface','avenue','commune', 'prix','units')
 
 #=====================================================
 #  LOCATIONSTAND
@@ -8085,3 +8085,36 @@ class TableOrdinateurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin)
 	resource_class = TableOrdinateurResources
 	list_display = ('vendeur','nom','prix','units')
 
+
+#======== 29-05-2018 =================================
+# DIFFUSION DE CONTENU MEDIATIQUE
+#=====================================================
+
+class DiffusionContenuMediatiqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  DiffusionContenuMediatique
+
+@admin.register(DiffusionContenuMediatique)
+class DiffusionContenuMediatiqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = DiffusionContenuMediatiqueResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#======== 04-06-2018 =================================
+# NETTOYAGE CHAISE
+#=====================================================
+
+class NettoyageDeChaiseResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  NettoyageDeChaise
+
+@admin.register(NettoyageDeChaise)
+class NettoyageDeChaiseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = NettoyageDeChaiseResources
+	list_display = ('vendeur','nom','revetement','prix','units')

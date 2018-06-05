@@ -1,0 +1,6601 @@
+[
+{
+  "model": "category.category",
+  "pk": 1,
+  "fields": {
+    "path": "0001",
+    "depth": 1,
+    "numchild": 4,
+    "name": "Agribusiness",
+    "description": "",
+    "image": "categories/AGRIBUSINESS__.png",
+    "slug": "agribusiness"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 2,
+  "fields": {
+    "path": "0003",
+    "depth": 1,
+    "numchild": 3,
+    "name": "Ameublement",
+    "description": "",
+    "image": "categories/OFFICEFURNITURES__.png",
+    "slug": "ameublement"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 3,
+  "fields": {
+    "path": "0004",
+    "depth": 1,
+    "numchild": 5,
+    "name": "Automobile",
+    "description": "",
+    "image": "categories/MOTORINGTRANSPORTEQIPMENT__.png",
+    "slug": "automobile"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 4,
+  "fields": {
+    "path": "000S",
+    "depth": 1,
+    "numchild": 1,
+    "name": "Finance et assurance",
+    "description": "",
+    "image": "categories/finance.jpg",
+    "slug": "finance-et-assurance"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 5,
+  "fields": {
+    "path": "0006",
+    "depth": 1,
+    "numchild": 4,
+    "name": "Batiment et construction",
+    "description": "",
+    "image": "categories/BATIMENT.jpg",
+    "slug": "batiment-et-construction"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 7,
+  "fields": {
+    "path": "000K",
+    "depth": 1,
+    "numchild": 7,
+    "name": "Bureautique Imprimerie et Communication",
+    "description": "",
+    "image": "categories/BUREAUTIQUE__2_-_Copie_tDBtDGt.jpg",
+    "slug": "bureautique-imprimerie-et-communication"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 9,
+  "fields": {
+    "path": "000Y",
+    "depth": 1,
+    "numchild": 1,
+    "name": "T\u00e9l\u00e9phonie, TV, Son, Photo, Video",
+    "description": "",
+    "image": "categories/smartphone.jpg",
+    "slug": "telephonie-tv-son-photo-video"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 10,
+  "fields": {
+    "path": "000P",
+    "depth": 1,
+    "numchild": 1,
+    "name": "Energie",
+    "description": "",
+    "image": "categories/ENERGY1__.png",
+    "slug": "energie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 13,
+  "fields": {
+    "path": "000T",
+    "depth": 1,
+    "numchild": 6,
+    "name": "Informatique",
+    "description": "",
+    "image": "categories/COMPUTERS__.png",
+    "slug": "informatique"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 14,
+  "fields": {
+    "path": "000U",
+    "depth": 1,
+    "numchild": 2,
+    "name": "Professions lib\u00e9rales",
+    "description": "",
+    "image": "categories/profession_liberale__.jpg",
+    "slug": "professions-liberales"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 15,
+  "fields": {
+    "path": "000X",
+    "depth": 1,
+    "numchild": 6,
+    "name": "Services Divers",
+    "description": "",
+    "image": "categories/SERVICES_ZnSFCFX.jpg",
+    "slug": "services-divers"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 20,
+  "fields": {
+    "path": "0001000R",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Produits agricoles",
+    "description": "Produits agricoles",
+    "image": "categories/agriculture_et_produits_agricoles.jpg",
+    "slug": "produits-agricoles"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 24,
+  "fields": {
+    "path": "0003000B",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Mobiliers de bureau",
+    "description": "",
+    "image": "categories/310x216_e6lx24I.jpg",
+    "slug": "mobiliers-de-bureau"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 26,
+  "fields": {
+    "path": "0004000D",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Batt\u00e9ries et accessoires",
+    "description": "",
+    "image": "categories/Batteries_de_demarrage_et_de_traction_VzDTdfe.jpg",
+    "slug": "batteries-et-accessoires"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 27,
+  "fields": {
+    "path": "0004000G",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Entretien et r\u00e9paration",
+    "description": "",
+    "image": "categories/310-216-entretien.jpg",
+    "slug": "entretien-et-reparation"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 28,
+  "fields": {
+    "path": "0004000I",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Pi\u00e8ces de rechange",
+    "description": "",
+    "image": "categories/310x216-piece-rechange.png",
+    "slug": "pieces-de-rechange"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 31,
+  "fields": {
+    "path": "000S0005",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Assurances",
+    "description": "",
+    "image": "categories/assurance.jpg",
+    "slug": "assurances"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 35,
+  "fields": {
+    "path": "0006000H",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Travaux de b\u00e2timent",
+    "description": "",
+    "image": "categories/slide02.jpg",
+    "slug": "travaux-de-batiment"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 40,
+  "fields": {
+    "path": "000K000H",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Enseigne signal\u00e9tique, mobilier urbain",
+    "description": "",
+    "image": "categories/accueil-site.png",
+    "slug": "enseigne-signaletique-mobilier-urbain"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 41,
+  "fields": {
+    "path": "000K000J",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Imprimerie, Infographie",
+    "description": "",
+    "image": "categories/bfb28044-2bd6-42e5-ae44-e1576c27b0be-1200.png",
+    "slug": "imprimerie-infographie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 42,
+  "fields": {
+    "path": "000K000I",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Fournitures de bureau et papeterie",
+    "description": "",
+    "image": "categories/fournitures-bureau-1.png",
+    "slug": "fournitures-de-bureau-et-papeterie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 44,
+  "fields": {
+    "path": "000K000B",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Broderie et gravure",
+    "description": "",
+    "image": "categories/Serigraphie_6PjD2gt.jpg",
+    "slug": "broderie-et-gravure"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 46,
+  "fields": {
+    "path": "000Y0008",
+    "depth": 2,
+    "numchild": 0,
+    "name": "T\u00e9l\u00e9phonie",
+    "description": "",
+    "image": "categories/equipement-telephonie-fixe-ks-telecom_nW4cY2D.jpg",
+    "slug": "telephonie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 49,
+  "fields": {
+    "path": "000P000A",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Energie solaire",
+    "description": "",
+    "image": "categories/ener-solaire.jpg",
+    "slug": "energie-solaire"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 51,
+  "fields": {
+    "path": "000R",
+    "depth": 1,
+    "numchild": 12,
+    "name": "Equipement et Mat\u00e9riel",
+    "description": "",
+    "image": "categories/equipement_et_materiel.jpg",
+    "slug": "equipement-et-materiel"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 53,
+  "fields": {
+    "path": "000R000D",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Mat\u00e9riels \u00e9lectriques",
+    "description": "",
+    "image": "categories/materiel_electrique1__.png",
+    "slug": "materiels-electriques"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 55,
+  "fields": {
+    "path": "000R000E",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Mat\u00e9riels et engins d\u2019atelier",
+    "description": "",
+    "image": "categories/materiel-engin.jpg",
+    "slug": "materiels-et-engins-datelier"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 56,
+  "fields": {
+    "path": "000R000G",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Outillage manuel",
+    "description": "",
+    "image": "categories/outillage-1.jpg",
+    "slug": "outillage-manuel"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 57,
+  "fields": {
+    "path": "000R000K",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Plomberie",
+    "description": "",
+    "image": "categories/plomberie.jpg",
+    "slug": "plomberie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 58,
+  "fields": {
+    "path": "000R000L",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Quincaillerie",
+    "description": "",
+    "image": "categories/outillage_Nzh6Jmp.jpg",
+    "slug": "quincaillerie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 62,
+  "fields": {
+    "path": "000T0006",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Internet",
+    "description": "",
+    "image": "categories/growing-internet_ya7vyRG.jpeg",
+    "slug": "internet"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 63,
+  "fields": {
+    "path": "000T000A",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Logiciel",
+    "description": "",
+    "image": "categories/logiciel.jpg",
+    "slug": "logiciel"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 64,
+  "fields": {
+    "path": "000T000E",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Ordinateurs et tablettes",
+    "description": "",
+    "image": "categories/ordinateur_et_tablette.jpg",
+    "slug": "ordinateurs-et-tablettes"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 65,
+  "fields": {
+    "path": "000T000F",
+    "depth": 2,
+    "numchild": 0,
+    "name": "P\u00e9riph\u00e9riques et consommables",
+    "description": "",
+    "image": "categories/peripherique.jpg",
+    "slug": "peripheriques-et-consommables"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 66,
+  "fields": {
+    "path": "000T000J",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Stockage et r\u00e9seau",
+    "description": "",
+    "image": "categories/stockage.jpg",
+    "slug": "stockage-et-reseau"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 69,
+  "fields": {
+    "path": "000U000A",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Bureaux de contr\u00f4le et d\u2019expertise",
+    "description": "",
+    "image": "categories/bureau-control.jpg",
+    "slug": "bureaux-de-controle-et-dexpertise"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 71,
+  "fields": {
+    "path": "000U000J",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Cabinets comptables, audits, conseils juridiques et fiscaux",
+    "description": "",
+    "image": "categories/comptable_GgE6n4x.jpg",
+    "slug": "cabinets-comptables-audits-conseils-juridiques-et-"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 73,
+  "fields": {
+    "path": "000X000L",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Formation",
+    "description": "",
+    "image": "categories/consulting-610x343.jpg",
+    "slug": "formation"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 74,
+  "fields": {
+    "path": "000X000Y",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Gardiennage et agents de s\u00e9curit\u00e9",
+    "description": "",
+    "image": "categories/gardiennage-de-maison_DiCWkDB_e8jka0B.jpg",
+    "slug": "gardiennage-et-agents-de-securite"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 76,
+  "fields": {
+    "path": "000X0010",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Traduction et Interpretariat",
+    "description": "",
+    "image": "categories/interpretation-paris_LrQ2Xf7.jpg",
+    "slug": "traduction-et-interpretariat"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 77,
+  "fields": {
+    "path": "000X000K",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Divers",
+    "description": "",
+    "image": "categories/divers.jpg",
+    "slug": "divers"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 78,
+  "fields": {
+    "path": "000W",
+    "depth": 1,
+    "numchild": 1,
+    "name": "Secteur M\u00e9dical",
+    "description": "",
+    "image": "categories/secteur_medical2__.jpg",
+    "slug": "secteur-medical"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 79,
+  "fields": {
+    "path": "000Z",
+    "depth": 1,
+    "numchild": 3,
+    "name": "Transport",
+    "description": "",
+    "image": "categories/TRANSPORT__.jpg",
+    "slug": "transport"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 80,
+  "fields": {
+    "path": "000Z0009",
+    "depth": 2,
+    "numchild": 1,
+    "name": "Transport terrestre",
+    "description": "",
+    "image": "categories/TRANSPORT_eEYITFd.jpg",
+    "slug": "transport-terrestre"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 81,
+  "fields": {
+    "path": "000Z0003",
+    "depth": 2,
+    "numchild": 0,
+    "name": "D\u00e9m\u00e9nagement",
+    "description": "",
+    "image": "categories/demenagement.jpg",
+    "slug": "demenagement"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 83,
+  "fields": {
+    "path": "000X000H",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Agence de voyage",
+    "description": "",
+    "image": "categories/agence_voyage__.png",
+    "slug": "agence-de-voyage"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 84,
+  "fields": {
+    "path": "0004000L",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Vente automobile",
+    "description": "",
+    "image": "categories/vente_automobile1__.png",
+    "slug": "vente-automobile"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 86,
+  "fields": {
+    "path": "0006000G",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Mat\u00e9riaux de construction",
+    "description": "",
+    "image": "categories/materiau_de_construction__.jpg",
+    "slug": "materiaux-de-construction"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 87,
+  "fields": {
+    "path": "000X000Z",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Service traiteur",
+    "description": "",
+    "image": "categories/buffet.jpg",
+    "slug": "service-traiteur"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 88,
+  "fields": {
+    "path": "0006000F",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Location immobili\u00e8re",
+    "description": "Location immobili\u00e8re",
+    "image": "categories/location.jpg",
+    "slug": "location-immobiliere"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 90,
+  "fields": {
+    "path": "000Z0004",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Messagerie",
+    "description": "",
+    "image": "categories/messagerie.jpg",
+    "slug": "messagerie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 91,
+  "fields": {
+    "path": "000R0005",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Climatisation et froid",
+    "description": "",
+    "image": "categories/split.jpg",
+    "slug": "climatisation-et-froid"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 92,
+  "fields": {
+    "path": "000R000C",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Mat\u00e9riel de s\u00e9curit\u00e9",
+    "description": "",
+    "image": "categories/detecteur.jpg",
+    "slug": "materiel-de-securite"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 94,
+  "fields": {
+    "path": "0003000A",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Articles de d\u00e9coration",
+    "description": "",
+    "image": "categories/Article_de_d\u00e9coration.jpg",
+    "slug": "articles-de-decoration"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 95,
+  "fields": {
+    "path": "000W0002",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Pharmacie",
+    "description": "",
+    "image": "categories/Pharmacie.jpg",
+    "slug": "pharmacie"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 100,
+  "fields": {
+    "path": "0001000S",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Transformation agricole",
+    "description": "",
+    "image": "categories/TRANS_AGR.jpg",
+    "slug": "transformation-agricole"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 101,
+  "fields": {
+    "path": "0004000H",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Location V\u00e9hicule",
+    "description": "",
+    "image": "categories/location_camion_uHr7RvJ.png",
+    "slug": "location-vehicule"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 102,
+  "fields": {
+    "path": "000T000I",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Services Informatiques",
+    "description": "",
+    "image": "categories/SERVICES_INFORMATIQUES__.jpg",
+    "slug": "services-informatiques"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 104,
+  "fields": {
+    "path": "0003000D",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Services de decoration",
+    "description": "",
+    "image": "categories/service-decoration.jpg",
+    "slug": "services-de-decoration"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 105,
+  "fields": {
+    "path": "0001000T",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Vente de b\u00e9tail et viande",
+    "description": "",
+    "image": "categories/vente_betail_et_viande1__.jpg",
+    "slug": "vente-de-betail-et-viande"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 107,
+  "fields": {
+    "path": "0006000B",
+    "depth": 2,
+    "numchild": 0,
+    "name": "G\u00e9nie Civil",
+    "description": "",
+    "image": "categories/genie-civil__.jpg",
+    "slug": "genie-civil"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 108,
+  "fields": {
+    "path": "0001000P",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Pisciculture et vente de poisson",
+    "description": "",
+    "image": "categories/pisciculture_vente_de_poisson.jpg",
+    "slug": "pisciculture-et-vente-de-poisson"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 109,
+  "fields": {
+    "path": "000Z00090005",
+    "depth": 3,
+    "numchild": 0,
+    "name": "Fret transit et douane",
+    "description": "",
+    "image": "categories/fret_douane_2.jpg",
+    "slug": "fret-transit-et-douane"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 111,
+  "fields": {
+    "path": "000K000P",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Publicit\u00e9",
+    "description": "Publicit\u00e9",
+    "image": "categories/publicite.jpg",
+    "slug": "publicite"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 112,
+  "fields": {
+    "path": "000K000F",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Communication",
+    "description": "communication",
+    "image": "categories/Communication.png",
+    "slug": "communication"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 113,
+  "fields": {
+    "path": "000K000G",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Edition",
+    "description": "\u00c9dition",
+    "image": "categories/edition_ZLhY4Nm.png",
+    "slug": "edition"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 116,
+  "fields": {
+    "path": "000R000F",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Outillage \u00e9lectrique",
+    "description": "",
+    "image": "categories/outillage-electrique.jpg",
+    "slug": "outillage-electrique"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 117,
+  "fields": {
+    "path": "000R000J",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Outillage thermique",
+    "description": "",
+    "image": "categories/Outillage-thermique.jpg",
+    "slug": "outillage-thermique"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 118,
+  "fields": {
+    "path": "000R000I",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Outillage pneumatique",
+    "description": "",
+    "image": "categories/Outillage-pneumatique.jpg",
+    "slug": "outillage-pneumatique"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 119,
+  "fields": {
+    "path": "000R000B",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Hotel et restaurant",
+    "description": "",
+    "image": "categories/hotel-restaurant.jpg",
+    "slug": "hotel-et-restaurant"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 120,
+  "fields": {
+    "path": "000R000A",
+    "depth": 2,
+    "numchild": 0,
+    "name": "Equipement divers",
+    "description": "Equipement divers",
+    "image": "categories/equipement_divers.jpg",
+    "slug": "equipement-divers"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1,
+  "fields": {
+    "name": "Laptop",
+    "description": "ordinateurs portable Laptop",
+    "product_model": 48,
+    "category": 64,
+    "slug": "laptop",
+    "product_type_image": "producttypes/laptop.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 2,
+  "fields": {
+    "name": "Imprimante",
+    "description": "Imprimante",
+    "product_model": 25,
+    "category": 65,
+    "slug": "imprimante",
+    "product_type_image": "producttypes/imprimante_YQs99wR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 3,
+  "fields": {
+    "name": "Desktop",
+    "description": "ordinateur de bureau desktop",
+    "product_model": 49,
+    "category": 64,
+    "slug": "desktop",
+    "product_type_image": "producttypes/desktop.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 268,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange pour carrosserie",
+    "description": "Pi\u00e8ce de rechange carrosserie",
+    "product_model": 72,
+    "category": 28,
+    "slug": "piece-de-rechange-pour-carrosserie",
+    "product_type_image": "producttypes/piece-carrosserie.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 269,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange \u00e9lectrique",
+    "description": "Pi\u00e8ce de rechange \u00e9lectrique",
+    "product_model": 33,
+    "category": 28,
+    "slug": "piece-de-rechange-electrique",
+    "product_type_image": "producttypes/Pieces-electrique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 270,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange embrayage",
+    "description": "Pi\u00e8ce de rechange embrayage",
+    "product_model": 27,
+    "category": 28,
+    "slug": "piece-de-rechange-embrayage",
+    "product_type_image": "producttypes/embriage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 271,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange freinage",
+    "description": "Pi\u00e8ce de rechange freinage",
+    "product_model": 87,
+    "category": 28,
+    "slug": "piece-de-rechange-freinage",
+    "product_type_image": "producttypes/freinage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 272,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange pour r\u00e9vision moteur",
+    "description": "Pi\u00e8ce de rechange r\u00e9vision moteur",
+    "product_model": 36,
+    "category": 28,
+    "slug": "piece-de-rechange-pour-revision-moteur",
+    "product_type_image": "producttypes/revision-moteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 273,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange moteur",
+    "description": "Pi\u00e8ce de rechange moteur",
+    "product_model": 83,
+    "category": 28,
+    "slug": "piece-de-rechange-moteur",
+    "product_type_image": "producttypes/rechanche_moteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 274,
+  "fields": {
+    "name": "Carte de service",
+    "description": "Carte de service",
+    "product_model": 45,
+    "category": 41,
+    "slug": "carte-de-service",
+    "product_type_image": "producttypes/carte_de_service.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 275,
+  "fields": {
+    "name": "Carte de visite",
+    "description": "Carte de visite",
+    "product_model": 65,
+    "category": 41,
+    "slug": "carte-de-visite",
+    "product_type_image": "producttypes/carte-visite.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 277,
+  "fields": {
+    "name": "impression Stylo",
+    "description": "Stylo imprim\u00e9s personnalis\u00e9s impression",
+    "product_model": 74,
+    "category": 41,
+    "slug": "impression-stylo",
+    "product_type_image": "producttypes/Stylo_fBfBYzj.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 279,
+  "fields": {
+    "name": "T shirt",
+    "description": "T shirt t-shirt",
+    "product_model": 7,
+    "category": 41,
+    "slug": "t-shirt",
+    "product_type_image": "producttypes/Tshirt_pNhrFyh.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 280,
+  "fields": {
+    "name": "D\u00e9pliant",
+    "description": "D\u00e9pliant",
+    "product_model": 60,
+    "category": 41,
+    "slug": "depliant",
+    "product_type_image": "producttypes/depliant.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 281,
+  "fields": {
+    "name": "Pin\u2019s",
+    "description": "Pin\u2019s pins",
+    "product_model": 62,
+    "category": 41,
+    "slug": "pins",
+    "product_type_image": "producttypes/pins.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 282,
+  "fields": {
+    "name": "Affiche",
+    "description": "Affiche",
+    "product_model": 82,
+    "category": 41,
+    "slug": "affiche",
+    "product_type_image": "producttypes/affiche.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 284,
+  "fields": {
+    "name": "impression sur Porte Cl\u00e9",
+    "description": "impression Porte Cl\u00e9",
+    "product_model": 37,
+    "category": 41,
+    "slug": "impression-sur-porte-cle",
+    "product_type_image": "producttypes/porte-cle.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 285,
+  "fields": {
+    "name": "Lani\u00e8re",
+    "description": "Lani\u00e8re",
+    "product_model": 67,
+    "category": 41,
+    "slug": "laniere",
+    "product_type_image": "producttypes/lanoere.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 287,
+  "fields": {
+    "name": "Flyer",
+    "description": "Flyer",
+    "product_model": 85,
+    "category": 41,
+    "slug": "flyer",
+    "product_type_image": "producttypes/flyers.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 288,
+  "fields": {
+    "name": "Carnet",
+    "description": "Carnet",
+    "product_model": 38,
+    "category": 41,
+    "slug": "carnet",
+    "product_type_image": "producttypes/carnet-reves_XRDVTaY.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 293,
+  "fields": {
+    "name": "Gravure",
+    "description": "Gravure",
+    "product_model": 28,
+    "category": 44,
+    "slug": "gravure",
+    "product_type_image": "producttypes/gravure.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 294,
+  "fields": {
+    "name": "Boite cuisini\u00e8re",
+    "description": "Boite cuisini\u00e8re",
+    "product_model": 70,
+    "category": 53,
+    "slug": "boite-cuisiniere",
+    "product_type_image": "producttypes/boitecuissiene_j0b0lbB.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 295,
+  "fields": {
+    "name": "Clef \u00e0 molette",
+    "description": "Clef \u00e0 molette",
+    "product_model": 71,
+    "category": 56,
+    "slug": "clef-a-molette",
+    "product_type_image": "producttypes/cle-mollette.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 296,
+  "fields": {
+    "name": "Disjoncteur",
+    "description": "Disjoncteur",
+    "product_model": 84,
+    "category": 53,
+    "slug": "disjoncteur",
+    "product_type_image": "producttypes/disjoncteur2_KiHsL9U.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 297,
+  "fields": {
+    "name": "interrupteur diff\u00e9rentiel",
+    "description": "interrupteur diff\u00e9rentiel",
+    "product_model": 63,
+    "category": 53,
+    "slug": "interrupteur-differentiel",
+    "product_type_image": "producttypes/H433343_web_TXeLV5x.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 298,
+  "fields": {
+    "name": "fusible",
+    "description": "fusible",
+    "product_model": 79,
+    "category": 53,
+    "slug": "fusible",
+    "product_type_image": "producttypes/fusible.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 299,
+  "fields": {
+    "name": "\u00e9querre",
+    "description": "\u00e9querre",
+    "product_model": 17,
+    "category": 56,
+    "slug": "equerre",
+    "product_type_image": "producttypes/equerre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 300,
+  "fields": {
+    "name": "monte charge",
+    "description": "monte charge",
+    "product_model": 61,
+    "category": 55,
+    "slug": "monte-charge",
+    "product_type_image": "producttypes/monte-charge_qdyaP8I.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 301,
+  "fields": {
+    "name": "interrupteur \u00e9lectrique",
+    "description": "interrupteur \u00e9lectrique",
+    "product_model": 86,
+    "category": 53,
+    "slug": "interrupteur-electrique",
+    "product_type_image": "producttypes/interrupteur-va-et-vient-a-griffes-blanc-adelais.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 302,
+  "fields": {
+    "name": "disjoncteur pour moteur",
+    "description": "disjoncteur moteur",
+    "product_model": 41,
+    "category": 53,
+    "slug": "disjoncteur-pour-moteur",
+    "product_type_image": "producttypes/disjoncteur-moteur-magneto-thermique-1-6-2-5a.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 303,
+  "fields": {
+    "name": "paumelle",
+    "description": "paumelle",
+    "product_model": 66,
+    "category": 58,
+    "slug": "paumelle",
+    "product_type_image": "producttypes/paumelle.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 304,
+  "fields": {
+    "name": "gant",
+    "description": "gant",
+    "product_model": 89,
+    "category": 56,
+    "slug": "gant",
+    "product_type_image": "producttypes/gant.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 305,
+  "fields": {
+    "name": "cylindre",
+    "description": "cylindre",
+    "product_model": 31,
+    "category": 58,
+    "slug": "cylindre",
+    "product_type_image": "producttypes/cylindre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 306,
+  "fields": {
+    "name": "palan m\u00e9canique",
+    "description": "palan m\u00e9canique",
+    "product_model": 23,
+    "category": 55,
+    "slug": "palan-mecanique",
+    "product_type_image": "producttypes/pallan_Wn84ibw.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 307,
+  "fields": {
+    "name": "inverseur",
+    "description": "inverseur",
+    "product_model": 76,
+    "category": 53,
+    "slug": "inverseur",
+    "product_type_image": "producttypes/principal_14221.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 308,
+  "fields": {
+    "name": "appareil de mesure",
+    "description": "appareil de mesure",
+    "product_model": 57,
+    "category": 53,
+    "slug": "appareil-de-mesure",
+    "product_type_image": "producttypes/multimetre-ohmtec-300-v_2A7sAoU.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 309,
+  "fields": {
+    "name": "Prise \u00e9lectrique",
+    "description": "Prise \u00e9lectrique",
+    "product_model": 26,
+    "category": 53,
+    "slug": "prise-electrique",
+    "product_type_image": "producttypes/priseelectrique-400x278_tJ5UJa0.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 310,
+  "fields": {
+    "name": "Rallonge",
+    "description": "Rallonge",
+    "product_model": 46,
+    "category": 53,
+    "slug": "rallonge",
+    "product_type_image": "producttypes/enrouleur-rallonge-electrique_A0H9L3E.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 311,
+  "fields": {
+    "name": "Boite de d\u00e9rivation",
+    "description": "Boite de d\u00e9rivation",
+    "product_model": 58,
+    "category": 53,
+    "slug": "boite-de-derivation",
+    "product_type_image": "producttypes/A_Abox_SL_02_5kdLXib.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 313,
+  "fields": {
+    "name": "Contacteur",
+    "description": "Contacteur",
+    "product_model": 64,
+    "category": 53,
+    "slug": "contacteur",
+    "product_type_image": "producttypes/contacteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 314,
+  "fields": {
+    "name": "m\u00e8che \u00e0 b\u00e9ton",
+    "description": "m\u00e8che \u00e0 b\u00e9ton",
+    "product_model": 51,
+    "category": 58,
+    "slug": "meche-a-beton",
+    "product_type_image": "producttypes/meche_\u00e0_beton.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 316,
+  "fields": {
+    "name": "balance",
+    "description": "balance",
+    "product_model": 12,
+    "category": 55,
+    "slug": "balance",
+    "product_type_image": "producttypes/balance.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 317,
+  "fields": {
+    "name": "tuyauterie",
+    "description": "tuyauterie",
+    "product_model": 40,
+    "category": 57,
+    "slug": "tuyauterie",
+    "product_type_image": "producttypes/tuyauterie_NkvM2G1.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 318,
+  "fields": {
+    "name": "accessoires hydrophore",
+    "description": "accessoires hydrophore",
+    "product_model": 53,
+    "category": 57,
+    "slug": "accessoires-hydrophore",
+    "product_type_image": "producttypes/acc-hydro.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 319,
+  "fields": {
+    "name": "flexible",
+    "description": "flexible",
+    "product_model": 43,
+    "category": 57,
+    "slug": "flexible",
+    "product_type_image": "producttypes/flexible.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 320,
+  "fields": {
+    "name": "siphon",
+    "description": "siphon",
+    "product_model": 47,
+    "category": 57,
+    "slug": "siphon",
+    "product_type_image": "producttypes/siphon.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 321,
+  "fields": {
+    "name": "r\u00e9duction pvc",
+    "description": "r\u00e9duction pvc",
+    "product_model": 19,
+    "category": 57,
+    "slug": "reduction-pvc",
+    "product_type_image": "producttypes/reduction-pvc.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 322,
+  "fields": {
+    "name": "motopompe",
+    "description": "motopompe",
+    "product_model": 18,
+    "category": 55,
+    "slug": "motopompe",
+    "product_type_image": "producttypes/motopompe.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 323,
+  "fields": {
+    "name": "chargeur de batterie",
+    "description": "chargeur batterie",
+    "product_model": 94,
+    "category": 55,
+    "slug": "chargeur-de-batterie",
+    "product_type_image": "producttypes/charge-batterie.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 324,
+  "fields": {
+    "name": "pompe hydrophore",
+    "description": "pompe hydrophore groupe suppression",
+    "product_model": 42,
+    "category": 55,
+    "slug": "pompe-hydrophore",
+    "product_type_image": "producttypes/hydrophore.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 325,
+  "fields": {
+    "name": "pompe de forage",
+    "description": "pompe forage",
+    "product_model": 90,
+    "category": 55,
+    "slug": "pompe-de-forage",
+    "product_type_image": "producttypes/pompe-forage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 326,
+  "fields": {
+    "name": "pompe \u00e0 eau",
+    "description": "pompe eau",
+    "product_model": 88,
+    "category": 55,
+    "slug": "pompe-a-eau",
+    "product_type_image": "producttypes/pompe_eau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 329,
+  "fields": {
+    "name": "groupe \u00e9lectrog\u00e8ne",
+    "description": "groupe \u00e9lectrog\u00e8ne",
+    "product_model": 93,
+    "category": 55,
+    "slug": "groupe-electrogene",
+    "product_type_image": "producttypes/groupe.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 330,
+  "fields": {
+    "name": "compresseur",
+    "description": "compresseur",
+    "product_model": 39,
+    "category": 55,
+    "slug": "compresseur",
+    "product_type_image": "producttypes/compresseur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 331,
+  "fields": {
+    "name": "moteur \u00e9lectrique",
+    "description": "moteur \u00e9lectrique",
+    "product_model": 92,
+    "category": 55,
+    "slug": "moteur-electrique",
+    "product_type_image": "producttypes/Moteurs-triphases_BKxuAvg.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 332,
+  "fields": {
+    "name": "conseil",
+    "description": "conseil",
+    "product_model": 78,
+    "category": 71,
+    "slug": "conseil",
+    "product_type_image": "producttypes/conseil_1_mF84E1M.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 334,
+  "fields": {
+    "name": "assistance fiscale",
+    "description": "assistance fiscale",
+    "product_model": 24,
+    "category": 71,
+    "slug": "assistance-fiscale",
+    "product_type_image": "producttypes/Conseil-Fiscal-large-qujqhb.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 336,
+  "fields": {
+    "name": "assistance comptable",
+    "description": "assistance technique comptable",
+    "product_model": 9,
+    "category": 71,
+    "slug": "assistance-comptable",
+    "product_type_image": "producttypes/accountinggg.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 337,
+  "fields": {
+    "name": "audit financier",
+    "description": "audit financier",
+    "product_model": 68,
+    "category": 71,
+    "slug": "audit-financier",
+    "product_type_image": "producttypes/audit-financier-st-jean-de-moirans_azYuYbz.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 338,
+  "fields": {
+    "name": "Assainissement",
+    "description": "Assainissement",
+    "product_model": 118,
+    "category": 77,
+    "slug": "assainissement",
+    "product_type_image": "producttypes/service-nettoyage_Tt8ZcPN.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 339,
+  "fields": {
+    "name": "Cours langues \u00e9trang\u00e8res",
+    "description": "Cours langues \u00e9trang\u00e8res",
+    "product_model": 15,
+    "category": 73,
+    "slug": "cours-langues-etrangeres",
+    "product_type_image": "producttypes/cours_de_langue_5H4eIsE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 340,
+  "fields": {
+    "name": "interpr\u00e9tariat",
+    "description": "interpr\u00e9tariat",
+    "product_model": 80,
+    "category": 76,
+    "slug": "interpretariat",
+    "product_type_image": "producttypes/interpretation-paris_CWaYJQp.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 341,
+  "fields": {
+    "name": "service de traduction",
+    "description": "service de traduction",
+    "product_model": 54,
+    "category": 76,
+    "slug": "service-de-traduction",
+    "product_type_image": "producttypes/traduction.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 345,
+  "fields": {
+    "name": "Assurance Voyage",
+    "description": "Assurance Voyage",
+    "product_model": 127,
+    "category": 31,
+    "slug": "assurance-voyage",
+    "product_type_image": "producttypes/assurance_voyage_1.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 346,
+  "fields": {
+    "name": "Pi\u00e8ce de Rechange Refroidissement",
+    "description": "Pi\u00e8ce de Rechange Refroidissement",
+    "product_model": 56,
+    "category": 28,
+    "slug": "piece-de-rechange-refroidissement",
+    "product_type_image": "producttypes/refroidissement.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 347,
+  "fields": {
+    "name": "Pi\u00e8ce de Rechange Direction Suspension",
+    "description": "Pi\u00e8ce de Rechange Direction Suspension",
+    "product_model": 52,
+    "category": 28,
+    "slug": "piece-de-rechange-direction-suspension",
+    "product_type_image": "producttypes/revision-moteur_FYjoYcs.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 348,
+  "fields": {
+    "name": "Location Camion",
+    "description": "Location Camion",
+    "product_model": 235,
+    "category": 101,
+    "slug": "location-camion",
+    "product_type_image": "producttypes/location_camion.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 349,
+  "fields": {
+    "name": "Location Remorque",
+    "description": "Location Remorque",
+    "product_model": 236,
+    "category": 3,
+    "slug": "location-remorque",
+    "product_type_image": "producttypes/location_remorque_intra_urbain.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 350,
+  "fields": {
+    "name": "Location Stand",
+    "description": "Location Stands",
+    "product_model": 208,
+    "category": 88,
+    "slug": "location-stand",
+    "product_type_image": "producttypes/stand_1_4JiJ4mm.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 351,
+  "fields": {
+    "name": "Peinture",
+    "description": "Peinture",
+    "product_model": 210,
+    "category": 35,
+    "slug": "peinture",
+    "product_type_image": "producttypes/peinture.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 382,
+  "fields": {
+    "name": "Escorte de fond",
+    "description": "Escorte de fond",
+    "product_model": 158,
+    "category": 74,
+    "slug": "escorte-de-fond",
+    "product_type_image": "producttypes/escorte_de_fond.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 400,
+  "fields": {
+    "name": "Buffet",
+    "description": "Buffet",
+    "product_model": 114,
+    "category": 87,
+    "slug": "buffet",
+    "product_type_image": "producttypes/buffet.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 401,
+  "fields": {
+    "name": "Chambre",
+    "description": "Chambre",
+    "product_model": 134,
+    "category": 88,
+    "slug": "chambre",
+    "product_type_image": "producttypes/Chambre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 402,
+  "fields": {
+    "name": "Cocktails",
+    "description": "Cocktails",
+    "product_model": 151,
+    "category": 87,
+    "slug": "cocktails",
+    "product_type_image": "producttypes/cocktails.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 403,
+  "fields": {
+    "name": "D\u00e9m\u00e9nagement",
+    "description": "D\u00e9m\u00e9nagement",
+    "product_model": 169,
+    "category": 81,
+    "slug": "demenagement",
+    "product_type_image": "producttypes/demenagement.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 406,
+  "fields": {
+    "name": "Fontaine d\u2019eau",
+    "description": "Fontaine d\u2019eau",
+    "product_model": 220,
+    "category": 77,
+    "slug": "fontaine-deau",
+    "product_type_image": "producttypes/fontaine_deau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 407,
+  "fields": {
+    "name": "Fret routier",
+    "description": "Fret routier",
+    "product_model": 247,
+    "category": 80,
+    "slug": "fret-routier",
+    "product_type_image": "producttypes/Fret_routier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 408,
+  "fields": {
+    "name": "Gardiennage",
+    "description": "Gardiennage",
+    "product_model": 106,
+    "category": 74,
+    "slug": "gardiennage",
+    "product_type_image": "producttypes/service-gardiennage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 409,
+  "fields": {
+    "name": "Pause caf\u00e9",
+    "description": "Pause caf\u00e9",
+    "product_model": 107,
+    "category": 87,
+    "slug": "pause-cafe",
+    "product_type_image": "producttypes/Pause-cafe.gif"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 410,
+  "fields": {
+    "name": "Placement",
+    "description": "Placement",
+    "product_model": 159,
+    "category": 77,
+    "slug": "placement",
+    "product_type_image": "producttypes/PLACEMENT__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 411,
+  "fields": {
+    "name": "Plafonnier \u00e0 led",
+    "description": "Plafonnier \u00e0 led",
+    "product_model": 183,
+    "category": 53,
+    "slug": "plafonnier-a-led",
+    "product_type_image": "producttypes/plafonier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 413,
+  "fields": {
+    "name": "Salle de conf\u00e9rence",
+    "description": "Salle de conf\u00e9rence",
+    "product_model": 104,
+    "category": 88,
+    "slug": "salle-de-conference",
+    "product_type_image": "producttypes/Salle_de_conference.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 414,
+  "fields": {
+    "name": "Services climatisation",
+    "description": "Services climatisation",
+    "product_model": 144,
+    "category": 91,
+    "slug": "services-climatisation",
+    "product_type_image": "producttypes/service-split.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 420,
+  "fields": {
+    "name": "Back drops",
+    "description": "Back drops",
+    "product_model": 129,
+    "category": 41,
+    "slug": "back-drops",
+    "product_type_image": "producttypes/backdrop.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 435,
+  "fields": {
+    "name": "Bande passante",
+    "description": "Bande passante",
+    "product_model": 100,
+    "category": 62,
+    "slug": "bande-passante",
+    "product_type_image": "producttypes/bande_passante.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 436,
+  "fields": {
+    "name": "Communication de masse",
+    "description": "Communication de masse",
+    "product_model": 148,
+    "category": 112,
+    "slug": "communication-de-masse",
+    "product_type_image": "producttypes/Communication_de_masse.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 437,
+  "fields": {
+    "name": "Communication graphique",
+    "description": "Communication graphique",
+    "product_model": 121,
+    "category": 112,
+    "slug": "communication-graphique",
+    "product_type_image": "producttypes/Impression_b\u00e2che_CaQRZKW.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 440,
+  "fields": {
+    "name": "Ecriture de scenario",
+    "description": "Ecriture de scenario",
+    "product_model": 122,
+    "category": 113,
+    "slug": "ecriture-de-scenario",
+    "product_type_image": "producttypes/ecriture_de_scenario.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 441,
+  "fields": {
+    "name": "Ev\u00e9nement de masse",
+    "description": "Ev\u00e9nement de masse",
+    "product_model": 145,
+    "category": 112,
+    "slug": "evenement-de-masse",
+    "product_type_image": "producttypes/evenement_de_masse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 442,
+  "fields": {
+    "name": "Fixeur",
+    "description": "Fixeur",
+    "product_model": 168,
+    "category": 113,
+    "slug": "fixeur",
+    "product_type_image": "producttypes/fixeur_rWUlrXv.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 443,
+  "fields": {
+    "name": "Insertion publicitaire",
+    "description": "Insertion publicitaire",
+    "product_model": 123,
+    "category": 111,
+    "slug": "insertion-publicitaire",
+    "product_type_image": "producttypes/insertion-publicitaire.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 444,
+  "fields": {
+    "name": "Postproduction",
+    "description": "Postproduction",
+    "product_model": 101,
+    "category": 113,
+    "slug": "postproduction",
+    "product_type_image": "producttypes/postproduction.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 445,
+  "fields": {
+    "name": "Production tournage",
+    "description": "Production tournage",
+    "product_model": 140,
+    "category": 113,
+    "slug": "production-tournage",
+    "product_type_image": "producttypes/production-tournage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 446,
+  "fields": {
+    "name": "Publication",
+    "description": "Publication",
+    "product_model": 258,
+    "category": 113,
+    "slug": "publication",
+    "product_type_image": "producttypes/R\u00e9daction_des_proc\u00e9dures_OFuxRGT.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 448,
+  "fields": {
+    "name": "Roll up",
+    "description": "Roll up",
+    "product_model": 126,
+    "category": 41,
+    "slug": "roll-up",
+    "product_type_image": "producttypes/roll-up.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 503,
+  "fields": {
+    "name": "Location d\u00e9p\u00f4t",
+    "description": "Location d\u00e9p\u00f4t",
+    "product_model": 214,
+    "category": 88,
+    "slug": "location-depot",
+    "product_type_image": "producttypes/location_depot.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 510,
+  "fields": {
+    "name": "Enregistreur cam\u00e9ra de surveillance",
+    "description": "Enregistreur cam\u00e9ra de surveillance",
+    "product_model": 73,
+    "category": 92,
+    "slug": "enregistreur-camera-de-surveillance",
+    "product_type_image": "producttypes/enregistreur_GX8JP0f.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 514,
+  "fields": {
+    "name": "Batterie",
+    "description": "Batterie",
+    "product_model": 330,
+    "category": 26,
+    "slug": "batterie",
+    "product_type_image": "producttypes/batterie-solaire_Z5xVsXR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 515,
+  "fields": {
+    "name": "Batterie solaire",
+    "description": "Batterie solaire",
+    "product_model": 252,
+    "category": 49,
+    "slug": "batterie-solaire",
+    "product_type_image": "producttypes/batterie-solaire.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 516,
+  "fields": {
+    "name": "Panneau solaire",
+    "description": "Panneau solaire",
+    "product_model": 248,
+    "category": 49,
+    "slug": "panneau-solaire",
+    "product_type_image": "producttypes/panneau-solaire.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 518,
+  "fields": {
+    "name": "Panneau de signalisation",
+    "description": "Panneau de signalisation",
+    "product_model": 201,
+    "category": 40,
+    "slug": "panneau-de-signalisation",
+    "product_type_image": "producttypes/panneau_signalisation.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 522,
+  "fields": {
+    "name": "Extincteur",
+    "description": "Extincteur",
+    "product_model": 202,
+    "category": 92,
+    "slug": "extincteur",
+    "product_type_image": "producttypes/exctincteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 523,
+  "fields": {
+    "name": "Fil plastique",
+    "description": "Fil plastique",
+    "product_model": 198,
+    "category": 53,
+    "slug": "fil-plastique",
+    "product_type_image": "producttypes/fil_plastique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 524,
+  "fields": {
+    "name": "S\u00e8che main",
+    "description": "S\u00e8che main",
+    "product_model": 10,
+    "category": 53,
+    "slug": "seche-main",
+    "product_type_image": "producttypes/seche_main.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 529,
+  "fields": {
+    "name": "Autocollant vinyle adh\u00e9sif",
+    "description": "Autocollant vinyle adh\u00e9sif",
+    "product_model": 110,
+    "category": 41,
+    "slug": "autocollant-vinyle-adhesif",
+    "product_type_image": "producttypes/vinyle_OtOoPQ9.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 531,
+  "fields": {
+    "name": "Bureau",
+    "description": "Bureau",
+    "product_model": 242,
+    "category": 24,
+    "slug": "bureau",
+    "product_type_image": "producttypes/table-bureau_sUPPfHI.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 532,
+  "fields": {
+    "name": "Sachet",
+    "description": "Sachet",
+    "product_model": 146,
+    "category": 41,
+    "slug": "sachet",
+    "product_type_image": "producttypes/sachet.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 536,
+  "fields": {
+    "name": "Impression banderole",
+    "description": "Impression banderole",
+    "product_model": 157,
+    "category": 41,
+    "slug": "impression-banderole",
+    "product_type_image": "producttypes/Impression_b\u00e2che_mJ1gL9B.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 538,
+  "fields": {
+    "name": "Adresse IP publique",
+    "description": "Adresse IP publique",
+    "product_model": 138,
+    "category": 62,
+    "slug": "adresse-ip-publique",
+    "product_type_image": "producttypes/ippublic.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 541,
+  "fields": {
+    "name": "Briques",
+    "description": "Briques",
+    "product_model": 207,
+    "category": 86,
+    "slug": "briques",
+    "product_type_image": "producttypes/brique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 542,
+  "fields": {
+    "name": "Moellon",
+    "description": "Moellon",
+    "product_model": 212,
+    "category": 86,
+    "slug": "moellon",
+    "product_type_image": "producttypes/moellon.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 547,
+  "fields": {
+    "name": "B\u00e9tonni\u00e8re",
+    "description": "B\u00e9tonni\u00e8re",
+    "product_model": 186,
+    "category": 55,
+    "slug": "betonniere",
+    "product_type_image": "producttypes/betonniere.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 548,
+  "fields": {
+    "name": "Compacteur",
+    "description": "Compacteur",
+    "product_model": 181,
+    "category": 55,
+    "slug": "compacteur",
+    "product_type_image": "producttypes/compacteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 582,
+  "fields": {
+    "name": "Ampoule",
+    "description": "Ampoule",
+    "product_model": 179,
+    "category": 53,
+    "slug": "ampoule",
+    "product_type_image": "producttypes/ampoule_dq31UqQ.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 583,
+  "fields": {
+    "name": "Ampoule-solaire",
+    "description": "Ampoule-solaire",
+    "product_model": 249,
+    "category": 53,
+    "slug": "ampoule-solaire",
+    "product_type_image": "producttypes/ampoule.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 585,
+  "fields": {
+    "name": "C\u00e2ble a masse",
+    "description": "C\u00e2ble a masse",
+    "product_model": 200,
+    "category": 53,
+    "slug": "cable-a-masse",
+    "product_type_image": "producttypes/cable_masse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 586,
+  "fields": {
+    "name": "C\u00e2ble informatique",
+    "description": "C\u00e2ble informatique",
+    "product_model": 136,
+    "category": 66,
+    "slug": "cable-informatique",
+    "product_type_image": "producttypes/patch_cord.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 587,
+  "fields": {
+    "name": "Cartouche toner",
+    "description": "Cartouche toner",
+    "product_model": 150,
+    "category": 65,
+    "slug": "cartouche-toner",
+    "product_type_image": "producttypes/cartouche.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 589,
+  "fields": {
+    "name": "Chaise pour salle d'attente",
+    "description": "Chaise pour salle d'attente",
+    "product_model": 221,
+    "category": 24,
+    "slug": "chaise-pour-salle-dattente",
+    "product_type_image": "producttypes/chaise_salle_dattente.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 590,
+  "fields": {
+    "name": "Citerne",
+    "description": "Citerne",
+    "product_model": 189,
+    "category": 58,
+    "slug": "citerne",
+    "product_type_image": "producttypes/citerne.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 591,
+  "fields": {
+    "name": "Clavier",
+    "description": "Clavier",
+    "product_model": 108,
+    "category": 65,
+    "slug": "clavier",
+    "product_type_image": "producttypes/clavier-usb.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 592,
+  "fields": {
+    "name": "Coffret divisionnaire",
+    "description": "Coffret divisionnaire",
+    "product_model": 188,
+    "category": 53,
+    "slug": "coffret-divisionnaire",
+    "product_type_image": "producttypes/coffret-divisionnaire.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 593,
+  "fields": {
+    "name": "Coffret \u00e9lectrique",
+    "description": "Coffret \u00e9lectrique",
+    "product_model": 30,
+    "category": 53,
+    "slug": "coffret-electrique",
+    "product_type_image": "producttypes/COFFRET_ELECTRIQUE_MODULAIRE_rjyBFXC.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 594,
+  "fields": {
+    "name": "Coffret jeu de barre",
+    "description": "Coffret jeu de barre",
+    "product_model": 184,
+    "category": 53,
+    "slug": "coffret-jeu-de-barre",
+    "product_type_image": "producttypes/cCoffret_jeu_de_barre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 596,
+  "fields": {
+    "name": "Disjoncteur compact",
+    "description": "Disjoncteur compact",
+    "product_model": 177,
+    "category": 53,
+    "slug": "disjoncteur-compact",
+    "product_type_image": "producttypes/Disjoncteur_compact.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 597,
+  "fields": {
+    "name": "Disjoncteur contacteur",
+    "description": "Disjoncteur contacteur",
+    "product_model": 203,
+    "category": 53,
+    "slug": "disjoncteur-contacteur",
+    "product_type_image": "producttypes/disjoncteur-contacteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 598,
+  "fields": {
+    "name": "Disjoncteur diff\u00e9rentiel",
+    "description": "Disjoncteur diff\u00e9rentiel",
+    "product_model": 187,
+    "category": 53,
+    "slug": "disjoncteur-differentiel",
+    "product_type_image": "producttypes/disjoncteur-differentiel.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 599,
+  "fields": {
+    "name": "Etag\u00e8re",
+    "description": "Etag\u00e8re",
+    "product_model": 218,
+    "category": 24,
+    "slug": "etagere",
+    "product_type_image": "producttypes/etagere.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 601,
+  "fields": {
+    "name": "Interrupteur sectionneur",
+    "description": "Interrupteur sectionneur",
+    "product_model": 262,
+    "category": 53,
+    "slug": "interrupteur-sectionneur",
+    "product_type_image": "producttypes/Interrupteur_sectionneur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 602,
+  "fields": {
+    "name": "Minuteur",
+    "description": "Minuteur",
+    "product_model": 263,
+    "category": 53,
+    "slug": "minuteur",
+    "product_type_image": "producttypes/MINUTEUR_POUR_CONTACTEUR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 603,
+  "fields": {
+    "name": "Modem wifi",
+    "description": "Modem wifi",
+    "product_model": 130,
+    "category": 66,
+    "slug": "modem-wifi",
+    "product_type_image": "producttypes/modem_wifi.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 604,
+  "fields": {
+    "name": "Moto 2 roues",
+    "description": "Moto 2 roues",
+    "product_model": 216,
+    "category": 84,
+    "slug": "moto-2-roues",
+    "product_type_image": "producttypes/Moto.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 605,
+  "fields": {
+    "name": "Moto 3 roues",
+    "description": "Moto 3 roues",
+    "product_model": 217,
+    "category": 84,
+    "slug": "moto-3-roues",
+    "product_type_image": "producttypes/moto_3_roues__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 606,
+  "fields": {
+    "name": "Onduleur",
+    "description": "Onduleur",
+    "product_model": 162,
+    "category": 53,
+    "slug": "onduleur",
+    "product_type_image": "producttypes/onduleur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 607,
+  "fields": {
+    "name": "Outil manuel",
+    "description": "Outil manuel",
+    "product_model": 204,
+    "category": 56,
+    "slug": "outil-manuel",
+    "product_type_image": "producttypes/outillage-1.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 608,
+  "fields": {
+    "name": "Peinture sp\u00e9ciales",
+    "description": "Peinture sp\u00e9ciales",
+    "product_model": 211,
+    "category": 35,
+    "slug": "peinture-speciales",
+    "product_type_image": "producttypes/peinture-speciale.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 609,
+  "fields": {
+    "name": "Projecteur",
+    "description": "Projecteur",
+    "product_model": 192,
+    "category": 53,
+    "slug": "projecteur",
+    "product_type_image": "producttypes/projecteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 610,
+  "fields": {
+    "name": "R\u00e9glette",
+    "description": "R\u00e9glette",
+    "product_model": 176,
+    "category": 53,
+    "slug": "reglette",
+    "product_type_image": "producttypes/reglette.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 611,
+  "fields": {
+    "name": "Rouleau flexible",
+    "description": "Rouleau flexible",
+    "product_model": 182,
+    "category": 57,
+    "slug": "rouleau-flexible",
+    "product_type_image": "producttypes/flexible_r9mpoq1.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 612,
+  "fields": {
+    "name": "Routeur",
+    "description": "Routeur",
+    "product_model": 139,
+    "category": 66,
+    "slug": "routeur",
+    "product_type_image": "producttypes/routeur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 613,
+  "fields": {
+    "name": "Recrutement",
+    "description": "Recrutement",
+    "product_model": 155,
+    "category": 77,
+    "slug": "recrutement",
+    "product_type_image": "producttypes/RECRUTEMENT__.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 614,
+  "fields": {
+    "name": "Transport des biens intra-kinshasa",
+    "description": "Transport biens intra-kinshasa",
+    "product_model": 253,
+    "category": 80,
+    "slug": "transport-des-biens-intra-kinshasa",
+    "product_type_image": "producttypes/TRANS_URBAIN_KINSHASA__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 615,
+  "fields": {
+    "name": "Riz",
+    "description": "Riz",
+    "product_model": 152,
+    "category": 20,
+    "slug": "riz",
+    "product_type_image": "producttypes/riz.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 616,
+  "fields": {
+    "name": "Bouture de Manioc",
+    "description": "Bouture de Manioc",
+    "product_model": 237,
+    "category": 20,
+    "slug": "bouture-de-manioc",
+    "product_type_image": "producttypes/bouture_manioc.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 617,
+  "fields": {
+    "name": "Semence",
+    "description": "Semence",
+    "product_model": 238,
+    "category": 20,
+    "slug": "semence",
+    "product_type_image": "producttypes/semences.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 618,
+  "fields": {
+    "name": "tourteau",
+    "description": "tourteau",
+    "product_model": 241,
+    "category": 20,
+    "slug": "tourteau",
+    "product_type_image": "producttypes/tourteau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 619,
+  "fields": {
+    "name": "Farine",
+    "description": "Farine",
+    "product_model": 240,
+    "category": 100,
+    "slug": "farine",
+    "product_type_image": "producttypes/farine_7Kt6SZy.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 620,
+  "fields": {
+    "name": "Huile",
+    "description": "Huile",
+    "product_model": 239,
+    "category": 100,
+    "slug": "huile",
+    "product_type_image": "producttypes/huile_ZUVz8J3.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 621,
+  "fields": {
+    "name": "Bouillie",
+    "description": "Bouillie",
+    "product_model": 164,
+    "category": 100,
+    "slug": "bouillie",
+    "product_type_image": "producttypes/bouillie.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 622,
+  "fields": {
+    "name": "Tableau d'art",
+    "description": "Tableau art",
+    "product_model": 261,
+    "category": 94,
+    "slug": "tableau-dart",
+    "product_type_image": "producttypes/tableau_art.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 623,
+  "fields": {
+    "name": "Chaise de bureau",
+    "description": "Chaise bureau",
+    "product_model": 222,
+    "category": 24,
+    "slug": "chaise-de-bureau",
+    "product_type_image": "producttypes/chaise-bureau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 624,
+  "fields": {
+    "name": "Abonnement journal",
+    "description": "Abonnement journal journaux",
+    "product_model": 137,
+    "category": 77,
+    "slug": "abonnement-journal",
+    "product_type_image": "producttypes/abonnement-journal.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 625,
+  "fields": {
+    "name": "Accueil a\u00e9roport",
+    "description": "Accueil a\u00e9roport",
+    "product_model": 125,
+    "category": 83,
+    "slug": "accueil-aeroport",
+    "product_type_image": "producttypes/accueil-aeroport.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 626,
+  "fields": {
+    "name": "Affichage Logo sur \u00e9cran",
+    "description": "Affichage Logo sur \u00e9cran",
+    "product_model": 227,
+    "category": 111,
+    "slug": "affichage-logo-sur-ecran",
+    "product_type_image": "producttypes/affichagelogo_sur_tv.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 627,
+  "fields": {
+    "name": "Audit et Contr\u00f4le Interne",
+    "description": "Audit et Contr\u00f4le Interne",
+    "product_model": 153,
+    "category": 71,
+    "slug": "audit-et-controle-interne",
+    "product_type_image": "producttypes/Audit_et_contr\u00f4le_interne.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 628,
+  "fields": {
+    "name": "Bande d\u00e9filante",
+    "description": "Bande d\u00e9filante",
+    "product_model": 224,
+    "category": 111,
+    "slug": "bande-defilante",
+    "product_type_image": "producttypes/bande_defilante1.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 629,
+  "fields": {
+    "name": "Bougie",
+    "description": "Bougie",
+    "product_model": 328,
+    "category": 28,
+    "slug": "bougie",
+    "product_type_image": "producttypes/bougie_qxPbOGD.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 630,
+  "fields": {
+    "name": "Broderie \u00e9cussons",
+    "description": "Broderie \u00e9cussons",
+    "product_model": 266,
+    "category": 44,
+    "slug": "broderie-ecussons",
+    "product_type_image": "producttypes/broderie_ecusson.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 631,
+  "fields": {
+    "name": "Broderie sur t-shirt",
+    "description": "Broderie t-shirt tshirt",
+    "product_model": 233,
+    "category": 44,
+    "slug": "broderie-sur-t-shirt",
+    "product_type_image": "producttypes/broderie-sur-tshirt.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 632,
+  "fields": {
+    "name": "C\u00e2ble \u00e9lectrique souple",
+    "description": "C\u00e2ble \u00e9lectrique souple",
+    "product_model": 195,
+    "category": 53,
+    "slug": "cable-electrique-souple",
+    "product_type_image": "producttypes/cable_souple_xaCE9Wz.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 633,
+  "fields": {
+    "name": "Cahier de charges",
+    "description": "Cahier charges",
+    "product_model": 170,
+    "category": 102,
+    "slug": "cahier-de-charges",
+    "product_type_image": "producttypes/cahier-des-charges.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 634,
+  "fields": {
+    "name": "Camion",
+    "description": "Camion",
+    "product_model": 245,
+    "category": 84,
+    "slug": "camion",
+    "product_type_image": "producttypes/vente_camion.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 635,
+  "fields": {
+    "name": "Casquette",
+    "description": "Casquette",
+    "product_model": 160,
+    "category": 41,
+    "slug": "casquette",
+    "product_type_image": "producttypes/casquette_5hMSkbE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 636,
+  "fields": {
+    "name": "Communiqu\u00e9",
+    "description": "Communiqu\u00e9",
+    "product_model": 225,
+    "category": 111,
+    "slug": "communique",
+    "product_type_image": "producttypes/communique-tv.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 637,
+  "fields": {
+    "name": "Conception graphique",
+    "description": "Conception graphique",
+    "product_model": 156,
+    "category": 113,
+    "slug": "conception-graphique",
+    "product_type_image": "producttypes/conception-graphique.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 638,
+  "fields": {
+    "name": "Conception de page magazine",
+    "description": "Conception page magazine",
+    "product_model": 205,
+    "category": 113,
+    "slug": "conception-de-page-magazine",
+    "product_type_image": "producttypes/conception-page-magazine.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 639,
+  "fields": {
+    "name": "Consultance en d\u00e9coration",
+    "description": "Consultance d\u00e9coration",
+    "product_model": 257,
+    "category": 104,
+    "slug": "consultance-en-decoration",
+    "product_type_image": "producttypes/consultance-decoration.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 640,
+  "fields": {
+    "name": "Dispositif de contr\u00f4le d'acc\u00e8s",
+    "description": "Dispositif contr\u00f4le acc\u00e8s",
+    "product_model": 13,
+    "category": 92,
+    "slug": "dispositif-de-controle-dacces",
+    "product_type_image": "producttypes/dispositif-control-acces.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 641,
+  "fields": {
+    "name": "Convertisseur",
+    "description": "Convertisseur transformateur",
+    "product_model": 21,
+    "category": 53,
+    "slug": "convertisseur",
+    "product_type_image": "producttypes/convertisseur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 642,
+  "fields": {
+    "name": "Cosse batterie",
+    "description": "Cosses batteries accessoires",
+    "product_model": 331,
+    "category": 28,
+    "slug": "cosse-batterie",
+    "product_type_image": "producttypes/cosse_batterie_XejBi2e.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 643,
+  "fields": {
+    "name": "Couverture photo",
+    "description": "Couverture photographe \u00e9v\u00e9nement shooting",
+    "product_model": 265,
+    "category": 77,
+    "slug": "couverture-photo",
+    "product_type_image": "producttypes/couverturephoto.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 644,
+  "fields": {
+    "name": "Cr\u00e9ation de site web",
+    "description": "Cr\u00e9ation de sites web d\u00e9veloppement",
+    "product_model": 109,
+    "category": 102,
+    "slug": "creation-de-site-web",
+    "product_type_image": "producttypes/creation-site-web_TCd0pxe.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 645,
+  "fields": {
+    "name": "D\u00e9coration et am\u00e9nagement",
+    "description": "D\u00e9coration am\u00e9nagement",
+    "product_model": 259,
+    "category": 104,
+    "slug": "decoration-et-amenagement",
+    "product_type_image": "producttypes/decorationamenagement.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 646,
+  "fields": {
+    "name": "D\u00e9coration de surfaces",
+    "description": "D\u00e9coration surfaces int\u00e9rieur",
+    "product_model": 260,
+    "category": 104,
+    "slug": "decoration-de-surfaces",
+    "product_type_image": "producttypes/decoration-surface.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 647,
+  "fields": {
+    "name": "D\u00e9tecteur d'incendie",
+    "description": "D\u00e9tecteur incendie fum\u00e9e",
+    "product_model": 199,
+    "category": 92,
+    "slug": "detecteur-dincendie",
+    "product_type_image": "producttypes/detecteur-incendie2.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 648,
+  "fields": {
+    "name": "D\u00e9tecteur d'intrusion",
+    "description": "D\u00e9tecteur d'intrusion alarme d\u00e9tection syst\u00e8me",
+    "product_model": 35,
+    "category": 92,
+    "slug": "detecteur-dintrusion",
+    "product_type_image": "producttypes/detecteur_9kER178.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 649,
+  "fields": {
+    "name": "Diffusion spot publicitaire",
+    "description": "Diffusion spot publicitaire",
+    "product_model": 223,
+    "category": 111,
+    "slug": "diffusion-spot-publicitaire",
+    "product_type_image": "producttypes/diffusion-spot-publicitaire.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 650,
+  "fields": {
+    "name": "Enseigne lumineuse",
+    "description": "Enseigne lumineuse",
+    "product_model": 75,
+    "category": 40,
+    "slug": "enseigne-lumineuse",
+    "product_type_image": "producttypes/enseigne-lumineuse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 651,
+  "fields": {
+    "name": "Evacuation d\u00e9chet",
+    "description": "Evacuation d\u00e9chets gestion",
+    "product_model": 276,
+    "category": 77,
+    "slug": "evacuation-dechet",
+    "product_type_image": "producttypes/evacuationdechet.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 654,
+  "fields": {
+    "name": "Formation",
+    "description": "Formations",
+    "product_model": 327,
+    "category": 73,
+    "slug": "formation",
+    "product_type_image": "producttypes/formation.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 655,
+  "fields": {
+    "name": "H\u00e9bergement de sites web",
+    "description": "H\u00e9bergement sites web",
+    "product_model": 103,
+    "category": 102,
+    "slug": "hebergement-de-sites-web",
+    "product_type_image": "producttypes/hebergement-site-web.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 687,
+  "fields": {
+    "name": "Agrafe",
+    "description": "Agrafe broche",
+    "product_model": 286,
+    "category": 42,
+    "slug": "agrafe",
+    "product_type_image": "producttypes/agrafes___5JjHlSs.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 688,
+  "fields": {
+    "name": "Agrafeuse",
+    "description": "Agrafeuse brocheuse",
+    "product_model": 301,
+    "category": 42,
+    "slug": "agrafeuse",
+    "product_type_image": "producttypes/agrafeuse__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 689,
+  "fields": {
+    "name": "Album pour carte de visite",
+    "description": "Album carte visite classeur agenda",
+    "product_model": 285,
+    "category": 42,
+    "slug": "album-pour-carte-de-visite",
+    "product_type_image": "producttypes/album_carte_de_visite2___0XBCskk.JPEG"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 690,
+  "fields": {
+    "name": "Anneau plastique",
+    "description": "Anneaux plastique reliure",
+    "product_model": 280,
+    "category": 42,
+    "slug": "anneau-plastique",
+    "product_type_image": "producttypes/anneau_plastique__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 691,
+  "fields": {
+    "name": "Attache",
+    "description": "Attache papier",
+    "product_model": 299,
+    "category": 42,
+    "slug": "attache",
+    "product_type_image": "producttypes/attaches__.gif"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 692,
+  "fields": {
+    "name": "Bac \u00e0 courrier",
+    "description": "Bac courrier",
+    "product_model": 292,
+    "category": 42,
+    "slug": "bac-a-courrier",
+    "product_type_image": "producttypes/bac_a_courrier__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 693,
+  "fields": {
+    "name": "Baguette",
+    "description": "Baguette",
+    "product_model": 326,
+    "category": 42,
+    "slug": "baguette",
+    "product_type_image": "producttypes/baguette__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 695,
+  "fields": {
+    "name": "B\u00e2ton de colle",
+    "description": "B\u00e2tons colle stic",
+    "product_model": 303,
+    "category": 42,
+    "slug": "baton-de-colle",
+    "product_type_image": "producttypes/baton_de_colle__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 696,
+  "fields": {
+    "name": "Bloc note lign\u00e9",
+    "description": "Bloc note lign\u00e9",
+    "product_model": 300,
+    "category": 42,
+    "slug": "bloc-note-ligne",
+    "product_type_image": "producttypes/bloc_note_ligne__.JPG"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 697,
+  "fields": {
+    "name": "Bloc note m\u00e9mo",
+    "description": "Bloc note m\u00e9mo vide",
+    "product_model": 302,
+    "category": 42,
+    "slug": "bloc-note-memo",
+    "product_type_image": "producttypes/bloc_note_meme__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 698,
+  "fields": {
+    "name": "Boite d'archive",
+    "description": "Boite archive",
+    "product_model": 289,
+    "category": 42,
+    "slug": "boite-darchive",
+    "product_type_image": "producttypes/boite_d_archive__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 699,
+  "fields": {
+    "name": "Cachet dateur",
+    "description": "Cachet dateur tampon",
+    "product_model": 284,
+    "category": 42,
+    "slug": "cachet-dateur",
+    "product_type_image": "producttypes/cachet_dateur__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 700,
+  "fields": {
+    "name": "Cachet",
+    "description": "Cachets sceaux tampons",
+    "product_model": 81,
+    "category": 42,
+    "slug": "cachet",
+    "product_type_image": "producttypes/cachet__.JPG"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 701,
+  "fields": {
+    "name": "Cahier",
+    "description": "Cahiers",
+    "product_model": 283,
+    "category": 42,
+    "slug": "cahier",
+    "product_type_image": "producttypes/cahiers__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 702,
+  "fields": {
+    "name": "Calculatrice",
+    "description": "Calculatrices calculettes",
+    "product_model": 291,
+    "category": 42,
+    "slug": "calculatrice",
+    "product_type_image": "producttypes/calculatrice__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 703,
+  "fields": {
+    "name": "Carbone",
+    "description": "Carbone papier carbon",
+    "product_model": 293,
+    "category": 42,
+    "slug": "carbone",
+    "product_type_image": "producttypes/carbone__.JPG"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 704,
+  "fields": {
+    "name": "Ciseau",
+    "description": "Ciseaux",
+    "product_model": 295,
+    "category": 42,
+    "slug": "ciseau",
+    "product_type_image": "producttypes/ciseaux__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 705,
+  "fields": {
+    "name": "Classeur",
+    "description": "Classeurs",
+    "product_model": 297,
+    "category": 42,
+    "slug": "classeur",
+    "product_type_image": "producttypes/classeurs__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 706,
+  "fields": {
+    "name": "Colle liquide",
+    "description": "Colle liquide",
+    "product_model": 281,
+    "category": 42,
+    "slug": "colle-liquide",
+    "product_type_image": "producttypes/colle_liquide.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 707,
+  "fields": {
+    "name": "Correcteur liquide",
+    "description": "Correcteur liquide encre vernis",
+    "product_model": 296,
+    "category": 42,
+    "slug": "correcteur-liquide",
+    "product_type_image": "producttypes/correcteur_liquide__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 708,
+  "fields": {
+    "name": "D\u00e9grafeuse",
+    "description": "Desagrafeuse D\u00e9grafeuse",
+    "product_model": 287,
+    "category": 42,
+    "slug": "degrafeuse",
+    "product_type_image": "producttypes/desagrafeuse__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 709,
+  "fields": {
+    "name": "Ecritoire",
+    "description": "Ecritoires",
+    "product_model": 282,
+    "category": 42,
+    "slug": "ecritoire",
+    "product_type_image": "producttypes/ecritoire__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 710,
+  "fields": {
+    "name": "Elastiques",
+    "description": "Elastiques plastiques",
+    "product_model": 317,
+    "category": 42,
+    "slug": "elastiques",
+    "product_type_image": "producttypes/elastiques__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 711,
+  "fields": {
+    "name": "Enveloppe",
+    "description": "Enveloppes",
+    "product_model": 322,
+    "category": 42,
+    "slug": "enveloppe",
+    "product_type_image": "producttypes/enveloppes__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 712,
+  "fields": {
+    "name": "Etiquette dymo",
+    "description": "Etiquettes dymo",
+    "product_model": 290,
+    "category": 42,
+    "slug": "etiquette-dymo",
+    "product_type_image": "producttypes/etiquettes_dymo__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 713,
+  "fields": {
+    "name": "Etui",
+    "description": "Etui pochette",
+    "product_model": 310,
+    "category": 42,
+    "slug": "etui",
+    "product_type_image": "producttypes/etui__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 714,
+  "fields": {
+    "name": "Farde",
+    "description": "fardes",
+    "product_model": 320,
+    "category": 42,
+    "slug": "farde",
+    "product_type_image": "producttypes/farde-chemise_zwyuhRg.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 715,
+  "fields": {
+    "name": "Gomme",
+    "description": "Gommes",
+    "product_model": 312,
+    "category": 42,
+    "slug": "gomme",
+    "product_type_image": "producttypes/gomme__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 716,
+  "fields": {
+    "name": "Helpdesk",
+    "description": "Helpdesk centre assistance informatique",
+    "product_model": 171,
+    "category": 102,
+    "slug": "helpdesk",
+    "product_type_image": "producttypes/helpdesk__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 717,
+  "fields": {
+    "name": "Impression sur tasse",
+    "description": "Impression sur tasse personnalisation personnalis\u00e9e",
+    "product_model": 267,
+    "category": 41,
+    "slug": "impression-sur-tasse",
+    "product_type_image": "producttypes/impression-tasse__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 788,
+  "fields": {
+    "name": "Imprimante \u00e0 badge",
+    "description": "Imprimante badge carte plastique",
+    "product_model": 272,
+    "category": 92,
+    "slug": "imprimante-a-badge",
+    "product_type_image": "producttypes/Imprimante_a_badge_BRMthCk.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 789,
+  "fields": {
+    "name": "Installation \u00e9lectrique",
+    "description": "Installation \u00e9lectrique",
+    "product_model": 279,
+    "category": 35,
+    "slug": "installation-electrique",
+    "product_type_image": "producttypes/installation-electrique__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 790,
+  "fields": {
+    "name": "Installation de logiciel serveur",
+    "description": "Installation logiciel serveur",
+    "product_model": 172,
+    "category": 102,
+    "slug": "installation-de-logiciel-serveur",
+    "product_type_image": "producttypes/installation_logiciel__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 791,
+  "fields": {
+    "name": "Installation solaire",
+    "description": "Installation solaire",
+    "product_model": 254,
+    "category": 49,
+    "slug": "installation-solaire",
+    "product_type_image": "producttypes/installation-solaire__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 792,
+  "fields": {
+    "name": "Int\u00e9gration personnalisation standard",
+    "description": "Int\u00e9gration personnalisation standard",
+    "product_model": 173,
+    "category": 102,
+    "slug": "integration-personnalisation-standard",
+    "product_type_image": "producttypes/integratio-customoisation-standard__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 793,
+  "fields": {
+    "name": "Intercalaire",
+    "description": "Intercalaire",
+    "product_model": 315,
+    "category": 42,
+    "slug": "intercalaire",
+    "product_type_image": "producttypes/intercallaire.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 794,
+  "fields": {
+    "name": "Coffret inverseur",
+    "description": "Coffret inverseur",
+    "product_model": 196,
+    "category": 53,
+    "slug": "coffret-inverseur",
+    "product_type_image": "producttypes/inverseur-coffret__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 795,
+  "fields": {
+    "name": "Jardinage",
+    "description": "Jardinages",
+    "product_model": 278,
+    "category": 77,
+    "slug": "jardinage",
+    "product_type_image": "producttypes/jardinage___DLzBhKc.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 796,
+  "fields": {
+    "name": "Latte",
+    "description": "latte r\u00e8gle",
+    "product_model": 314,
+    "category": 42,
+    "slug": "latte",
+    "product_type_image": "producttypes/latte__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 797,
+  "fields": {
+    "name": "Location porte-conteneur",
+    "description": "Location porte conteneur camion industriel remorque",
+    "product_model": 256,
+    "category": 80,
+    "slug": "location-porte-conteneur",
+    "product_type_image": "producttypes/location-porte-container__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 798,
+  "fields": {
+    "name": "Location studio",
+    "description": "Location studio enregistrement",
+    "product_model": 226,
+    "category": 88,
+    "slug": "location-studio",
+    "product_type_image": "producttypes/location_studion__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 799,
+  "fields": {
+    "name": "Location v\u00e9hicule",
+    "description": "vehicules v\u00e9hicules locations voitures jeeps bus ketch",
+    "product_model": 206,
+    "category": 101,
+    "slug": "location-vehicule",
+    "product_type_image": "producttypes/location_vehicule2__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 800,
+  "fields": {
+    "name": "Logiciel",
+    "description": "Logiciels",
+    "product_model": 113,
+    "category": 63,
+    "slug": "logiciel",
+    "product_type_image": "producttypes/logiciel__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 801,
+  "fields": {
+    "name": "Maintenance et backup",
+    "description": "Maintenance backup ordinateur informatique",
+    "product_model": 174,
+    "category": 102,
+    "slug": "maintenance-et-backup",
+    "product_type_image": "producttypes/maintenance_backup__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 802,
+  "fields": {
+    "name": "Marqueur",
+    "description": "Marqueur",
+    "product_model": 311,
+    "category": 42,
+    "slug": "marqueur",
+    "product_type_image": "producttypes/marqueur__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 803,
+  "fields": {
+    "name": "Moteur camion",
+    "description": "moteur camion",
+    "product_model": 246,
+    "category": 28,
+    "slug": "moteur-camion",
+    "product_type_image": "producttypes/moteur_camion__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 804,
+  "fields": {
+    "name": "Navette a\u00e9roport",
+    "description": "Navette a\u00e9roport courses transport",
+    "product_model": 102,
+    "category": 83,
+    "slug": "navette-aeroport",
+    "product_type_image": "producttypes/navette_aeroport__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 805,
+  "fields": {
+    "name": "Num\u00e9risation de donn\u00e9es",
+    "description": "Num\u00e9risation donn\u00e9es scannage",
+    "product_model": 175,
+    "category": 102,
+    "slug": "numerisation-de-donnees",
+    "product_type_image": "producttypes/numerisation_donnees__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 806,
+  "fields": {
+    "name": "Page magazine",
+    "description": "Pages magazine publicit\u00e9",
+    "product_model": 229,
+    "category": 111,
+    "slug": "page-magazine",
+    "product_type_image": "producttypes/page_magazine__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 807,
+  "fields": {
+    "name": "Papier",
+    "description": "papier rame duplicateur",
+    "product_model": 309,
+    "category": 42,
+    "slug": "papier",
+    "product_type_image": "producttypes/papier__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 808,
+  "fields": {
+    "name": "Perforateur papier",
+    "description": "Perforateur papier",
+    "product_model": 308,
+    "category": 42,
+    "slug": "perforateur-papier",
+    "product_type_image": "producttypes/perforateur_papier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 809,
+  "fields": {
+    "name": "Photocopieuse",
+    "description": "photocopieuse",
+    "product_model": 142,
+    "category": 65,
+    "slug": "photocopieuse",
+    "product_type_image": "producttypes/photocopi\u00e8re.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 810,
+  "fields": {
+    "name": "Pi\u00e8ce de rechange transmission",
+    "description": "rechanges pieces transmissions reparations pi\u00e8ces r\u00e9parations",
+    "product_model": 32,
+    "category": 28,
+    "slug": "piece-de-rechange-transmission",
+    "product_type_image": "producttypes/piece_rechange_transmission__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 811,
+  "fields": {
+    "name": "Pile",
+    "description": "Pile batterie",
+    "product_model": 321,
+    "category": 53,
+    "slug": "pile",
+    "product_type_image": "producttypes/piles__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 812,
+  "fields": {
+    "name": "Pneu",
+    "description": "pneus roues v\u00e9hicules",
+    "product_model": 329,
+    "category": 28,
+    "slug": "pneu",
+    "product_type_image": "producttypes/pneu___yrSsUxQ.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 813,
+  "fields": {
+    "name": "Porte cl\u00e9",
+    "description": "Porte cl\u00e9",
+    "product_model": 316,
+    "category": 42,
+    "slug": "porte-cle",
+    "product_type_image": "producttypes/porte_cle__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 814,
+  "fields": {
+    "name": "Post it",
+    "description": "post it",
+    "product_model": 313,
+    "category": 42,
+    "slug": "post-it",
+    "product_type_image": "producttypes/post_it.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 815,
+  "fields": {
+    "name": "Poubelle",
+    "description": "Poubelles corbeilles",
+    "product_model": 306,
+    "category": 42,
+    "slug": "poubelle",
+    "product_type_image": "producttypes/corbeilles-a-papier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 816,
+  "fields": {
+    "name": "Presence physique sur plateau",
+    "description": "Pr\u00e9sence physique plateau t\u00e9l\u00e9vision tv",
+    "product_model": 231,
+    "category": 111,
+    "slug": "presence-physique-sur-plateau",
+    "product_type_image": "producttypes/presence_sur_plateau_tv__.JPG"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 817,
+  "fields": {
+    "name": "Produit de d\u00e9ratisation",
+    "description": "Produits de d\u00e9ratisation souris rats",
+    "product_model": 275,
+    "category": 77,
+    "slug": "produit-de-deratisation",
+    "product_type_image": "producttypes/produit_de_deratisation2__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 818,
+  "fields": {
+    "name": "Produit de nettoyage",
+    "description": "Produits nettoyages entretien propret\u00e9",
+    "product_model": 273,
+    "category": 77,
+    "slug": "produit-de-nettoyage",
+    "product_type_image": "producttypes/prouit_de_nettoyage__.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 820,
+  "fields": {
+    "name": "Publicit\u00e9 sur plateau",
+    "description": "Publicit\u00e9s sur plateaux t\u00e9l\u00e9vision tv",
+    "product_model": 230,
+    "category": 111,
+    "slug": "publicite-sur-plateau",
+    "product_type_image": "producttypes/publicite_sur_plateau__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 821,
+  "fields": {
+    "name": "Punaise",
+    "description": "Punaise",
+    "product_model": 304,
+    "category": 42,
+    "slug": "punaise",
+    "product_type_image": "producttypes/punaise__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 823,
+  "fields": {
+    "name": "Reboisement",
+    "description": "Reboisements plantations arbres",
+    "product_model": 274,
+    "category": 20,
+    "slug": "reboisement",
+    "product_type_image": "producttypes/reboisement__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 824,
+  "fields": {
+    "name": "R\u00e9daction de proc\u00e9dures",
+    "description": "d\u00e9daction proc\u00e9dures draft procedures",
+    "product_model": 154,
+    "category": 71,
+    "slug": "redaction-de-procedures",
+    "product_type_image": "producttypes/R\u00e9daction_des_proc\u00e9dures_1tG3IWU.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 825,
+  "fields": {
+    "name": "Registre indicateur de courrier",
+    "description": "Registre indicateur de courrier",
+    "product_model": 305,
+    "category": 42,
+    "slug": "registre-indicateur-de-courrier",
+    "product_type_image": "producttypes/registre_courrier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 826,
+  "fields": {
+    "name": "Regulateur",
+    "description": "r\u00e9gulateurs solaire solar regulators",
+    "product_model": 250,
+    "category": 49,
+    "slug": "regulateur",
+    "product_type_image": "producttypes/regulateur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 827,
+  "fields": {
+    "name": "R\u00e9paration installation solaire",
+    "description": "r\u00e9paration installation solaire solar",
+    "product_model": 255,
+    "category": 49,
+    "slug": "reparation-installation-solaire",
+    "product_type_image": "producttypes/reparation_installation_solaire__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 828,
+  "fields": {
+    "name": "R\u00e9paration climatiseur",
+    "description": "r\u00e9parations climatiseurs splits",
+    "product_model": 277,
+    "category": 91,
+    "slug": "reparation-climatiseur",
+    "product_type_image": "producttypes/r\u00e9paration_climatiseur__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 829,
+  "fields": {
+    "name": "Reportage t\u00e9l\u00e9 promo",
+    "description": "reportage t\u00e9l\u00e9vision promotionnel reporting",
+    "product_model": 228,
+    "category": 111,
+    "slug": "reportage-tele-promo",
+    "product_type_image": "producttypes/reportage_tv_promo__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 830,
+  "fields": {
+    "name": "Retransmission en direct",
+    "description": "Live retransmission direct",
+    "product_model": 232,
+    "category": 111,
+    "slug": "retransmission-en-direct",
+    "product_type_image": "producttypes/retransmission_direct__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 831,
+  "fields": {
+    "name": "Rose \u00e0 reliure",
+    "description": "rose \u00e0 reliure",
+    "product_model": 288,
+    "category": 42,
+    "slug": "rose-a-reliure",
+    "product_type_image": "producttypes/rose_a_reliure__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 832,
+  "fields": {
+    "name": "Salle de gym",
+    "description": "sports room gym salles",
+    "product_model": 120,
+    "category": 88,
+    "slug": "salle-de-gym",
+    "product_type_image": "producttypes/salle_gym__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 833,
+  "fields": {
+    "name": "Scotch",
+    "description": "scotch ruban adh\u00e9sif",
+    "product_model": 323,
+    "category": 42,
+    "slug": "scotch",
+    "product_type_image": "producttypes/scotch__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 834,
+  "fields": {
+    "name": "Serveur",
+    "description": "serveur server ordinateur",
+    "product_model": 128,
+    "category": 64,
+    "slug": "serveur",
+    "product_type_image": "producttypes/server.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 835,
+  "fields": {
+    "name": "Service accueil",
+    "description": "services accueil",
+    "product_model": 147,
+    "category": 77,
+    "slug": "service-accueil",
+    "product_type_image": "producttypes/service_accueil__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 836,
+  "fields": {
+    "name": "Service agence de voyage",
+    "description": "Service agence voyage",
+    "product_model": 143,
+    "category": 83,
+    "slug": "service-agence-de-voyage",
+    "product_type_image": "producttypes/service_agence_voyage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 837,
+  "fields": {
+    "name": "Signataire",
+    "description": "Signataire",
+    "product_model": 318,
+    "category": 42,
+    "slug": "signataire",
+    "product_type_image": "producttypes/signataire__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 838,
+  "fields": {
+    "name": "Sir\u00e8ne",
+    "description": "sir\u00e8nes alarmes",
+    "product_model": 270,
+    "category": 58,
+    "slug": "sirene",
+    "product_type_image": "producttypes/sirene__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 839,
+  "fields": {
+    "name": "Smartphone",
+    "description": "Smartphone",
+    "product_model": 166,
+    "category": 46,
+    "slug": "smartphone",
+    "product_type_image": "producttypes/smartphone.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 840,
+  "fields": {
+    "name": "Souligneur",
+    "description": "souligneurs surligneurs feutres",
+    "product_model": 319,
+    "category": 42,
+    "slug": "souligneur",
+    "product_type_image": "producttypes/souligneur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 841,
+  "fields": {
+    "name": "Souris",
+    "description": "souris",
+    "product_model": 131,
+    "category": 65,
+    "slug": "souris",
+    "product_type_image": "producttypes/souris_XNUXc57.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 842,
+  "fields": {
+    "name": "climatiseur",
+    "description": "split climatiseur",
+    "product_model": 243,
+    "category": 91,
+    "slug": "climatiseur",
+    "product_type_image": "producttypes/split_ElxXWvw.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 843,
+  "fields": {
+    "name": "Stabilisateur",
+    "description": "stabilisateur",
+    "product_model": 163,
+    "category": 53,
+    "slug": "stabilisateur",
+    "product_type_image": "producttypes/stabilisateur___Bwbetri.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 844,
+  "fields": {
+    "name": "Stylo",
+    "description": "stylo",
+    "product_model": 324,
+    "category": 42,
+    "slug": "stylo",
+    "product_type_image": "producttypes/stylo_bille__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 845,
+  "fields": {
+    "name": "Switch",
+    "description": "Switch",
+    "product_model": 149,
+    "category": 66,
+    "slug": "switch",
+    "product_type_image": "producttypes/switch.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 847,
+  "fields": {
+    "name": "Table de r\u00e9union",
+    "description": "table r\u00e9unions conf\u00e9rences",
+    "product_model": 244,
+    "category": 24,
+    "slug": "table-de-reunion",
+    "product_type_image": "producttypes/table_reunion__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 848,
+  "fields": {
+    "name": "Tablette",
+    "description": "Tablette",
+    "product_model": 165,
+    "category": 64,
+    "slug": "tablette",
+    "product_type_image": "producttypes/tablette__.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 849,
+  "fields": {
+    "name": "T\u00e9l\u00e9phone bureau",
+    "description": "T\u00e9l\u00e9phone bureau",
+    "product_model": 271,
+    "category": 46,
+    "slug": "telephone-bureau",
+    "product_type_image": "producttypes/telephone_bureau__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 850,
+  "fields": {
+    "name": "T\u00e9l\u00e9phone mobile simple",
+    "description": "telephones t\u00e9l\u00e9phones mobiles portables normal simples",
+    "product_model": 167,
+    "category": 46,
+    "slug": "telephone-mobile-simple",
+    "product_type_image": "producttypes/telephone_mobile_simple__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 851,
+  "fields": {
+    "name": "Transparent \u00e0 reliure",
+    "description": "reliures transparentiels transparents",
+    "product_model": 325,
+    "category": 42,
+    "slug": "transparent-a-reliure",
+    "product_type_image": "producttypes/transparent_a_reliure__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 852,
+  "fields": {
+    "name": "Travaux de peinture",
+    "description": "Travaux de peinture",
+    "product_model": 213,
+    "category": 35,
+    "slug": "travaux-de-peinture",
+    "product_type_image": "producttypes/travaux_de_peinture__.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 853,
+  "fields": {
+    "name": "Tube",
+    "description": "tubes",
+    "product_model": 191,
+    "category": 53,
+    "slug": "tube",
+    "product_type_image": "producttypes/tube.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 854,
+  "fields": {
+    "name": "Unit\u00e9 de stockage",
+    "description": "Unit\u00e9 stockage",
+    "product_model": 132,
+    "category": 66,
+    "slug": "unite-de-stockage",
+    "product_type_image": "producttypes/unit\u00e9_de_stockage.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 855,
+  "fields": {
+    "name": "Vid\u00e9o projecteur",
+    "description": "vid\u00e9os projecteurs",
+    "product_model": 115,
+    "category": 65,
+    "slug": "video-projecteur",
+    "product_type_image": "producttypes/videoprojecteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 856,
+  "fields": {
+    "name": "Voiture jeep bus",
+    "description": "voitures v\u00e9hicules jeeps bus",
+    "product_model": 215,
+    "category": 84,
+    "slug": "voiture-jeep-bus",
+    "product_type_image": "producttypes/voiture_jeep_bus__.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 857,
+  "fields": {
+    "name": "X stand",
+    "description": "xstand x stand",
+    "product_model": 124,
+    "category": 41,
+    "slug": "x-stand",
+    "product_type_image": "producttypes/x-stand.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 858,
+  "fields": {
+    "name": "produits pharmaceutiques",
+    "description": "produits pharmaceutiques",
+    "product_model": 333,
+    "category": 95,
+    "slug": "produits-pharmaceutiques",
+    "product_type_image": "producttypes/MEDOC.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 859,
+  "fields": {
+    "name": "Entretien et reparation de vehicule",
+    "description": "entretiens r\u00e9parations v\u00e9hicules voitures jeeps bus",
+    "product_model": 335,
+    "category": 27,
+    "slug": "entretien-et-reparation-de-vehicule",
+    "product_type_image": "producttypes/reparation-vehicule.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 861,
+  "fields": {
+    "name": "Envoi colis international de plus de 70kgs",
+    "description": "Envoi colis international autre pays kilo vers ext\u00e9rieur",
+    "product_model": 347,
+    "category": 90,
+    "slug": "envoi-colis-international-de-plus-de-70kgs",
+    "product_type_image": "producttypes/colis_hCHSKNY.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 862,
+  "fields": {
+    "name": "Envoi colis international",
+    "description": "Envoi colis international autre pays kilo vers ext\u00e9rieur",
+    "product_model": 351,
+    "category": 90,
+    "slug": "envoi-colis-international",
+    "product_type_image": "producttypes/colis_AMcdqxb.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 863,
+  "fields": {
+    "name": "Envoi colis national de 0 \u00e0 20kgs",
+    "description": "Envoi colis national local kilo kg",
+    "product_model": 345,
+    "category": 90,
+    "slug": "envoi-colis-national-de-0-a-20kgs",
+    "product_type_image": "producttypes/colis_MBepW8c.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 864,
+  "fields": {
+    "name": "Envoi colis national de plus 100kgs",
+    "description": "Envoi colis national local kilo kg",
+    "product_model": 346,
+    "category": 90,
+    "slug": "envoi-colis-national-de-plus-100kgs",
+    "product_type_image": "producttypes/colis_CMTOozM.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 865,
+  "fields": {
+    "name": "Envoi colis national de 20kgs \u00e0 99kgs",
+    "description": "Envoi colis national local kilo kg",
+    "product_model": 349,
+    "category": 90,
+    "slug": "envoi-colis-national-de-20kgs-a-99kgs",
+    "product_type_image": "producttypes/colis_u7XbzpB.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 866,
+  "fields": {
+    "name": "Envoi courrier international",
+    "description": "Envoi courrier international",
+    "product_model": 344,
+    "category": 90,
+    "slug": "envoi-courrier-international",
+    "product_type_image": "producttypes/colis_i8YHu6z.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 867,
+  "fields": {
+    "name": "Vente de poisson",
+    "description": "Vente poissons",
+    "product_model": 338,
+    "category": 108,
+    "slug": "vente-de-poisson",
+    "product_type_image": "producttypes/index.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 868,
+  "fields": {
+    "name": "Vente de B\u0153uf",
+    "description": "Vente de b\u0153uf boeufs  vache",
+    "product_model": 359,
+    "category": 105,
+    "slug": "vente-de-buf",
+    "product_type_image": "producttypes/vache.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 869,
+  "fields": {
+    "name": "Vente de ch\u00e8vre",
+    "description": "Vente de ch\u00e8vres",
+    "product_model": 360,
+    "category": 105,
+    "slug": "vente-de-chevre",
+    "product_type_image": "producttypes/chevre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 870,
+  "fields": {
+    "name": "Vente de porc",
+    "description": "Vente de porcs cochons",
+    "product_model": 353,
+    "category": 105,
+    "slug": "vente-de-porc",
+    "product_type_image": "producttypes/porc_IPpvrX3.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 871,
+  "fields": {
+    "name": "Vente de poulet",
+    "description": "Vente poulets",
+    "product_model": 358,
+    "category": 105,
+    "slug": "vente-de-poulet",
+    "product_type_image": "producttypes/poulet.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 872,
+  "fields": {
+    "name": "Vente de l\u00e9gume",
+    "description": "Vente l\u00e9gumes",
+    "product_model": 334,
+    "category": 20,
+    "slug": "vente-de-legume",
+    "product_type_image": "producttypes/legume.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 873,
+  "fields": {
+    "name": "Construction de route",
+    "description": "Construction route",
+    "product_model": 337,
+    "category": 107,
+    "slug": "construction-de-route",
+    "product_type_image": "producttypes/route.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 874,
+  "fields": {
+    "name": "Construction de B\u00e2timent",
+    "description": "Construction B\u00e2timent",
+    "product_model": 336,
+    "category": 107,
+    "slug": "construction-de-batiment",
+    "product_type_image": "producttypes/batiment_skes7BN.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 875,
+  "fields": {
+    "name": "Mission de contr\u00f4le chantier",
+    "description": "Mission de contr\u00f4le chantier",
+    "product_model": 234,
+    "category": 69,
+    "slug": "mission-de-controle-chantier",
+    "product_type_image": "producttypes/batiment_42EGEwg.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 877,
+  "fields": {
+    "name": "Armoire",
+    "description": "Armoire",
+    "product_model": 69,
+    "category": 24,
+    "slug": "armoire",
+    "product_type_image": "producttypes/armoire-de-bureau_qXLFWJY.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 878,
+  "fields": {
+    "name": "Booster",
+    "description": "",
+    "product_model": 363,
+    "category": 116,
+    "slug": "booster",
+    "product_type_image": "producttypes/booster.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 879,
+  "fields": {
+    "name": "Melangeur",
+    "description": "",
+    "product_model": 364,
+    "category": 116,
+    "slug": "melangeur",
+    "product_type_image": "producttypes/melangeur_2_grd.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 881,
+  "fields": {
+    "name": "Coupe haie \u00e9lectrique",
+    "description": "",
+    "product_model": 366,
+    "category": 116,
+    "slug": "coupe-haie-electrique",
+    "product_type_image": "producttypes/coupe_haie.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 882,
+  "fields": {
+    "name": "D\u00e9capeur thermique",
+    "description": "",
+    "product_model": 367,
+    "category": 116,
+    "slug": "decapeur-thermique",
+    "product_type_image": "producttypes/DECAPEUR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 883,
+  "fields": {
+    "name": "Scie sauteuse",
+    "description": "",
+    "product_model": 368,
+    "category": 116,
+    "slug": "scie-sauteuse",
+    "product_type_image": "producttypes/SCIE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 884,
+  "fields": {
+    "name": "Aspirateur",
+    "description": "",
+    "product_model": 369,
+    "category": 116,
+    "slug": "aspirateur",
+    "product_type_image": "producttypes/aspirateur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 885,
+  "fields": {
+    "name": "Machine agricole",
+    "description": "",
+    "product_model": 370,
+    "category": 55,
+    "slug": "machine-agricole",
+    "product_type_image": "producttypes/machine.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 886,
+  "fields": {
+    "name": "Reproduction cl\u00e9s",
+    "description": "Reproduction cl\u00e9s",
+    "product_model": 371,
+    "category": 77,
+    "slug": "reproduction-cles",
+    "product_type_image": "producttypes/reproduction_de_cle.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 888,
+  "fields": {
+    "name": "Sonnerie \u00e9lectrique",
+    "description": "Sonnerie \u00e9lectrique",
+    "product_model": 372,
+    "category": 58,
+    "slug": "sonnerie-electrique",
+    "product_type_image": "producttypes/Sonnerie_elec.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 889,
+  "fields": {
+    "name": "Fil barbel\u00e9",
+    "description": "Fil barbel\u00e9",
+    "product_model": 420,
+    "category": 58,
+    "slug": "fil-barbele",
+    "product_type_image": "producttypes/fil_barbel\u00e9.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 890,
+  "fields": {
+    "name": "WC",
+    "description": "WC Water close",
+    "product_model": 373,
+    "category": 58,
+    "slug": "wc",
+    "product_type_image": "producttypes/wc_2.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 891,
+  "fields": {
+    "name": "Installations sanitaire",
+    "description": "Installations sanitaire",
+    "product_model": 374,
+    "category": 58,
+    "slug": "installations-sanitaire",
+    "product_type_image": "producttypes/lavabo.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 892,
+  "fields": {
+    "name": "Karcher",
+    "description": "Karcher",
+    "product_model": 375,
+    "category": 53,
+    "slug": "karcher",
+    "product_type_image": "producttypes/karcher.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 893,
+  "fields": {
+    "name": "Rivet",
+    "description": "Rivet",
+    "product_model": 377,
+    "category": 58,
+    "slug": "rivet",
+    "product_type_image": "producttypes/Rivet.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 894,
+  "fields": {
+    "name": "Hublot",
+    "description": "Hublot",
+    "product_model": 378,
+    "category": 58,
+    "slug": "hublot",
+    "product_type_image": "producttypes/hublot.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 895,
+  "fields": {
+    "name": "Coupe carreau",
+    "description": "Coupe carreau",
+    "product_model": 379,
+    "category": 55,
+    "slug": "coupe-carreau",
+    "product_type_image": "producttypes/coupe_carreau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 896,
+  "fields": {
+    "name": "Silicone",
+    "description": "Silicone",
+    "product_model": 381,
+    "category": 56,
+    "slug": "silicone",
+    "product_type_image": "producttypes/silicone.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 897,
+  "fields": {
+    "name": "Treillis",
+    "description": "Treillis",
+    "product_model": 380,
+    "category": 58,
+    "slug": "treillis",
+    "product_type_image": "producttypes/treillis_lpo3Ayl.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 898,
+  "fields": {
+    "name": "Tente",
+    "description": "Tente",
+    "product_model": 382,
+    "category": 58,
+    "slug": "tente",
+    "product_type_image": "producttypes/tente.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 899,
+  "fields": {
+    "name": "Charni\u00e8re",
+    "description": "Charni\u00e8re",
+    "product_model": 383,
+    "category": 58,
+    "slug": "charniere",
+    "product_type_image": "producttypes/charniere.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 900,
+  "fields": {
+    "name": "Clinche",
+    "description": "Clinche",
+    "product_model": 384,
+    "category": 58,
+    "slug": "clinche",
+    "product_type_image": "producttypes/clinche_2.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 901,
+  "fields": {
+    "name": "Spray",
+    "description": "Spray",
+    "product_model": 385,
+    "category": 58,
+    "slug": "spray",
+    "product_type_image": "producttypes/spray.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 902,
+  "fields": {
+    "name": "Scie cloche",
+    "description": "Scie cloche",
+    "product_model": 386,
+    "category": 55,
+    "slug": "scie-cloche",
+    "product_type_image": "producttypes/scie_cloche.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 903,
+  "fields": {
+    "name": "Diable",
+    "description": "diable",
+    "product_model": 387,
+    "category": 56,
+    "slug": "diable",
+    "product_type_image": "producttypes/diable.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 904,
+  "fields": {
+    "name": "Arrache clou",
+    "description": "arrache clou",
+    "product_model": 388,
+    "category": 56,
+    "slug": "arrache-clou",
+    "product_type_image": "producttypes/arrache_clou.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 905,
+  "fields": {
+    "name": "Attache c\u00e2ble",
+    "description": "Attache c\u00e2ble",
+    "product_model": 389,
+    "category": 56,
+    "slug": "attache-cable",
+    "product_type_image": "producttypes/attache_cable.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 906,
+  "fields": {
+    "name": "Autocollant",
+    "description": "Autocollant",
+    "product_model": 390,
+    "category": 56,
+    "slug": "autocollant",
+    "product_type_image": "producttypes/autocollant_JIgFkwO.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 907,
+  "fields": {
+    "name": "Balastre",
+    "description": "Balastre",
+    "product_model": 391,
+    "category": 53,
+    "slug": "balastre",
+    "product_type_image": "producttypes/balastre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 909,
+  "fields": {
+    "name": "Aiguille vibreur \u00e0 b\u00e9ton",
+    "description": "",
+    "product_model": 412,
+    "category": 116,
+    "slug": "aiguille-vibreur-a-beton",
+    "product_type_image": "producttypes/aiguille.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 910,
+  "fields": {
+    "name": "Botte",
+    "description": "",
+    "product_model": 416,
+    "category": 56,
+    "slug": "botte",
+    "product_type_image": "producttypes/bottes-caoutchouc.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 911,
+  "fields": {
+    "name": "C\u00e2ble acier",
+    "description": "C\u00e2ble en acier",
+    "product_model": 408,
+    "category": 58,
+    "slug": "cable-acier",
+    "product_type_image": "producttypes/cable_acier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 912,
+  "fields": {
+    "name": "Bande signal\u00e9tique",
+    "description": "Bande signal\u00e9tique",
+    "product_model": 393,
+    "category": 92,
+    "slug": "bande-signaletique",
+    "product_type_image": "producttypes/bande_signaletique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 913,
+  "fields": {
+    "name": "C\u00e2ble de remorquage",
+    "description": "C\u00e2ble de remorquage",
+    "product_model": 394,
+    "category": 26,
+    "slug": "cable-de-remorquage",
+    "product_type_image": "producttypes/cable_de_remorquage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 914,
+  "fields": {
+    "name": "Cyclometre",
+    "description": "",
+    "product_model": 414,
+    "category": 56,
+    "slug": "cyclometre",
+    "product_type_image": "producttypes/Cyclometre.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 915,
+  "fields": {
+    "name": "Rouleau \u00e0 poncer",
+    "description": "Rouleau \u00e0 poncer",
+    "product_model": 397,
+    "category": 58,
+    "slug": "rouleau-a-poncer",
+    "product_type_image": "producttypes/rouleau_a_poncer.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 916,
+  "fields": {
+    "name": "Self pour projecteur",
+    "description": "Self pour projecteur",
+    "product_model": 402,
+    "category": 53,
+    "slug": "self-pour-projecteur",
+    "product_type_image": "producttypes/self_pour_projecteur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 917,
+  "fields": {
+    "name": "Souffleur aspirateur",
+    "description": "Souffleur aspirateur",
+    "product_model": 395,
+    "category": 55,
+    "slug": "souffleur-aspirateur",
+    "product_type_image": "producttypes/souffleur-aspirateur-electrique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 918,
+  "fields": {
+    "name": "T\u00e9flon",
+    "description": "T\u00e9flon",
+    "product_model": 399,
+    "category": 57,
+    "slug": "teflon",
+    "product_type_image": "producttypes/teflon.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 919,
+  "fields": {
+    "name": "Tenaille",
+    "description": "tenaille",
+    "product_model": 396,
+    "category": 56,
+    "slug": "tenaille",
+    "product_type_image": "producttypes/tenaille.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 920,
+  "fields": {
+    "name": "T\u00eate de visseuse",
+    "description": "t\u00eate de visseuse",
+    "product_model": 398,
+    "category": 116,
+    "slug": "tete-de-visseuse",
+    "product_type_image": "producttypes/tete_de_visseuse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 921,
+  "fields": {
+    "name": "Toiture",
+    "description": "Toiture",
+    "product_model": 401,
+    "category": 58,
+    "slug": "toiture",
+    "product_type_image": "producttypes/toiture.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 922,
+  "fields": {
+    "name": "Tuyau pour motopompe",
+    "description": "Tuyau pour motopompe",
+    "product_model": 400,
+    "category": 57,
+    "slug": "tuyau-pour-motopompe",
+    "product_type_image": "producttypes/tuyau_motopompe.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 925,
+  "fields": {
+    "name": "Dame sauteuse",
+    "description": "",
+    "product_model": 403,
+    "category": 116,
+    "slug": "dame-sauteuse",
+    "product_type_image": "producttypes/dame_sauteuse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 927,
+  "fields": {
+    "name": "Diamant coupe carreau",
+    "description": "",
+    "product_model": 411,
+    "category": 116,
+    "slug": "diamant-coupe-carreau",
+    "product_type_image": "producttypes/diamant_coupe_carreau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 928,
+  "fields": {
+    "name": "Disque de scie",
+    "description": "",
+    "product_model": 407,
+    "category": 116,
+    "slug": "disque-de-scie",
+    "product_type_image": "producttypes/disque_de_scie.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 929,
+  "fields": {
+    "name": "Globe pour \u00e9clairage",
+    "description": "",
+    "product_model": 405,
+    "category": 58,
+    "slug": "globe-pour-eclairage",
+    "product_type_image": "producttypes/globe_pour_\u00e9clairage.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 930,
+  "fields": {
+    "name": "Fumigateur",
+    "description": "",
+    "product_model": 406,
+    "category": 117,
+    "slug": "fumigateur",
+    "product_type_image": "producttypes/FUMIGATEUR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 931,
+  "fields": {
+    "name": "Nettoyeur haute pression",
+    "description": "",
+    "product_model": 419,
+    "category": 55,
+    "slug": "nettoyeur-haute-pression",
+    "product_type_image": "producttypes/nettoyeur_haute_pression.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 932,
+  "fields": {
+    "name": "Papier a poncer",
+    "description": "",
+    "product_model": 409,
+    "category": 56,
+    "slug": "papier-a-poncer",
+    "product_type_image": "producttypes/papier_a_poncer.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 934,
+  "fields": {
+    "name": "Pinceau",
+    "description": "",
+    "product_model": 415,
+    "category": 56,
+    "slug": "pinceau",
+    "product_type_image": "producttypes/pinceau_uqk6ESG.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 935,
+  "fields": {
+    "name": "Plantoir",
+    "description": "",
+    "product_model": 413,
+    "category": 56,
+    "slug": "plantoir",
+    "product_type_image": "producttypes/plantoir_N5EUCSY.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 936,
+  "fields": {
+    "name": "imperm\u00e9able",
+    "description": "",
+    "product_model": 417,
+    "category": 56,
+    "slug": "impermeable",
+    "product_type_image": "producttypes/imperm\u00e9able.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 937,
+  "fields": {
+    "name": "Cossette de manioc",
+    "description": "Cossette de manioc",
+    "product_model": 422,
+    "category": 20,
+    "slug": "cossette-de-manioc",
+    "product_type_image": "producttypes/cossette_manioc_i4QFc4m.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 938,
+  "fields": {
+    "name": "Miel pur",
+    "description": "Miel pur",
+    "product_model": 423,
+    "category": 20,
+    "slug": "miel-pur",
+    "product_type_image": "producttypes/miel_pur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 939,
+  "fields": {
+    "name": "Location remorque MATADI-KINSHASA",
+    "description": "",
+    "product_model": 236,
+    "category": 101,
+    "slug": "location-remorque-matadi-kinshasa",
+    "product_type_image": "producttypes/location-camion.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 941,
+  "fields": {
+    "name": "Impression one way",
+    "description": "Impression one way",
+    "product_model": 440,
+    "category": 41,
+    "slug": "impression-one-way",
+    "product_type_image": "producttypes/impression_one_way.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 942,
+  "fields": {
+    "name": "Box light",
+    "description": "Box light",
+    "product_model": 441,
+    "category": 41,
+    "slug": "box-light",
+    "product_type_image": "producttypes/box_light.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 943,
+  "fields": {
+    "name": "Pr\u00e9sentoir",
+    "description": "Pr\u00e9sentoir",
+    "product_model": 437,
+    "category": 41,
+    "slug": "presentoir",
+    "product_type_image": "producttypes/presentoir.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 944,
+  "fields": {
+    "name": "Branding v\u00e9hicule full",
+    "description": "Branding v\u00e9hicule full",
+    "product_model": 438,
+    "category": 41,
+    "slug": "branding-vehicule-full",
+    "product_type_image": "producttypes/branding_vehicule.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 945,
+  "fields": {
+    "name": "Impression ABS",
+    "description": "Impression ABS",
+    "product_model": 439,
+    "category": 41,
+    "slug": "impression-abs",
+    "product_type_image": "producttypes/impression_abs.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 946,
+  "fields": {
+    "name": "combinaison",
+    "description": "combinaison",
+    "product_model": 435,
+    "category": 41,
+    "slug": "combinaison",
+    "product_type_image": "producttypes/combinaison.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 947,
+  "fields": {
+    "name": "Chemise",
+    "description": "chemise",
+    "product_model": 436,
+    "category": 41,
+    "slug": "chemise",
+    "product_type_image": "producttypes/chemise.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 948,
+  "fields": {
+    "name": "Lampe torche",
+    "description": "",
+    "product_model": 443,
+    "category": 53,
+    "slug": "lampe-torche",
+    "product_type_image": "producttypes/lampe-torche-projecteur-rechargeable.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 949,
+  "fields": {
+    "name": "Raboteuse",
+    "description": "",
+    "product_model": 444,
+    "category": 116,
+    "slug": "raboteuse",
+    "product_type_image": "producttypes/raboteuse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 950,
+  "fields": {
+    "name": "Burineur",
+    "description": "",
+    "product_model": 445,
+    "category": 118,
+    "slug": "burineur",
+    "product_type_image": "producttypes/BURINEUR_PNEUMATIQUE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 951,
+  "fields": {
+    "name": "Assistance obtention visa",
+    "description": "Assistance obtention visa",
+    "product_model": 446,
+    "category": 83,
+    "slug": "assistance-obtention-visa",
+    "product_type_image": "producttypes/visas.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 952,
+  "fields": {
+    "name": "R\u00e9servation h\u00f4tel \u00e0 l'\u00e9tranger",
+    "description": "R\u00e9servation h\u00f4tel \u00e0 l'\u00e9tranger",
+    "product_model": 452,
+    "category": 83,
+    "slug": "reservation-hotel-a-letranger",
+    "product_type_image": "producttypes/hotel_reservations.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 953,
+  "fields": {
+    "name": "Ma\u00efs",
+    "description": "Ma\u00efs",
+    "product_model": 458,
+    "category": 20,
+    "slug": "mais",
+    "product_type_image": "producttypes/Mais_2.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 954,
+  "fields": {
+    "name": "Arachide",
+    "description": "Arachide",
+    "product_model": 461,
+    "category": 20,
+    "slug": "arachide",
+    "product_type_image": "producttypes/arachide.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 955,
+  "fields": {
+    "name": "semoule",
+    "description": "semoule",
+    "product_model": 459,
+    "category": 100,
+    "slug": "semoule",
+    "product_type_image": "producttypes/semoule.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 956,
+  "fields": {
+    "name": "Adaptateur",
+    "description": "",
+    "product_model": 490,
+    "category": 66,
+    "slug": "adaptateur",
+    "product_type_image": "producttypes/adaptateur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 957,
+  "fields": {
+    "name": "Antenne Wifi",
+    "description": "Antenne Wifi",
+    "product_model": 491,
+    "category": 66,
+    "slug": "antenne-wifi",
+    "product_type_image": "producttypes/antenne-wifi-exterieure.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 958,
+  "fields": {
+    "name": "Tablier",
+    "description": "Tablier",
+    "product_model": 472,
+    "category": 119,
+    "slug": "tablier",
+    "product_type_image": "producttypes/Tablier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 959,
+  "fields": {
+    "name": "Autocollant code bar",
+    "description": "Autocollant pour code bar",
+    "product_model": 493,
+    "category": 65,
+    "slug": "autocollant-code-bar",
+    "product_type_image": "producttypes/AUTOCOLLANT_CODE_BAR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 960,
+  "fields": {
+    "name": "Balance de cuisine",
+    "description": "Balance de cuisine",
+    "product_model": 477,
+    "category": 119,
+    "slug": "balance-de-cuisine",
+    "product_type_image": "producttypes/Balance-de-cuisine.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 961,
+  "fields": {
+    "name": "Batterie Laptop",
+    "description": "Batterie pour Laptop",
+    "product_model": 492,
+    "category": 64,
+    "slug": "batterie-laptop",
+    "product_type_image": "producttypes/LAPTOP_BATTERIES.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 962,
+  "fields": {
+    "name": "Boitier disque dur 2.5\u2019\u2019",
+    "description": "Boitier disque dur",
+    "product_model": 495,
+    "category": 66,
+    "slug": "boitier-disque-dur-25",
+    "product_type_image": "producttypes/BOITIER_DISQUE_DUR_2.5.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 963,
+  "fields": {
+    "name": "Bouilloire",
+    "description": "",
+    "product_model": 481,
+    "category": 119,
+    "slug": "bouilloire",
+    "product_type_image": "producttypes/BOUILLOIRE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 964,
+  "fields": {
+    "name": "Cafetiere",
+    "description": "",
+    "product_model": 482,
+    "category": 119,
+    "slug": "cafetiere",
+    "product_type_image": "producttypes/CAFETIERE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 965,
+  "fields": {
+    "name": "Carte",
+    "description": "",
+    "product_model": 496,
+    "category": 65,
+    "slug": "carte",
+    "product_type_image": "producttypes/CARTE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 966,
+  "fields": {
+    "name": "Chargeur Laptop",
+    "description": "",
+    "product_model": 500,
+    "category": 65,
+    "slug": "chargeur-laptop",
+    "product_type_image": "producttypes/CHARGEUR.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 967,
+  "fields": {
+    "name": "Chauffe eau electrique",
+    "description": "",
+    "product_model": 483,
+    "category": 53,
+    "slug": "chauffe-eau-electrique",
+    "product_type_image": "producttypes/CHAUFFE_EAU_ELECTRIQUE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 968,
+  "fields": {
+    "name": "Comptoire",
+    "description": "",
+    "product_model": 478,
+    "category": 119,
+    "slug": "comptoire",
+    "product_type_image": "producttypes/COMPTOIRE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 969,
+  "fields": {
+    "name": "congelateur",
+    "description": "",
+    "product_model": 485,
+    "category": 91,
+    "slug": "congelateur",
+    "product_type_image": "producttypes/congelateur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 970,
+  "fields": {
+    "name": "Connecteur",
+    "description": "",
+    "product_model": 494,
+    "category": 66,
+    "slug": "connecteur",
+    "product_type_image": "producttypes/Connecteurs-RJ45--Cat5e.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 971,
+  "fields": {
+    "name": "Destructeur de papier",
+    "description": "",
+    "product_model": 484,
+    "category": 41,
+    "slug": "destructeur-de-papier",
+    "product_type_image": "producttypes/DESTRUCTEUR_DE_PAPIER.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 972,
+  "fields": {
+    "name": "Filtre \u00e0 Eau",
+    "description": "",
+    "product_model": 404,
+    "category": 119,
+    "slug": "filtre-a-eau",
+    "product_type_image": "producttypes/FILTRE_A_EAU.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 973,
+  "fields": {
+    "name": "Four \u00e0 pizza",
+    "description": "",
+    "product_model": 476,
+    "category": 119,
+    "slug": "four-a-pizza",
+    "product_type_image": "producttypes/FOUR_A_PIZZA.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 974,
+  "fields": {
+    "name": "Frigo",
+    "description": "",
+    "product_model": 487,
+    "category": 91,
+    "slug": "frigo",
+    "product_type_image": "producttypes/frigo-americain.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 975,
+  "fields": {
+    "name": "C\u00e2ble coaxial",
+    "description": "C\u00e2ble coaxial",
+    "product_model": 503,
+    "category": 92,
+    "slug": "cable-coaxial",
+    "product_type_image": "producttypes/cable-coaxial_k8Zn6vv.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 976,
+  "fields": {
+    "name": "C\u00e2ble pour camera CCD",
+    "description": "C\u00e2ble pour camera CCD",
+    "product_model": 516,
+    "category": 92,
+    "slug": "cable-pour-camera-ccd",
+    "product_type_image": "producttypes/cable__CCD.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 977,
+  "fields": {
+    "name": "Machine \u00e0 cr\u00e8me glac\u00e9e",
+    "description": "",
+    "product_model": 473,
+    "category": 91,
+    "slug": "machine-a-creme-glacee",
+    "product_type_image": "producttypes/MACHINE_A_CREME_GLACEE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 978,
+  "fields": {
+    "name": "Memoire RAM",
+    "description": "",
+    "product_model": 501,
+    "category": 65,
+    "slug": "memoire-ram",
+    "product_type_image": "producttypes/MEMOIRES_RAM.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 979,
+  "fields": {
+    "name": "Microonde",
+    "description": "",
+    "product_model": 486,
+    "category": 119,
+    "slug": "microonde",
+    "product_type_image": "producttypes/Microonde.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 980,
+  "fields": {
+    "name": "Camera CCD",
+    "description": "Camera CCD",
+    "product_model": 507,
+    "category": 92,
+    "slug": "camera-ccd",
+    "product_type_image": "producttypes/camera_ccd.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 981,
+  "fields": {
+    "name": "Camera IP",
+    "description": "Camera IP",
+    "product_model": 505,
+    "category": 92,
+    "slug": "camera-ip",
+    "product_type_image": "producttypes/camera_ip.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 982,
+  "fields": {
+    "name": "Parasoleil",
+    "description": "",
+    "product_model": 475,
+    "category": 119,
+    "slug": "parasoleil",
+    "product_type_image": "producttypes/PARASOLEIL.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 983,
+  "fields": {
+    "name": "Cha\u00eene de s\u00e9curit\u00e9 pour Laptop",
+    "description": "Cha\u00eene de s\u00e9curit\u00e9 pour Laptop",
+    "product_model": 515,
+    "category": 92,
+    "slug": "chaine-de-securite-pour-laptop",
+    "product_type_image": "producttypes/Anti-Vol-Bureau-Ordinateur-Portable.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 984,
+  "fields": {
+    "name": "Patch cord",
+    "description": "",
+    "product_model": 502,
+    "category": 66,
+    "slug": "patch-cord",
+    "product_type_image": "producttypes/PATCH_CORD.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 985,
+  "fields": {
+    "name": "Patch panel",
+    "description": "",
+    "product_model": 105,
+    "category": 66,
+    "slug": "patch-panel",
+    "product_type_image": "producttypes/PATCH_PANEL.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 986,
+  "fields": {
+    "name": "Po\u00eale",
+    "description": "",
+    "product_model": 480,
+    "category": 119,
+    "slug": "poele",
+    "product_type_image": "producttypes/POELE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 987,
+  "fields": {
+    "name": "Poubelle",
+    "description": "",
+    "product_model": 465,
+    "category": 24,
+    "slug": "poubelle",
+    "product_type_image": "producttypes/poubelle.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 988,
+  "fields": {
+    "name": "Chargeur camera CCD",
+    "description": "Chargeur camera CCD",
+    "product_model": 514,
+    "category": 92,
+    "slug": "chargeur-camera-ccd",
+    "product_type_image": "producttypes/chargeur_camera_ccd.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 989,
+  "fields": {
+    "name": "Connecteur BNC",
+    "description": "Connecteur BNC",
+    "product_model": 510,
+    "category": 92,
+    "slug": "connecteur-bnc",
+    "product_type_image": "producttypes/connecteur_bnc_poChbtT.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 990,
+  "fields": {
+    "name": "Protection contre les surtensions",
+    "description": "",
+    "product_model": 499,
+    "category": 53,
+    "slug": "protection-contre-les-surtensions",
+    "product_type_image": "producttypes/PROTECTION_CONTRE_LES_SURTENSIONS.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 991,
+  "fields": {
+    "name": "Connecteur d'alimentation femelle pour camera CCD",
+    "description": "Connecteur d'alimentation femelle pour camera CCD",
+    "product_model": 513,
+    "category": 92,
+    "slug": "connecteur-dalimentation-femelle-pour-camera-ccd",
+    "product_type_image": "producttypes/connecteur-femelle-ccd.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 992,
+  "fields": {
+    "name": "Rack",
+    "description": "",
+    "product_model": 112,
+    "category": 66,
+    "slug": "rack",
+    "product_type_image": "producttypes/RACK.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 993,
+  "fields": {
+    "name": "Enregistreur CCD",
+    "description": "Enregistreur CCD",
+    "product_model": 509,
+    "category": 92,
+    "slug": "enregistreur-ccd",
+    "product_type_image": "producttypes/enregistreur_ccd.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 994,
+  "fields": {
+    "name": "Lentille pour camera CCD",
+    "description": "Lentille pour camera CCD",
+    "product_model": 504,
+    "category": 92,
+    "slug": "lentille-pour-camera-ccd",
+    "product_type_image": "producttypes/lentille-cam.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 995,
+  "fields": {
+    "name": "Repartiteur HDMI",
+    "description": "",
+    "product_model": 497,
+    "category": 65,
+    "slug": "repartiteur-hdmi",
+    "product_type_image": "producttypes/REPARTITEUR_HDMI.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 996,
+  "fields": {
+    "name": "Microphone pour camera IP",
+    "description": "microphone pour camera IP",
+    "product_model": 506,
+    "category": 92,
+    "slug": "microphone-pour-camera-ip",
+    "product_type_image": "producttypes/micro-cam-ip.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 997,
+  "fields": {
+    "name": "Table plastique",
+    "description": "",
+    "product_model": 468,
+    "category": 2,
+    "slug": "table-plastique",
+    "product_type_image": "producttypes/TABLE_PLASTIQUE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 998,
+  "fields": {
+    "name": "Rouleau c\u00e2ble coaxial",
+    "description": "Rouleau c\u00e2ble coaxial",
+    "product_model": 508,
+    "category": 92,
+    "slug": "rouleau-cable-coaxial",
+    "product_type_image": "producttypes/rouleau-coaxial.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 999,
+  "fields": {
+    "name": "Sac \u00e0 dos",
+    "description": "Sac \u00e0 dos",
+    "product_model": 512,
+    "category": 58,
+    "slug": "sac-a-dos",
+    "product_type_image": "producttypes/sac-laptop.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1000,
+  "fields": {
+    "name": "Unit\u00e9 d'alimentation pour camera CCD",
+    "description": "Unit\u00e9 d'alimentation pour camera CCD",
+    "product_model": 511,
+    "category": 92,
+    "slug": "unite-dalimentation-pour-camera-ccd",
+    "product_type_image": "producttypes/coffret-alimentation-ccd.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1001,
+  "fields": {
+    "name": "Tasse de messure",
+    "description": "",
+    "product_model": 470,
+    "category": 119,
+    "slug": "tasse-de-messure",
+    "product_type_image": "producttypes/TASSE_DE_MESURE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1002,
+  "fields": {
+    "name": "Triplex",
+    "description": "",
+    "product_model": 469,
+    "category": 86,
+    "slug": "triplex",
+    "product_type_image": "producttypes/TRIPLEX.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1003,
+  "fields": {
+    "name": "Tuyau d'arrosage",
+    "description": "",
+    "product_model": 488,
+    "category": 58,
+    "slug": "tuyau-darrosage",
+    "product_type_image": "producttypes/TUYAU_DARROSAGE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1004,
+  "fields": {
+    "name": "Tv Led",
+    "description": "",
+    "product_model": 489,
+    "category": 9,
+    "slug": "tv-led",
+    "product_type_image": "producttypes/tv_led.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1005,
+  "fields": {
+    "name": "Vase",
+    "description": "",
+    "product_model": 466,
+    "category": 94,
+    "slug": "vase",
+    "product_type_image": "producttypes/vase.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1006,
+  "fields": {
+    "name": "Ventilateur Pafonnier",
+    "description": "",
+    "product_model": 467,
+    "category": 94,
+    "slug": "ventilateur-pafonnier",
+    "product_type_image": "producttypes/VENTILATEUR_PLAFONNIER.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1007,
+  "fields": {
+    "name": "Vitrine pour boisson",
+    "description": "",
+    "product_model": 474,
+    "category": 91,
+    "slug": "vitrine-pour-boisson",
+    "product_type_image": "producttypes/VITRINE_POUR_BOISSON.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1008,
+  "fields": {
+    "name": "Webcam",
+    "description": "",
+    "product_model": 498,
+    "category": 65,
+    "slug": "webcam",
+    "product_type_image": "producttypes/WEBCAM.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1009,
+  "fields": {
+    "name": "Couvercle oval",
+    "description": "",
+    "product_model": 479,
+    "category": 119,
+    "slug": "couvercle-oval",
+    "product_type_image": "producttypes/cloche_0N.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1010,
+  "fields": {
+    "name": "Bouteille d'encre",
+    "description": "BOUTEILLE D\u2019ENCRE",
+    "product_model": 523,
+    "category": 65,
+    "slug": "bouteille-dencre",
+    "product_type_image": "producttypes/BOUTEILLE_DENCRE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1011,
+  "fields": {
+    "name": "Coupleur",
+    "description": "",
+    "product_model": 517,
+    "category": 66,
+    "slug": "coupleur",
+    "product_type_image": "producttypes/coupleur.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1012,
+  "fields": {
+    "name": "Distributeur d\u2019alimentation \u00e9lectrique",
+    "description": "",
+    "product_model": 524,
+    "category": 66,
+    "slug": "distributeur-dalimentation-electrique",
+    "product_type_image": "producttypes/DISTRIBUTEUR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1013,
+  "fields": {
+    "name": "Hub Usb",
+    "description": "",
+    "product_model": 518,
+    "category": 65,
+    "slug": "hub-usb",
+    "product_type_image": "producttypes/HUB_USB_2.0.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1014,
+  "fields": {
+    "name": "Lecteur DVD",
+    "description": "",
+    "product_model": 521,
+    "category": 65,
+    "slug": "lecteur-dvd",
+    "product_type_image": "producttypes/LECTEUR_DVD.jpeg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1015,
+  "fields": {
+    "name": "Lecteur graveur",
+    "description": "",
+    "product_model": 141,
+    "category": 65,
+    "slug": "lecteur-graveur",
+    "product_type_image": "producttypes/GRAVEUR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1016,
+  "fields": {
+    "name": "Outil de sertissage",
+    "description": "",
+    "product_model": 519,
+    "category": 66,
+    "slug": "outil-de-sertissage",
+    "product_type_image": "producttypes/OUTIL_DE_SERTISSAGE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1017,
+  "fields": {
+    "name": "Prise wifi",
+    "description": "",
+    "product_model": 522,
+    "category": 66,
+    "slug": "prise-wifi",
+    "product_type_image": "producttypes/PRISE_WIFI.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1018,
+  "fields": {
+    "name": "Processeur",
+    "description": "",
+    "product_model": 520,
+    "category": 65,
+    "slug": "processeur",
+    "product_type_image": "producttypes/PROCESSEUR.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1020,
+  "fields": {
+    "name": "Camera Cloud",
+    "description": "Camera Cloud",
+    "product_model": 528,
+    "category": 65,
+    "slug": "camera-cloud",
+    "product_type_image": "producttypes/camera_cloud.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1021,
+  "fields": {
+    "name": "Moniteur",
+    "description": "Moniteur",
+    "product_model": 119,
+    "category": 64,
+    "slug": "moniteur",
+    "product_type_image": "producttypes/moniteur_ordi.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1022,
+  "fields": {
+    "name": "R\u00e9partiteur HDMI",
+    "description": "R\u00e9partiteur HDMI",
+    "product_model": 497,
+    "category": 65,
+    "slug": "repartiteur-hdmi",
+    "product_type_image": "producttypes/repartiteur_hdmi_VrsdsZd.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1023,
+  "fields": {
+    "name": "Ruban d'impression",
+    "description": "Ruban d'impression",
+    "product_model": 534,
+    "category": 65,
+    "slug": "ruban-dimpression",
+    "product_type_image": "producttypes/ruban_impression.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1024,
+  "fields": {
+    "name": "Ruban papier",
+    "description": "Ruban papier",
+    "product_model": 536,
+    "category": 65,
+    "slug": "ruban-papier",
+    "product_type_image": "producttypes/ruban_papier.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1025,
+  "fields": {
+    "name": "Ruban pour \u00e9tiqueteuse",
+    "description": "Ruban pour \u00e9tiqueteuse",
+    "product_model": 529,
+    "category": 65,
+    "slug": "ruban-pour-etiqueteuse",
+    "product_type_image": "producttypes/ruban-etiqueteuse.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1026,
+  "fields": {
+    "name": "Switch HDMI",
+    "description": "Switch HDMI",
+    "product_model": 531,
+    "category": 65,
+    "slug": "switch-hdmi",
+    "product_type_image": "producttypes/switch_HDMI.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1027,
+  "fields": {
+    "name": "Switch KVM",
+    "description": "Switch KVM",
+    "product_model": 538,
+    "category": 65,
+    "slug": "switch-kvm",
+    "product_type_image": "producttypes/switch_kvm.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1029,
+  "fields": {
+    "name": "Tambour",
+    "description": "Tambour",
+    "product_model": 535,
+    "category": 65,
+    "slug": "tambour",
+    "product_type_image": "producttypes/tambour.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1030,
+  "fields": {
+    "name": "Testeur de c\u00e2ble",
+    "description": "Testeur de c\u00e2ble",
+    "product_model": 532,
+    "category": 65,
+    "slug": "testeur-de-cable",
+    "product_type_image": "producttypes/testeur_cable.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1031,
+  "fields": {
+    "name": "Trousse \u00e0 outil",
+    "description": "Trousse \u00e0 outil",
+    "product_model": 533,
+    "category": 56,
+    "slug": "trousse-a-outil",
+    "product_type_image": "producttypes/trousse_a_outil.JPG"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1032,
+  "fields": {
+    "name": "Ventilateur pour carte m\u00e8re",
+    "description": "Ventilateur pour carte m\u00e8re",
+    "product_model": 527,
+    "category": 65,
+    "slug": "ventilateur-pour-carte-mere",
+    "product_type_image": "producttypes/ventilateur_carte_mere.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1033,
+  "fields": {
+    "name": "Batterie Cmos",
+    "description": "",
+    "product_model": 540,
+    "category": 65,
+    "slug": "batterie-cmos",
+    "product_type_image": "producttypes/pile_cmos.png"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1034,
+  "fields": {
+    "name": "C\u00e2ble r\u00e9seau",
+    "description": "",
+    "product_model": 545,
+    "category": 66,
+    "slug": "cable-reseau",
+    "product_type_image": "producttypes/C\u00e2ble_r\u00e9seau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1035,
+  "fields": {
+    "name": "Camera",
+    "description": "",
+    "product_model": 539,
+    "category": 9,
+    "slug": "camera",
+    "product_type_image": "producttypes/CAMERA.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1036,
+  "fields": {
+    "name": "Casque avec micro",
+    "description": "",
+    "product_model": 543,
+    "category": 65,
+    "slug": "casque-avec-micro",
+    "product_type_image": "producttypes/Casque_avec_micro.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1037,
+  "fields": {
+    "name": "Casque de musique",
+    "description": "",
+    "product_model": 547,
+    "category": 65,
+    "slug": "casque-de-musique",
+    "product_type_image": "producttypes/CASQUE_DE_MUSIQUE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1038,
+  "fields": {
+    "name": "Compteur de monnaie",
+    "description": "",
+    "product_model": 542,
+    "category": 65,
+    "slug": "compteur-de-monnaie",
+    "product_type_image": "producttypes/COMPTEUR_DE_MONNAIE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1039,
+  "fields": {
+    "name": "Ecouteur avec micro",
+    "description": "",
+    "product_model": 544,
+    "category": 65,
+    "slug": "ecouteur-avec-micro",
+    "product_type_image": "producttypes/ECOUTEUR_AVEC_MICRO.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1040,
+  "fields": {
+    "name": "Ecran de projection",
+    "description": "",
+    "product_model": 552,
+    "category": 65,
+    "slug": "ecran-de-projection",
+    "product_type_image": "producttypes/ECRAN_DE_PROJECTION.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1041,
+  "fields": {
+    "name": "Equipement Cpe",
+    "description": "",
+    "product_model": 541,
+    "category": 66,
+    "slug": "equipement-cpe",
+    "product_type_image": "producttypes/EQUIPEMENT_CPE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1042,
+  "fields": {
+    "name": "Haut parleur USB",
+    "description": "",
+    "product_model": 554,
+    "category": 65,
+    "slug": "haut-parleur-usb",
+    "product_type_image": "producttypes/HAUT_PARLEUR_USB.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1043,
+  "fields": {
+    "name": "Imprimante d'\u00e9tiquette",
+    "description": "Imprimante d'\u00e9tiquette",
+    "product_model": 550,
+    "category": 65,
+    "slug": "imprimante-detiquette",
+    "product_type_image": "producttypes/imprimante-etiquette.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1044,
+  "fields": {
+    "name": "Kit accessoires  pour split",
+    "description": "Kit accessoires  pour split",
+    "product_model": 546,
+    "category": 91,
+    "slug": "kit-accessoires-pour-split",
+    "product_type_image": "producttypes/KIT_ACCESSOIRES_POUR_SPLIT.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1045,
+  "fields": {
+    "name": "Mousse nettoyante",
+    "description": "Mousse nettoyante",
+    "product_model": 556,
+    "category": 65,
+    "slug": "mousse-nettoyante",
+    "product_type_image": "producttypes/MOUSSE_NETTOYANTE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1046,
+  "fields": {
+    "name": "Stand laptop",
+    "description": "Stand laptop",
+    "product_model": 549,
+    "category": 65,
+    "slug": "stand-laptop",
+    "product_type_image": "producttypes/stand_laptop.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1047,
+  "fields": {
+    "name": "Tableau blanc",
+    "description": "Tableau blanc",
+    "product_model": 530,
+    "category": 24,
+    "slug": "tableau-blanc",
+    "product_type_image": "producttypes/tableau-blanc_u9mPVeG.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1048,
+  "fields": {
+    "name": "Tapis de souris",
+    "description": "Tapis de souris",
+    "product_model": 548,
+    "category": 65,
+    "slug": "tapis-de-souris",
+    "product_type_image": "producttypes/TAPIS_DE_SOURIS.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1049,
+  "fields": {
+    "name": "Ventilateur carte m\u00e8re",
+    "description": "Ventilateur carte m\u00e8re",
+    "product_model": 527,
+    "category": 65,
+    "slug": "ventilateur-carte-mere",
+    "product_type_image": "producttypes/VENTILATEUR_CARTE_MERE.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1050,
+  "fields": {
+    "name": "Bloc d'alimentation pour PC",
+    "description": "Bloc d'alimentation pour PC",
+    "product_model": 557,
+    "category": 65,
+    "slug": "bloc-dalimentation-pour-pc",
+    "product_type_image": "producttypes/Bloc-d-alimentation.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1051,
+  "fields": {
+    "name": "Appareil de gym",
+    "description": "Appareil de gym",
+    "product_model": 559,
+    "category": 120,
+    "slug": "appareil-de-gym",
+    "product_type_image": "producttypes/appareil_gym.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1052,
+  "fields": {
+    "name": "Boitier arri\u00e8re pour socket mural",
+    "description": "Boitier arri\u00e8re pour socket mural",
+    "product_model": 558,
+    "category": 65,
+    "slug": "boitier-arriere-pour-socket-mural",
+    "product_type_image": "producttypes/Boitier_arriere_socket.jpeg.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1053,
+  "fields": {
+    "name": "Caisson de bureau",
+    "description": "Caisson de bureau",
+    "product_model": 560,
+    "category": 24,
+    "slug": "caisson-de-bureau",
+    "product_type_image": "producttypes/caisson_de_bureau.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1054,
+  "fields": {
+    "name": "Clavier et souris sans fil",
+    "description": "Clavier et souris sans fil",
+    "product_model": 561,
+    "category": 65,
+    "slug": "clavier-et-souris-sans-fil",
+    "product_type_image": "producttypes/clavier_souris_sans_fil.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1055,
+  "fields": {
+    "name": "Clavier sans fil",
+    "description": "Clavier sans fil",
+    "product_model": 562,
+    "category": 65,
+    "slug": "clavier-sans-fil",
+    "product_type_image": "producttypes/clavier_sans_fil.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1056,
+  "fields": {
+    "name": "Kit de poids pour musculation",
+    "description": "Kit de poids pour musculation",
+    "product_model": 563,
+    "category": 120,
+    "slug": "kit-de-poids-pour-musculation",
+    "product_type_image": "producttypes/kit_haltere.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1057,
+  "fields": {
+    "name": "Imprimante photo",
+    "description": "Imprimante photo",
+    "product_model": 564,
+    "category": 65,
+    "slug": "imprimante-photo",
+    "product_type_image": "producttypes/imprimante_photo.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1058,
+  "fields": {
+    "name": "Kit de nettoyage",
+    "description": "Kit de nettoyage",
+    "product_model": 566,
+    "category": 65,
+    "slug": "kit-de-nettoyage",
+    "product_type_image": "producttypes/kit_nettoyage_fargo.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1059,
+  "fields": {
+    "name": "V\u00e9lo elliptique",
+    "description": "V\u00e9lo elliptique",
+    "product_model": 568,
+    "category": 120,
+    "slug": "velo-elliptique",
+    "product_type_image": "producttypes/velo-elliptique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1060,
+  "fields": {
+    "name": "Poin\u00e7on",
+    "description": "Poin\u00e7on",
+    "product_model": 569,
+    "category": 56,
+    "slug": "poincon",
+    "product_type_image": "producttypes/Poincon.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1061,
+  "fields": {
+    "name": "Table d'ordinateur",
+    "description": "Table d'ordinateur",
+    "product_model": 570,
+    "category": 24,
+    "slug": "table-dordinateur",
+    "product_type_image": "producttypes/table-ordi.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1062,
+  "fields": {
+    "name": "Tapis de course",
+    "description": "Tapis de course",
+    "product_model": 567,
+    "category": 120,
+    "slug": "tapis-de-course",
+    "product_type_image": "producttypes/tapis-de-course.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1063,
+  "fields": {
+    "name": "V\u00e9lo magn\u00e9tique",
+    "description": "V\u00e9lo magn\u00e9tique",
+    "product_model": 572,
+    "category": 120,
+    "slug": "velo-magnetique",
+    "product_type_image": "producttypes/velo_magnetique.jpg"
+  }
+},
+{
+  "model": "category.producttype",
+  "pk": 1064,
+  "fields": {
+    "name": "Equipement bluetooth",
+    "description": "Equipement bluetooth",
+    "product_model": 565,
+    "category": 65,
+    "slug": "equipement-bluetooth",
+    "product_type_image": "producttypes/equipement_BT.jpg"
+  }
+}
+]

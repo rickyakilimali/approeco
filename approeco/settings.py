@@ -50,6 +50,11 @@ INSTALLED_APPS = [
 	'pub',
 	'papeterie',
 	'smuggler',
+	'dbbackup',  # django-dbbackup
+	'consultation',
+	'cart',
+	'mathfilters',
+
 ]
 
 MIDDLEWARE = [
@@ -152,6 +157,9 @@ STATICFILES_DIRS = [
 STATIC_URL = '/static/'
 
 SMUGGLER_FIXTURE_DIR = 'fixtures'
+
+DBBACKUP_STORAGE = 'django.core.files.storage.FileSystemStorage'
+DBBACKUP_STORAGE_OPTIONS = {'location': '/home/approeco/approeco'}
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'

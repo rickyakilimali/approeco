@@ -1,0 +1,27 @@
+{% load cart_tags %}
+<html>
+<body>
+
+<h1>Shopping Cart</h1>
+
+{% get_cart as cart %}
+
+    <table border="1">
+    <tr>
+        <th>Produit</th>
+        <th>Quantité</th>
+        
+    </tr>
+    {% for item in cart.items %}
+    <tr>
+        <td>{{ item.product }}</td>
+        <td>{{ item.quantity }}</td>
+        
+    </tr>
+        {% endfor %}
+    </table>
+
+    
+
+</body>
+</html>

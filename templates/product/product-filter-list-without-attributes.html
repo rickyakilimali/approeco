@@ -9,10 +9,9 @@
 {% load django_tables2 %}
 {% load i18n %}
 {% load product_extra_tags %}
-{% block headline %}Catalogue {{product_type.name}}
+{% block headline %} {{product_type.name}}
+
 <img src="{{product_type.product_type_image.url}}" alt="Picture of Product" class="img-responsive"/>
-
-
 
 {% endblock headline %}
 
@@ -32,8 +31,8 @@
             <table class="table table-hover">
                 <thead>
                     <tr>
-                        <td><strong>Vendeur</strong></td>
-                    {% for field in fields %}
+                        <td><strong>VENDEUR</strong></td>
+                    {% for field in fields_verbose_name %}
                         <td style="text-align:center"><strong>{{field}}</strong></td>
                     {% endfor %}
                     </tr>

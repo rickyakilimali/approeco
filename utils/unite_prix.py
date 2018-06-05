@@ -29,6 +29,12 @@ UNITE_USD_CARNET = (
 
     )
 
+UNITE_USD_CHAISE = (
+        ('USD/CHAISE','USD/CHAISE'),
+
+    )
+
+
 UNITE_USD_COMMUNIQUE = (
 
         ('USD/COMMUNIQUE','USD/COMMUNIQUE'),

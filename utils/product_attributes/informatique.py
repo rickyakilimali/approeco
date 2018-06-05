@@ -1,70 +1,64 @@
 MARQUE_INFORMATIQUE = (
-        ('HP', 'HP'),
-        ('DELL', 'DELL'),
         ('ACER', 'ACER'),
-        ('FUJITSU', 'FUJITSU'),
-        ('CANON', 'CANON'),
-        ('LENOVO', 'LENOVO'),
-        ('SONY', 'SONY'),
-		('ASUS', 'ASUS'),
-		('APPLE', 'APPLE'),
-		('SANDISK', 'SANDISK'),
-		('TOSHIBA', 'TOSHIBA'),
-		('SEAGATE', 'SEAGATE'),
-		('PREMAX', 'PREMAX'),
-		('LENOVO', 'LENOVO'),
-	    ('SAMSUNG', 'SAMSUNG'),
 		('APC', 'APC'),
-		('IMOTION', 'IMOTION'),
-		('SEAGATE', 'SEAGATE'),
-		('D LINK', 'D LINK'),
-		('CISCO', 'CISCO'),
-		('EPSON', 'EPSON'),
-		('LINKSYS', 'LINKSYS'),
-		('TP-LINK', 'TP-LINK'),
+		('APPLE', 'APPLE'),
+		('ASUS', 'ASUS'),
 		('BROTHER', 'BROTHER'),
-		('KATUN', 'KATUN'),
-		('ITC', 'ITC'),
-		('MERCURY','MERCURY'),
-		('IPAD','IPAD'),
+        ('CANON', 'CANON'),
+		('CISCO', 'CISCO'),
+		('D LINK', 'D LINK'),
+        ('DELL', 'DELL'),
+		('EPSON', 'EPSON'),
+        ('FUJITSU', 'FUJITSU'),
+        ('HP', 'HP'),
 		('HUAWEI','HUAWEI'),
+		('IMOTION', 'IMOTION'),
+		('IPAD','IPAD'),
+		('ITC', 'ITC'),
+		('KATUN', 'KATUN'),
+        ('LENOVO', 'LENOVO'),
+		('LENOVO', 'LENOVO'),
+		('LINKSYS', 'LINKSYS'),
+		('MERCURY','MERCURY'),
+		('PREMAX', 'PREMAX'),
+	    ('SAMSUNG', 'SAMSUNG'),
+		('SANDISK', 'SANDISK'),
+		('SEAGATE', 'SEAGATE'),
+		('SEAGATE', 'SEAGATE'),
+        ('SONY', 'SONY'),
+		('TOSHIBA', 'TOSHIBA'),
+		('TP-LINK', 'TP-LINK'),
     )
 
 MARQUE_ONDULEUR = (
 
-		('PREMAX', 'PREMAX'),
 		('APC', 'APC'),
 		('ITC', 'ITC'),
 		('MERCURY','MERCURY'),
+		('PREMAX', 'PREMAX'),
     )
 
 
 MARQUE_CARTOUCHE = (
-        ('HP', 'HP'),
-        ('SAMSUNG', 'SAMSUNG'),
-
-        ('CANON', 'CANON'),
-
-		('EPSON', 'EPSON'),
-
 		('BROTHER', 'BROTHER'),
+        ('CANON', 'CANON'),
+		('EPSON', 'EPSON'),
+        ('HP', 'HP'),
 		('KATUN', 'KATUN'),
+        ('SAMSUNG', 'SAMSUNG'),
 
     )
 
 
 MARQUE_ANTIVIRUS = (
         ('KASPERSKY', 'KASPERSKY'),
-
         ('NORTON', 'NORTON'),
 
     )
 
 MARQUE_RESEAU = (
-
-		('D LINK', 'D LINK'),
 		('CISCO', 'CISCO'),
-
+		('D LINK', 'D LINK'),
 		('LINKSYS', 'LINKSYS'),
 		('TP-LINK', 'TP-LINK'),
 
@@ -72,54 +66,49 @@ MARQUE_RESEAU = (
 
 MARQUE_UNITE_STOCKAGE = (
         ('HP', 'HP'),
-
-        ('SONY', 'SONY'),
-
-		('SANDISK', 'SANDISK'),
-		('TOSHIBA', 'TOSHIBA'),
-		('SEAGATE', 'SEAGATE'),
-		('WESTERN DIGITAL', 'WESTERN DIGITAL'),
-
 		('IMATION', 'IMATION'),
+		('SANDISK', 'SANDISK'),
 		('SEAGATE', 'SEAGATE'),
+		('SEAGATE', 'SEAGATE'),
+        ('SONY', 'SONY'),
+		('TOSHIBA', 'TOSHIBA'),
+		('WESTERN DIGITAL', 'WESTERN DIGITAL'),
 
     )
 
 MARQUE_IMPRIMANTE = (
-        ('HP', 'HP'),
-
+		('BROTHER', 'BROTHER'),
         ('CANON', 'CANON'),
         ('EPSON', 'EPSON'),
+        ('HP', 'HP'),
 	    ('SAMSUNG', 'SAMSUNG'),
-
-		('BROTHER', 'BROTHER'),
 
     )
 
 MARQUE_ORDINATEUR = (
-        ('HP', 'HP'),
-        ('DELL', 'DELL'),
         ('ACER', 'ACER'),
+		('APPLE', 'APPLE'),
+		('ASUS', 'ASUS'),
+        ('DELL', 'DELL'),
         ('FUJITSU', 'FUJITSU'),
+        ('HP', 'HP'),
         ('LENOVO', 'LENOVO'),
         ('SONY', 'SONY'),
-		('ASUS', 'ASUS'),
-		('APPLE', 'APPLE'),
-
 		('TOSHIBA', 'TOSHIBA'),
 
     )
 
 TYPE_DE_PROCESSEUR = (
+        ('CELERON', 'CELERON'),
+        ('CORE DUO', 'CORE DUO'),
         ('CORE I3', 'CORE I3'),
         ('CORE I5', 'CORE I5'),
         ('CORE I7', 'CORE I7'),
-        ('CELERON', 'CELERON'),
         ('DUAL CORE', 'DUAL CORE'),
-        ('CORE DUO', 'CORE DUO'),
         ('INTEL CORE', 'INTEL CORE'),
-		('PENTIUM', 'PENTIUM'),
 		('INTEL XEON','INTEL XEON'),
+		('PENTIUM', 'PENTIUM'),
+
     )
 
 
@@ -170,7 +159,6 @@ CAPACITE_DISQUE_DUR = (
 		('256GB', '256GB'),
         ('320GB', '320GB'),
         ('500GB', '500GB'),
-
         ('800GB', '800GB'),
         ('900GB', '900GB'),
         ('1TB', '1TB'),
@@ -180,11 +168,12 @@ CAPACITE_DISQUE_DUR = (
     )
 
 SYSTEME_EXPLOITATION = (
+        ('ANDROID', 'ANDROID'),
+        ('IOS', 'IOS'),
         ('WIN7', 'WIN7'),
         ('WIN8', 'WIN8'),
         ('WIN10', 'WIN10'),
-        ('ANDROID', 'ANDROID'),
-        ('IOS', 'IOS'),
+
     )
 
 CONTROLEUR_RAID= (
@@ -193,15 +182,14 @@ CONTROLEUR_RAID= (
     )
 
 MODELE_TABLETTE = (
+        ('AIR2', 'AIR 2'),
         ('PRO 1', 'PRO 1'),
         ('PRO 2', 'PRO 2'),
-        ('AIR2', 'AIR2'),
         ('TAB 3 ESSENTIAL', 'TAB 3 ESSENTIAL'),
-        ('TAB S3', 'TAB S3'),
-        ('TAB S2', 'TAB S2'),
         ('TAB A(6)', 'TAB A(6)'),
         ('TAB E', 'TAB E'),
-
+        ('TAB S2', 'TAB S2'),
+        ('TAB S3', 'TAB S3'),
 
     )
 
@@ -249,7 +237,7 @@ TECHNOLOGIE_IMPRESSION = (
 
     )
 
-COULEUR= (
+COULEUR_IMPRIMANTE= (
         ('COULEUR', 'COULEUR'),
         ('NOIR ET BLANC', 'NOIR ET BLANC'),
     )
@@ -266,10 +254,10 @@ RESEAU= (
 
 COULEUR_CARTOUCHE = (
         ('COULEUR', 'COULEUR'),
-        ('NOIR', 'NOIR'),
 		('CYAN', 'CYAN'),
-		('MAGENTA', 'MAGENTA'),
 		('JAUNE', 'JAUNE'),
+		('MAGENTA', 'MAGENTA'),
+        ('NOIR', 'NOIR'),
 
     )
 
@@ -281,32 +269,6 @@ FORMAT_MAXIMUM_PAPIER = (
 
 NUMERO_CARTOUCHE = (
         ('05A','05A'),
-        ('12A','12A'),
-        ('15','15'),
-        ('17A', '17A'),
-        ('21','21'),
-        ('22','22'),
-        ('28','28'),
-        ('29','29'),
-        ('35A','35A'),
-        ('36A','36A'),
-        ('42 A','42 A'),
-        ('49','49'),
-        ('49A','49A'),
-        ('55 A','55 A'),
-        ('57', '57'),
-        ('60','60'),
-        ('61','61'),
-        ('63','63'),
-        ('63A', '63A'),
-        ('73', '73'),
-        ('78A','78A'),
-        ('80 A','80 A'),
-        ('80A','80A'),
-        ('83 A','83 A'),
-        ('83A','83A'),
-        ('88','88'),
-        ('94','94'),
         ('104 S','104 S'),
         ('104S','104S'),
         ('121', '121'),
@@ -318,39 +280,65 @@ NUMERO_CARTOUCHE = (
         ('128 A','128 A'),
         ('128A','128A'),
         ('129','129'),
+        ('12A','12A'),
         ('131 A','131 A'),
         ('131A','131A'),
         ('136','136'),
         ('140','140'),
         ('141','141'),
+        ('15','15'),
         ('178','178'),
+        ('17A', '17A'),
         ('201 A','201 A'),
         ('201A', '201A'),
+        ('21','21'),
+        ('22','22'),
+        ('28','28'),
+        ('29','29'),
         ('300','300'),
         ('301','301'),
         ('304 A','304 A'),
         ('305 A','305 A'),
         ('305A','305A'),
         ('336','336'),
+        ('35A','35A'),
         ('364','364'),
+        ('36A','36A'),
         ('401A', '401A'),
+        ('42 A','42 A'),
+        ('49','49'),
+        ('49A','49A'),
+        ('55 A','55 A'),
         ('563', '563'),
+        ('57', '57'),
+        ('60','60'),
+        ('61','61'),
+        ('63','63'),
+        ('63A', '63A'),
         ('650','650'),
         ('716','716'),
         ('725','725'),
         ('728','728'),
+        ('73', '73'),
         ('731','731'),
+        ('78A','78A'),
+        ('80 A','80 A'),
+        ('80A','80A'),
+        ('83 A','83 A'),
+        ('83A','83A'),
+        ('88','88'),
         ('920 XL','920 XL'),
         ('920','920'),
         ('920','920'),
         ('932','932'),
         ('933 XL','933 XL'),
         ('933','933'),
+        ('94','94'),
         ('940','940'),
         ('951', '951'),
+        ('CEXV 33', 'CEXV 33'),
         ('C-EXV14', 'C-EXV14'),
         ('C-EXV40', 'C-EXV40'),
-        ('CEXV 33', 'CEXV 33'),
         ('CF 350','CF 350'),
         ('CF 351', 'CF 351'),
         ('GPR08','GPR08'),
@@ -408,14 +396,13 @@ FORMAT = (
 MARQUE_ANTIVIRUS = (
         ('KASPERSKY', 'KASPERSKY'),
         ('NORTON', 'NORTON'),
-
     )
 
 
 LICENCE = (
         ('1 UTILISATEUR', '1 UTILISATEUR'),
-        ('10 UTILISATEURS', '10 UTILISATEURS'),
         ('3 UTILISATEURS', '3 UTILISATEURS'),
+        ('10 UTILISATEURS', '10 UTILISATEURS'),
 
     )
 
@@ -441,45 +428,44 @@ NOMBRE_PORT_PATCH_PANEL= (
 
 
 TYPE_DE_STOCKAGE=(
-        ('MEMOIRE SD', 'MEMOIRE SD'),
-        ('FLASHDISK', 'FLASHDISK'),
-		('DISQUE EXTERNE', 'DISQUE EXTERNE'),
 		('CD-RW', 'CD-RW'),
-		('DVD', 'DVD'),
-		('DISQUE INTERNE LAPTOP', 'DISQUE INTERNE LAPTOP'),
+		('DISQUE EXTERNE', 'DISQUE EXTERNE'),
 		('DISQUE INTERNE DESKTOP', 'DISQUE INTERNE DESKTOP'),
+		('DISQUE INTERNE LAPTOP', 'DISQUE INTERNE LAPTOP'),
+		('DVD', 'DVD'),
+        ('FLASHDISK', 'FLASHDISK'),
+        ('MEMOIRE SD', 'MEMOIRE SD'),
 
     )
 
 
 
 MODEL_SMARTPHONE=(
-        ('PRO 2', 'PRO 2'),
-        ('PRO 1', 'PRO 1'),
-		('AIR2', 'AIR2'),
-		('TAB 3 ', 'TAB 3 '),
+		('AIR2', 'AIR 2'),
 		('ESSENTIAL', 'ESSENTIAL'),
-		('TAB S2', 'TAB S2'),
-		('TAB S3', 'TAB S3'),
+        ('PRO 1', 'PRO 1'),
+        ('PRO 2', 'PRO 2'),
+		('TAB 3 ', 'TAB 3 '),
 		('TAB A6', 'TAB A6'),
 		('TAB E', 'TAB E'),
+		('TAB S2', 'TAB S2'),
+		('TAB S3', 'TAB S3'),
 
     )
 
 MODEL_IMPRIMANTE=(
-        ('LASERJET P2035','LASERJET P2035'),
         ('CANON 4870','CANON 4870'),
-        ('COLOR LASERJET','COLOR LASERJET'),
         ('COLOR LASERJET PRO M176 N','COLOR LASERJET PRO M176 N'),
         ('COLOR LASERJET PRO M177 FW MFP','COLOR LASERJET PRO M177 FW MFP'),
+        ('COLOR LASERJET','COLOR LASERJET'),
         ('DESKJET 125A','DESKJET 125A'),
         ('DESKJET 2130','DESKJET 2130'),
         ('DESKJET 2180','DESKJET 2180'),
         ('DESKJET 3630 W','DESKJET 3630 W'),
         ('DESKJET 3632','DESKJET 3632'),
         ('DESKJET 3635 W','DESKJET 3635 W'),
-        ('I-SENSYS MF41','I-SENSYS MF41'),
         ('IMAGE RUNNER 1133','IMAGE RUNNER 1133'),
+        ('I-SENSYS MF41','I-SENSYS MF41'),
         ('LASERJET  PRO MFP 177 FW','LASERJET  PRO MFP 177 FW'),
         ('LASERJET  PRO MFP 227 SDN','LASERJET  PRO MFP 227 SDN'),
         ('LASERJET  PRO MFP 277 DW','LASERJET  PRO MFP 277 DW'),
@@ -490,8 +476,9 @@ MODEL_IMPRIMANTE=(
         ('LASERJET M176N','LASERJET M176N'),
         ('LASERJET M201N','LASERJET M201N'),
         ('LASERJET M252DW','LASERJET M252DW'),
-        ('LASERJET PRO 400','LASERJET PRO 400'),
+        ('LASERJET P2035','LASERJET P2035'),
         ('LASERJET PRO 400 M4280W','LASERJET PRO 400 M4280W'),
+        ('LASERJET PRO 400','LASERJET PRO 400'),
         ('LASERJET PRO CM1415FN','LASERJET PRO CM1415FN'),
         ('LASERJET PRO M102','LASERJET PRO M102'),
         ('LASERJET PRO M107','LASERJET PRO M107'),
@@ -517,18 +504,13 @@ MODEL_IMPRIMANTE=(
         ('XPRESS M 2835','XPRESS M 2835'),
         ('XPRESS M2020','XPRESS M2020'),
 
-
-
-
     )
 
 
 TYPE_LOGICIEL=(
         ('ANTIVIRUS', 'ANTIVIRUS'),
         ('INTERNET SECURITY MULTIDEVICE', 'INTERNET SECURITY MULTIDEVICE'),
-		('ANTIVIRUS+PAREFEU', 'ANTIVIRUS+PAREFEU'),
-
-
+		('ANTIVIRUS+PAREFEU', 'ANTIVIRUS + PAREFEU'),
     )
 
 TYPE_EQUIPEMENT=(
@@ -561,31 +543,29 @@ WIFI = (
 
     )
 AVEC_FIL = (
-        ('OUI', 'OUI'),
-		('NON', 'NON'),
+        ('AVEC FIL', 'AVEC FIL'),
+		('SANS FIL', 'SANS FIL'),
 
 
     )
 
 TYPE_CLAVIER=(
-        ('QWERTY', 'QWERTY'),
 		('AZERTY', 'AZERTY'),
+        ('QWERTY', 'QWERTY'),
 
 
     )
 TYPE_CABLE_INFORMATIQUE=(
-        ('HDMI', 'HDMI'),
-		('VGA', 'VGA'),
-		('FIREWARE', 'FIREWARE'),
-		('OPTICAL', 'OPTICAL'),
+		('BAFFLE', 'BAFFLE'),
 		('CAT 6', 'CAT 6'),
 		('COAXIAL', 'COAXIAL'),
-		('MICRO', 'MICRO'),
-		('BAFFLE', 'BAFFLE'),
-		('SON (1*1)', 'SON (1*1)'),
+		('FIREWARE', 'FIREWARE'),
+        ('HDMI', 'HDMI'),
 		('MAC THUNDER', 'MAC THUNDER'),
-
-
+		('MICRO', 'MICRO'),
+		('OPTICAL', 'OPTICAL'),
+		('SON (1*1)', 'SON (1*1)'),
+		('VGA', 'VGA'),
     )
 
 LONGUEUR_CABLE_INFORMATIQUE=(
@@ -608,13 +588,13 @@ FONCTION_MODEM = (
     )
 
 POID_COFFRE_FORT = (
+		('42KG', '42KG'),
+		('51KG', '51KG'),
+		('55KG', '55KG'),
         ('80KG', '80KG'),
         ('140KG', '140KG'),
 		('200KG', '200KG'),
 		('260KG', '260KG'),
-		('42KG', '42KG'),
-		('51KG', '51KG'),
-		('55KG', '55KG'),
 
     )
 
@@ -677,17 +657,9 @@ NOMBRE_ADRESSE_MAXIMUM	= (
 
 	)
 
-TYPE_SITE_WEB = (
-
-		('SITE VITRINE','SITE VITRINE'),
-		('E-COMMERCE','E-COMMERCE'),
-		('SITE AVEC APPLICATION','SITE AVEC APPLICATION'),
-
-	)
 
 TYPE_HEBERGEMENT=(
 
-		('SITE VITRINE','SITE VITRINE'),
 		('HEBERGEMENT SITE INTERNET','HEBERGEMENT SITE INTERNET'),
 		('HEBERGEMENT MODULE ERP','HEBERGEMENT MODULE ERP'),
 		('HEBERGEMENT UTILISATEUR ERP','HEBERGEMENT UTILISATEUR ERP'),
@@ -698,9 +670,9 @@ TYPE_HEBERGEMENT=(
 
 TYPE_SITE = (
 
-		('VITRINE', 'VITRINE'),
-        ('E-COMMERCE', 'E-COMMERCE'),
-        ('SITE AVEC APPLICATION', 'SITE AVEC APPLICATION'),
+		('E-COMMERCE','SITE E-COMMERCE'),
+		('SITE AVEC APPLICATION','SITE AVEC APPLICATION'),
+		('SITE VITRINE','SITE VITRINE'),
 
 	)
 
@@ -720,34 +692,33 @@ CALL_MANAGER = (
 
 TYPE_ADAPTATEUR= (
 
+		('VGA VERS HDMI','VGA VERS HDMI'),
 		('ALIMENTATION CCTV CAMERA 12V','ALIMENTATION CCTV CAMERA 12V'),
-		('USB VERS PORT PARALLELE','USB VERS PORT PARALLELE'),
-		('USB VERS RJ45','USB VERS RJ45'),
-		('USB VERS PORT SERIE','USB VERS PORT SERIE'),
-		('USB VERS SON','USB VERS SON'),
-		('USB WIFI TPLINK T2U AC600','USB WIFI TPLINK T2U AC600'),
-		('USB WIRELESS TL-WN7200ND','USB WIRELESS TL-WN7200ND'),
-		('USB WIFI TPLINK TL-WN725N','USB WIFI TPLINK TL-WN725N'),
-		('1VGA VERS HDMI','VGA VERS HDMI'),
-		('WIFI POUR IMPRIMANTE','WIFI POUR IMPRIMANTE'),
-		('IHPONE 5/6 VERS HDMI AVEC ALIMENTATION', 'IHPONE 5/6 VERS HDMI AVEC ALIMENTATION'),
-        ('DVI VERS VGA', 'DVI VERS VGA'),
-        ('POUR ORDINATEUR', 'POUR ORDINATEUR'),
-        ('UNIVERSEL POUR LAPTOP', 'UNIVERSEL POUR LAPTOP'),
         ('CARTE MEMOIRE', 'CARTE MEMOIRE'),
-        ('USB 3.0 VERS HDMI', 'USB 3.0 VERS HDMI'),
-        ('USB 3.0 VERS VGA', 'USB 3.0 VERS VGA'),
-        ('HUB CHARGEUR DE SORTIE UNIVERSEL USB', 'HUB CHARGEUR DE SORTIE UNIVERSEL USB'),
+        ('DVI VERS VGA', 'DVI VERS VGA'),
         ('HDMI VERS 3RCA AVEC ALIMENTATON', 'HDMI VERS 3RCA AVEC ALIMENTATON'),
-        ('HDMI VERS VGA AVEC ALIMENTATION', 'HDMI VERS VGA AVEC ALIMENTATION'),
-        ('VGA VERS HDMI', 'VGA VERS HDMI'),
-        ('PORT DISPLAY DVI', 'PORT DISPLAY DVI'),
         ('HDMI VERS VGA ', 'HDMI VERS VGA '),
+        ('HDMI VERS VGA AVEC ALIMENTATION', 'HDMI VERS VGA AVEC ALIMENTATION'),
+        ('HUB CHARGEUR DE SORTIE UNIVERSEL USB', 'HUB CHARGEUR DE SORTIE UNIVERSEL USB'),
+		('IHPONE 5/6 VERS HDMI AVEC ALIMENTATION', 'IHPONE 5/6 VERS HDMI AVEC ALIMENTATION'),
         ('IPAD VERS HDMI', 'IPAD VERS HDMI'),
+        ('PORT DISPLAY DVI', 'PORT DISPLAY DVI'),
         ('PORT MINI DISPLAY VERS DVI', 'PORT MINI DISPLAY VERS DVI'),
         ('PORT MINI DISPLAY VERS HDMI', 'PORT MINI DISPLAY VERS HDMI'),
         ('POUR ALIMENTATION IMPRIMANTE HP', 'POUR ALIMENTATION IMPRIMANTE HP'),
-
+        ('POUR ORDINATEUR', 'POUR ORDINATEUR'),
+        ('UNIVERSEL POUR LAPTOP', 'UNIVERSEL POUR LAPTOP'),
+        ('USB 3.0 VERS HDMI', 'USB 3.0 VERS HDMI'),
+        ('USB 3.0 VERS VGA', 'USB 3.0 VERS VGA'),
+		('USB VERS PORT PARALLELE','USB VERS PORT PARALLELE'),
+		('USB VERS PORT SERIE','USB VERS PORT SERIE'),
+		('USB VERS RJ45','USB VERS RJ45'),
+		('USB VERS SON','USB VERS SON'),
+		('USB WIFI TPLINK T2U AC600','USB WIFI TPLINK T2U AC600'),
+		('USB WIFI TPLINK TL-WN725N','USB WIFI TPLINK TL-WN725N'),
+		('USB WIRELESS TL-WN7200ND','USB WIRELESS TL-WN7200ND'),
+        ('VGA VERS HDMI', 'VGA VERS HDMI'),
+		('WIFI POUR IMPRIMANTE','WIFI POUR IMPRIMANTE'),
 
 	)
 
@@ -759,32 +730,31 @@ MARQUE_ANTENNE= (
 
 	)
 MODELE_ANTENNE= (
-
+		('M5 NBE-M5-1','M5 NBE-M5-1'),
 		('TL-ANT2415D','TL-ANT2415D'),
 		('TL-ANT2424B','TL-ANT2424B'),
-		('M5 NBE-M5-1','M5 NBE-M5-1'),
 
 	)
 
 QUANTITE_AUTOCOLLANT= (
 
-				('1500','1500'),
-				('5000','5000'),
-				('4000','4000'),
+		('1500','1500'),
+		('4000','4000'),
+		('5000','5000'),
 
 
 	)
 DIMENSION_AUTOCOLLANT= (
 
-				('102x76 MM','102x76 MM'),
-				('50x30 MM','50x30 MM'),
-				('60x30 MM','60x30 MM'),
+		('102x76 MM','102x76 MM'),
+		('50x30 MM','50x30 MM'),
+		('60x30 MM','60x30 MM'),
 
 	)
 
 MARQUE_LAPTOP= (
 
-				('HP','HP'),
+		('HP','HP'),
 
 
 	)
@@ -801,86 +771,82 @@ MODELE_LAPTOP= (
 
 
 TYPE_DISQUE= (
-
-				('SATA','SATA'),
-				('IDE','IDE'),
-
-
+		('IDE','IDE'),
+		('SATA','SATA'),
 	)
 
 TYPE_CARTE= (
 
-				('GRAPHIQUE PCI EXPRESS NVIDIA 1GO','GRAPHIQUE PCI EXPRESS NVIDIA 1GO'),
-				('GRAPHICS ZOTAC PCI EXPRESS NVIDIA 2GO','GRAPHICS ZOTAC PCI EXPRESS NVIDIA 2GO'),
-				('READER EXTERNAL','READER EXTERNAL'),
-				('RESEAU SANS FIL PCI EXPRESS TPLINK TL781ND','RESEAU SANS FIL PCI EXPRESS TPLINK TL781ND'),
-				('FIREWIRE PCI LW','FIREWIRE PCI LW'),
-				('GRAPHIQUE NVIDIA 1GB','GRAPHIQUE NVIDIA 1GB'),
-				('PCI COMBO 2 SERIAL+1PARRALE','PCI COMBO 2 SERIAL+1PARRALE'),
-				('PCI EXPRESS','PCI EXPRESS'),
-				('PCI SERIAL ATA HOST','PCI SERIAL ATA HOST'),
-				('PCI TO PCMCI','PCI TO PCMCI'),
-				('PCI ULTRA ATA','PCI ULTRA ATA'),
-				('PCMCI RJ45','PCMCI RJ45'),
-				('SON PCI','SON PCI'),
-				('CARTE MERE INTEL DG 41BL','CARTE MERE INTEL DG 41BL'),
-
+		('CARTE MERE INTEL DG 41BL','CARTE MERE INTEL DG 41BL'),
+		('FIREWIRE PCI LW','FIREWIRE PCI LW'),
+		('GRAPHICS ZOTAC PCI EXPRESS NVIDIA 2GO','GRAPHICS ZOTAC PCI EXPRESS NVIDIA 2GO'),
+		('GRAPHIQUE NVIDIA 1GB','GRAPHIQUE NVIDIA 1GB'),
+		('GRAPHIQUE PCI EXPRESS NVIDIA 1GO','GRAPHIQUE PCI EXPRESS NVIDIA 1GO'),
+		('PCI COMBO 2 SERIAL+1PARRALE','PCI COMBO 2 SERIAL+1PARRALE'),
+		('PCI EXPRESS','PCI EXPRESS'),
+		('PCI SERIAL ATA HOST','PCI SERIAL ATA HOST'),
+		('PCI TO PCMCI','PCI TO PCMCI'),
+		('PCI ULTRA ATA','PCI ULTRA ATA'),
+		('PCMCI RJ45','PCMCI RJ45'),
+		('READER EXTERNAL','READER EXTERNAL'),
+		('RESEAU SANS FIL PCI EXPRESS TPLINK TL781ND','RESEAU SANS FIL PCI EXPRESS TPLINK TL781ND'),
+		('SON PCI','SON PCI'),
 
     )
 
 MARQUE_CHARGEUR= (
 
-				('ACER','ACER'),
-				('DELL','DELL'),
-				('HP','HP'),
-				('UNIVERSEL','UNIVERSEL'),
-				('SELPHY CP910','SELPHY CP910'),
-				('TOSHIBA','TOSHIBA'),
+		('ACER','ACER'),
+		('DELL','DELL'),
+		('HP','HP'),
+		('SELPHY CP910','SELPHY CP910'),
+		('TOSHIBA','TOSHIBA'),
+		('UNIVERSEL','UNIVERSEL'),
 
 	)
 TENSION_CHARGEUR= (
 
-				('19V','19V'),
-				('19,5V','19,5V'),
-				('18,5V','18,5V'),
+		('18,5V','18,5V'),
+		('19V','19V'),
+		('19,5V','19,5V'),
 
 	)
 INTENSITE_CHARGEUR= (
 
-				('3,42A','3,42A'),
-				('3,34A','3,34A'),
-				('4,62A','4,62A'),
-				('3,5A','3,5A'),
-				('3,5A SMALL PIN','3,5A SMALL PIN'),
-				('1,58A','1,58A'),
-				('4,74A BIG PIN','4,74A BIG PIN'),
-				('4,74A SMALL PIN','4,74A SMALL PIN'),
-				('3,42A','3,42A'),
-				('3,95A','3,95A'),
+		('1,58A','1,58A'),
+		('3,34A','3,34A'),
+		('3,42A','3,42A'),
+		('3,42A','3,42A'),
+		('3,5A SMALL PIN','3,5A SMALL PIN'),
+		('3,5A','3,5A'),
+		('3,95A','3,95A'),
+		('4,62A','4,62A'),
+		('4,74A BIG PIN','4,74A BIG PIN'),
+		('4,74A SMALL PIN','4,74A SMALL PIN'),
 
 	)
 
 TYPE_CONNECTEUR= (
 
-				('RJ45 CAT6 METAL','RJ45 CAT6 METAL'),
-				('RJ45 COUVERT','RJ45 COUVERT'),
-				('RJ11','RJ11'),
-				('RJ45 CAT5E','RJ45 CAT5E'),
-				('RJ45 CAT6E','RJ45 CAT6E'),
-				('COUVERTURE CABLE RJ45','COUVERTURE CABLE RJ45'),
-				('RJ45 AICO','RJ45 AICO'),
-				('RJ45 CAT6','RJ45 CAT6'),
-				('RJ45 METAL','RJ45 METAL'),
-				('RJ45 NORMA','RJ45 NORMA'),
-				('CAT6 RJ45 POUR PRISE MURALE','CAT6 RJ45 POUR PRISE MURALE'),
+		('CAT6 RJ45 POUR PRISE MURALE','CAT6 RJ45 POUR PRISE MURALE'),
+		('COUVERTURE CABLE RJ45','COUVERTURE CABLE RJ45'),
+		('RJ11','RJ11'),
+		('RJ45 AICO','RJ45 AICO'),
+		('RJ45 CAT5E','RJ45 CAT5E'),
+		('RJ45 CAT6 METAL','RJ45 CAT6 METAL'),
+		('RJ45 CAT6','RJ45 CAT6'),
+		('RJ45 CAT6E','RJ45 CAT6E'),
+		('RJ45 COUVERT','RJ45 COUVERT'),
+		('RJ45 METAL','RJ45 METAL'),
+		('RJ45 NORMA','RJ45 NORMA'),
 
 
 	)
 
 TYPE_ORDINATEUR= (
 
-				('LAPTOP','LAPTOP'),
-				('DESKTOP','DESKTOP'),
+		('DESKTOP','DESKTOP'),
+		('LAPTOP','LAPTOP'),
 
 
 
@@ -888,10 +854,10 @@ TYPE_ORDINATEUR= (
 	)
 TYPE_MEMOIRE_RAM= (
 
-				('DDR1','DDR1'),
-				('DDR2','DDR2'),
-				('DDR3','DDR3'),
-				('DDR4','DDR4'),
+		('DDR1','DDR1'),
+		('DDR2','DDR2'),
+		('DDR3','DDR3'),
+		('DDR4','DDR4'),
 
 
 
@@ -899,31 +865,28 @@ TYPE_MEMOIRE_RAM= (
 	)
 CAPACITE_MEMOIRE_RAM= (
 
-				('128MB','128MB'),
-				('2GB','2GB'),
-				('4GB','4GB'),
-				('8GB','8GB'),
+		('128MB','128MB'),
+		('2GB','2GB'),
+		('4GB','4GB'),
+		('8GB','8GB'),
 
 	)
 
 LONGUEUR_PATCHCORD= (
-
-				('15M','15M'),
-				('1M','1M'),
-				('0,3M ','0,3M '),
-				('3M','3M'),
+		('0,3M ','0,3M '),
+		('1M','1M'),
+		('3M','3M'),
+		('15M','15M'),
 	)
+
 TYPE_PATCHPANEL= (
 
 				('CAT 5E','CAT 5E'),
 				('CAT 6E','CAT 6E'),
 
-
-
 	)
 NOMBRE_PORT_PATCHPANEL= (
 
-				('24 PORTS','24 PORTS'),
 				('24 PORTS','24 PORTS'),
 				('48 PORTS','48 PORTS'),
 
@@ -943,34 +906,33 @@ MONTAGE_RACK= (
 
 	)
 FAN_RACK= (
-
-				('OUI','OUI'),
-				('NON','NON'),
-				('DOUBLE','DOUBLE'),
+		('DOUBLE','DOUBLE'),
+		('OUI','OUI'),
+		('NON','NON'),
 
 	)
 UNITE_RACK= (
 
-				('12U','12U'),
-				('15U','15U'),
-				('18U','18U'),
-				('22U','22U'),
-				('27U','27U'),
-				('32U','32U'),
-				('37U','37U'),
-				('42U','42U'),
-				('6U','6U'),
-				('9U','9U'),
+        ('6U','6U'),
+		('9U','9U'),
+        ('12U','12U'),
+		('15U','15U'),
+		('18U','18U'),
+		('22U','22U'),
+		('27U','27U'),
+		('32U','32U'),
+		('37U','37U'),
+		('42U','42U'),
 
 	)
 DIMENSION_RACK= (
 
-				('600x600MM','600x600MM'),
-				('600x800MM','600x800MM'),
-				('600x1000MM','600x1000MM'),
-				('800x800MM','800x800MM'),
-				('800X1000MM','800X1000MM'),
-				('600X550MM','600X550MM'),
+		('600x600MM','600x600MM'),
+		('600x800MM','600x800MM'),
+		('600x1000MM','600x1000MM'),
+		('800x800MM','800x800MM'),
+		('800X1000MM','800X1000MM'),
+		('600X550MM','600X550MM'),
 
 
 

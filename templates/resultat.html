@@ -1,0 +1,47 @@
+{% extends '_layouts/acheteur.html' %}
+{# Load the tag library #}
+
+
+{# Load CSS and JavaScript #}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+
+{% load cart_tags %}
+{% get_cart as cart %}
+
+{% block headline %}Catalogue
+
+    {% if current_cat %}
+        {{current_cat.name}}
+    {% endif %}
+
+{% endblock headline %}
+
+{% block content %}
+
+
+<div class="container">
+
+	{% if  cabinetavocat_sellers %}
+	<ul>
+	{% for seller in cabinetavocat_sellers %}
+		<li>{{seller.username}}</li>
+	{% endfor %}
+	</ul>
+
+	<!-- nombre de ligne :{{ cabinetavocat_sellers|length }}</br> -->
+	<!-- nombre de colonnes :{{ cart.unique_count }} -->
+    {% endif %}
+
+<table>
+	{% for key, value in resultat.items %}
+    <tr>
+        <td>fournisseur n°{{ key }} :  </td> <td> {{ value }}$ </td>
+    </tr>
+	{% endfor %}
+	</table>
+
+
+
+</div>
+{% endblock %}

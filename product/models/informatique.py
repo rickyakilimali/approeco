@@ -10,15 +10,15 @@ from utils.unite_prix import *
 class Imprimante(productbase.ProductBase):
 
 	#les attributs
-	marque_imprimante  = models.CharField("MARQUE IMPRIMANTE",max_length=50, choices=MARQUE_IMPRIMANTE)
+	marque_imprimante  = models.CharField("MARQUE",max_length=50, choices=MARQUE_IMPRIMANTE)
 	technologie = models.CharField("TECHNOLOGIE",max_length=50, choices=TECHNOLOGIE_IMPRESSION)
 	modele	= models.CharField("MODELE",max_length=50, choices=MODEL_IMPRIMANTE)
-	couleur = models.CharField("COULEUR D'IMPRESSION",max_length=50, choices=COULEUR)
-	multifonction = models.CharField("MULTIFONCTION",max_length=50, choices=MULTIFONCTION)
+	couleur = models.CharField("COULEUR D'IMPRESSION",max_length=50, choices=COULEUR_IMPRIMANTE)
+	multifonction = models.CharField("OPTION MULTIFONCTION",max_length=50, choices=MULTIFONCTION)
 	recto_verso = models.CharField("RECTO VERSO",max_length=50, choices=RECTO_VERSO)
-	format_max_papier = models.CharField("FORMAT MAXIMUM PAPIER",max_length=50, choices=FORMAT_MAXIMUM_PAPIER)
+	format_max_papier = models.CharField("FORMAT MAXIMUM",max_length=50, choices=FORMAT_MAXIMUM_PAPIER)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -33,16 +33,16 @@ class Imprimante(productbase.ProductBase):
 class Photocopieuse(productbase.ProductBase):
 
 	#les attributs
-	marque_imprimante  = models.CharField("MARQUE PHOTOCOPIEUSE",max_length=50, choices=MARQUE_IMPRIMANTE)
+	marque_photocopieuse  = models.CharField("MARQUE PHOTOCOPIEUSE",max_length=50, choices=MARQUE_IMPRIMANTE)
 	technologie = models.CharField("TECHNOLOGIE",max_length=50, choices=TECHNOLOGIE_IMPRESSION)
 
 
 
 	recto_verso = models.CharField("RECTO VERSO",max_length=50, choices=RECTO_VERSO)
-	reseau = models.CharField("RESEAU",max_length=50, choices=RESEAU)
-	format_max_papier = models.CharField("FORMAT MAXIMUM PAPIER",max_length=50, choices=FORMAT_MAXIMUM_PAPIER)
+	reseau = models.CharField("CONNEXION RESEAU",max_length=50, choices=RESEAU)
+	format_max_papier = models.CharField("FORMAT MAXIMUM",max_length=50, choices=FORMAT_MAXIMUM_PAPIER)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -56,12 +56,12 @@ class Photocopieuse(productbase.ProductBase):
 class Desktop(productbase.ProductBase):
 
 	#les attributs
-	marque_desktop= models.CharField("MARQUE DESKTOP",max_length=50, choices=MARQUE_ORDINATEUR)
+	marque_desktop= models.CharField("MARQUE",max_length=50, choices=MARQUE_ORDINATEUR)
 	type_processeur = models.CharField("TYPE DE PROCESSEUR",max_length=50, choices= TYPE_DE_PROCESSEUR)
 	memoire_ram = models.CharField("MEMOIRE RAM",max_length=50, choices=CAPACITE_MEMOIRE)
 	capacite_disque_dur = models.CharField("CAPACITE DU DISQUE DUR",max_length=50, choices= CAPACITE_DISQUE_DUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -79,7 +79,7 @@ class Laptop(productbase.ProductBase):
 	memoire_ram = models.CharField("MEMOIRE RAM",max_length=50, choices=CAPACITE_MEMOIRE)
 	capacite_disque_dur = models.CharField("CAPACITE DU DISQUE DUR",max_length=50, choices=CAPACITE_DISQUE_DUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -93,11 +93,11 @@ class Laptop(productbase.ProductBase):
 class Cartouche(productbase.ProductBase):
 
 	#les attributs
-	marque_cartouche= models.CharField("MARQUE DE CARTOUCHE",max_length=50, choices=MARQUE_CARTOUCHE)
-	numero_cartouche = models.CharField("NUMERO DE CARTOUCHE",max_length=50, choices=NUMERO_CARTOUCHE)
-	couleur_cartouche = models.CharField("COULEUR DE CARTOUCHE",max_length=50, choices=COULEUR_CARTOUCHE)
+	marque_cartouche= models.CharField("MARQUE DE LA CARTOUCHE",max_length=50, choices=MARQUE_CARTOUCHE)
+	numero_cartouche = models.CharField("NUMERO DE SERIE",max_length=50, choices=NUMERO_CARTOUCHE)
+	couleur_cartouche = models.CharField("COULEUR DE LA CARTOUCHE",max_length=50, choices=COULEUR_CARTOUCHE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -106,7 +106,7 @@ class Cartouche(productbase.ProductBase):
 
 
 #=====================================================
-# 5. UNITÉS DE STOCKAGES
+# 5. UNITE DE STOCKAGES
 #=====================================================
 class Unite_stockage(productbase.ProductBase):
 
@@ -115,7 +115,7 @@ class Unite_stockage(productbase.ProductBase):
 	type_stockage= models.CharField("TYPE DE STOCKAGE",max_length=50, choices=TYPE_DE_STOCKAGE)
 	capacite_memoire = models.CharField("CAPAPCITE DE STOCKAGE",max_length=50, choices=CAPACITE_MEMOIRE_STOCKAGE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -138,7 +138,7 @@ class Logiciel(productbase.ProductBase):
 
 	licence = models.CharField("LICENCE",max_length=50, choices=LICENCE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -150,11 +150,11 @@ class Logiciel(productbase.ProductBase):
 class Switch(productbase.ProductBase):
 
 	#les attributs
-	type_equipement= models.CharField("TYPE_EQUIPEMENT",max_length=50, choices=TYPE_EQUIPEMENT)
+	type_equipement= models.CharField("TYPE D'EQUIPEMENT",max_length=50, choices=TYPE_EQUIPEMENT)
 	marque = models.CharField("MARQUE",max_length=50, choices=MARQUE_RESEAU)
-	nombre_port= models.CharField("NOMBRE DES PORTS",max_length=50, choices= NOMBRE_PORT_SWITCH)
+	nombre_port= models.CharField("NOMBRE DE PORTS",max_length=50, choices= NOMBRE_PORT_SWITCH)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -170,7 +170,7 @@ class Videoprojecteur(productbase.ProductBase):
 	marque = models.CharField("MARQUE",max_length=50, choices=MARQUE_VIDEOPROJECTEUR)
 	puissance= models.CharField("PUISSANCE",max_length=50, choices= PUISSANCE_VIDEOPROJECTEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -184,7 +184,7 @@ class Routeur(productbase.ProductBase):
 	marque = models.CharField("MARQUE",max_length=50, choices=MARQUE_RESEAU)
 	wifi= models.CharField("WIFI",max_length=50, choices= WIFI)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -195,9 +195,9 @@ class Routeur(productbase.ProductBase):
 class Souris(productbase.ProductBase):
 
 	#les attributs
-	avec_fil = models.CharField("AVEC FIL",max_length=50, choices= AVEC_FIL)
+	technologie = models.CharField("TECHNOLOGIE",max_length=50, choices= AVEC_FIL)
 	prix = models.DecimalField("PRIX",max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -209,9 +209,9 @@ class Souris(productbase.ProductBase):
 class Clavier(productbase.ProductBase):
 
 	#les attributs
-	type_clavier = models.CharField("TYPE CLAVIER",max_length=50, choices= TYPE_CLAVIER)
+	type_clavier = models.CharField("TYPE",max_length=50, choices= TYPE_CLAVIER)
 	prix = models.DecimalField("PRIX",max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -225,7 +225,7 @@ class ModemWifi(productbase.ProductBase):
 	#les attributs
 	marque = models.CharField("MARQUE",max_length=50, choices= MARQUE_INFORMATIQUE)
 	prix = models.DecimalField("PRIX",max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -237,10 +237,10 @@ class ModemWifi(productbase.ProductBase):
 class CableInformatique(productbase.ProductBase):
 
 	#les attributs
-	type_cable = models.CharField("TYPE CABLE",max_length=50, choices= TYPE_CABLE_INFORMATIQUE)
-	longueur = models.CharField("LONGUEUR CABLE(METRE)",max_length=50, choices= LONGUEUR_CABLE_INFORMATIQUE)
+	type_cable = models.CharField("TYPE DE CABLE",max_length=50, choices= TYPE_CABLE_INFORMATIQUE)
+	longueur = models.CharField("LONGUEUR",max_length=50, choices= LONGUEUR_CABLE_INFORMATIQUE)
 	prix = models.DecimalField("PRIX",max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -255,7 +255,7 @@ class PointAcces(productbase.ProductBase):
 	marque= models.CharField("MARQUE",max_length=50, choices=MARQUE_INFORMATIQUE)
 	fonction_modem = models.CharField("FONCTION MODEM",max_length=50, choices=FONCTION_MODEM)
 	prix = models.DecimalField("PRIX",max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -274,15 +274,15 @@ class PointAcces(productbase.ProductBase):
 #=====================================================
 class Serveur(productbase.ProductBase):
 	marque = models.CharField("MARQUE",max_length=50, choices=MARQUE_ORDINATEUR)
-	modele_serveur = models.CharField("MODELE SERVEUR",max_length=50, choices= MODELE_SERVEUR)
-	type_serveur = models.CharField("TYPE SERVEUR",max_length=50, choices= TYPE_SERVEUR)
+	modele_serveur = models.CharField("MODELE",max_length=50, choices= MODELE_SERVEUR)
+	type_serveur = models.CharField("TYPE DE SERVEUR",max_length=50, choices= TYPE_SERVEUR)
 	type_processeur = models.CharField("TYPE DE PROCESSEUR",max_length=50, choices= TYPE_DE_PROCESSEUR)
 	capacite_disque_dur = models.CharField("CAPACITE DU DISQUE DUR",max_length=50, choices= CAPACITE_DISQUE_DUR)
 	controleur_raid = models.CharField("CONTROLEUR RAID",max_length=50, choices= CONTROLEUR_RAID)
-	capacite_ram_max = models.CharField("MEMOIRE RAM maximum",max_length=50, choices=CAPACITE_MEMOIRE)
+	capacite_ram_max = models.CharField("MEMOIRE RAM MAXIMUM",max_length=50, choices=CAPACITE_MEMOIRE)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -292,9 +292,9 @@ class Serveur(productbase.ProductBase):
 # 20. ADRESSE IP PUBLIQUE
 #=====================================================
 class AdresseIpPublique(productbase.ProductBase):
-	nombre_adresse_maximum =models.CharField("NOMBRE ADRESSE IP PUBLIQUE MAXIMUM", max_length=20, choices= NOMBRE_ADRESSE_MAXIMUM)
+	nombre_adresse_maximum =models.CharField("NOMBRE D'IP PUBLIQUE MAXIMUM", max_length=20, choices= NOMBRE_ADRESSE_MAXIMUM)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_AN)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_AN)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -302,12 +302,12 @@ class AdresseIpPublique(productbase.ProductBase):
 # 21. BANDE PASSANTE
 #=====================================================
 class BandePassante(productbase.ProductBase):
-	type_bande_passante =models.CharField("TYPE BANDE PASSANTE", max_length=20, choices= TYPE_BANDE_PASSANTE)
+	type_bande_passante =models.CharField("TYPE DE BANDE PASSANTE", max_length=20, choices= TYPE_BANDE_PASSANTE)
 	debit_download =models.CharField("DEBIT EN DOWNLOAD", max_length=20, choices= DEBIT_DOWNLOAD)
 	debit_upload =models.CharField("DEBIT EN UPLOAD", max_length=20, choices= DEBIT_UPLOAD)
-	frais_installation =models.CharField("FRAIS INSTALLATION", max_length=20, choices= FRAIS_INSTALLATION)
+	frais_installation =models.CharField("FRAIS D'INSTALLATION", max_length=20, choices= FRAIS_INSTALLATION)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_MOIS)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_MOIS)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -319,9 +319,9 @@ class BandePassante(productbase.ProductBase):
 # 23. HEBERGEMENT SITE WEB
 #=====================================================
 class HebergementSiteWeb(productbase.ProductBase):
-	type_hebergement=models.CharField("TYPE HEBERGEMENT", max_length=50, choices= TYPE_HEBERGEMENT)
+	type_hebergement=models.CharField("TYPE D'HEBERGEMENT", max_length=50, choices= TYPE_HEBERGEMENT)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_AN)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_AN)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -334,7 +334,7 @@ class Tablette(productbase.ProductBase):
 	systeme_exploitation=models.CharField("SYSTEME D'EXPLOITATION", max_length=100, choices= SYSTEME_EXPLOITATION)
 	memoire_tablette=models.CharField("MEMOIRE", max_length=20, choices= CAPACITE_MEMOIRE)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -344,7 +344,7 @@ class Tablette(productbase.ProductBase):
 class CahierCharges(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -354,7 +354,7 @@ class CahierCharges(productbase.ProductBase):
 class Helpdesk(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_HEURE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_HEURE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -364,7 +364,7 @@ class Helpdesk(productbase.ProductBase):
 class InstallationLogicielServeur(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -375,7 +375,7 @@ class InstallationLogicielServeur(productbase.ProductBase):
 class IntegrationCustomisationStandard(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_MODULE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -386,7 +386,7 @@ class IntegrationCustomisationStandard(productbase.ProductBase):
 class MaintenanceBackup(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_MOIS)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_MOIS)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -397,7 +397,7 @@ class MaintenanceBackup(productbase.ProductBase):
 class NumerisationDonnees(productbase.ProductBase):
 
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_PAGE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PAGE)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -410,7 +410,7 @@ class CreationSiteWeb(productbase.ProductBase):
 	#les attributs
 	type_site_web  = models.CharField("TYPE DE SITE",max_length=100, choices=TYPE_SITE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -423,7 +423,7 @@ class InstallationReseauInformatique(productbase.ProductBase):
 
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_POURC_DEVIS)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_POURC_DEVIS)
 
 	#ordonner les produits
 	class Meta:
@@ -439,7 +439,7 @@ class InstallationReseauTelephonique(productbase.ProductBase):
 	call_manager  = models.CharField("CALL MANAGER",max_length=100, choices=CALL_MANAGER)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE_USD_POSTE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_POSTE)
 
 	#ordonner les produits
 	class Meta:
@@ -450,9 +450,9 @@ class InstallationReseauTelephonique(productbase.ProductBase):
 
 class Adaptateur(productbase.ProductBase):
 	#les attributs
-	type_adaptateur= models.CharField("TYPE ADAPTATEUR ",max_length=100, choices=TYPE_ADAPTATEUR)
+	type_adaptateur= models.CharField("TYPE D'ADAPTATEUR ",max_length=100, choices=TYPE_ADAPTATEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -463,10 +463,10 @@ class Adaptateur(productbase.ProductBase):
 
 class AntenneWifi(productbase.ProductBase):
 	#les attributs
-	marque_antenne= models.CharField("MARQUE ANTENNE",max_length=100, choices=MARQUE_ANTENNE)
-	modele_antenne= models.CharField("MODELE ANTENNE ",max_length=100, choices=MODELE_ANTENNE)
+	marque_antenne= models.CharField("MARQUE",max_length=100, choices=MARQUE_ANTENNE)
+	modele_antenne= models.CharField("MODELE ",max_length=100, choices=MODELE_ANTENNE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -479,10 +479,10 @@ class AntenneWifi(productbase.ProductBase):
 
 class AutocollantCodeBar(productbase.ProductBase):
 	#les attributs
-	dimension_autocollant= models.CharField("DIMENSION AUTOCOLLANT",max_length=100, choices=DIMENSION_AUTOCOLLANT)
-	quantite_autocollant= models.CharField("QUANTITE AUTOCOLLANT",max_length=100, choices=QUANTITE_AUTOCOLLANT)
+	dimension_autocollant= models.CharField("DIMENSION",max_length=100, choices=DIMENSION_AUTOCOLLANT)
+	quantite_autocollant= models.CharField("QUANTITE",max_length=100, choices=QUANTITE_AUTOCOLLANT)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -495,10 +495,10 @@ class AutocollantCodeBar(productbase.ProductBase):
 
 class BatterieLaptop(productbase.ProductBase):
 	#les attributs
-	marque_laptop= models.CharField("MARQUE LAPTOP",max_length=100, choices=MARQUE_LAPTOP)
-	modeles_laptop= models.CharField("MODELE LAPTOP",max_length=100, choices=MODELE_LAPTOP)
+	marque_laptop= models.CharField("MARQUE DU LAPTOP",max_length=100, choices=MARQUE_LAPTOP)
+	modeles_laptop= models.CharField("MODELE DU LAPTOP",max_length=100, choices=MODELE_LAPTOP)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -512,7 +512,7 @@ class BoitierDisqueDur(productbase.ProductBase):
 	#les attributs
 	type_disque_dur= models.CharField("TYPE DE DISQUE",max_length=100, choices=TYPE_DISQUE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -525,9 +525,9 @@ class BoitierDisqueDur(productbase.ProductBase):
 
 class Carte(productbase.ProductBase):
 	#les attributs
-	type_carte= models.CharField("TYPE CARTE",max_length=100, choices=TYPE_CARTE)
+	type_carte= models.CharField("TYPE DE CARTE",max_length=100, choices=TYPE_CARTE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -541,10 +541,10 @@ class Carte(productbase.ProductBase):
 class ChargeurLaptop(productbase.ProductBase):
 	#les attributs
 	marque_appareil= models.CharField("MARQUE",max_length=100, choices=MARQUE_CHARGEUR)
-	tension= models.CharField("TENSION(VOLT)",max_length=100, choices=TENSION_CHARGEUR)
-	intensite= models.CharField("INTENSITE(AMPERE)",max_length=100, choices=INTENSITE_CHARGEUR)
+	tension= models.CharField("TENSION",max_length=100, choices=TENSION_CHARGEUR)
+	intensite= models.CharField("INTENSITE",max_length=100, choices=INTENSITE_CHARGEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -556,9 +556,9 @@ class ChargeurLaptop(productbase.ProductBase):
 
 class Connecteur(productbase.ProductBase):
 	#les attributs
-	type_connecteur= models.CharField("TYPE CONNECTEUR",max_length=100, choices=TYPE_CONNECTEUR)
+	type_connecteur= models.CharField("TYPE DE CONNECTEUR",max_length=100, choices=TYPE_CONNECTEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -572,10 +572,10 @@ class Connecteur(productbase.ProductBase):
 class MemoireRam(productbase.ProductBase):
 	#les attributs
 	type_ordinateur= models.CharField("TYPE D'ORDINATEUR",max_length=100, choices=TYPE_ORDINATEUR)
-	type_memoire= models.CharField("TYPE MEMOIRE",max_length=100, choices=TYPE_MEMOIRE_RAM)
+	type_memoire= models.CharField("TYPE DE MEMOIRE",max_length=100, choices=TYPE_MEMOIRE_RAM)
 	capacite_memoire= models.CharField("CAPACITE MEMOIRE",max_length=100, choices=CAPACITE_MEMOIRE_RAM)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -587,9 +587,9 @@ class MemoireRam(productbase.ProductBase):
 
 class PatchCord(productbase.ProductBase):
 	#les attributs
-	longueur= models.CharField("LONGUEUR PATCH CORD",max_length=100, choices=LONGUEUR_PATCHCORD)
+	longueur= models.CharField("LONGUEUR",max_length=100, choices=LONGUEUR_PATCHCORD)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -602,10 +602,10 @@ class PatchCord(productbase.ProductBase):
 
 class PatchPanel(productbase.ProductBase):
 	#les attributs
-	type_patch_panel= models.CharField("TYPE PATCH PANEL",max_length=100, choices=TYPE_PATCHPANEL)
+	type_patch_panel= models.CharField("TYPE DE PATCH PANEL",max_length=100, choices=TYPE_PATCHPANEL)
 	nombre_port= models.CharField("NOMBRE DE PORT",max_length=100, choices=NOMBRE_PORT_PATCHPANEL)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -620,7 +620,7 @@ class ProtectionSurtensions(productbase.ProductBase):
 	#les attributs
 	marque= models.CharField("MARQUE",max_length=100, choices=MARQUE_SURTENSIONS)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -637,7 +637,7 @@ class Rack(productbase.ProductBase):
 	nombre_unites= models.CharField("UNITE",max_length=100, choices=UNITE_RACK)
 	dimension= models.CharField("DIMENSION",max_length=100, choices=DIMENSION_RACK)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -653,7 +653,7 @@ class RepartiteurHdmi(productbase.ProductBase):
 	#les attributs
 	entree_sortie= models.CharField("ENTRE ET SORTIE",max_length=100, choices=ENTRE_SORTIE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -665,9 +665,9 @@ class RepartiteurHdmi(productbase.ProductBase):
 #=====================================================
 class Webcam(productbase.ProductBase):
 	#les attributs
-	type_webcam= models.CharField("TYPE WEBCAM",max_length=100, choices=TYPE_WEBCAM)
+	type_webcam= models.CharField("TYPE",max_length=100, choices=TYPE_WEBCAM)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -680,11 +680,11 @@ class Webcam(productbase.ProductBase):
 
 class BouteilleEncre(productbase.ProductBase):
 	#les attributs
-	marque_bouteille_encre= models.CharField("MARQUE D'ENCRE",max_length=100, choices=MARQUE_ENCRE)
+	marque_bouteille_encre= models.CharField("MARQUE DE L'ENCRE",max_length=100, choices=MARQUE_ENCRE)
 	couleur= models.CharField("COULEUR",max_length=100, choices=COULEUR)
 	nombre_pages_max= models.CharField("NOMBRE DE PAGE MAX",max_length=100, choices=NOMBRE_PAGE_MAX)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -698,9 +698,9 @@ class BouteilleEncre(productbase.ProductBase):
 
 class Coupleur(productbase.ProductBase):
 	#les attributs
-	type_coupleur= models.CharField("TYPE DE COUPLEUR",max_length=100, choices=TYPE_COUPLEUR)
+	type_coupleur= models.CharField("TYPE",max_length=100, choices=TYPE_COUPLEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -715,7 +715,7 @@ class DistributeurElectrique(productbase.ProductBase):
 	#les attributs
 	nombre_prise= models.CharField("NOMBRE DE PRISE",max_length=100, choices=NOMBRE_PRISE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -728,9 +728,9 @@ class DistributeurElectrique(productbase.ProductBase):
 
 class HubUsb(productbase.ProductBase):
 	#les attributs
-	type_hub= models.CharField("TYPE HUB",max_length=100, choices=TYPE_HUB)
+	type_hub= models.CharField("TYPE DE HUB",max_length=100, choices=TYPE_HUB)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -746,7 +746,7 @@ class LecteurDvd(productbase.ProductBase):
 	#les attributs
 	taille_ecran= models.CharField("TAILLE DE L'ECRAN",max_length=100, choices=TAILLE_ECRAN)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -761,7 +761,7 @@ class Graveur(productbase.ProductBase):
 	#les attributs
 	Type_graveur= models.CharField("TYPE DE GRAVEUR",max_length=100, choices=TYPE_GRAVEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -773,9 +773,9 @@ class Graveur(productbase.ProductBase):
 
 class OutilSertissage(productbase.ProductBase):
 	#les attributs
-	modele_outil_sertissage= models.CharField("MODELE OUTIL DE SERTISSAGE",max_length=100, choices=MODELE_SERTISSAGE)
+	modele_outil_sertissage= models.CharField("MODELE D'OUTIL DE SERTISSAGE",max_length=100, choices=MODELE_SERTISSAGE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -789,9 +789,9 @@ class OutilSertissage(productbase.ProductBase):
 class PriseWifi(productbase.ProductBase):
 	#les attributs
 	marque= models.CharField("MARQUE",max_length=100, choices=MARQUE_PRISE_WIFI)
-	modele_prise= models.CharField("MODEL DE PRISE",max_length=100, choices=MODELE_PRISE)
+	modele_prise= models.CharField("MODEL",max_length=100, choices=MODELE_PRISE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -805,10 +805,10 @@ class PriseWifi(productbase.ProductBase):
 
 class Processeur(productbase.ProductBase):
 	#les attributs
-	marque_processeur= models.CharField("MARQUE PROCESSEUR",max_length=100, choices=MARQUE_PROCESSEUR)
-	modele_processeur= models.CharField("MODEL PROCESSEUR",max_length=100, choices=MODELE_PROCESSEUR)
+	marque_processeur= models.CharField("MARQUE",max_length=100, choices=MARQUE_PROCESSEUR)
+	modele_processeur= models.CharField("MODEL",max_length=100, choices=MODELE_PROCESSEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -823,7 +823,7 @@ class Processeur(productbase.ProductBase):
 class RepartiteurAdsl(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -835,10 +835,10 @@ class RepartiteurAdsl(productbase.ProductBase):
 
 class CameraCloud(productbase.ProductBase):
 	#les attributs
-	marque = models.CharField("MARQUE DE CAMERA CLOUD",max_length=100, choices=MARQUE_CAMERA_CLOUD)
-	modele = models.CharField("MODELE DE CAMERA CLOUD",max_length=100, choices=MODELE_CAMERA_CLOUD)
+	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_CAMERA_CLOUD)
+	modele = models.CharField("MODELE",max_length=100, choices=MODELE_CAMERA_CLOUD)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -851,11 +851,11 @@ class CameraCloud(productbase.ProductBase):
 
 class Moniteur(productbase.ProductBase):
 	#les attributs
-	marque = models.CharField("MARQUE DU MONITEUR",max_length=100, choices=MARQUE_MONITEUR)
-	type_ecran = models.CharField("TYPE D'ECRAN",max_length=100, choices=TYPE_MONITEUR)
-	taille_ecran = models.CharField("TAILLE DE L'ECRAN",max_length=100, choices=TAILLE_MONITEUR)
+	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_MONITEUR)
+	type_ecran = models.CharField("TYPE",max_length=100, choices=TYPE_MONITEUR)
+	taille_ecran = models.CharField("TAILLE",max_length=100, choices=TAILLE_MONITEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -868,10 +868,10 @@ class Moniteur(productbase.ProductBase):
 
 class RubanImpression(productbase.ProductBase):
 	#les attributs
-	modele = models.CharField("MODELE RUBAN",max_length=100, choices=MODELE_RUBAN)
-	longueur = models.CharField("LONGUEUR RUBAN",max_length=100, choices=LONGUEUR_RUBAN)
+	modele = models.CharField("MODELE",max_length=100, choices=MODELE_RUBAN)
+	longueur = models.CharField("LONGUEUR",max_length=100, choices=LONGUEUR_RUBAN)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -884,11 +884,11 @@ class RubanImpression(productbase.ProductBase):
 
 class RubanPapier(productbase.ProductBase):
 	#les attributs
-	marque = models.CharField("MARQUE RUBAN",max_length=100, choices=MARQUE_RUBAN)
-	modele = models.CharField("MODELE RUBAN",max_length=100, choices=MODELE_RUBAN)
-	numero = models.CharField("LONGUEUR RUBAN",max_length=100, choices=NUMERO_RUBAN)
+	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_RUBAN)
+	modele = models.CharField("MODELE",max_length=100, choices=MODELE_RUBAN)
+	numero = models.CharField("LONGUEUR",max_length=100, choices=NUMERO_RUBAN)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -901,10 +901,10 @@ class RubanPapier(productbase.ProductBase):
 
 class RubanPourEtiqueteuse(productbase.ProductBase):
 	#les attributs
-	marque = models.CharField("MARQUE RUBAN",max_length=100, choices=MARQUE_RUBAN)
-	modele = models.CharField("MODELE RUBAN",max_length=100, choices=MODELE_RUBAN_ETIQ)
+	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_RUBAN)
+	modele = models.CharField("MODELE",max_length=100, choices=MODELE_RUBAN_ETIQ)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -917,10 +917,10 @@ class RubanPourEtiqueteuse(productbase.ProductBase):
 
 class SwitchHDMI(productbase.ProductBase):
 	#les attributs
-	marque = models.CharField("MARQUE SWITCH HDMI",max_length=100, choices=MARQUE_SWITCH_HDMI)
+	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_SWITCH_HDMI)
 	nombre_port = models.CharField("NOMBRE DE PORT",max_length=100, choices=NOMBRE_PORT_HDMI)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -937,7 +937,7 @@ class SwitchKVM(productbase.ProductBase):
 	nombre_pc = models.CharField("NOMBRE DE PC",max_length=100, choices=NOMBRE_PC)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -950,9 +950,9 @@ class SwitchKVM(productbase.ProductBase):
 
 class TableauBlanc(productbase.ProductBase):
 	#les attributs
-	dimension = models.CharField("DIMENSION EN CENTIMETRE",max_length=100, choices=DIMENSION_TABLEAU)
+	dimension = models.CharField("DIMENSION",max_length=100, choices=DIMENSION_TABLEAU)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -966,10 +966,10 @@ class TableauBlanc(productbase.ProductBase):
 
 class Tambour(productbase.ProductBase):
 	#les attributs
-	marque = models.CharField("MARQUE DU TAMBOUR",max_length=100, choices=MARQUE_TAMBOUR)
-	numero = models.CharField("NUMERO TAMBOUR",max_length=100, choices=NUM_TAMBOUR)
+	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_TAMBOUR)
+	numero = models.CharField("NUMERO",max_length=100, choices=NUM_TAMBOUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -984,7 +984,7 @@ class TesteurDeCable(productbase.ProductBase):
 	#les attributs
 	type_testeur = models.CharField("TYPE DE TESTEUR",max_length=100, choices=TYPE_TESTEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1000,7 +1000,7 @@ class TrousseAOutil(productbase.ProductBase):
 	#les attributs
 	nombre_d_outil = models.CharField("NOMBRE D'OUTIL",max_length=100, choices=NBRE_OUTIL)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1017,7 +1017,7 @@ class VentilateurCarteMere(productbase.ProductBase):
 	marque = models.CharField("MARQUE DE VENTILATEUR",max_length=100, choices=MARQUE_VENTIL)
 	type_socket = models.CharField("NOMBRE DE SOCKET",max_length=100, choices=TYPE_SOCKET)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1031,7 +1031,7 @@ class VentilateurCarteMere(productbase.ProductBase):
 class BatterieCmos(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1048,7 +1048,7 @@ class CableReseau(productbase.ProductBase):
 	longueur= models.CharField("LONGUEUR",max_length=100, choices=LONGUEUR_RX)
 	marque_cable_reseau= models.CharField("MARQUE",max_length=100, choices=MARQUE_RX)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1060,10 +1060,10 @@ class CableReseau(productbase.ProductBase):
 
 class Camera(productbase.ProductBase):
 	#les attributs
-	marque_camera= models.CharField("MARQUE CAMERA",max_length=100, choices=MARQUE_CAMERA)
-	modele_camera= models.CharField("MODELE CAMERA",max_length=100, choices=MODELE_CAMERA)
+	marque_camera= models.CharField("MARQUE",max_length=100, choices=MARQUE_CAMERA)
+	modele_camera= models.CharField("MODELE",max_length=100, choices=MODELE_CAMERA)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1075,9 +1075,9 @@ class Camera(productbase.ProductBase):
 
 class CasqueAvecMicro(productbase.ProductBase):
 	#les attributs
-	marque_casque_micro= models.CharField("MARQUE CASQUE",max_length=100, choices=MARQUE_CASQUE_MICRO)
+	marque_casque_micro= models.CharField("MARQUE",max_length=100, choices=MARQUE_CASQUE_MICRO)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1088,9 +1088,9 @@ class CasqueAvecMicro(productbase.ProductBase):
 
 class CasqueMusique(productbase.ProductBase):
 	#les attributs
-	marque_casque_musique= models.CharField("MARQUE CASQUE",max_length=100, choices=MARQUE_CASQUE_MUSIQUE)
+	marque_casque_musique= models.CharField("MARQUE",max_length=100, choices=MARQUE_CASQUE_MUSIQUE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1102,7 +1102,7 @@ class CasqueMusique(productbase.ProductBase):
 class CasqueMusiqueHautParleur(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1110,15 +1110,15 @@ class CasqueMusiqueHautParleur(productbase.ProductBase):
 
 
 #=============== 23-05-2018 ==========================
-#COMPTEUR DE MONNAIE
+#COMPTEUSE DE MONNAIE
 #=====================================================
 
 class CompteurMonnaie(productbase.ProductBase):
 	#les attributs
-	marque_compteur_monnaie= models.CharField("MARQUE COMPTEUR",max_length=100, choices=MARQUE_COMPTEUR_MONNAIE)
-	model_compteur_monnaie= models.CharField("MODELE COMPTEUR",max_length=100, choices=MODEL_COMPTEUR_MONNAIE)
+	marque_compteur_monnaie= models.CharField("MARQUE",max_length=100, choices=MARQUE_COMPTEUR_MONNAIE)
+	model_compteur_monnaie= models.CharField("MODELE",max_length=100, choices=MODEL_COMPTEUR_MONNAIE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1131,7 +1131,7 @@ class CompteurMonnaie(productbase.ProductBase):
 class EcouteurMicro(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1143,9 +1143,9 @@ class EcouteurMicro(productbase.ProductBase):
 
 class EcranProjection(productbase.ProductBase):
 	#les attributs
-	dimension= models.CharField("DIMENSION ECRAN PROJECTION",max_length=100, choices=DIMENSION_ECRAN_PROJECTION)
+	dimension= models.CharField("DIMENSION",max_length=100, choices=DIMENSION_ECRAN_PROJECTION)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1159,10 +1159,10 @@ class EcranProjection(productbase.ProductBase):
 
 class EquipementCpe(productbase.ProductBase):
 	#les attributs
-	marque_cpe= models.CharField("MARQUE CPE",max_length=100, choices=MARQUE_CPE)
-	modele_cpe= models.CharField("MODELE_CPE",max_length=100, choices=MODELE_CPE)
+	marque_cpe= models.CharField("MARQUE",max_length=100, choices=MARQUE_CPE)
+	modele_cpe= models.CharField("MODELE",max_length=100, choices=MODELE_CPE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1174,9 +1174,9 @@ class EquipementCpe(productbase.ProductBase):
 
 class HautParleurUsb(productbase.ProductBase):
 	#les attributs
-	marque_haut_parleur= models.CharField("MARQUE HAUT PARLEUR",max_length=100, choices=MARQUE_HAUT_PARLEUR)
+	marque_haut_parleur= models.CharField("MARQUE",max_length=100, choices=MARQUE_HAUT_PARLEUR)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1190,9 +1190,9 @@ class HautParleurUsb(productbase.ProductBase):
 class ImprimanteEtiquette(productbase.ProductBase):
 	#les attributs
 	marque= models.CharField("MARQUE",max_length=100, choices=MARQUE_IMPRIMANTE_ETIQUETTE)
-	modele_imprimante_etiquette= models.CharField("MODELE IMPRIMANTE",max_length=100, choices=MODELE_IMPRIMANTE_ETIQUETTE)
+	modele_imprimante_etiquette= models.CharField("MODELE",max_length=100, choices=MODELE_IMPRIMANTE_ETIQUETTE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1204,9 +1204,9 @@ class ImprimanteEtiquette(productbase.ProductBase):
 
 class KitAccessoiresSplit(productbase.ProductBase):
 	#les attributs
-	puissance_split= models.CharField("PUISSANCE SPLIT",max_length=100, choices=PUISSANCE_SPLIT_KIT)
+	puissance_split= models.CharField("PUISSANCE DU SPLIT",max_length=100, choices=PUISSANCE_SPLIT_KIT)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1220,7 +1220,7 @@ class KitAccessoiresSplit(productbase.ProductBase):
 class MousseNettoyante(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1233,7 +1233,7 @@ class MousseNettoyante(productbase.ProductBase):
 class StandLaptop(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1249,7 +1249,7 @@ class StandLaptop(productbase.ProductBase):
 class TapisSouris(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1263,7 +1263,7 @@ class TapisSouris(productbase.ProductBase):
 class BlocDAlimentationPourPC(productbase.ProductBase):
 	#les attributs
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1278,7 +1278,7 @@ class ClavierEtSourisSansFil(productbase.ProductBase):
 	#les attributs
 	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_CLAVIER_SOURIS)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1294,7 +1294,7 @@ class ClavierSansFil(productbase.ProductBase):
 	#les attributs
 	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_CLAVIER_SOURIS)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1310,7 +1310,7 @@ class ImprimantePhoto(productbase.ProductBase):
 	marque_imprimante = models.CharField("MARQUE DE L'IMPRIMANTE",max_length=100, choices=MARQUE_IMPR_PHOTO)
 	modele_imprimante = models.CharField("MODELE DE L'IMPRIMANTE",max_length=100, choices=MODELE_IMPR_PHOTO)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1326,7 +1326,7 @@ class KitDeNettoyageImprimante(productbase.ProductBase):
 	#les attributs
 	modele_imprimante = models.CharField("MODELE DE L'IMPRIMANTE",max_length=100, choices=MODELE_KIT_NET)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
@@ -1342,7 +1342,7 @@ class EquipementBluetoothPortable(productbase.ProductBase):
 	#les attributs
 	type_appareil = models.CharField("TYPE D'APPAREIL",max_length=100, choices=TYPE_APP_BT)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
-	units = models.CharField("UNITÉS",max_length=50, choices=UNITE)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 
 	#ordonner les produits
 	class Meta:
