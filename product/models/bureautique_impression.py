@@ -6,7 +6,7 @@ from utils.unite_prix import *
 # 1. Carte de service
 #=====================================================
 class CarteService(productbase.ProductBase):
-	face_impression = models.CharField("FACE A IMPRIMER",max_length=50, choices=FACE_IMPRIMEE)
+	face_impression = models.CharField("FACE A IMPRIMER",max_length=50, choices=FACE_IMPRIMEE_CARTE_SERVICE)
 	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_CARTE_SERVICE)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
@@ -19,7 +19,7 @@ class CarteService(productbase.ProductBase):
 #=====================================================
 class CarteVisite(productbase.ProductBase):
 
-	face_impression = models.CharField("FACE A IMPRIMER",max_length=50, choices=FACE_IMPRIMEE)
+	face_impression = models.CharField("FACE A IMPRIMER",max_length=50, choices=FACE_IMPRIMEE_CARTE_VISITE)
 	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_CARTE_VISITE)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
@@ -42,7 +42,7 @@ class Stylo(productbase.ProductBase):
 # 5. T-shirt blanc
 #=====================================================
 class TShirtBlanc(productbase.ProductBase):
-	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE)
+	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_TSHIRT)
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
 #ordonner les produits
@@ -66,8 +66,8 @@ class TShirt(productbase.ProductBase):
 #=====================================================
 class Depliant(productbase.ProductBase):
 
-	format_papier = models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER)
-	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_4)
+	format_papier = models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER_DEPLIANT)
+	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_DEPLIANT)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
@@ -78,7 +78,7 @@ class Depliant(productbase.ProductBase):
 # 8. Pin's
 #=====================================================
 class Pins(productbase.ProductBase):
-	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_5)
+	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_PINS)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
@@ -91,7 +91,7 @@ class Pins(productbase.ProductBase):
 class Affiche(productbase.ProductBase):
 
 
-	format_papier = models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER)
+	format_papier = models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER_AFFICHE)
 	quantite =models.CharField("QUANTITE",max_length=50, choices=QUANTITE_AFFICHE)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
@@ -115,7 +115,7 @@ class PorteClef(productbase.ProductBase):
 # 12. LANIERE
 #=====================================================
 class Laniere(productbase.ProductBase):
-	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_1)
+	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_LANIERE)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
@@ -142,8 +142,8 @@ class Casquette(productbase.ProductBase):
 #=====================================================
 class Flyer(productbase.ProductBase):
 
-	face_impression = models.CharField("FACE A IMPRIMER",max_length=50, choices=FACE_IMPRIMEE)
-	format_papier = models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER)
+	face_impression = models.CharField("FACE A IMPRIMER",max_length=50, choices=FACE_IMPRIMEE_FLYERS)
+	format_papier = models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER_FLYERS)
 	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE_FLYER)
 
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
@@ -154,16 +154,7 @@ class Flyer(productbase.ProductBase):
 #=====================================================
 # 15. Carnets
 #=====================================================
-class Carnet(productbase.ProductBase):
 
-	format_papier =models.CharField("FORMAT",max_length=50, choices=FORMAT_PAPIER)
-	quantite = models.CharField("QUANTITE",max_length=50, choices=QUANTITE)
-
-	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
-	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
-#ordonner les produits
-	class Meta:
-		ordering = ['prix']
 #=====================================================
 # 16. Poster
 #=====================================================
@@ -235,7 +226,7 @@ class AutocollantVinyleAdhesif(productbase.ProductBase):
 #=====================================================
 class BackDrops(productbase.ProductBase):
 
-	dimension = models.CharField("DIMENSION", max_length=50, choices=DIMENSION_2)
+	dimension = models.CharField("DIMENSION", max_length=50, choices=DIMENSION_BACKDROP)
 	quantite = models.CharField("QUANTITE", max_length=50, choices=QUANTITE_BACKDROP)
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
@@ -249,7 +240,7 @@ class BackDrops(productbase.ProductBase):
 # 23. IMPRESSION BANDEROLE
 #=====================================================
 class ImpressionBanderole(productbase.ProductBase):
-	type_support = models.CharField("TYPE SUPPORT", max_length=50, choices=TYPE_SUPPORT)
+	type_support = models.CharField("TYPE SUPPORT", max_length=50, choices=TYPE_SUPPORT_BANDEROLE)
 	quantite = models.CharField("TYPE SUPPORT", max_length=50, choices=QUANTITE_BANDEROLE)
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_M2)
@@ -283,7 +274,7 @@ class Sachet(productbase.ProductBase):
 # 26. ROLL UP
 #=====================================================
 class RollUp(productbase.ProductBase):
-	dimension = models.CharField("DIMENSION",max_length=50, choices= DIMENSION_3)
+	dimension = models.CharField("DIMENSION",max_length=50, choices= DIMENSION_ROLLUP)
 	quantite = models.CharField("QUANTITE",max_length=50, choices= QUANTITE_ROLLUP)
 	prix = models.DecimalField("PRIX",max_digits=12, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
@@ -361,7 +352,7 @@ class EcritureScenario(productbase.ProductBase):
 # 5. POSTPRODUCTION
 #=====================================================
 class Postproduction(productbase.ProductBase):
-	nombre_minute = models.CharField("DUREE DE LA PRODUCTION(MINUTE)", max_length=20, choices= NOMBRE_MINUTE_POST_PRODUCTION)
+	nombre_minute = models.CharField("DUREE DE LA PRODUCTION (PAR MINUTE)", max_length=20, choices= NOMBRE_MINUTE_POST_PRODUCTION)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE", max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -373,7 +364,7 @@ class Postproduction(productbase.ProductBase):
 # 5. PRODUCTION ET TOURNAGE
 #=====================================================
 class ProductionTournage(productbase.ProductBase):
-	nombre_minute = models.CharField("DUREE DU TOURNAGE(MINUTE)", max_length=20, choices= NOMBRE_MINUTE_PRODUCTION_TOURNAGE)
+	nombre_minute = models.CharField("DUREE DU TOURNAGE (PAR MINUTE)", max_length=20, choices= NOMBRE_MINUTE_PRODUCTION_TOURNAGE)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE", max_length=50, choices=UNITE)
 #ordonner les produits
@@ -401,7 +392,7 @@ class InsertionPublicitaire(productbase.ProductBase):
 	type_insertion =models.CharField("TYPE INSERTION", max_length=20, choices=TYPE_ABONNEMENT)
 	periodicite_parution =models.CharField("PERIODICITÉ DE PARUTION",max_length=20, choices= PERIODICITE_PARUTION)
 	tirage =models.CharField("TIRAGE", max_length=20, choices=TIRAGE)
-	dimension =models.CharField("DIMENSION INSERTION", max_length=100, choices=DIMENSION)
+	dimension =models.CharField("DIMENSION INSERTION", max_length=100, choices=DIMENSION_INSERTION_PUB)
 
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE", max_length=50, choices=UNITE)
@@ -426,7 +417,7 @@ class ConceptionPageMagazine(productbase.ProductBase):
 class DiffusionSpotPublicitaire(productbase.ProductBase):
 
 	#les attributs
-	periode  = models.CharField("PERIODE",max_length=100, choices=PERIODE)
+	periode  = models.CharField("PERIODE",max_length=100, choices=PERIODE_SPOT)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_SECONDE)
@@ -578,7 +569,7 @@ class RetransmissionDirect(productbase.ProductBase):
 	class Meta:
 		ordering = ['prix']
 
-#=====================================================
+#=====================================================https://www.pythonanywhere.com/user/approeco/files/home/approeco/approeco/approeco/product/models
 #  BRODERIE SUR TSHIRT  ==> COMMUNICATION EDITION
 #=====================================================
 
@@ -629,7 +620,7 @@ class BroderieEcussons(productbase.ProductBase):
 class ImpressionTasse(productbase.ProductBase):
 
 	#les attributs
-	quantite = models.CharField("SUPPORT",max_length=100, choices=QUANTITE)
+	quantite = models.CharField("SUPPORT",max_length=100, choices=QUANTITE_TASSE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
 
@@ -644,7 +635,7 @@ class ImpressionTasse(productbase.ProductBase):
 class ImpressionSurPapierPhoto(productbase.ProductBase):
 
 	#les attributs
-	quantite = models.CharField("SUPPORT",max_length=100, choices=QUANTITE_3)
+	quantite = models.CharField("SUPPORT",max_length=100, choices=QUANTITE_PHOTO)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_M2)
 
@@ -737,8 +728,8 @@ class Attache(productbase.ProductBase):
 	#les attributs
 	taille_attache = models.CharField("TAILLE DE L'ATTACHE",max_length=100, choices=TAILLE_ATTACHE)
 
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
-	nombre_boite = models.CharField("",max_length=100, choices=QUANTITE_CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ATTACHE)
+	nombre_boite = models.CharField("NOMBRE DE BOITE",max_length=100, choices=QUANTITE_CONTENANT)
 	quantite_par_boite = models.CharField("NOMBRE DE BOITE",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -757,7 +748,7 @@ class Attache(productbase.ProductBase):
 class Baguette(productbase.ProductBase):
 
 	#les attributs
-	taille_baguette = models.CharField("TAILLE ANNEAU",max_length=100, choices=TAILLE_BAGUETTE)
+	taille_baguette = models.CharField("TAILLE BAGUETTE",max_length=100, choices=TAILLE_BAGUETTE)
 
 	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_CONTENANT)
@@ -777,7 +768,7 @@ class Baguette(productbase.ProductBase):
 class BacACourrier(productbase.ProductBase):
 
 	#les attributs
-	matiere = models.CharField("MATIERE",max_length=100, choices=MATIERE)
+	matiere = models.CharField("MATIERE",max_length=100, choices=MATIERE_BAC_PAPIER)
 	nombre_bac = models.CharField("NOMBRE DE BAC",max_length=100, choices=NOMBRE_BAC)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE)
@@ -947,7 +938,7 @@ class Carbonne(productbase.ProductBase):
 
 	#les attributs
 	type_carbonne = models.CharField("TYPE DE CARBONNE",max_length=100,blank=True, null=True, choices=TYPE_CARBONNE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_CRABONNE)
 	quantite_par_paquet = models.CharField("QUANTITE",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -967,8 +958,6 @@ class CarnetDeRecu(productbase.ProductBase):
 
 	#les attributs
 
-
-
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
 
@@ -985,7 +974,7 @@ class RoseAReliure(productbase.ProductBase):
 
 	#les attributs
 	format_papeterie = models.CharField("FORMAT",max_length=100, choices=FORMAT_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ROSE_RELIURE)
 	quantite_par_paquet = models.CharField("QUANTITE",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
@@ -1124,7 +1113,7 @@ class Ecritoire(productbase.ProductBase):
 class Elastiques(productbase.ProductBase):
 
 	#les attributs
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ELASTIQUES)
 	quantite = models.CharField("QUANTITE EN GRAMMES",max_length=100, choices=QUANTITE_CONTENANT)
 
 
@@ -1144,7 +1133,7 @@ class Enveloppe(productbase.ProductBase):
 
 	#les attributs
 	format_enveloppe = models.CharField("FORMAT",max_length=100, choices=FORMAT_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ENVELOPPES)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1164,7 +1153,7 @@ class Etui(productbase.ProductBase):
 
 	#les attributs
 	format_etui = models.CharField("FORMAT",max_length=100, choices=FORMAT_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_ETUI)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1221,7 +1210,7 @@ class Gomme(productbase.ProductBase):
 class Intercalaire(productbase.ProductBase):
 
 	#les attributs
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_INTERCALAIRE)
 	quantite_par_jeu = models.CharField("QUANTITE PAR JEU",max_length=100, choices=QUANTITE_PAR_JEU)
 
 
@@ -1261,7 +1250,7 @@ class Marqueur(productbase.ProductBase):
 
 	#les attributs
 	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_MARQUEUR)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1284,7 +1273,7 @@ class Papier(productbase.ProductBase):
 	#les attributs
 	type_papier = models.CharField("TYPE PAPIER",max_length=100, choices=TYPE_PAPIER)
 	format_papier = models.CharField("FORMAT",max_length=100,blank=True,null=True, choices=FORMAT_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_PAPIER)
 	quantite_par_contenant = models.CharField("QUANTITE PAR CONTENANT",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1324,7 +1313,7 @@ class Pile(productbase.ProductBase):
 	#les attributs
 
 	format_pile = models.CharField("FORMAT DE LA PILE",max_length=100, choices=FORMAT_PILE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_PILE)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1362,7 +1351,7 @@ class PostIt(productbase.ProductBase):
 	#les attributs
 
 	type_postit = models.CharField("TYPE DE POST-IT",max_length=100, choices=TYPE_POSTIT)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_POSTIT)
 	dimension_postit = models.CharField("DIMENSION EN MILLIMETRE",max_length=100, choices=DIMENSION_POSTIT)
 
 
@@ -1383,7 +1372,7 @@ class Poubelle(productbase.ProductBase):
 
 	#les attributs
 
-	matiere = models.CharField("MATIERE",max_length=100, choices=MATIERE)
+	matiere = models.CharField("MATIERE",max_length=100, choices=MATIERE_POUBELLE)
 	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_PIECE)
 
@@ -1399,7 +1388,7 @@ class Punaise(productbase.ProductBase):
 
 	#les attributs
 
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_PUNAISE)
 	quantite_par_boite = models.CharField("QUANTITE PAR BOITE",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1516,7 +1505,7 @@ class StyloPapeterie(productbase.ProductBase):
 
 	#les attributs
 	marque = models.CharField("MARQUE",max_length=100, choices=MARQUE_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_STYLO_PAPETERIE)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 
@@ -1538,7 +1527,7 @@ class TransparentAReliure(productbase.ProductBase):
 
 	#les attributs
 	format_transparent = models.CharField("FORMAT",max_length=100, choices=FORMAT_PAPETERIE)
-	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT)
+	contenant = models.CharField("CONTENANT",max_length=100, choices=CONTENANT_TRANSPARENT_RELUIRE)
 	quantite_par_paquet = models.CharField("QUANTITE PAR PAQUET",max_length=100, choices=QUANTITE_PAR_PAQUET)
 
 

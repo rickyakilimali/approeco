@@ -1480,7 +1480,7 @@ class ImpressionTasseResources(resources.ModelResource):
 @admin.register(ImpressionTasse)
 class ImpressionTasseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class =ImpressionTasseResources
-	list_display = ('vendeur','nom','prix','units')
+	list_display = ('vendeur','nom','quantite','prix','units')
 
 #=====================================================
 #  IMPRESSION SUR TASSE
@@ -8118,3 +8118,177 @@ class NettoyageDeChaiseResources(resources.ModelResource):
 class NettoyageDeChaiseAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
 	resource_class = NettoyageDeChaiseResources
 	list_display = ('vendeur','nom','revetement','prix','units')
+
+
+
+#===========05-06-2018================================
+# CONSTRUCTION DE CHARPENTE METALLIQUE
+#=====================================================
+
+class ConstructionDeCharpenteMetalliqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ConstructionDeCharpenteMetallique
+
+@admin.register(ConstructionDeCharpenteMetallique)
+class ConstructionDeCharpenteMetalliqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ConstructionDeCharpenteMetalliqueResources
+	list_display = ('vendeur','nom','prix','units')
+
+#===========05-06-2018================================
+# CONCASSEUR NOIX DE PALME
+#=====================================================
+
+class ConcasseurNoixDePalmeResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  ConcasseurNoixDePalme
+
+@admin.register(ConcasseurNoixDePalme)
+class ConcasseurNoixDePalmeAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = ConcasseurNoixDePalmeResources
+	list_display = ('vendeur','nom','puissance','prix','units')
+
+
+#===========05-06-2018================================
+# MALAXEUR
+#=====================================================
+
+class MalaxeurResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Malaxeur
+
+@admin.register(Malaxeur)
+class MalaxeurAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MalaxeurResources
+	list_display = ('vendeur','nom','puissance','materiaux','prix','units')
+
+
+#===========05-06-2018================================
+# MENUISERIE METALLIQUE
+#=====================================================
+
+class MenuiserieMetalliqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  MenuiserieMetallique
+
+@admin.register(MenuiserieMetallique)
+class MenuiserieMetalliqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MenuiserieMetalliqueResources
+	list_display = ('vendeur','nom','prix','units')
+
+
+#===========05-06-2018================================
+# MOULIN
+#=====================================================
+
+class MoulinResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Moulin
+
+@admin.register(Moulin)
+class MoulinAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = MoulinResources
+	list_display = ('vendeur','nom','puissance','prix','units')
+
+
+#===========05-06-2018================================
+# PATE D'ARACHIDE
+#=====================================================
+
+class PateDArachideResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  PateDArachide
+
+@admin.register(PateDArachide)
+class PateDArachideAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = PateDArachideResources
+	list_display = ('vendeur','nom','conditionnement_arrachide','prix','units')
+
+
+#===========05-06-2018================================
+# PIMENT
+#=====================================================
+
+class PimentDeTableResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  PimentDeTable
+
+@admin.register(PimentDeTable)
+class PimentDeTableAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = PimentDeTableResources
+	list_display = ('vendeur','nom','forme_piment','type_piment','conditionnement_piment','prix','units')
+
+
+
+#===========05-06-2018================================
+# SECHAGE ET EMBALLAGE  DE LEGUMES
+#=====================================================
+
+class SechageEtEmballageDeLegumesResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  SechageEtEmballageDeLegumes
+
+@admin.register(SechageEtEmballageDeLegumes)
+class SechageEtEmballageDeLegumesAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = SechageEtEmballageDeLegumesResources
+	list_display = ('vendeur','nom','poids_avant_sechage','prix','units')
+
+
+
+#===========05-06-2018================================
+# SECHOIR ELECTRIQUE
+#=====================================================
+
+class SechoirElectriqueResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  SechoirElectrique
+
+@admin.register(SechoirElectrique)
+class SechoirElectriqueAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = SechoirElectriqueResources
+	list_display = ('vendeur','nom','volume','puissance','prix','units')
+
+
+
+#===========05-06-2018================================
+# BLANCHISSERIE
+#=====================================================
+
+class BlanchisserieResources(resources.ModelResource):
+	vendeur = fields.Field(column_name='vendeur', attribute='vendeur', widget=ForeignKeyWidget(User, 'username'))
+	category = fields.Field(column_name='category', attribute='category', widget=ForeignKeyWidget(Category, 'slug'))
+
+	class Meta:
+		model =  Blanchisserie
+
+@admin.register(Blanchisserie)
+class BlanchisserieAdmin(ImportExportModelAdmin, ImportExportActionModelAdmin):
+	resource_class = BlanchisserieResources
+	list_display = ('vendeur','nom','prix','units')
+

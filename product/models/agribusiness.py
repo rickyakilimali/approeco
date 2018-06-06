@@ -330,3 +330,51 @@ class Semoule(productbase.ProductBase):
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
+
+#=====================================================
+# PATE D'ARACHIDE
+#=====================================================
+
+class PateDArachide(productbase.ProductBase):
+	#les attributs
+	conditionnement_arrachide= models.CharField("CONDITIONNEMENT",max_length=100, choices=CONDITIONNEMENT_ARACHIDE)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#=====================================================
+# PIMENT
+#=====================================================
+
+class PimentDeTable(productbase.ProductBase):
+	#les attributs
+	forme_piment= models.CharField("FORME",max_length=100, choices=FORME_PIMENT)
+	type_piment= models.CharField("TYPE",max_length=100, choices=TYPE_PIMENT)
+	conditionnement_piment = models.CharField("CONDITIONNEMENT",max_length=100, choices=CONDITIONNEMENT_PIMENT)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#=====================================================
+# SECHAGE ET EMBALLAGE  DE LEGUMES
+#=====================================================
+
+class SechageEtEmballageDeLegumes(productbase.ProductBase):
+	#les attributs
+	poids_avant_sechage= models.CharField("POIDS AVANT SECHAGE",max_length=100, choices=POIDS_AVANT_LEGUMES)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+

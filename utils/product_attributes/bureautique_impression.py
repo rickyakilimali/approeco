@@ -1,14 +1,28 @@
-FACE_IMPRIMEE = (
+FACE_IMPRIMEE_CARTE_VISITE= (
 		('RECTO','RECTO'),
 		('RECTO VERSO','RECTO VERSO'),
 	)
 
+FACE_IMPRIMEE_FLYERS= (
+		('RECTO','RECTO'),
+		('RECTO VERSO','RECTO VERSO'),
+	)
+FACE_IMPRIMEE_CARTE_SERVICE= (
+		('RECTO','RECTO'),
+		('RECTO VERSO','RECTO VERSO'),
+	)
 QUANTITE_CARTE_VISITE = (
 		('100','100'),
 
 	)
 
-QUANTITE_1= (
+TYPE_TSHIRT = (
+		('NON APPLICABLE','NON APPLICABLE'),
+		('ORDINAIRE','ORDINAIRE'),
+		('PREMIUM','PREMIUM'),
+	)
+
+QUANTITE_LANIERE= (
 		('1-100','1-100'),
 		('101-1000','101-1000'),
 		('1001-10000','1001-10000'),
@@ -26,7 +40,7 @@ QUANTITE_2= (
 
 	)
 
-QUANTITE_3= (
+QUANTITE_PHOTO = (
 		('1-100','1-100'),
 		('100 <','100 <'),
 		('1-1000','1-1000'),
@@ -41,7 +55,7 @@ QUANTITE_CARTE_SERVICE= (
 		('1000 <','1000 <'),
 	)
 
-QUANTITE_4= (
+QUANTITE_DEPLIANT= (
 		('20001<','20001<'),
 		('10001-20000','10001-20000'),
 		('5001-10000','5001-10000'),
@@ -53,6 +67,8 @@ QUANTITE_4= (
 		('1-500','1-500'),
 
 	)
+
+
 
 QUANTITE_AFFICHE= (
 		('20001<','20001<'),
@@ -66,7 +82,7 @@ QUANTITE_AFFICHE= (
 		('1-500','1-500'),
 
 	)
-QUANTITE_5 = (
+QUANTITE_PINS = (
 		('1-100','1-100'),
 		('101-500','101-500'),
 		('501-1000','501-1000'),
@@ -110,6 +126,35 @@ TYPE_STYLO = (
 TYPE_TSHIRT = (
 		('ORDINAIRE','ORDINAIRE'),
 		('PREMIUM','PREMIUM'),
+	)
+
+FORMAT_PAPIER_DEPLIANT = (
+		('A4','A4'),
+	)
+
+FORMAT_PAPIER_AFFICHE = (
+		('A0','A0'),
+		('A1','A1'),
+		('A2','A2'),
+		('A3','A3'),
+		('A4','A4'),
+	)
+
+FORMAT_PAPIER_FLYERS = (
+		('A4','A4'),
+		('A5','A5'),
+		('A6','A6'),
+	)
+
+FORMAT_PAPIER_CARNET = (
+		('A0','A0'),
+		('A1','A1'),
+		('A2','A2'),
+		('A3','A3'),
+		('A4','A4'),
+		('A5','A5'),
+		('A6','A6'),
+		('1/3 A4','1/3 A4'),
 	)
 
 FORMAT_PAPIER = (
@@ -229,7 +274,7 @@ QUANTITE_AUTOCOLLANT = (
 
 	)
 
-DIMENSION_2= (
+DIMENSION_BACKDROP= (
 		('2,25Mx2,25M','2,25Mx2,25M'),
 		('4,6Mx2,25M','4,6Mx2,25M'),
 		('3,2X3,29M','3,2X3,29M'),
@@ -238,7 +283,7 @@ DIMENSION_2= (
 	)
 
 
-TYPE_SUPPORT = (
+TYPE_SUPPORT_BANDEROLE = (
 		('BACHE','BACHE'),
 		('TISSUS','TISSUS'),
 
@@ -255,10 +300,8 @@ TYPE_SUPPORT_X= (
 	)
 
 
-DIMENSION_3 = (
-		('200CMX80CM','200cmX80CM'),
-		('180CMX80CM','180CMX80CM'),
-		('10cmX15CM','10cmX15CM'),
+DIMENSION_ROLLUP = (
+
 		('85X200CM','85X200CM'),
 
 
@@ -287,7 +330,7 @@ TIRAGE= (
 
 	)
 
-DIMENSION= (
+DIMENSION = (
 		('1 PAGE COULEUR','1 PAGE COULEUR'),
 		('1 PAGE NB','1 PAGE NB'),
 		('1/2 PAGE COULEUR','1/2 PAGE COULEUR'),
@@ -299,6 +342,19 @@ DIMENSION= (
 		('DOCUMENT','DOCUMENT'),
 
 	)
+DIMENSION_INSERTION_PUB= (
+		('1 PAGE COULEUR','1 PAGE COULEUR'),
+		('1 PAGE NB','1 PAGE NB'),
+		('1/2 PAGE COULEUR','1/2 PAGE COULEUR'),
+		('1/2 PAGE NB','1/2 PAGE NB'),
+		('1/4 PAGE NB','1/4 PAGE NB'),
+		('LA UNE','LA UNE'),
+		('PUBLI-REPORTAGE','PUBLI-REPORTAGE'),
+		('PUBLICATION','PUBLICATION'),
+
+	)
+
+DIMENSION_ROLLUP
 
 TYPE_EVENEMENT_DE_MASSE = (
 
@@ -403,7 +459,7 @@ DIMENSION = (
 
 	)
 
-PERIODE = (
+PERIODE_SPOT = (
 
 		('AVANT 18H', 'AVANT 18H'),
         ('APRES 18H', 'APRES 18H'),
@@ -476,6 +532,15 @@ QUANTITE = (
 	('501-1000', '501-1000'),
 	('1001-10000', '1001-10000'),
 
+	)
+QUANTITE_TASSE = (
+
+	('1-100', '1-100'),
+	('101-200', '101-200'),
+	('201-500', '201-500'),
+	('501-1000', '501-1000'),
+	('1001-10000', '1001-10000'),
+	('10000<', '10000<'),
 
 	)
 
@@ -566,7 +631,18 @@ MATIERE = (
 		('PLASTIQUE', 'PLASTIQUE'),
 
 	)
+MATIERE_BAC_PAPIER= (
 
+		('METAL', 'METAL'),
+		('PLASTIQUE', 'PLASTIQUE'),
+
+	)
+MATIERE_POUBELLE= (
+
+		('METAL', 'METAL'),
+		('PLASTIQUE', 'PLASTIQUE'),
+
+	)
 NOMBRE_BAC = (
 
 		('2', '2'),
@@ -603,13 +679,73 @@ CONTENANT = (
 
 		('PAQUET', 'PAQUET'),
 		('100/PAQUET', '100/PAQUET'),
-		('CARNET', 'CARNET'),
 		('BOITE', 'BOITE'),
-		('JEUX', 'JEUX'),
 		('RAME', 'RAME'),
 
 	)
+CONTENANT_INTERCALAIRE= (
+		('JEUX', 'JEUX'),
+    )
+CONTENANT_MARQUEUR= (
+			('PAQUET', 'PAQUET'),
 
+    )
+CONTENANT_PAPIER= (
+			('PAQUET', 'PAQUET'),
+			('RAME', 'RAME'),
+
+    )
+CONTENANT_PILE= (
+			('PAQUET', 'PAQUET'),
+
+    )
+CONTENANT_PUNAISE= (
+		('BOITE', 'BOITE'),
+
+    )
+CONTENANT_POSTIT= (
+
+		('CARNET', 'CARNET'),
+
+	)
+CONTENANT_STYLO_PAPETERIE= (
+
+		('PAQUET', 'PAQUET'),
+
+	)
+CONTENANT_CRABONNE= (
+
+		('PAQUET', 'PAQUET'),
+
+	)
+CONTENANT_ROSE_RELIURE= (
+
+		('PAQUET', 'PAQUET'),
+
+	)
+CONTENANT_ELASTIQUES= (
+
+		('PAQUET', 'PAQUET'),
+
+	)
+CONTENANT_ENVELOPPES= (
+
+		('PAQUET', 'PAQUET'),
+
+	)
+CONTENANT_TRANSPARENT_RELUIRE= (
+
+		('PAQUET', 'PAQUET'),
+
+	)
+CONTENANT_ATTACHE = (
+
+		('PAQUET', 'PAQUET'),
+	)
+CONTENANT_ETUI= (
+
+		('PAQUET', 'PAQUET'),
+	)
 
 MARQUE_PAPETERIE = (
 

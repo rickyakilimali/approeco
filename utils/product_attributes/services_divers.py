@@ -335,8 +335,8 @@ NOMBRE_JOUR = (
 	)
 
 TRANCHE_AGE = (
-		('0-55 ANS','0-55 ANS'),
-		('55-65 ANS','55-65 ANS'),
+		('0-54 ANS','0-54 ANS'),
+		('55-64 ANS','55-64 ANS'),
 		('65-69 ANS','65-69 ANS'),
 	)
 

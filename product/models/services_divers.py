@@ -216,7 +216,7 @@ class AssistanceObtentionVisa(productbase.ProductBase):
 #=====================================================
 class ReservationHotelEtranger(productbase.ProductBase):
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉ",max_length=50, choices=UNITE_USD_PERSONNE)
+	units = models.CharField("UNITÉ",max_length=50, choices=UNITE_USD_CHAMBRE)
 #ordonner les produits
 	class Meta:
 		ordering = ['prix']
@@ -263,7 +263,7 @@ class NavetteAeroport(productbase.ProductBase):
 class AccueilAeroport(productbase.ProductBase):
 	nombre_personnes =models.CharField("NOMBRE DE PERSONNES", max_length=20, choices= NOMBRE_PERSONNES)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
-	units = models.CharField("UNITÉ",max_length=50, choices=UNITE)
+	units = models.CharField("UNITÉ",max_length=50, choices=UNITE_USD_PERSONNE)
 
 
 
@@ -335,6 +335,17 @@ class NettoyageDeChaise(productbase.ProductBase):
 	revetement=models.CharField("REVETEMENT DES CHAISES", max_length=100, choices= REVETEMENT_CHAISE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
 	units = models.CharField("UNITÉ",max_length=50, choices=UNITE_USD_CHAISE)
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#======== 06-06-2018 =================================
+# BLANCHISSERIE
+#=====================================================
+class Blanchisserie(productbase.ProductBase):
+	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
+	units = models.CharField("UNITÉ",max_length=50, choices=UNITE_USD_KG)
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']

@@ -13,6 +13,27 @@ MARQUE= (
 
 
 	)
+MARQUE_BATTERIE_SOLAIRE= (
+		('EXCIS','EXCIS'),
+		('MONBAT','MONBAT'),
+		('CNBINDUSTRIALPOWER','CNBINDUSTRIALPOWER'),
+		('REOO INDUSTRY','REOO INDUSTRY'),
+
+	)
+MARQUE_REGULATEUR= (
+		('WESTECH','WESTECH'),
+		('EPSOLAR','EPSOLAR'),
+		('VICTRON ENERGY','VICTRON ENERGY'),
+		('REOO INDUSTRY','REOO INDUSTRY'),
+
+	)
+MARQUE_CONVERTISSEUR= (
+
+		('WESTECH','WESTECH'),
+		('VICTRON ENERGY','VICTRON ENERGY'),
+		('REOO INDUSTRY','REOO INDUSTRY'),
+
+	)
 MARQUE_PANNEAU= (
 
 
@@ -37,7 +58,19 @@ PUISSANCE_CONVERTISSEUR= (
 
 
 	)
+PUISSANCE_PANNEAU_SOLAIRE= (
 
+		('50W','50W'),
+		('80W','80W'),
+		('100W','100W'),
+		('150W','150W'),
+		('180W','180W'),
+		('190W','190W'),
+		('250W','250W'),
+        ('300W','300W'),
+
+
+	)
 TENSION_CONVERTISSEUR=(
 		('2V','2V'),
 		('12V','12V'),
@@ -67,8 +100,13 @@ PUISSANCE= (
         ('400W','400W'),
 
 	)
+PUISSANCE_AMPOULE= (
+        ('3W','3W'),
+		('5W','5W'),
+		('10W','10W'),
 
-TENSION= (
+	)
+TENSION_BATTERIE_SOLAIRE= (
 		('2V','2V'),
 		('12V','12V'),
 
@@ -114,13 +152,24 @@ GARANTIE= (
 
 
 	)
+GARANTIE_PANNEAUX_SOLAIRE= (
+		('5 ANS','5 ANS'),
+
+
+	)
+DUREE_VIE_PANNEAUX_SOLAIRE= (
+
+		('20 ANS','20 ANS'),
+
+	)
+
 
 TYPE_REGULATION =(
 		('PWM','PWM'),
 		('MPPT','MPPT'),
 
 	)
-INTENSITE = (
+INTENSITE= (
 		('9A','9A'),
 		('12A','12A'),
 		('18A','18A'),
@@ -149,4 +198,15 @@ INTENSITE = (
 
 
 	)
+INTENSITE_REGULATEUR= (
+		('20A','20A'),
+		('30A','30A'),
+		('40A','40A'),
+		('45A','45A'),
+		('50A','50A'),
+		('60A','60A'),
+	    ('80A','80A'),
+        ('85A','85A'),
 
+
+	)

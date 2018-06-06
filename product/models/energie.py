@@ -7,7 +7,7 @@ from utils.unite_prix import UNITE
 # 1. AMPOULE SOLAIRE
 #=====================================================
 class AmpouleSolaire(productbase.ProductBase):
-	puissance =models.CharField("PUISSANCE", max_length=20, choices= PUISSANCE)
+	puissance =models.CharField("PUISSANCE", max_length=20, choices= PUISSANCE_AMPOULE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -18,8 +18,8 @@ class AmpouleSolaire(productbase.ProductBase):
 # 2. BATTERIE SOLAIRE
 #=====================================================
 class BatterieSolaire(productbase.ProductBase):
-	marque =models.CharField("MARQUE", max_length=20, choices= MARQUE)
-	tension =models.CharField("TENSION EN VOLT", max_length=20, choices= TENSION)
+	marque =models.CharField("MARQUE", max_length=20, choices= MARQUE_BATTERIE_SOLAIRE)
+	tension =models.CharField("TENSION EN VOLT", max_length=20, choices= TENSION_BATTERIE_SOLAIRE)
 	duree_vie=models.CharField("DUREE DE VIE", max_length=20, choices= DUREE_VIE)
 	garantie=models.CharField("GARANTIE", max_length=20, choices= GARANTIE)
 	capacite =models.CharField("CAPACITE EN AMPERE-HEURE", max_length=20, choices= CAPACITE_BATTERIE)
@@ -35,9 +35,9 @@ class BatterieSolaire(productbase.ProductBase):
 class PanneauxSolaire(productbase.ProductBase):
 	marque =models.CharField("MARQUE", max_length=20, choices= MARQUE_PANNEAU)
 	type_cellule=models.CharField("TYPE DE CELLULE", max_length=20, choices= TYPE_CELLULE_PANNEAU)
-	duree_vie=models.CharField("DUREE DE VIE", max_length=20, choices= DUREE_VIE)
-	garantie=models.CharField("GARANTIE", max_length=20, choices= GARANTIE)
-	puissance =models.CharField("PUISSANCE", max_length=20, choices= PUISSANCE)
+	duree_vie=models.CharField("DUREE DE VIE", max_length=20, choices= DUREE_VIE_PANNEAUX_SOLAIRE)
+	garantie=models.CharField("GARANTIE", max_length=20, choices= GARANTIE_PANNEAUX_SOLAIRE)
+	puissance =models.CharField("PUISSANCE", max_length=20, choices= PUISSANCE_PANNEAU_SOLAIRE)
 	prix = models.DecimalField("PRIX", max_digits=5, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -48,9 +48,9 @@ class PanneauxSolaire(productbase.ProductBase):
 # 4. REGULATEUR
 #=====================================================
 class Regulateur(productbase.ProductBase):
-	marque =models.CharField("MARQUE", max_length=20, choices= MARQUE)
+	marque =models.CharField("MARQUE", max_length=20, choices= MARQUE_REGULATEUR)
 	type_regulation =models.CharField("TYPE DE REGULATION", max_length=20, choices= TYPE_REGULATION)
-	intensite =models.CharField("INTENSITE", max_length=20, choices= INTENSITE)
+	intensite =models.CharField("INTENSITE", max_length=20, choices= INTENSITE_REGULATEUR)
 	prix = models.DecimalField("PRIX", max_digits=10, decimal_places=2)
 	units = models.CharField("UNITE",max_length=50, choices=UNITE)
 	#ordonner les produits
@@ -62,7 +62,7 @@ class Regulateur(productbase.ProductBase):
 # 5. CONVERTISSEUR
 #=====================================================
 class Convertisseur(productbase.ProductBase):
-	marque_convertisseur =models.CharField("MARQUE", max_length=20, choices= MARQUE)
+	marque_convertisseur =models.CharField("MARQUE", max_length=20, choices= MARQUE_CONVERTISSEUR)
 	puissance_convertisseur =models.CharField("PUISSANCE", max_length=20, choices= PUISSANCE_CONVERTISSEUR )
 	tension_convertisseur =models.CharField("TENSION", max_length=20, choices= TENSION_CONVERTISSEUR )
 	chargeur =models.CharField("CHARGEUR", max_length=20, blank=True, null=True,choices= CHARGEUR )

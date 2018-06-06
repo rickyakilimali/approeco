@@ -2660,3 +2660,44 @@ MODELE_VELO = (
         ('ORBITRAC', 'ORBITRAC'),
 
     )
+
+PUISSANCE_CONCASSEUR = (
+
+		('15KW','15KW'),
+		('20KW','20KW'),
+
+	)
+
+PUISSANCE_MALAXEUR = (
+
+		('5KW','5KW'),
+		('7,5KW','7,5KW'),
+
+	)
+
+MATERIAUX_MALAXEUR =(
+
+		('INOX','INOX'),
+		('ACIER','ACIER'),
+
+	)
+
+PUISSANCE_MOULIN = (
+
+		('7KW','7KW'),
+		('10KW','10KW'),
+
+	)
+
+
+VOLUME_SECHOIR = (
+
+		('2M3','2M3'),
+
+	)
+
+PUISSANCE_SECHOIR = (
+
+		('12KW','12KW'),
+
+	)

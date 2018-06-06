@@ -228,6 +228,7 @@ class Chambre(productbase.ProductBase):
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
 #=====================================================
 #TRIPLEX
 #=====================================================
@@ -243,3 +244,18 @@ class Triplex(productbase.ProductBase):
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
+
+#===========05-06-2018================================
+# CONSTRUCTION DE CHARPENTE METALLIQUE
+#=====================================================
+
+class ConstructionDeCharpenteMetallique(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_POURC_DEVIS)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+

@@ -214,3 +214,8 @@ UNITE_POURC_DEVIS = (
 
         ('% DU DEVIS','% DU DEVIS'),
     )
+UNITE_USD_CHAMBRE= (
+
+        ('USD/CHAMBRE','USD/CHAMBRE'),
+
+    )

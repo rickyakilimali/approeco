@@ -2704,7 +2704,6 @@ class PlaqueAFaceDoublePourSocketMural(productbase.ProductBase):
 		ordering = ['prix']
 
 
-
 #====== 23-05-2018 =================================
 # POINCON
 #===================================================
@@ -2717,3 +2716,80 @@ class Poincon(productbase.ProductBase):
 	#ordonner les produits
 	class Meta:
 		ordering = ['prix']
+
+
+#====== 05-06-2018 =================================
+# CONCASSEUR NOIX DE PALME
+#===================================================
+
+class ConcasseurNoixDePalme(productbase.ProductBase):
+	#les attributs
+	puissance = models.CharField("PUISSANCE",max_length=100, choices=PUISSANCE_CONCASSEUR)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+#====== 05-06-2018 =================================
+# MALAXEUR
+#===================================================
+
+class Malaxeur(productbase.ProductBase):
+	#les attributs
+	puissance = models.CharField("PUISSANCE",max_length=100, choices=PUISSANCE_MALAXEUR)
+	materiaux = models.CharField("MATERIAUX",max_length=100, choices=MATERIAUX_MALAXEUR)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#====== 05-06-2018 =================================
+# MENUISERIE METALLIQUE
+#===================================================
+
+class MenuiserieMetallique(productbase.ProductBase):
+	#les attributs
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_POURC_DEVIS)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+#====== 05-06-2018 =================================
+# MOULIN
+#===================================================
+
+class Moulin(productbase.ProductBase):
+	#les attributs
+	puissance = models.CharField("PUISSANCE",max_length=100, choices=PUISSANCE_MOULIN)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
+
+
+#=====================================================
+# SECHOIR ELECTRIQUE
+#=====================================================
+
+class SechoirElectrique(productbase.ProductBase):
+	#les attributs
+	volume= models.CharField("VOLUME",max_length=100, choices=VOLUME_SECHOIR)
+	puissance= models.CharField("PUISSANCE",max_length=100, choices=PUISSANCE_SECHOIR)
+	prix = models.DecimalField("PRIX",max_digits=10, decimal_places=2)
+	units = models.CharField("UNITE",max_length=50, choices=UNITE_USD_KG)
+
+	#ordonner les produits
+	class Meta:
+		ordering = ['prix']
+
